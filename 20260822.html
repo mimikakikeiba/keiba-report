@@ -1,3 +1,4 @@
+<a id="top"></a>
 <title>2026年8月22日（土）の推奨レース</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -135,6 +136,7 @@ h1.title .nowrap{white-space:nowrap;}
   white-space:nowrap;
 }
 .pill:active{background:var(--surface-2);}
+.pill-all{color:var(--accent);border-color:var(--accent);}
 .filter-toggle{
   margin-left:auto;flex:0 0 auto;display:flex;align-items:center;gap:6px;
   font-size:12.5px;color:var(--text-muted);white-space:nowrap;
@@ -153,7 +155,7 @@ h1.title .nowrap{white-space:nowrap;}
 /* ---- section headings ---- */
 .section-eyebrow{
   font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--text-faint);
-  text-transform:uppercase;margin:34px 0 4px;
+  text-transform:uppercase;margin:34px 0 4px;scroll-margin-top:64px;
 }
 .section-lead{font-size:14px;color:var(--text-muted);margin:0 0 16px;}
 .section-lead b{color:var(--text);font-weight:700;}
@@ -322,6 +324,13 @@ h1.title .nowrap{white-space:nowrap;}
 
 /* ---- footer ---- */
 .footer-meta{margin-top:14px;font-size:11.5px;color:var(--text-faint);text-align:center;}
+.to-top{margin-top:28px;text-align:center;}
+.to-top a{
+  display:inline-block;padding:8px 18px;border-radius:999px;border:1px solid var(--border-strong);
+  background:var(--surface);font-size:13px;font-weight:600;color:var(--text-muted);
+  text-decoration:none;
+}
+.to-top a:active{background:var(--surface-2);}
 
 @media (max-width:420px){
   h1.title{font-size:23px;}
@@ -352,7 +361,7 @@ h1.title .nowrap{white-space:nowrap;}
 
 <nav class="subnav">
   <div class="subnav-inner">
-    <a href="#v-中京" class="pill">中京</a><a href="#v-新潟" class="pill">新潟</a><a href="#v-札幌" class="pill">札幌</a>
+    <a href="#all-races" class="pill pill-all">全レース</a><a href="#v-中京" class="pill">中京</a><a href="#v-新潟" class="pill">新潟</a><a href="#v-札幌" class="pill">札幌</a>
     <div class="filter-toggle">
       推奨のみ
       <div class="switch" id="filterSwitch" role="switch" aria-checked="false" tabindex="0"></div>
@@ -853,7 +862,7 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
     </article>
 
-  <div class="section-eyebrow">全レース一覧</div>
+  <div class="section-eyebrow" id="all-races">全レース一覧</div>
   <p class="section-lead">会場・レースをタップすると相対勝率が開きます</p>
   <section class="venue-section" id="v-中京">
       <h2 class="venue-title">中京</h2>
@@ -4433,6 +4442,8 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="stat"><div class="num tabular">51<small>%</small></div><div class="label">◎単勝回収率</div></div>
       <div class="stat"><div class="num tabular">46<small>%</small></div><div class="label">◎複勝回収率</div></div>
     </div>
+
+  <div class="to-top"><a href="#top">↑ ページ上部へ</a></div>
 
   <div class="footer-meta tabular">Generated 2026年8月22日（土） ／ Personal prediction system</div>
 </main>
