@@ -1,0 +1,950 @@
+<div class="back-to-top-wrap"><a href="index.html" class="back-to-top">← TOPに戻る</a></div>
+<style>.back-to-top-wrap{max-width:720px;margin:0 auto;padding:14px 16px 0;}.back-to-top{display:inline-flex;align-items:center;gap:4px;font-size:13px;font-weight:600;color:var(--accent);text-decoration:none;}</style>
+<a id="top"></a>
+<title>2026年8月27日（木）の地方競馬picks（実験版）</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="2026年8月27日（木）の地方競馬picks（実験版）">
+<meta property="og:description" content="◎○▲☆と全レースの相対勝率・結果・的中ピックアップ">
+<meta property="og:image" content="https://mimikakikeiba.github.io/keiba-report/og-image.png">
+<meta property="og:url" content="https://mimikakikeiba.github.io/keiba-report/nar_20260827.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="2026年8月27日（木）の地方競馬picks（実験版）">
+<meta name="twitter:description" content="◎○▲☆と全レースの相対勝率・結果・的中ピックアップ">
+<meta name="twitter:image" content="https://mimikakikeiba.github.io/keiba-report/og-image.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root{
+  --bg:#EEF3F8;--surface:#FFFFFF;--surface-2:#E2EAF3;--surface-3:#D3E0EE;
+  --text:#141C26;--text-muted:#57677A;--text-faint:#8494A6;
+  --border:#D6E1EC;--border-strong:#B9CBDD;
+  --accent:#1B5FA6;--accent-strong:#0E3E73;--accent-tint:#E2ECF7;
+  --shadow:0 1px 2px rgba(10,25,40,.06),0 6px 20px -8px rgba(10,25,40,.18);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0B141F;--surface:#121D2B;--surface-2:#182536;--surface-3:#203047;
+    --text:#E7EEF6;--text-muted:#98ABC1;--text-faint:#69809A;
+    --border:#22334A;--border-strong:#2C4360;
+    --accent:#5B9BD8;--accent-strong:#8DC0EA;--accent-tint:#152840;
+    --shadow:0 1px 2px rgba(0,0,0,.35),0 10px 28px -10px rgba(0,0,0,.55);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0B141F;--surface:#121D2B;--surface-2:#182536;--surface-3:#203047;
+  --text:#E7EEF6;--text-muted:#98ABC1;--text-faint:#69809A;
+  --border:#22334A;--border-strong:#2C4360;
+  --accent:#5B9BD8;--accent-strong:#8DC0EA;--accent-tint:#152840;
+  --shadow:0 1px 2px rgba(0,0,0,.35),0 10px 28px -10px rgba(0,0,0,.55);
+  color-scheme:dark;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic","Noto Sans JP",system-ui,-apple-system,sans-serif;
+  line-height:1.6;font-feature-settings:"palt";
+}
+.wrap{max-width:720px;margin:0 auto;padding:28px 16px 56px;}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--accent);text-transform:uppercase;}
+h1{font-size:24px;font-weight:800;margin:6px 0 10px;letter-spacing:-.01em;}
+.notice{
+  background:var(--accent-tint);border:1px solid var(--border-strong);border-radius:12px;
+  padding:12px 14px;font-size:12.5px;color:var(--text-muted);margin:0 0 22px;line-height:1.7;
+}
+.notice b{color:var(--accent-strong);}
+.back-top{display:inline-block;margin-bottom:14px;font-size:13px;font-weight:600;color:var(--accent);text-decoration:none;}
+.venue-title{
+  font-size:18px;font-weight:800;margin:26px 0 10px;padding-top:16px;border-top:1px solid var(--border);
+}
+.venue-title:first-of-type{border-top:none;padding-top:0;margin-top:0;}
+.race-card{
+  background:var(--surface);border:1px solid var(--border);border-radius:12px;
+  padding:12px 14px;margin-bottom:8px;box-shadow:var(--shadow);
+}
+.race-head{display:flex;align-items:baseline;gap:8px;margin-bottom:8px;font-size:13px;color:var(--text-muted);}
+.race-no{font-size:15px;font-weight:800;color:var(--text);}
+.picks{display:flex;flex-direction:column;gap:5px;}
+.pick-row{display:flex;align-items:baseline;gap:8px;font-size:14px;}
+.mark{font-weight:800;width:18px;text-align:center;}
+.mark-honmei{color:var(--accent-strong);}
+.mark-aite{color:var(--accent);}
+.pick-name{font-weight:600;}
+.pick-gap{margin-left:auto;font-size:11.5px;color:var(--text-faint);}
+.no-race{color:var(--text-faint);font-size:13px;}
+.footer-meta{margin-top:24px;font-size:11px;color:var(--text-faint);text-align:center;}
+</style>
+<div class="wrap">
+  <div class="eyebrow">NAR Report (Beta)</div>
+  <h1>2026年8月27日（木）の地方競馬picks</h1>
+  <div class="notice">
+    <b>実験段階のモデルです。</b>7年分のwalk-forward検証でROI68〜73%程度と、市場の
+    1番人気を機械的に買うだけの場合(ROI約79%)にもまだ届いていません。参考程度にご覧ください。
+  </div>
+  <div class="venue-title">園田</div><div class="race-card">
+              <div class="race-head"><span class="race-no">1R</span>1400mダート 9頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">1 クリノビックリバゴ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">5 チョウカンセイ</span>
+                  <span class="pick-gap">gap 5.59</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">1R</span>1400mダート 9頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">1 クリノビックリバゴ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">5 チョウカンセイ</span>
+                  <span class="pick-gap">gap 5.59</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">2R</span>1400mダート 9頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">7 フクノフィアーノン</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">8 ラクプエル</span>
+                  <span class="pick-gap">gap 0.16</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">2R</span>1400mダート 9頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">7 フクノフィアーノン</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">8 ラクプエル</span>
+                  <span class="pick-gap">gap 0.16</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">3R</span>820mダート 7頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">1 エストジュール</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">2 ニネンツキグミ</span>
+                  <span class="pick-gap">gap 0.00</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">3R</span>820mダート 7頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">1 エストジュール</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">2 ニネンツキグミ</span>
+                  <span class="pick-gap">gap 0.00</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">4R</span>1230mダート 10頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">9 ヴェニスクィーン</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">2 ヒマリン</span>
+                  <span class="pick-gap">gap 0.62</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">4R</span>1230mダート 10頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">9 ヴェニスクィーン</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">2 ヒマリン</span>
+                  <span class="pick-gap">gap 0.62</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">5R</span>1400mダート 10頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">5 オーシンエンジェル</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">4 サクラトップクロス</span>
+                  <span class="pick-gap">gap 0.05</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">5R</span>1400mダート 10頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">5 オーシンエンジェル</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">4 サクラトップクロス</span>
+                  <span class="pick-gap">gap 0.05</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">6R</span>1400mダート 10頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">3 アルムチャーチル</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">10 コスモタイシ</span>
+                  <span class="pick-gap">gap 2.52</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">6R</span>1400mダート 10頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">3 アルムチャーチル</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">10 コスモタイシ</span>
+                  <span class="pick-gap">gap 2.52</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">7R</span>1230mダート 8頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">7 フルリール</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">6 ガンバルフトシ</span>
+                  <span class="pick-gap">gap 1.76</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">7R</span>1230mダート 8頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">7 フルリール</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">6 ガンバルフトシ</span>
+                  <span class="pick-gap">gap 1.76</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">8R</span>1870mダート 7頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">3 イマジンレノン</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">2 オーラエグザート</span>
+                  <span class="pick-gap">gap 3.37</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">8R</span>1870mダート 7頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">3 イマジンレノン</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">2 オーラエグザート</span>
+                  <span class="pick-gap">gap 3.37</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">9R</span>1230mダート 9頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">8 エンドレステイル</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">9 テイムキッド</span>
+                  <span class="pick-gap">gap 1.45</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">9R</span>1230mダート 9頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">8 エンドレステイル</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">9 テイムキッド</span>
+                  <span class="pick-gap">gap 1.45</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">10R</span>1230mダート 9頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">4 アレナトーレ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">7 モルツシャン</span>
+                  <span class="pick-gap">gap 3.03</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">10R</span>1230mダート 9頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">4 アレナトーレ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">7 モルツシャン</span>
+                  <span class="pick-gap">gap 3.03</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">11R</span>1400mダート 12頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">11 ベラジオガルフ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">10 メイショウカイコン</span>
+                  <span class="pick-gap">gap 2.51</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">11R</span>1400mダート 12頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">11 ベラジオガルフ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">10 メイショウカイコン</span>
+                  <span class="pick-gap">gap 2.51</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">12R</span>1400mダート 10頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">10 ネバーセイグッバイ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">3 クロワール</span>
+                  <span class="pick-gap">gap 2.03</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">12R</span>1400mダート 10頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">10 ネバーセイグッバイ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">3 クロワール</span>
+                  <span class="pick-gap">gap 2.03</span></div>
+              </div>
+            </div><div class="venue-title">笠松</div><div class="race-card">
+              <div class="race-head"><span class="race-no">1R</span>1400mダート 5頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">4 シャッターチャンス</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">5 ベラジオホームラン</span>
+                  <span class="pick-gap">gap 1.05</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">1R</span>1400mダート 5頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">4 シャッターチャンス</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">5 ベラジオホームラン</span>
+                  <span class="pick-gap">gap 1.05</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">2R</span>1400mダート 6頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">3 オンベイト</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">4 ラクリメ</span>
+                  <span class="pick-gap">gap 1.50</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">2R</span>1400mダート 6頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">3 オンベイト</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">4 ラクリメ</span>
+                  <span class="pick-gap">gap 1.50</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">3R</span>1400mダート 8頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">1 スウェーバック</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">2 メイショウミズホ</span>
+                  <span class="pick-gap">gap 0.00</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">3R</span>1400mダート 8頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">1 スウェーバック</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">2 メイショウミズホ</span>
+                  <span class="pick-gap">gap 0.00</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">4R</span>1400mダート 8頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">1 イッツユー</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">8 シュガームーン</span>
+                  <span class="pick-gap">gap 1.65</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">4R</span>1400mダート 8頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">1 イッツユー</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">8 シュガームーン</span>
+                  <span class="pick-gap">gap 1.65</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">5R</span>1400mダート 9頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">1 エースオブスペーズ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">7 ロバストウォリアー</span>
+                  <span class="pick-gap">gap 2.39</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">5R</span>1400mダート 9頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">1 エースオブスペーズ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">7 ロバストウォリアー</span>
+                  <span class="pick-gap">gap 2.39</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">6R</span>1400mダート 8頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">4 ヴィラロボス</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">3 キタノコウセイ</span>
+                  <span class="pick-gap">gap 2.02</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">6R</span>1400mダート 8頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">4 ヴィラロボス</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">3 キタノコウセイ</span>
+                  <span class="pick-gap">gap 2.02</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">7R</span>1400mダート 8頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">1 ヤングジャガー</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">7 ウサギチャン</span>
+                  <span class="pick-gap">gap 4.04</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">7R</span>1400mダート 8頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">1 ヤングジャガー</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">7 ウサギチャン</span>
+                  <span class="pick-gap">gap 4.04</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">8R</span>1400mダート 10頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">5 トゥレイス</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">7 メイプルラブリー</span>
+                  <span class="pick-gap">gap 3.57</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">8R</span>1400mダート 10頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">5 トゥレイス</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">7 メイプルラブリー</span>
+                  <span class="pick-gap">gap 3.57</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">9R</span>1400mダート 8頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">2 レイノルズナンバー</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">6 エイシンキンザザ</span>
+                  <span class="pick-gap">gap 0.05</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">9R</span>1400mダート 8頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">2 レイノルズナンバー</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">6 エイシンキンザザ</span>
+                  <span class="pick-gap">gap 0.05</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">10R</span>1400mダート 9頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">3 エイシンタヴェルナ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">1 ミズイロ</span>
+                  <span class="pick-gap">gap 3.79</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">10R</span>1400mダート 9頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">3 エイシンタヴェルナ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">1 ミズイロ</span>
+                  <span class="pick-gap">gap 3.79</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">11R</span>1400mダート 8頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">3 トレノ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">7 ベアケイ</span>
+                  <span class="pick-gap">gap 0.03</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">11R</span>1400mダート 8頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">3 トレノ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">7 ベアケイ</span>
+                  <span class="pick-gap">gap 0.03</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">12R</span>1580mダート 9頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">1 ビートウマザンマイ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">9 ニホンピロペリー</span>
+                  <span class="pick-gap">gap 2.12</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">12R</span>1580mダート 9頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">1 ビートウマザンマイ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">9 ニホンピロペリー</span>
+                  <span class="pick-gap">gap 2.12</span></div>
+              </div>
+            </div><div class="venue-title">船橋</div><div class="race-card">
+              <div class="race-head"><span class="race-no">1R</span>1200mダート 10頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">5 グランドタルマエ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">6 シェナスーパー</span>
+                  <span class="pick-gap">gap 0.82</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">1R</span>1200mダート 10頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">5 グランドタルマエ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">6 シェナスーパー</span>
+                  <span class="pick-gap">gap 0.82</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">2R</span>1200mダート 12頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">9 ブロードファイラム</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">5 フェアリーランド</span>
+                  <span class="pick-gap">gap 1.48</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">2R</span>1200mダート 12頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">9 ブロードファイラム</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">5 フェアリーランド</span>
+                  <span class="pick-gap">gap 1.48</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">3R</span>1000mダート 6頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">1 プレストアース</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">2 ハクサンフナバシ</span>
+                  <span class="pick-gap">gap 0.00</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">3R</span>1000mダート 6頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">1 プレストアース</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">2 ハクサンフナバシ</span>
+                  <span class="pick-gap">gap 0.00</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">4R</span>1500mダート 6頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">6 フルールマジック</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">2 フェズミント</span>
+                  <span class="pick-gap">gap 4.99</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">4R</span>1500mダート 6頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">6 フルールマジック</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">2 フェズミント</span>
+                  <span class="pick-gap">gap 4.99</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">5R</span>1200mダート 12頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">4 エンドステージ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">11 グラフィティウォー</span>
+                  <span class="pick-gap">gap 0.53</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">5R</span>1200mダート 12頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">4 エンドステージ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">11 グラフィティウォー</span>
+                  <span class="pick-gap">gap 0.53</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">6R</span>1200mダート 11頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">3 チーフルガール</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">11 ヴィーケン</span>
+                  <span class="pick-gap">gap 1.02</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">6R</span>1200mダート 11頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">3 チーフルガール</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">11 ヴィーケン</span>
+                  <span class="pick-gap">gap 1.02</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">7R</span>1200mダート 12頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">10 オルキデアロッサ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">7 ワンダージャーニー</span>
+                  <span class="pick-gap">gap 2.61</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">7R</span>1200mダート 12頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">10 オルキデアロッサ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">7 ワンダージャーニー</span>
+                  <span class="pick-gap">gap 2.61</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">8R</span>1500mダート 13頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">12 トクシーマリリン</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">10 ナニワノベンケイ</span>
+                  <span class="pick-gap">gap 1.51</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">8R</span>1500mダート 13頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">12 トクシーマリリン</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">10 ナニワノベンケイ</span>
+                  <span class="pick-gap">gap 1.51</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">9R</span>1000mダート 14頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">12 シンボリライト</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">11 エーティースピカ</span>
+                  <span class="pick-gap">gap 4.46</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">9R</span>1000mダート 14頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">12 シンボリライト</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">11 エーティースピカ</span>
+                  <span class="pick-gap">gap 4.46</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">10R</span>1600mダート 10頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">2 グリーンダイヤル</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">4 ヒラボクラフィット</span>
+                  <span class="pick-gap">gap 4.72</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">10R</span>1600mダート 10頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">2 グリーンダイヤル</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">4 ヒラボクラフィット</span>
+                  <span class="pick-gap">gap 4.72</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">11R</span>1700mダート 10頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">2 アンジュルナ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">3 ナリスナ</span>
+                  <span class="pick-gap">gap 1.63</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">11R</span>1700mダート 10頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">2 アンジュルナ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">3 ナリスナ</span>
+                  <span class="pick-gap">gap 1.63</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">12R</span>2200mダート 13頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">7 レルアバド</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">5 ラップランド</span>
+                  <span class="pick-gap">gap 3.55</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">12R</span>2200mダート 13頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">7 レルアバド</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">5 ラップランド</span>
+                  <span class="pick-gap">gap 3.55</span></div>
+              </div>
+            </div><div class="venue-title">門別</div><div class="race-card">
+              <div class="race-head"><span class="race-no">1R</span>1000mダート 12頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">8 キューティーホープ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">6 シセイフット</span>
+                  <span class="pick-gap">gap 2.65</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">1R</span>1000mダート 12頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">8 キューティーホープ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">6 シセイフット</span>
+                  <span class="pick-gap">gap 2.65</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">2R</span>1200mダート 12頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">10 ディアローラ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">1 ミーディアムセラア</span>
+                  <span class="pick-gap">gap 0.70</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">2R</span>1200mダート 12頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">10 ディアローラ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">1 ミーディアムセラア</span>
+                  <span class="pick-gap">gap 0.70</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">3R</span>1200mダート 11頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">5 リコーニック</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">3 ブールドネージュ</span>
+                  <span class="pick-gap">gap 4.52</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">3R</span>1200mダート 11頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">5 リコーニック</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">3 ブールドネージュ</span>
+                  <span class="pick-gap">gap 4.52</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">4R</span>1200mダート 10頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">2 ダイビングキャッチ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">7 カネショウラッシュ</span>
+                  <span class="pick-gap">gap 5.31</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">4R</span>1200mダート 10頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">2 ダイビングキャッチ</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">7 カネショウラッシュ</span>
+                  <span class="pick-gap">gap 5.31</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">5R</span>1700mダート 8頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">7 ティンバリートス</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">5 リヴァールミナス</span>
+                  <span class="pick-gap">gap 1.26</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">5R</span>1700mダート 8頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">7 ティンバリートス</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">5 リヴァールミナス</span>
+                  <span class="pick-gap">gap 1.26</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">6R</span>1100mダート 12頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">1 ヴァンフロール</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">2 エンテンガビ</span>
+                  <span class="pick-gap">gap 0.00</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">6R</span>1100mダート 12頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">1 ヴァンフロール</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">2 エンテンガビ</span>
+                  <span class="pick-gap">gap 0.00</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">7R</span>1600mダート 7頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">7 ウィルミスチヴァス</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">4 マナスカイ</span>
+                  <span class="pick-gap">gap 1.54</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">7R</span>1600mダート 7頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">7 ウィルミスチヴァス</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">4 マナスカイ</span>
+                  <span class="pick-gap">gap 1.54</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">8R</span>1800mダート 7頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">6 アヴェルス</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">4 ドクターストップ</span>
+                  <span class="pick-gap">gap 3.80</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">8R</span>1800mダート 7頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">6 アヴェルス</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">4 ドクターストップ</span>
+                  <span class="pick-gap">gap 3.80</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">9R</span>1200mダート 10頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">6 マッドシークレット</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">2 サザンフラワー</span>
+                  <span class="pick-gap">gap 0.32</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">9R</span>1200mダート 10頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">6 マッドシークレット</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">2 サザンフラワー</span>
+                  <span class="pick-gap">gap 0.32</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">10R</span>1700mダート 9頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">8 ホウオウアーネスト</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">5 ブラストブラック</span>
+                  <span class="pick-gap">gap 0.34</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">10R</span>1700mダート 9頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">8 ホウオウアーネスト</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">5 ブラストブラック</span>
+                  <span class="pick-gap">gap 0.34</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">11R</span>2000mダート 11頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">8 ペンダント</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">2 ゼロアワー</span>
+                  <span class="pick-gap">gap 1.21</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">11R</span>2000mダート 11頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">8 ペンダント</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">2 ゼロアワー</span>
+                  <span class="pick-gap">gap 1.21</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">12R</span>1200mダート 9頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">3 スティールペガサス</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">2 ケイアイドリー</span>
+                  <span class="pick-gap">gap 1.09</span></div>
+              </div>
+            </div><div class="race-card">
+              <div class="race-head"><span class="race-no">12R</span>1200mダート 9頭</div>
+              <div class="picks">
+                <div class="pick-row"><span class="mark mark-honmei">◎</span>
+                  <span class="pick-name">3 スティールペガサス</span></div>
+                <div class="pick-row"><span class="mark mark-aite">○</span>
+                  <span class="pick-name">2 ケイアイドリー</span>
+                  <span class="pick-gap">gap 1.09</span></div>
+              </div>
+            </div>
+  <div class="footer-meta">Generated 2026年8月27日（木） ／ Personal prediction system (NAR beta)</div>
+</div>
