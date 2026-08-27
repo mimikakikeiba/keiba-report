@@ -154,6 +154,25 @@ h1.title .nowrap{white-space:nowrap;}
 .p3-fill.plain,.p3-fill.yonkaku{background:var(--border-strong);}
 .p3-num{font-size:12px;color:var(--text-muted);width:48px;text-align:right;flex:0 0 auto;font-variant-numeric:tabular-nums;}
 
+.results{margin-top:14px;padding-top:12px;border-top:1px solid var(--border-strong);}
+.results-head{font-size:11.5px;font-weight:700;color:var(--text-muted);text-transform:uppercase;
+  letter-spacing:.05em;margin-bottom:9px;}
+.podium{display:flex;flex-direction:column;gap:4px;}
+.podium-row{display:flex;align-items:baseline;gap:8px;font-size:12.5px;flex-wrap:nowrap;}
+.podium-rank{font-weight:800;color:var(--text-muted);width:26px;flex:0 0 auto;
+  font-variant-numeric:tabular-nums;white-space:nowrap;}
+.podium-row .mark{width:auto;flex:0 0 auto;}
+.podium-name{font-weight:600;flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;
+  white-space:nowrap;}
+.podium-ninki{margin-left:auto;font-size:11.5px;color:var(--text-faint);flex:0 0 auto;white-space:nowrap;}
+.result-badge{font-size:11px;font-weight:700;padding:1px 7px;border-radius:6px;flex:0 0 auto;white-space:nowrap;}
+.result-badge.hit{color:var(--accent-strong);background:var(--accent-tint);}
+.result-badge.miss{color:var(--text-faint);background:var(--surface-2);}
+.result-badge.wide-result{margin-left:6px;}
+.result-badge.pick-result{margin-left:auto;margin-right:0;font-size:11.5px;}
+
+.stat-row-summary{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:12px 0 0;}
+
 .footer-meta{margin-top:14px;font-size:11.5px;color:var(--text-faint);text-align:center;}
 .to-top{margin-top:28px;text-align:center;}
 .to-top a{display:inline-block;padding:8px 18px;border-radius:999px;border:1px solid var(--border-strong);
@@ -205,6 +224,7 @@ h1.title .nowrap{white-space:nowrap;}
         <div class="pick-race">11R</div>
         <div class="pick-meta">2000mダート 11頭 <span class="badge badge-grade">重賞</span>
           <span class="badge badge-rel rel-hi">S</span>
+          
         </div>
       </header>
       <ul class="horse-list"><li class="horse-list-head">
@@ -265,12 +285,14 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">サンヨウスフィーダ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:1%"></div></div><span class="p3-num">0.7%</span></div>
     </li></ul>
+      
     </article><article class="pick-card" id="r-園田-8">
       <header class="pick-head">
         <div class="pick-venue">園田</div>
         <div class="pick-race">8R</div>
         <div class="pick-meta">1870mダート 7頭 
           <span class="badge badge-rel rel-hi">S</span>
+          
         </div>
       </header>
       <ul class="horse-list"><li class="horse-list-head">
@@ -311,12 +333,14 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">メイショウヤスマサ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:5%"></div></div><span class="p3-num">2.7%</span></div>
     </li></ul>
+      
     </article><article class="pick-card" id="r-門別-8">
       <header class="pick-head">
         <div class="pick-venue">門別</div>
         <div class="pick-race">8R</div>
         <div class="pick-meta">1800mダート 7頭 
           <span class="badge badge-rel rel-hi">S</span>
+          
         </div>
       </header>
       <ul class="horse-list"><li class="horse-list-head">
@@ -357,6 +381,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">バッハ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:0%"></div></div><span class="p3-num">0.1%</span></div>
     </li></ul>
+      
     </article>
 
   <div class="section-eyebrow" id="all-races">全レース一覧</div>
@@ -463,47 +488,9 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ハイラブエナン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:0%"></div></div><span class="p3-num">0.2%</span></div>
     </li></ul></div>
-    </details><details class="race-card is-skip" id="r-園田-3" data-buy="0">
-      <summary><span class="sum-race">3R</span><span class="sum-meta">820mダート 7頭<span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎1 エストジュール</span></summary>
-      <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span>
-</li><li class="horse-row">
-      <span class="uma-badge" style="background:#FFFFFF;color:#141C26;border:1.5px solid #B9CBDD;">1</span>
-      <span class="mark mark-honmei">◎</span>
-      <span class="horse-name">エストジュール</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">14.3%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
-      <span class="mark mark-o">○</span>
-      <span class="horse-name">ニネンツキグミ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:100%"></div></div><span class="p3-num">14.3%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
-      <span class="mark mark-sankaku">▲</span>
-      <span class="horse-name">トリオパーティー</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:100%"></div></div><span class="p3-num">14.3%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
-      <span class="mark mark-hoshi">☆</span>
-      <span class="horse-name">ロックンビート</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:100%"></div></div><span class="p3-num">14.3%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#F2E100;color:#141C26;border:none;">5</span>
-      <span class="mark mark-yonkaku">△</span>
-      <span class="horse-name">コパノジャマイカ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:100%"></div></div><span class="p3-num">14.3%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">6</span>
-      <span class="mark mark-yonkaku">△</span>
-      <span class="horse-name">ウメスイショウ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:100%"></div></div><span class="p3-num">14.3%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">7</span>
-      <span class="mark mark-yonkaku">△</span>
-      <span class="horse-name">オトワオー</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:100%"></div></div><span class="p3-num">14.3%</span></div>
-    </li></ul></div>
-    </details><details class="race-card is-skip" id="r-園田-4" data-buy="0">
+    </details><div class="race-card is-excluded" id="r-園田-3" data-buy="0">
+      <div class="race-card-row"><span class="sum-race">3R</span><span class="sum-meta">820mダート 7頭</span><span class="sum-honmei sum-excluded">新馬戦（出走馬全員が初出走）のため除外</span></div>
+    </div><details class="race-card is-skip" id="r-園田-4" data-buy="0">
       <summary><span class="sum-race">4R</span><span class="sum-meta">1230mダート 10頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎9 ヴェニスクィーン</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -1041,52 +1028,9 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">アーサーリード</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:1%"></div></div><span class="p3-num">0.4%</span></div>
     </li></ul></div>
-    </details><details class="race-card is-skip" id="r-笠松-3" data-buy="0">
-      <summary><span class="sum-race">3R</span><span class="sum-meta">1400mダート 8頭<span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎1 スウェーバック</span></summary>
-      <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span>
-</li><li class="horse-row">
-      <span class="uma-badge" style="background:#FFFFFF;color:#141C26;border:1.5px solid #B9CBDD;">1</span>
-      <span class="mark mark-honmei">◎</span>
-      <span class="horse-name">スウェーバック</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">12.5%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
-      <span class="mark mark-o">○</span>
-      <span class="horse-name">メイショウミズホ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:100%"></div></div><span class="p3-num">12.5%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
-      <span class="mark mark-sankaku">▲</span>
-      <span class="horse-name">ランランリンリン</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:100%"></div></div><span class="p3-num">12.5%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
-      <span class="mark mark-hoshi">☆</span>
-      <span class="horse-name">サツキジュエル</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:100%"></div></div><span class="p3-num">12.5%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#F2E100;color:#141C26;border:none;">5</span>
-      <span class="mark mark-yonkaku">△</span>
-      <span class="horse-name">エイシンニンバス</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:100%"></div></div><span class="p3-num">12.5%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">6</span>
-      <span class="mark mark-yonkaku">△</span>
-      <span class="horse-name">シュンポシオン</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:100%"></div></div><span class="p3-num">12.5%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">7</span>
-      <span class="mark mark-yonkaku">△</span>
-      <span class="horse-name">カタフラクト</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:100%"></div></div><span class="p3-num">12.5%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">8</span>
-      <span class="mark mark-yonkaku">△</span>
-      <span class="horse-name">ケファロニア</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:100%"></div></div><span class="p3-num">12.5%</span></div>
-    </li></ul></div>
-    </details><details class="race-card is-skip" id="r-笠松-4" data-buy="0">
+    </details><div class="race-card is-excluded" id="r-笠松-3" data-buy="0">
+      <div class="race-card-row"><span class="sum-race">3R</span><span class="sum-meta">1400mダート 8頭</span><span class="sum-honmei sum-excluded">新馬戦（出走馬全員が初出走）のため除外</span></div>
+    </div><details class="race-card is-skip" id="r-笠松-4" data-buy="0">
       <summary><span class="sum-race">4R</span><span class="sum-meta">1400mダート 8頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎7 リックカリーナ</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -1639,42 +1583,9 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">キーチパーヘチュア</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:0%"></div></div><span class="p3-num">0.1%</span></div>
     </li></ul></div>
-    </details><details class="race-card is-skip" id="r-船橋-3" data-buy="0">
-      <summary><span class="sum-race">3R</span><span class="sum-meta">1000mダート 6頭<span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎1 プレストアース</span></summary>
-      <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span>
-</li><li class="horse-row">
-      <span class="uma-badge" style="background:#FFFFFF;color:#141C26;border:1.5px solid #B9CBDD;">1</span>
-      <span class="mark mark-honmei">◎</span>
-      <span class="horse-name">プレストアース</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">16.7%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
-      <span class="mark mark-o">○</span>
-      <span class="horse-name">ハクサンフナバシ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:100%"></div></div><span class="p3-num">16.7%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
-      <span class="mark mark-sankaku">▲</span>
-      <span class="horse-name">ミスメロディ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:100%"></div></div><span class="p3-num">16.7%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
-      <span class="mark mark-hoshi">☆</span>
-      <span class="horse-name">リブロボア</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:100%"></div></div><span class="p3-num">16.7%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#F2E100;color:#141C26;border:none;">5</span>
-      <span class="mark mark-yonkaku">△</span>
-      <span class="horse-name">ジョワレーヴ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:100%"></div></div><span class="p3-num">16.7%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">6</span>
-      <span class="mark mark-yonkaku">△</span>
-      <span class="horse-name">イニシエーション</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:100%"></div></div><span class="p3-num">16.7%</span></div>
-    </li></ul></div>
-    </details><details class="race-card is-skip" id="r-船橋-4" data-buy="0">
+    </details><div class="race-card is-excluded" id="r-船橋-3" data-buy="0">
+      <div class="race-card-row"><span class="sum-race">3R</span><span class="sum-meta">1000mダート 6頭</span><span class="sum-honmei sum-excluded">新馬戦（出走馬全員が初出走）のため除外</span></div>
+    </div><details class="race-card is-skip" id="r-船橋-4" data-buy="0">
       <summary><span class="sum-race">4R</span><span class="sum-meta">1500mダート 6頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎6 フルールマジック</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -2517,72 +2428,9 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">オリザレコルト</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:1%"></div></div><span class="p3-num">0.5%</span></div>
     </li></ul></div>
-    </details><details class="race-card is-skip" id="r-門別-6" data-buy="0">
-      <summary><span class="sum-race">6R</span><span class="sum-meta">1100mダート 12頭<span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎1 ヴァンフロール</span></summary>
-      <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span>
-</li><li class="horse-row">
-      <span class="uma-badge" style="background:#FFFFFF;color:#141C26;border:1.5px solid #B9CBDD;">1</span>
-      <span class="mark mark-honmei">◎</span>
-      <span class="horse-name">ヴァンフロール</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">8.3%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
-      <span class="mark mark-o">○</span>
-      <span class="horse-name">エンテンガビ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:100%"></div></div><span class="p3-num">8.3%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
-      <span class="mark mark-sankaku">▲</span>
-      <span class="horse-name">レイスプリント</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:100%"></div></div><span class="p3-num">8.3%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
-      <span class="mark mark-hoshi">☆</span>
-      <span class="horse-name">アサグモ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:100%"></div></div><span class="p3-num">8.3%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#F2E100;color:#141C26;border:none;">5</span>
-      <span class="mark mark-yonkaku">△</span>
-      <span class="horse-name">リコースターリング</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:100%"></div></div><span class="p3-num">8.3%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#F2E100;color:#141C26;border:none;">6</span>
-      <span class="mark mark-yonkaku">△</span>
-      <span class="horse-name">ブエナモーダ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:100%"></div></div><span class="p3-num">8.3%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">7</span>
-      <span class="mark mark-yonkaku">△</span>
-      <span class="horse-name">エムティグレース</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:100%"></div></div><span class="p3-num">8.3%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">8</span>
-      <span class="mark mark-yonkaku">△</span>
-      <span class="horse-name">イナズマレジーナ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:100%"></div></div><span class="p3-num">8.3%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">9</span>
-      <span class="mark mark-yonkaku">△</span>
-      <span class="horse-name">ヴァンヴァンヴァン</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:100%"></div></div><span class="p3-num">8.3%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">10</span>
-      <span class="mark"></span>
-      <span class="horse-name">オケアニディマーレ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:100%"></div></div><span class="p3-num">8.3%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">11</span>
-      <span class="mark"></span>
-      <span class="horse-name">ツブアン</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:100%"></div></div><span class="p3-num">8.3%</span></div>
-    </li><li class="horse-row">
-      <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">12</span>
-      <span class="mark"></span>
-      <span class="horse-name">ゴールデンシャイナ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:100%"></div></div><span class="p3-num">8.3%</span></div>
-    </li></ul></div>
-    </details><details class="race-card is-skip" id="r-門別-7" data-buy="0">
+    </details><div class="race-card is-excluded" id="r-門別-6" data-buy="0">
+      <div class="race-card-row"><span class="sum-race">6R</span><span class="sum-meta">1100mダート 12頭</span><span class="sum-honmei sum-excluded">新馬戦（出走馬全員が初出走）のため除外</span></div>
+    </div><details class="race-card is-skip" id="r-門別-7" data-buy="0">
       <summary><span class="sum-race">7R</span><span class="sum-meta">1600mダート 7頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎7 ウィルミスチヴァス</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -2879,6 +2727,8 @@ h1.title .nowrap{white-space:nowrap;}
     </li></ul></div>
     </details></div>
     </section>
+
+  
 
   <div class="to-top"><a href="#top">↑ ページ上部へ</a></div>
 
