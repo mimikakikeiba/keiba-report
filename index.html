@@ -13,21 +13,24 @@
 <style>
 :root{
   --bg:#F2F5EC;--surface:#FFFFFF;--border:#DBE2D2;--border-strong:#C3CDB7;
-  --text:#182018;--text-muted:#5B6558;--accent:#1E6B3F;--accent-strong:#0F4A29;
+  --text:#182018;--text-muted:#5B6558;--accent:#1E6B3F;--accent-strong:#0F4A29;--accent-tint:#E4EFE3;
+  --accent-nar:#1B5FA6;--accent-nar-strong:#0E3E73;--accent-nar-tint:#E2ECF7;
   --shadow:0 1px 2px rgba(15,30,20,.06),0 6px 20px -8px rgba(15,30,20,.18);
   color-scheme:light;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
     --bg:#0E1512;--surface:#151F19;--border:#28362C;--border-strong:#354536;
-    --text:#EAEDE4;--text-muted:#9FAB9B;--accent:#4FB57A;--accent-strong:#7BD6A0;
+    --text:#EAEDE4;--text-muted:#9FAB9B;--accent:#4FB57A;--accent-strong:#7BD6A0;--accent-tint:#16281E;
+    --accent-nar:#5B9BD8;--accent-nar-strong:#8DC0EA;--accent-nar-tint:#152840;
     --shadow:0 1px 2px rgba(0,0,0,.35),0 10px 28px -10px rgba(0,0,0,.55);
     color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
   --bg:#0E1512;--surface:#151F19;--border:#28362C;--border-strong:#354536;
-  --text:#EAEDE4;--text-muted:#9FAB9B;--accent:#4FB57A;--accent-strong:#7BD6A0;
+  --text:#EAEDE4;--text-muted:#9FAB9B;--accent:#4FB57A;--accent-strong:#7BD6A0;--accent-tint:#16281E;
+  --accent-nar:#5B9BD8;--accent-nar-strong:#8DC0EA;--accent-nar-tint:#152840;
   --shadow:0 1px 2px rgba(0,0,0,.35),0 10px 28px -10px rgba(0,0,0,.55);
   color-scheme:dark;
 }
@@ -40,13 +43,22 @@ body{
 .wrap{max-width:640px;margin:0 auto;padding:32px 16px 64px;}
 .eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--accent);text-transform:uppercase;}
 h1{font-size:24px;font-weight:800;margin:6px 0 4px;letter-spacing:-.01em;}
-.lead{color:var(--text-muted);font-size:13.5px;margin:0 0 24px;}
+.lead{color:var(--text-muted);font-size:13.5px;margin:0 0 20px;}
+.tabs{display:flex;gap:8px;margin-bottom:16px;}
+.tab-btn{
+  flex:1;padding:10px 14px;border-radius:999px;border:1.5px solid var(--border-strong);
+  background:var(--surface);font-size:14px;font-weight:700;cursor:pointer;color:var(--text-muted);
+  font-family:inherit;
+}
+.tab-btn[data-tab="jra"].active{background:var(--accent-tint);border-color:var(--accent);color:var(--accent-strong);}
+.tab-btn[data-tab="nar"].active{background:var(--accent-nar-tint);border-color:var(--accent-nar);color:var(--accent-nar-strong);}
 .list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;}
 .list a{
-  display:block;background:var(--surface);border:1px solid var(--border);border-radius:12px;
-  padding:14px 16px;text-decoration:none;color:var(--text);font-weight:700;font-size:15px;
+  display:block;background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--accent);
+  border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--text);font-weight:700;font-size:15px;
   box-shadow:var(--shadow);
 }
+.list-nar a{border-left-color:var(--accent-nar);}
 .list a:active{background:var(--border);}
 .footer{margin-top:24px;font-size:11.5px;color:var(--text-muted);text-align:center;}
 </style></head><body>
@@ -54,7 +66,26 @@ h1{font-size:24px;font-weight:800;margin:6px 0 4px;letter-spacing:-.01em;}
   <div class="eyebrow">Keiba Report</div>
   <h1>競馬予想レポート</h1>
   <p class="lead">日付を選んで、その日の推奨レース・結果をご覧いただけます。</p>
-  <ul class="list"><li><a href="20260823.html">2026年8月23日（日）</a></li><li><a href="20260822.html">2026年8月22日（土）</a></li><li><a href="20260816.html">2026年8月16日（日）</a></li><li><a href="20260815.html">2026年8月15日（土）</a></li><li><a href="20260809.html">2026年8月9日（日）</a></li><li><a href="20260808.html">2026年8月8日（土）</a></li><li><a href="20260802.html">2026年8月2日（日）</a></li><li><a href="20260801.html">2026年8月1日（土）</a></li></ul>
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="jra">中央</button>
+    <button class="tab-btn" data-tab="nar">地方</button>
+  </div>
+  <ul class="list" id="list-jra"><li><a href="20260823.html">2026年8月23日（日）</a></li><li><a href="20260822.html">2026年8月22日（土）</a></li><li><a href="20260816.html">2026年8月16日（日）</a></li><li><a href="20260815.html">2026年8月15日（土）</a></li><li><a href="20260809.html">2026年8月9日（日）</a></li><li><a href="20260808.html">2026年8月8日（土）</a></li><li><a href="20260802.html">2026年8月2日（日）</a></li><li><a href="20260801.html">2026年8月1日（土）</a></li></ul>
+  <ul class="list list-nar" id="list-nar" style="display:none;"><li><a href="nar_20260827.html">2026年8月27日（木）</a></li></ul>
   <div class="footer">Personal prediction system</div>
 </div>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  var btns = document.querySelectorAll('.tab-btn');
+  btns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      btns.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      var tab = btn.dataset.tab;
+      document.getElementById('list-jra').style.display = (tab === 'jra') ? '' : 'none';
+      document.getElementById('list-nar').style.display = (tab === 'nar') ? '' : 'none';
+    });
+  });
+});
+</script>
 </body></html>
