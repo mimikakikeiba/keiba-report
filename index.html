@@ -15,6 +15,7 @@
   --bg:#F2F5EC;--surface:#FFFFFF;--border:#DBE2D2;--border-strong:#C3CDB7;
   --text:#182018;--text-muted:#5B6558;--accent:#1E6B3F;--accent-strong:#0F4A29;--accent-tint:#E4EFE3;
   --accent-nar:#1B5FA6;--accent-nar-strong:#0E3E73;--accent-nar-tint:#E2ECF7;
+  --gold:#9C6E1E;--gold-strong:#7A5511;--gold-tint:#FBF1DC;
   --shadow:0 1px 2px rgba(15,30,20,.06),0 6px 20px -8px rgba(15,30,20,.18);
   color-scheme:light;
 }
@@ -23,6 +24,7 @@
     --bg:#0E1512;--surface:#151F19;--border:#28362C;--border-strong:#354536;
     --text:#EAEDE4;--text-muted:#9FAB9B;--accent:#4FB57A;--accent-strong:#7BD6A0;--accent-tint:#16281E;
     --accent-nar:#5B9BD8;--accent-nar-strong:#8DC0EA;--accent-nar-tint:#152840;
+    --gold:#E3B657;--gold-strong:#F0CB7C;--gold-tint:#2E2513;
     --shadow:0 1px 2px rgba(0,0,0,.35),0 10px 28px -10px rgba(0,0,0,.55);
     color-scheme:dark;
   }
@@ -31,6 +33,7 @@
   --bg:#0E1512;--surface:#151F19;--border:#28362C;--border-strong:#354536;
   --text:#EAEDE4;--text-muted:#9FAB9B;--accent:#4FB57A;--accent-strong:#7BD6A0;--accent-tint:#16281E;
   --accent-nar:#5B9BD8;--accent-nar-strong:#8DC0EA;--accent-nar-tint:#152840;
+  --gold:#E3B657;--gold-strong:#F0CB7C;--gold-tint:#2E2513;
   --shadow:0 1px 2px rgba(0,0,0,.35),0 10px 28px -10px rgba(0,0,0,.55);
   color-scheme:dark;
 }
@@ -44,6 +47,11 @@ body{
 .eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--accent);text-transform:uppercase;}
 h1{font-size:24px;font-weight:800;margin:6px 0 4px;letter-spacing:-.01em;}
 .lead{color:var(--text-muted);font-size:13.5px;margin:0 0 20px;}
+.graded-link{
+  display:inline-flex;align-items:center;gap:6px;margin:-8px 0 20px;padding:8px 14px;
+  border-radius:999px;border:1.5px solid var(--gold);background:var(--gold-tint);
+  color:var(--gold-strong);font-weight:700;font-size:13.5px;text-decoration:none;
+}
 .tabs{display:flex;gap:8px;margin-bottom:16px;}
 .tab-btn{
   flex:1;padding:10px 14px;border-radius:999px;border:1.5px solid var(--border-strong);
@@ -66,6 +74,7 @@ h1{font-size:24px;font-weight:800;margin:6px 0 4px;letter-spacing:-.01em;}
   <div class="eyebrow">Keiba Report</div>
   <h1>競馬予想レポート</h1>
   <p class="lead">日付を選んで、その日の推奨レース・結果をご覧いただけます。</p>
+  <a href="graded.html" class="graded-link">🏆 重賞アーカイブ</a>
   <div class="tabs">
     <button class="tab-btn active" data-tab="jra">中央</button>
     <button class="tab-btn" data-tab="nar">地方</button>
