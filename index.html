@@ -86,15 +86,17 @@ h1{font-size:24px;font-weight:800;margin:6px 0 4px;letter-spacing:-.01em;}
 <script>
 document.addEventListener('DOMContentLoaded', function(){
   var btns = document.querySelectorAll('.tab-btn');
+  function activate(tab){
+    btns.forEach(function(b){ b.classList.toggle('active', b.dataset.tab === tab); });
+    document.getElementById('list-jra').style.display = (tab === 'jra') ? '' : 'none';
+    document.getElementById('list-nar').style.display = (tab === 'nar') ? '' : 'none';
+  }
   btns.forEach(function(btn){
-    btn.addEventListener('click', function(){
-      btns.forEach(function(b){ b.classList.remove('active'); });
-      btn.classList.add('active');
-      var tab = btn.dataset.tab;
-      document.getElementById('list-jra').style.display = (tab === 'jra') ? '' : 'none';
-      document.getElementById('list-nar').style.display = (tab === 'nar') ? '' : 'none';
-    });
+    btn.addEventListener('click', function(){ activate(btn.dataset.tab); });
   });
+  // 2026/09/02: 地方の日次ページ等から「TOPに戻る」で index.html#nar に来た場合、
+  // 地方タブを開いた状態で表示する（中央タブが既定で先頭に出る違和感の解消）。
+  if (location.hash === '#nar') { activate('nar'); }
 });
 </script>
 </body></html>
