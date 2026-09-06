@@ -52,6 +52,8 @@ h1{font-size:24px;font-weight:800;margin:6px 0 4px;letter-spacing:-.01em;}
   border-radius:999px;border:1.5px solid var(--gold);background:var(--gold-tint);
   color:var(--gold-strong);font-weight:700;font-size:13.5px;text-decoration:none;
 }
+.links-row{display:flex;gap:10px;flex-wrap:wrap;margin:-4px 0 20px;}
+.links-row .graded-link{margin:0;}
 .tabs{display:flex;gap:8px;margin-bottom:16px;}
 .tab-btn{
   flex:1;padding:10px 14px;border-radius:999px;border:1.5px solid var(--border-strong);
@@ -74,7 +76,10 @@ h1{font-size:24px;font-weight:800;margin:6px 0 4px;letter-spacing:-.01em;}
   <div class="eyebrow">Keiba Report</div>
   <h1>2026年9月</h1>
   <p class="lead">日付を選んで、その日の推奨レース・結果をご覧いただけます。</p>
-  <a href="index.html" class="graded-link">← 月一覧に戻る</a>
+  <div class="links-row">
+    <a href="index.html" class="graded-link">← 月一覧に戻る</a>
+    <a href="graded.html" class="graded-link">🏆 重賞アーカイブ</a>
+  </div>
   <div class="tabs">
     <button class="tab-btn active" data-tab="jra">中央</button>
     <button class="tab-btn" data-tab="nar">地方</button>
