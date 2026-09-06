@@ -50,9 +50,13 @@ h1{font-size:22px;margin:0 0 8px;line-height:1.35;}
 .section-head .dot{width:9px;height:9px;border-radius:50%;flex:0 0 auto;}
 .dot-jra{background:var(--accent-jra);}
 .dot-nar{background:var(--accent-nar);}
-.month-head{font-size:12.5px;font-weight:800;letter-spacing:.04em;color:var(--text-faint);
-  margin:18px 0 10px;padding-bottom:4px;border-bottom:1px dashed var(--border);}
-.month-head:first-of-type{margin-top:4px;}
+.month-pills{display:flex;gap:8px;flex-wrap:wrap;margin:4px 0 16px;}
+.month-btn{
+  padding:7px 14px;border-radius:999px;border:1.5px solid var(--border-strong);
+  background:var(--surface);font-size:13px;font-weight:700;cursor:pointer;color:var(--text-muted);
+  font-family:inherit;
+}
+.month-btn.active{background:var(--gold-tint);border-color:var(--gold);color:var(--gold-strong);}
 .card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--gold);
   border-radius:12px;padding:14px 16px;margin-bottom:12px;box-shadow:var(--shadow);}
 .card-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:4px;}
@@ -118,7 +122,7 @@ table.field-table tr.row-honmei{background:var(--gold-tint);}
     レース名をクリックすると、そのレースの個別ページに移動します。</p>
   </header>
   <div class="section-head" id="jra"><span class="dot dot-jra"></span><h2>中央競馬</h2></div>
-  <div class="month-head">2026年9月</div><div class="card">
+  <div class="month-pills"><button class="month-btn active" data-scope="jra" data-month="202609">2026年9月</button><button class="month-btn" data-scope="jra" data-month="202608">2026年8月</button></div><div class="month-group" data-scope="jra" data-month="202609"><div class="card">
       <div class="card-head">
         <span class="badge">GII</span>
         <span class="card-venue">阪神11R</span>
@@ -206,7 +210,7 @@ table.field-table tr.row-honmei{background:var(--gold-tint);}
         <span class="result-badge missed">4着</span></div><div class="review-row"><span class="mark mark-hoshi">☆</span>
         <span class="review-name">4 フォルテアンジェロ</span>
         <span class="result-badge missed">6着</span></div></div>
-    </div><div class="month-head">2026年8月</div><div class="card">
+    </div></div><div class="month-group" data-scope="jra" data-month="202608" style="display:none;"><div class="card">
       <div class="card-head">
         <span class="badge">GIII</span>
         <span class="card-venue">新潟8R</span>
@@ -448,9 +452,9 @@ table.field-table tr.row-honmei{background:var(--gold-tint);}
         <span class="result-badge missed">7着</span></div><div class="review-row"><span class="mark mark-o">○</span>
         <span class="review-name">9 カウンターセブン</span>
         <span class="result-badge missed">14着</span></div></div>
-    </div>
+    </div></div>
   <div class="section-head" id="nar"><span class="dot dot-nar"></span><h2>地方競馬（ダートグレード）</h2></div>
-  <div class="month-head">2026年9月</div><div class="card">
+  <div class="month-pills"><button class="month-btn active" data-scope="nar" data-month="202609">2026年9月</button><button class="month-btn" data-scope="nar" data-month="202608">2026年8月</button></div><div class="month-group" data-scope="nar" data-month="202609"><div class="card">
       <div class="card-head">
         <span class="badge">JpnIII</span>
         <span class="card-venue">佐賀11R</span>
@@ -494,7 +498,7 @@ table.field-table tr.row-honmei{background:var(--gold-tint);}
         <span class="result-badge missed">4着</span></div><div class="review-row"><span class="mark mark-hoshi">☆</span>
         <span class="review-name">10 メイショウコマチ</span>
         <span class="result-badge missed">7着</span></div></div>
-    </div><div class="month-head">2026年8月</div><div class="card">
+    </div></div><div class="month-group" data-scope="nar" data-month="202608" style="display:none;"><div class="card">
       <div class="card-head">
         <span class="badge">JpnIII</span>
         <span class="card-venue">門別11R</span>
@@ -516,6 +520,21 @@ table.field-table tr.row-honmei{background:var(--gold-tint);}
         <span class="result-badge came-in">2着</span></div><div class="review-row"><span class="mark mark-hoshi">☆</span>
         <span class="review-name">2 ゼロアワー</span>
         <span class="result-badge missed">8着</span></div></div>
-    </div>
+    </div></div>
   <div class="footer">Personal prediction system</div>
 </div>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  document.querySelectorAll('.month-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var scope = btn.dataset.scope, month = btn.dataset.month;
+      document.querySelectorAll('.month-btn[data-scope="' + scope + '"]').forEach(function(b){
+        b.classList.toggle('active', b === btn);
+      });
+      document.querySelectorAll('.month-group[data-scope="' + scope + '"]').forEach(function(g){
+        g.style.display = (g.dataset.month === month) ? '' : 'none';
+      });
+    });
+  });
+});
+</script>
