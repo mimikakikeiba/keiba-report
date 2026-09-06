@@ -1,0 +1,202 @@
+<title>GIIの重賞</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="GIIの重賞">
+<meta property="og:description" content="◎○▲☆と全レースの相対勝率・結果・的中ピックアップ">
+<meta property="og:image" content="https://mimikakikeiba.github.io/keiba-report/og-image.png">
+<meta property="og:url" content="https://mimikakikeiba.github.io/keiba-report/graded_g2.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GIIの重賞">
+<meta name="twitter:description" content="◎○▲☆と全レースの相対勝率・結果・的中ピックアップ">
+<meta name="twitter:image" content="https://mimikakikeiba.github.io/keiba-report/og-image.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{box-sizing:border-box;}
+:root{
+  --bg:#FAF7F0; --surface:#FFFFFF; --surface-2:#F3EFE4; --border:#E6DFCC; --border-strong:#D8CEB0;
+  --text:#26221A; --text-muted:#6B6350; --text-faint:#948A6E;
+  --gold:#9C6E1E; --gold-strong:#7A5511; --gold-tint:#FBF1DC; --gold-tint-strong:#F5E4BC;
+  --accent-jra:#1E6B3F; --accent-nar:#1B5FA6;
+  --shadow:0 1px 3px rgba(60,45,10,0.08);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#181510; --surface:#221E16; --surface-2:#2B261C; --border:#3A331F; --border-strong:#4A4028;
+    --text:#F0EADA; --text-muted:#B8AD8E; --text-faint:#8C826A;
+    --gold:#E3B657; --gold-strong:#F0CB7C; --gold-tint:#2E2513; --gold-tint-strong:#3B2F16;
+    --accent-jra:#4FB57A; --accent-nar:#5B9BD8;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#181510; --surface:#221E16; --surface-2:#2B261C; --border:#3A331F; --border-strong:#4A4028;
+  --text:#F0EADA; --text-muted:#B8AD8E; --text-faint:#8C826A;
+  --gold:#E3B657; --gold-strong:#F0CB7C; --gold-tint:#2E2513; --gold-tint-strong:#3B2F16;
+  --accent-jra:#4FB57A; --accent-nar:#5B9BD8;
+}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif;
+  -webkit-font-smoothing:antialiased;}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px 40px;}
+.back-to-top-wrap{max-width:760px;margin:0 auto;padding:14px 16px 0;display:flex;gap:16px;flex-wrap:wrap;}
+.back-to-top{display:inline-flex;align-items:center;gap:4px;font-size:13px;font-weight:600;
+  color:var(--gold-strong);text-decoration:none;}
+.masthead{padding:18px 0 14px;}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--gold-strong);margin-bottom:6px;}
+h1{font-size:22px;margin:0 0 8px;line-height:1.35;}
+.lead{font-size:13px;color:var(--text-muted);line-height:1.7;margin:0;}
+.section-head{display:flex;align-items:baseline;gap:8px;margin:26px 0 12px;padding-bottom:8px;
+  border-bottom:2px solid var(--border-strong);}
+.section-head h2{font-size:16px;margin:0;}
+.section-head .dot{width:9px;height:9px;border-radius:50%;flex:0 0 auto;}
+.dot-jra{background:var(--accent-jra);}
+.dot-nar{background:var(--accent-nar);}
+.year-head{font-size:12.5px;font-weight:800;letter-spacing:.04em;color:var(--text-faint);
+  margin:18px 0 10px;padding-bottom:4px;border-bottom:1px dashed var(--border);}
+.year-head:first-of-type{margin-top:4px;}
+.nav-eyebrow{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--text-faint);margin:22px 0 10px;}
+.nav-eyebrow:first-of-type{margin-top:2px;}
+.nav-list{list-style:none;margin:0 0 4px;padding:0;display:flex;flex-direction:column;gap:8px;}
+.nav-list a{
+  display:block;background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--gold);
+  border-radius:12px;padding:13px 16px;text-decoration:none;color:var(--text);font-weight:700;font-size:14.5px;
+  box-shadow:var(--shadow);
+}
+.back-link{display:inline-flex;align-items:center;gap:6px;margin:-8px 0 20px;padding:8px 14px;
+  border-radius:999px;border:1.5px solid var(--gold);background:var(--gold-tint);
+  color:var(--gold-strong);font-weight:700;font-size:13.5px;text-decoration:none;}
+.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--gold);
+  border-radius:12px;padding:14px 16px;margin-bottom:12px;box-shadow:var(--shadow);}
+.card-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:4px;}
+.badge{display:inline-flex;align-items:center;font-size:11px;font-weight:800;padding:2px 7px;
+  border-radius:999px;border:1px solid var(--gold);color:var(--gold-strong);background:var(--gold-tint);}
+.card-date{font-size:12px;color:var(--text-faint);}
+.card-venue{font-size:12px;color:var(--text-muted);font-weight:600;}
+.card-title{font-size:15.5px;font-weight:700;margin:2px 0 10px;}
+.card-title a{color:var(--text);text-decoration:none;}
+.card-title a:hover{text-decoration:underline;}
+.podium{display:flex;flex-direction:column;gap:4px;margin-bottom:10px;padding-bottom:10px;
+  border-bottom:1px dashed var(--border);}
+.podium-row{display:flex;align-items:baseline;gap:8px;font-size:12.5px;}
+.podium-rank{font-weight:800;color:var(--gold-strong);width:2.4em;flex:0 0 auto;}
+.mark{font-weight:800;font-size:14px;width:16px;text-align:center;flex:0 0 auto;}
+.mark-honmei{color:var(--gold-strong);}
+.mark-o{color:#2E7D46;}
+.mark-sankaku{color:#6B7FCF;}
+.mark-hoshi{color:#B06BC2;}
+.podium-name{flex:1 1 auto;}
+.reviews{display:flex;flex-direction:column;gap:5px;}
+.review-row{display:flex;align-items:baseline;gap:8px;font-size:12.5px;}
+.review-name{flex:1 1 auto;}
+.result-badge{font-size:11px;font-weight:700;padding:1px 7px;border-radius:999px;flex:0 0 auto;}
+.result-badge.came-in{color:#1F7A45;background:#E4F3E9;}
+.result-badge.missed{color:var(--text-faint);background:var(--surface-2);}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .result-badge.came-in{color:#7BD6A0;background:#16281E;}
+}
+:root[data-theme="dark"] .result-badge.came-in{color:#7BD6A0;background:#16281E;}
+.no-data{font-size:12.5px;color:var(--text-faint);}
+.footer{margin-top:24px;font-size:11.5px;color:var(--text-faint);text-align:center;}
+
+/* 個別ページ専用 */
+.race-meta{font-size:13px;color:var(--text-muted);margin:2px 0 16px;}
+.narrative{background:var(--gold-tint);border:1px solid var(--gold-tint-strong);border-radius:12px;
+  padding:14px 16px;font-size:13.5px;line-height:1.85;margin-bottom:20px;}
+.narrative-head{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--gold-strong);margin-bottom:6px;}
+.section-title{font-size:14px;font-weight:800;margin:22px 0 10px;color:var(--text);}
+.tablewrap{overflow-x:auto;border:1px solid var(--border);border-radius:10px;}
+table.field-table{width:100%;border-collapse:collapse;font-size:12.5px;white-space:nowrap;}
+table.field-table th{background:var(--surface-2);color:var(--text-muted);font-weight:700;
+  text-align:left;padding:7px 10px;position:sticky;top:0;}
+table.field-table td{padding:7px 10px;border-top:1px solid var(--border);}
+table.field-table tr.row-honmei{background:var(--gold-tint);}
+</style>
+<div class="wrap">
+  <div class="back-to-top-wrap">
+  <a href="index.html" class="back-to-top">← TOPに戻る</a>
+  <a href="graded.html" class="back-to-top">🏆 重賞一覧</a>
+</div>
+<style>
+.back-to-top-wrap{max-width:760px;margin:0 auto;padding:14px 16px 0;display:flex;gap:16px;}
+.back-to-top{display:inline-flex;align-items:center;gap:4px;font-size:13px;font-weight:600;
+  color:var(--accent);text-decoration:none;}
+</style>
+<header class="masthead">
+    <div class="eyebrow">Graded Races</div>
+    <h1>GIIの重賞</h1>
+    <p class="lead">レース名をクリックすると、そのレースの個別ページに移動します。</p>
+  </header>
+  <a href="graded.html" class="back-link">← 重賞アーカイブに戻る</a>
+  <div class="section-head" id="jra"><span class="dot dot-jra"></span><h2>中央競馬</h2></div>
+  <div class="year-head">2026年</div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">阪神11R</span>
+        <span class="card-date">9/6（日）</span>
+      </div>
+      <div class="card-title"><a href="race_20260906_hanshin11.html">セントウルS</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark mark-hoshi">☆</span>
+        <span class="podium-name">3 フリッカージャブ</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark mark-sankaku">▲</span>
+        <span class="podium-name">9 ピューロマジック</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark mark-honmei">◎</span>
+        <span class="podium-name">1 ママコチャ</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">1 ママコチャ</span>
+        <span class="result-badge came-in">3着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">5 ダイヤモンドノット</span>
+        <span class="result-badge missed">8着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">9 ピューロマジック</span>
+        <span class="result-badge came-in">2着</span></div><div class="review-row"><span class="mark mark-hoshi">☆</span>
+        <span class="review-name">3 フリッカージャブ</span>
+        <span class="result-badge came-in">1着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">中山11R</span>
+        <span class="card-date">9/6（日）</span>
+      </div>
+      <div class="card-title"><a href="race_20260906_nakayama11.html">紫苑S</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark mark-honmei">◎</span>
+        <span class="podium-name">4 マスターソアラ</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark"></span>
+        <span class="podium-name">2 サムシングスイート</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark mark-sankaku">▲</span>
+        <span class="podium-name">9 ドリームコア</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">4 マスターソアラ</span>
+        <span class="result-badge came-in">1着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">11 ベンヴェヌータ</span>
+        <span class="result-badge missed">9着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">9 ドリームコア</span>
+        <span class="result-badge came-in">3着</span></div><div class="review-row"><span class="mark mark-hoshi">☆</span>
+        <span class="review-name">10 ジッピーチューン</span>
+        <span class="result-badge missed">10着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">札幌11R</span>
+        <span class="card-date">8/16（日）</span>
+      </div>
+      <div class="card-title"><a href="race_20260816_sapporo11.html">札幌記念</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark"></span>
+        <span class="podium-name">15 シェイクユアハート</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark mark-sankaku">▲</span>
+        <span class="podium-name">8 サクラファレル</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark"></span>
+        <span class="podium-name">14 レディネス</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">10 アドマイヤテラ</span>
+        <span class="result-badge missed">9着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">13 グランディア</span>
+        <span class="result-badge missed">5着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">8 サクラファレル</span>
+        <span class="result-badge came-in">2着</span></div><div class="review-row"><span class="mark mark-hoshi">☆</span>
+        <span class="review-name">7 ショウヘイ</span>
+        <span class="result-badge missed">7着</span></div></div>
+    </div>
+  <div class="section-head" id="nar"><span class="dot dot-nar"></span><h2>地方競馬（ダートグレード）</h2></div>
+  <p class="no-data">該当する地方ダートグレードはありません。</p>
+  <div class="footer">Personal prediction system</div>
+</div>
