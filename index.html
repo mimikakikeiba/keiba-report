@@ -62,6 +62,7 @@ h1{font-size:24px;font-weight:800;margin:6px 0 4px;letter-spacing:-.01em;}
 }
 .tab-btn[data-tab="jra"].active{background:var(--accent-tint);border-color:var(--accent);color:var(--accent-strong);}
 .tab-btn[data-tab="nar"].active{background:var(--accent-nar-tint);border-color:var(--accent-nar);color:var(--accent-nar-strong);}
+.tab-btn[data-tab="matome"].active{background:var(--gold-tint);border-color:var(--gold);color:var(--gold-strong);}
 .list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;}
 .list a{
   display:block;background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--accent);
@@ -92,6 +93,10 @@ document.addEventListener('DOMContentLoaded', function(){
     btns.forEach(function(b){ b.classList.toggle('active', b.dataset.tab === tab); });
     document.getElementById('list-jra').style.display = (tab === 'jra') ? '' : 'none';
     document.getElementById('list-nar').style.display = (tab === 'nar') ? '' : 'none';
+    // pane-matome(まとめタブ)は月別ページ({month}.html)にのみ存在(2026/09/07)。
+    // index.htmlには無いのでnullガードする。
+    var pm = document.getElementById('pane-matome');
+    if (pm) pm.style.display = (tab === 'matome') ? '' : 'none';
   }
   btns.forEach(function(btn){
     btn.addEventListener('click', function(){ activate(btn.dataset.tab); });
