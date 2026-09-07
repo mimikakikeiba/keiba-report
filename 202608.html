@@ -71,6 +71,26 @@ h1{font-size:24px;font-weight:800;margin:6px 0 4px;letter-spacing:-.01em;}
 .list-nar a{border-left-color:var(--accent-nar);}
 .list a:active{background:var(--border);}
 .footer{margin-top:24px;font-size:11.5px;color:var(--text-muted);text-align:center;}
+
+.tabular{font-variant-numeric:tabular-nums;}
+#summary-jra,#summary-nar{margin-bottom:22px;}
+#summary-jra .section-eyebrow,#summary-nar .section-eyebrow{
+  font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin:0 0 4px;
+}
+#summary-jra .section-eyebrow{color:var(--accent-strong);}
+#summary-nar .section-eyebrow{color:var(--accent-nar-strong);}
+#summary-jra .section-lead,#summary-nar .section-lead{font-size:13px;color:var(--text-muted);margin:0 0 12px;}
+#summary-jra .stat-row,#summary-nar .stat-row{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 14px;
+}
+#summary-jra .stat-row-2,#summary-nar .stat-row-2{grid-template-columns:repeat(2,1fr);}
+#summary-jra .stat,#summary-nar .stat{
+  background:var(--surface);border:1px solid var(--border);border-radius:12px;
+  padding:10px 12px;box-shadow:var(--shadow);
+}
+#summary-jra .stat .num,#summary-nar .stat .num{font-size:19px;font-weight:800;letter-spacing:-.01em;}
+#summary-jra .stat .num small,#summary-nar .stat .num small{font-size:11.5px;font-weight:600;margin-left:1px;}
+#summary-jra .stat .label,#summary-nar .stat .label{font-size:10.5px;color:var(--text-muted);letter-spacing:.02em;margin-top:2px;}
 </style></head><body>
 <div class="wrap">
   <div class="eyebrow">Keiba Report</div>
@@ -84,6 +104,30 @@ h1{font-size:24px;font-weight:800;margin:6px 0 4px;letter-spacing:-.01em;}
     <button class="tab-btn active" data-tab="jra">中央</button>
     <button class="tab-btn" data-tab="nar">地方</button>
   </div>
+  <div id="summary-jra"><div class="month-summary"><div class="section-eyebrow">2026年8月のまとめ</div>
+  <p class="section-lead">◎1頭を単勝・複勝それぞれ100円均等で買った場合の成績（仮定シミュレーション）です。</p>
+  <div class="stat-row stat-row-2">
+      <div class="stat"><div class="num tabular">27.4<small>%</small></div><div class="label">◎勝率（86/314R）</div></div>
+      <div class="stat"><div class="num tabular">51.6<small>%</small></div><div class="label">◎複勝率（162/314R）</div></div>
+      <div class="stat"><div class="num tabular">83<small>%</small></div><div class="label">◎単勝回収率</div></div>
+      <div class="stat"><div class="num tabular">77<small>%</small></div><div class="label">◎複勝回収率</div></div>
+    </div>
+  <p class="section-lead">注目レースのみ対象。馬単・馬連・ワイドは◎-○▲☆の3点均等（馬単は◎→相手の順序指定）、3連単は◎○▲BOX（6点）を100円均等で買った場合の成績（仮定シミュレーション）です。</p>
+  <div class="stat-row"><div class="stat"><div class="num tabular">66<small>%</small></div><div class="label">単勝◎回収率（注目のみ）</div></div><div class="stat"><div class="num tabular">60<small>%</small></div><div class="label">馬単◎→○▲☆回収率</div></div><div class="stat"><div class="num tabular">69<small>%</small></div><div class="label">馬連◎-○▲☆回収率</div></div><div class="stat"><div class="num tabular">60<small>%</small></div><div class="label">ワイド◎-○▲☆回収率</div></div><div class="stat"><div class="num tabular">52<small>%</small></div><div class="label">3連複◎軸流し回収率</div></div><div class="stat"><div class="num tabular">19<small>%</small></div><div class="label">3連単◎○▲BOX回収率</div></div></div>
+  <p class="section-lead">こちらは全レース対象（見送りレースも含めて買った場合の参考値）です。</p>
+  <div class="stat-row"><div class="stat"><div class="num tabular">67<small>%</small></div><div class="label">ワイド◎-○▲☆回収率（全レース）</div></div><div class="stat"><div class="num tabular">48<small>%</small></div><div class="label">3連単◎○▲BOX回収率（全レース）</div></div></div></div></div>
+  <div id="summary-nar" style="display:none;"><div class="month-summary"><div class="section-eyebrow">2026年8月のまとめ</div>
+  <p class="section-lead">◎1頭を単勝・複勝それぞれ100円均等で買った場合の成績（仮定シミュレーション）です。</p>
+  <div class="stat-row">
+    <div class="stat"><div class="num tabular">31.2<small>%</small></div><div class="label">◎勝率（59/189R）</div></div>
+    <div class="stat"><div class="num tabular">56.1<small>%</small></div><div class="label">◎複勝率（106/189R）</div></div>
+    <div class="stat"><div class="num tabular">74<small>%</small></div><div class="label">◎単勝回収率</div></div>
+    <div class="stat"><div class="num tabular">69<small>%</small></div><div class="label">◎複勝回収率</div></div>
+  </div>
+  <p class="section-lead">注目レースのみ対象。馬単・馬連・ワイドは◎-○▲☆の3点均等（馬単は◎→相手の順序指定）、3連単は◎○▲BOX（6点）を100円均等で買った場合の成績（仮定シミュレーション）です。</p>
+  <div class="stat-row"><div class="stat"><div class="num tabular">101<small>%</small></div><div class="label">単勝◎回収率（注目のみ）</div></div><div class="stat"><div class="num tabular">107<small>%</small></div><div class="label">馬単◎→○▲☆回収率</div></div><div class="stat"><div class="num tabular">43<small>%</small></div><div class="label">馬連◎-○▲☆回収率</div></div><div class="stat"><div class="num tabular">69<small>%</small></div><div class="label">ワイド◎-○▲☆回収率</div></div><div class="stat"><div class="num tabular">56<small>%</small></div><div class="label">3連複◎軸流し回収率</div></div><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">3連単◎○▲BOX回収率</div></div></div>
+  <p class="section-lead">こちらは全レース対象（見送りレースも含めて買った場合の参考値）です。</p>
+  <div class="stat-row"><div class="stat"><div class="num tabular">60<small>%</small></div><div class="label">ワイド◎-○▲☆回収率（全レース）</div></div><div class="stat"><div class="num tabular">29<small>%</small></div><div class="label">3連単◎○▲BOX回収率（全レース）</div></div></div></div></div>
   <ul class="list" id="list-jra"><li><a href="20260830.html">2026年8月30日（日）</a></li><li><a href="20260829.html">2026年8月29日（土）</a></li><li><a href="20260823.html">2026年8月23日（日）</a></li><li><a href="20260822.html">2026年8月22日（土）</a></li><li><a href="20260816.html">2026年8月16日（日）</a></li><li><a href="20260815.html">2026年8月15日（土）</a></li><li><a href="20260809.html">2026年8月9日（日）</a></li><li><a href="20260808.html">2026年8月8日（土）</a></li><li><a href="20260802.html">2026年8月2日（日）</a></li><li><a href="20260801.html">2026年8月1日（土）</a></li></ul>
   <ul class="list list-nar" id="list-nar" style="display:none;"><li><a href="nar_20260831.html">2026年8月31日（月）</a></li><li><a href="nar_20260830.html">2026年8月30日（日）</a></li><li><a href="nar_20260829.html">2026年8月29日（土）</a></li><li><a href="nar_20260828.html">2026年8月28日（金）</a></li><li><a href="nar_20260827.html">2026年8月27日（木）</a></li><li><a href="nar_20260826.html">2026年8月26日（水）</a></li></ul>
   <div class="footer">Personal prediction system</div>
@@ -95,6 +139,12 @@ document.addEventListener('DOMContentLoaded', function(){
     btns.forEach(function(b){ b.classList.toggle('active', b.dataset.tab === tab); });
     document.getElementById('list-jra').style.display = (tab === 'jra') ? '' : 'none';
     document.getElementById('list-nar').style.display = (tab === 'nar') ? '' : 'none';
+    // summary-jra/summary-nar は月別ページ({month}.html)にのみ存在(2026/09/07)。
+    // index.htmlには無いのでnullガードする。
+    var sj = document.getElementById('summary-jra');
+    var sn = document.getElementById('summary-nar');
+    if (sj) sj.style.display = (tab === 'jra') ? '' : 'none';
+    if (sn) sn.style.display = (tab === 'nar') ? '' : 'none';
   }
   btns.forEach(function(btn){
     btn.addEventListener('click', function(){ activate(btn.dataset.tab); });
