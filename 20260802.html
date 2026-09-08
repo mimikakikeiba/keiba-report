@@ -196,13 +196,13 @@ h1.title .nowrap{white-space:nowrap;}
 /* ---- horse list ---- */
 .horse-list{list-style:none;margin:0;padding:0;}
 .horse-list-head{
-  display:grid;grid-template-columns:28px 20px 1fr 88px 52px;align-items:center;gap:9px;
+  display:grid;grid-template-columns:28px 20px 1fr 100px;align-items:center;gap:9px;
   padding:0 0 4px;font-size:10.5px;font-weight:700;color:var(--text-faint);
   text-transform:uppercase;letter-spacing:.03em;
 }
-.horse-list-head span:nth-child(4),.horse-list-head span:nth-child(5){text-align:right;}
+.horse-list-head span:last-child{text-align:right;}
 .horse-row{
-  display:grid;grid-template-columns:28px 20px 1fr 88px 52px;align-items:center;gap:9px;
+  display:grid;grid-template-columns:28px 20px 1fr 100px;align-items:center;gap:9px;
   padding:7px 0;border-bottom:1px solid var(--border);font-size:14px;
 }
 .horse-row:last-child{border-bottom:none;}
@@ -226,11 +226,9 @@ h1.title .nowrap{white-space:nowrap;}
 .p3-fill.o{background:var(--accent);}
 .p3-fill.sankaku{background:#6B7FCF;}
 .p3-fill.hoshi{background:#B06BC2;}
-.p3-num{font-size:12px;color:var(--text-muted);width:44px;text-align:right;flex:0 0 auto;
+.p3-num{font-size:12px;color:var(--text-muted);width:54px;text-align:right;flex:0 0 auto;
   font-variant-numeric:tabular-nums;}
 .p3-na{color:var(--text-faint);font-size:12px;}
-.p3-place-col{font-size:12px;color:var(--text-muted);font-variant-numeric:tabular-nums;
-  text-align:right;display:block;}
 
 /* ---- 重賞レポート（全馬表） ---- */
 .graded{margin-top:14px;padding-top:12px;border-top:1px solid var(--border-strong);}
@@ -347,10 +345,9 @@ h1.title .nowrap{white-space:nowrap;}
 @media (max-width:420px){
   h1.title{font-size:23px;}
   .stat .num{font-size:19px;}
-  .horse-row,.horse-list-head{grid-template-columns:26px 18px 1fr 78px 44px;gap:6px;font-size:13px;}
+  .horse-row,.horse-list-head{grid-template-columns:26px 18px 1fr 88px;gap:6px;font-size:13px;}
   .p3-track{width:26px;}
-  .p3-num{width:40px;font-size:11px;}
-  .p3-place-col{font-size:11px;}
+  .p3-num{width:48px;font-size:11px;}
 }
 </style>
 
@@ -398,104 +395,83 @@ h1.title .nowrap{white-space:nowrap;}
         </div>
       </header>
       <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#F1A0C4;color:#182018;border:none;">16</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">アメリカンステージ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">21.3%</span></div>
-      <span class="p3-place-col">48.0%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#F1A0C4;color:#182018;border:none;">17</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">ビッグシーザー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:44%"></div></div><span class="p3-num">9.3%</span></div>
-      <span class="p3-place-col">26.4%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#FFFFFF;color:#182018;border:1.5px solid #C3CDB7;">1</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">ウイングレイテスト</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:44%"></div></div><span class="p3-num">9.3%</span></div>
-      <span class="p3-place-col">26.4%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#F2E100;color:#182018;border:none;">9</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">カウンターセブン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:44%"></div></div><span class="p3-num">9.3%</span></div>
-      <span class="p3-place-col">26.4%</span>
     </li></ul>
       <div class="graded">
       <div class="graded-head">重賞レポート — 全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">16</td><td class="tname">アメリカンステージ</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">21.3%</td>
-          <td class="tnum">48.0%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">6</td><td class="tname">ピューロマジック</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">10.3%</td>
-          <td class="tnum">31.0%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">17</td><td class="tname">ビッグシーザー</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">9.3%</td>
-          <td class="tnum">26.4%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">1</td><td class="tname">ウイングレイテスト</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">9.3%</td>
-          <td class="tnum">26.4%</td>
         </tr><tr class="row-o">
           <td class="tn">9</td><td class="tname">カウンターセブン</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">9.3%</td>
-          <td class="tnum">26.4%</td>
         </tr><tr>
           <td class="tn">8</td><td class="tname">シュラフ</td>
           <td class="tmk"></td><td class="tnum">8.1%</td>
-          <td class="tnum">26.4%</td>
         </tr><tr>
           <td class="tn">4</td><td class="tname">カウスリップ</td>
           <td class="tmk"></td><td class="tnum">7.0%</td>
-          <td class="tnum">22.9%</td>
         </tr><tr>
           <td class="tn">10</td><td class="tname">エコロレジーナ</td>
           <td class="tmk"></td><td class="tnum">5.7%</td>
-          <td class="tnum">16.6%</td>
         </tr><tr>
           <td class="tn">2</td><td class="tname">デュガ</td>
           <td class="tmk"></td><td class="tnum">4.3%</td>
-          <td class="tnum">16.1%</td>
         </tr><tr>
           <td class="tn">5</td><td class="tname">ベルギューン</td>
           <td class="tmk"></td><td class="tnum">3.7%</td>
-          <td class="tnum">14.5%</td>
         </tr><tr>
           <td class="tn">11</td><td class="tname">ロードトレイル</td>
           <td class="tmk"></td><td class="tnum">2.6%</td>
-          <td class="tnum">9.3%</td>
         </tr><tr>
           <td class="tn">12</td><td class="tname">クムシラコ</td>
           <td class="tmk"></td><td class="tnum">2.6%</td>
-          <td class="tnum">8.8%</td>
         </tr><tr>
           <td class="tn">13</td><td class="tname">テイエムスパーダ</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">6.6%</td>
         </tr><tr>
           <td class="tn">15</td><td class="tname">アタリダイキチ</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">6.6%</td>
         </tr><tr>
           <td class="tn">14</td><td class="tname">ブーケファロス</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">6.6%</td>
         </tr><tr>
           <td class="tn">7</td><td class="tname">バグラダス</td>
           <td class="tmk"></td><td class="tnum">1.3%</td>
-          <td class="tnum">5.0%</td>
         </tr><tr>
           <td class="tn">3</td><td class="tname">ミカッテヨンデイイ</td>
           <td class="tmk"></td><td class="tnum">0.1%</td>
-          <td class="tnum">2.4%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -545,92 +521,74 @@ h1.title .nowrap{white-space:nowrap;}
         </div>
       </header>
       <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#F2E100;color:#182018;border:none;">7</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">ココナッツブラウン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">32.8%</span></div>
-      <span class="p3-place-col">64.5%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">5</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">アンゴラブラック</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:33%"></div></div><span class="p3-num">10.7%</span></div>
-      <span class="p3-place-col">33.3%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#EE8A1D;color:#182018;border:none;">11</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">コガネノソラ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:30%"></div></div><span class="p3-num">9.8%</span></div>
-      <span class="p3-place-col">30.9%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#F1A0C4;color:#182018;border:none;">13</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">ルージュソリテール</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:26%"></div></div><span class="p3-num">8.5%</span></div>
-      <span class="p3-place-col">29.5%</span>
     </li></ul>
       <div class="graded">
       <div class="graded-head">重賞レポート — 全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">7</td><td class="tname">ココナッツブラウン</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">32.8%</td>
-          <td class="tnum">64.5%</td>
         </tr><tr class="row-o">
           <td class="tn">5</td><td class="tname">アンゴラブラック</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">10.7%</td>
-          <td class="tnum">33.3%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">11</td><td class="tname">コガネノソラ</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">9.8%</td>
-          <td class="tnum">30.9%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">13</td><td class="tname">ルージュソリテール</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">8.5%</td>
-          <td class="tnum">29.5%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">9</td><td class="tname">エリカエクスプレス</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">8.5%</td>
-          <td class="tnum">29.5%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">4</td><td class="tname">リラボニート</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">6.6%</td>
-          <td class="tnum">23.6%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">1</td><td class="tname">フレミングフープ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">5.9%</td>
-          <td class="tnum">18.6%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">2</td><td class="tname">ケリフレッドアスク</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">5.3%</td>
-          <td class="tnum">18.6%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">10</td><td class="tname">フェスティバルヒル</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">3.8%</td>
-          <td class="tnum">16.2%</td>
         </tr><tr>
           <td class="tn">12</td><td class="tname">ボンドガール</td>
           <td class="tmk"></td><td class="tnum">2.7%</td>
-          <td class="tnum">11.8%</td>
         </tr><tr>
           <td class="tn">3</td><td class="tname">カテリーナ</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">7.4%</td>
         </tr><tr>
           <td class="tn">14</td><td class="tname">ヴーレヴー</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">7.4%</td>
         </tr><tr>
           <td class="tn">8</td><td class="tname">エラトー</td>
           <td class="tmk"></td><td class="tnum">1.3%</td>
-          <td class="tnum">5.6%</td>
         </tr><tr>
           <td class="tn">6</td><td class="tname">クリノメイ</td>
           <td class="tmk"></td><td class="tnum">0.6%</td>
-          <td class="tnum">3.3%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -680,108 +638,86 @@ h1.title .nowrap{white-space:nowrap;}
         </div>
       </header>
       <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">7</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">レッドレガリア</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">32.7%</span></div>
-      <span class="p3-place-col">64.6%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">5</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">チルチャンプ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:68%"></div></div><span class="p3-num">22.3%</span></div>
-      <span class="p3-place-col">53.6%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">12</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">カルダモン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:30%"></div></div><span class="p3-num">9.8%</span></div>
-      <span class="p3-place-col">30.9%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">6</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">エクストラダーク</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:16%"></div></div><span class="p3-num">5.3%</span></div>
-      <span class="p3-place-col">18.6%</span>
     </li></ul>
       <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">7</td><td class="tname">レッドレガリア</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">32.7%</td>
-          <td class="tnum">64.6%</td>
         </tr><tr class="row-o">
           <td class="tn">5</td><td class="tname">チルチャンプ</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">22.3%</td>
-          <td class="tnum">53.6%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">12</td><td class="tname">カルダモン</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">9.8%</td>
-          <td class="tnum">30.9%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">6</td><td class="tname">エクストラダーク</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">5.3%</td>
-          <td class="tnum">18.6%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">17</td><td class="tname">フキョウワオン</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">4.5%</td>
-          <td class="tnum">18.0%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">2</td><td class="tname">ラグアイリータ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">3.8%</td>
-          <td class="tnum">16.2%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">3</td><td class="tname">セーヌデローヴ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">3.8%</td>
-          <td class="tnum">16.2%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">18</td><td class="tname">アオゾラランチ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">3.8%</td>
-          <td class="tnum">16.2%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">13</td><td class="tname">ニシノトップダノン</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">2.7%</td>
-          <td class="tnum">14.1%</td>
         </tr><tr>
           <td class="tn">1</td><td class="tname">ナイトバード</td>
           <td class="tmk"></td><td class="tnum">2.7%</td>
-          <td class="tnum">11.8%</td>
         </tr><tr>
           <td class="tn">16</td><td class="tname">プラネタリーアワー</td>
           <td class="tmk"></td><td class="tnum">2.7%</td>
-          <td class="tnum">10.4%</td>
         </tr><tr>
           <td class="tn">10</td><td class="tname">レーザーキック</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">7.4%</td>
         </tr><tr>
           <td class="tn">11</td><td class="tname">ビップマリク</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">7.4%</td>
         </tr><tr>
           <td class="tn">9</td><td class="tname">イバラヒメ</td>
           <td class="tmk"></td><td class="tnum">1.2%</td>
-          <td class="tnum">5.6%</td>
         </tr><tr>
           <td class="tn">14</td><td class="tname">キタノアヤカ</td>
           <td class="tmk"></td><td class="tnum">0.6%</td>
-          <td class="tnum">3.4%</td>
         </tr><tr>
           <td class="tn">4</td><td class="tname">ジーナグレイス</td>
           <td class="tmk"></td><td class="tnum">0.6%</td>
-          <td class="tnum">3.4%</td>
         </tr><tr>
           <td class="tn">15</td><td class="tname">テンノルーキー</td>
           <td class="tmk"></td><td class="tnum">0.1%</td>
-          <td class="tnum">1.4%</td>
         </tr><tr>
           <td class="tn">8</td><td class="tname">ルビーサンセット</td>
           <td class="tmk"></td><td class="tnum">0.0%</td>
-          <td class="tnum">1.1%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -831,92 +767,74 @@ h1.title .nowrap{white-space:nowrap;}
         </div>
       </header>
       <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#EE8A1D;color:#182018;border:none;">12</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">ヤマメホープ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">26.1%</span></div>
-      <span class="p3-place-col">56.1%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#F1A0C4;color:#182018;border:none;">13</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">クイーンズレイン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:47%"></div></div><span class="p3-num">12.3%</span></div>
-      <span class="p3-place-col">35.6%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#FFFFFF;color:#182018;border:1.5px solid #C3CDB7;">1</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">キコリータ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:40%"></div></div><span class="p3-num">10.5%</span></div>
-      <span class="p3-place-col">33.3%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#F2E100;color:#182018;border:none;">7</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">ブラーヴジャン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:36%"></div></div><span class="p3-num">9.5%</span></div>
-      <span class="p3-place-col">29.7%</span>
     </li></ul>
       <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">12</td><td class="tname">ヤマメホープ</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">26.1%</td>
-          <td class="tnum">56.1%</td>
         </tr><tr class="row-o">
           <td class="tn">13</td><td class="tname">クイーンズレイン</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">12.3%</td>
-          <td class="tnum">35.6%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">1</td><td class="tname">キコリータ</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">10.5%</td>
-          <td class="tnum">33.3%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">7</td><td class="tname">ブラーヴジャン</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">9.5%</td>
-          <td class="tnum">29.7%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">14</td><td class="tname">フォンドルレール</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">9.5%</td>
-          <td class="tnum">28.4%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">5</td><td class="tname">コスモアミュレット</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">8.3%</td>
-          <td class="tnum">28.4%</td>
         </tr><tr>
           <td class="tn">8</td><td class="tname">マイネルオラクル</td>
           <td class="tmk"></td><td class="tnum">5.8%</td>
-          <td class="tnum">17.9%</td>
         </tr><tr>
           <td class="tn">4</td><td class="tname">サヴマ</td>
           <td class="tmk"></td><td class="tnum">5.1%</td>
-          <td class="tnum">17.9%</td>
         </tr><tr>
           <td class="tn">11</td><td class="tname">ソロンゴ</td>
           <td class="tmk"></td><td class="tnum">5.1%</td>
-          <td class="tnum">17.9%</td>
         </tr><tr>
           <td class="tn">2</td><td class="tname">レッドリファインド</td>
           <td class="tmk"></td><td class="tnum">4.4%</td>
-          <td class="tnum">17.3%</td>
         </tr><tr>
           <td class="tn">10</td><td class="tname">カムバックトゥミー</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">7.1%</td>
         </tr><tr>
           <td class="tn">6</td><td class="tname">タイキヴィグルーズ</td>
           <td class="tmk"></td><td class="tnum">1.3%</td>
-          <td class="tnum">5.4%</td>
         </tr><tr>
           <td class="tn">9</td><td class="tname">ジーティーホクサイ</td>
           <td class="tmk"></td><td class="tnum">0.6%</td>
-          <td class="tnum">3.9%</td>
         </tr><tr>
           <td class="tn">3</td><td class="tname">フロステリオン</td>
           <td class="tmk"></td><td class="tnum">0.0%</td>
-          <td class="tnum">1.0%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -966,88 +884,71 @@ h1.title .nowrap{white-space:nowrap;}
         </div>
       </header>
       <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">5</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">クオンタムスター</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">32.5%</span></div>
-      <span class="p3-place-col">68.5%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#F1A0C4;color:#182018;border:none;">12</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">テイクザクラウン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:49%"></div></div><span class="p3-num">16.0%</span></div>
-      <span class="p3-place-col">44.8%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">ワンダフルデイズ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:48%"></div></div><span class="p3-num">15.6%</span></div>
-      <span class="p3-place-col">44.8%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">9</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">ニヒトツーゼーア</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:29%"></div></div><span class="p3-num">9.4%</span></div>
-      <span class="p3-place-col">30.1%</span>
     </li></ul>
       <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">5</td><td class="tname">クオンタムスター</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">32.5%</td>
-          <td class="tnum">68.5%</td>
         </tr><tr class="row-o">
           <td class="tn">12</td><td class="tname">テイクザクラウン</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">16.0%</td>
-          <td class="tnum">44.8%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">2</td><td class="tname">ワンダフルデイズ</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">15.6%</td>
-          <td class="tnum">44.8%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">9</td><td class="tname">ニヒトツーゼーア</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">9.4%</td>
-          <td class="tnum">30.1%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">6</td><td class="tname">タケルフォーカス</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">6.4%</td>
-          <td class="tnum">24.2%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">10</td><td class="tname">レイデラティエラ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">5.1%</td>
-          <td class="tnum">19.0%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">1</td><td class="tname">エナジーショット</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">2.6%</td>
-          <td class="tnum">12.7%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">13</td><td class="tname">シャインバオバブ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">2.6%</td>
-          <td class="tnum">12.7%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">8</td><td class="tname">ランブリングマン</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">2.6%</td>
-          <td class="tnum">12.7%</td>
         </tr><tr>
           <td class="tn">4</td><td class="tname">グランアルト</td>
           <td class="tmk"></td><td class="tnum">2.6%</td>
-          <td class="tnum">10.9%</td>
         </tr><tr>
           <td class="tn">7</td><td class="tname">ペリプルス</td>
           <td class="tmk"></td><td class="tnum">2.6%</td>
-          <td class="tnum">10.6%</td>
         </tr><tr>
           <td class="tn">3</td><td class="tname">ジーティートシオー</td>
           <td class="tmk"></td><td class="tnum">1.3%</td>
-          <td class="tnum">5.7%</td>
         </tr><tr>
           <td class="tn">11</td><td class="tname">サイモンイロハニー</td>
           <td class="tmk"></td><td class="tnum">0.6%</td>
-          <td class="tnum">3.4%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -1097,108 +998,86 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">1R</span><span class="sum-meta">2000m芝 18頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎4 ビクスバイト</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">ビクスバイト</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">33.1%</span></div>
-      <span class="p3-place-col">62.9%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">メイショウプレマ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:39%"></div></div><span class="p3-num">12.8%</span></div>
-      <span class="p3-place-col">36.0%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#F2E100;color:#182018;border:none;">9</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">ゴールデンテティス</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:20%"></div></div><span class="p3-num">6.7%</span></div>
-      <span class="p3-place-col">23.1%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#F1A0C4;color:#182018;border:none;">16</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">テンダーワーズ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:20%"></div></div><span class="p3-num">6.7%</span></div>
-      <span class="p3-place-col">23.0%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">4</td><td class="tname">ビクスバイト</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">33.1%</td>
-          <td class="tnum">62.9%</td>
         </tr><tr class="row-o">
           <td class="tn">3</td><td class="tname">メイショウプレマ</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">12.8%</td>
-          <td class="tnum">36.0%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">9</td><td class="tname">ゴールデンテティス</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">6.7%</td>
-          <td class="tnum">23.1%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">16</td><td class="tname">テンダーワーズ</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">6.7%</td>
-          <td class="tnum">23.0%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">13</td><td class="tname">ノブレスラブリエ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">6.7%</td>
-          <td class="tnum">23.0%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">14</td><td class="tname">フィールライクユー</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">6.2%</td>
-          <td class="tnum">20.4%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">8</td><td class="tname">タイセイアビオン</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">5.9%</td>
-          <td class="tnum">18.1%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">7</td><td class="tname">レーヴドリュヌ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">4.6%</td>
-          <td class="tnum">17.5%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">15</td><td class="tname">オーマイラッキーン</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">3.9%</td>
-          <td class="tnum">15.8%</td>
         </tr><tr>
           <td class="tn">5</td><td class="tname">ワンダースアン</td>
           <td class="tmk"></td><td class="tnum">3.9%</td>
-          <td class="tnum">15.8%</td>
         </tr><tr>
           <td class="tn">2</td><td class="tname">オーロアルジェント</td>
           <td class="tmk"></td><td class="tnum">3.8%</td>
-          <td class="tnum">13.9%</td>
         </tr><tr>
           <td class="tn">17</td><td class="tname">ルーチェブリラーレ</td>
           <td class="tmk"></td><td class="tnum">2.8%</td>
-          <td class="tnum">11.5%</td>
         </tr><tr>
           <td class="tn">10</td><td class="tname">ワンダーデリエール</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">7.2%</td>
         </tr><tr>
           <td class="tn">11</td><td class="tname">ダンツカレン</td>
           <td class="tmk"></td><td class="tnum">0.6%</td>
-          <td class="tnum">3.9%</td>
         </tr><tr>
           <td class="tn">1</td><td class="tname">グラディオール</td>
           <td class="tmk"></td><td class="tnum">0.6%</td>
-          <td class="tnum">3.3%</td>
         </tr><tr>
           <td class="tn">18</td><td class="tname">リュネヴィル</td>
           <td class="tmk"></td><td class="tnum">0.1%</td>
-          <td class="tnum">2.4%</td>
         </tr><tr>
           <td class="tn">12</td><td class="tname">ノチェブエナ</td>
           <td class="tmk"></td><td class="tnum">0.1%</td>
-          <td class="tnum">1.3%</td>
         </tr><tr>
           <td class="tn">6</td><td class="tname">ハギノデュア</td>
           <td class="tmk"></td><td class="tnum">0.0%</td>
-          <td class="tnum">1.0%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -1247,100 +1126,80 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">4R</span><span class="sum-meta">1200mダ 16頭 <span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎15 ナムラロダン</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#F1A0C4;color:#182018;border:none;">15</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">ナムラロダン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">16.8%</span></div>
-      <span class="p3-place-col">40.6%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#FFFFFF;color:#182018;border:1.5px solid #C3CDB7;">1</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">メテオロイド</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:85%"></div></div><span class="p3-num">14.3%</span></div>
-      <span class="p3-place-col">39.8%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#F2E100;color:#182018;border:none;">9</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">クロカミジョウ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:74%"></div></div><span class="p3-num">12.4%</span></div>
-      <span class="p3-place-col">33.5%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">12</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">マクアケ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:57%"></div></div><span class="p3-num">9.6%</span></div>
-      <span class="p3-place-col">26.8%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">15</td><td class="tname">ナムラロダン</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">16.8%</td>
-          <td class="tnum">40.6%</td>
         </tr><tr class="row-o">
           <td class="tn">1</td><td class="tname">メテオロイド</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">14.3%</td>
-          <td class="tnum">39.8%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">9</td><td class="tname">クロカミジョウ</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">12.4%</td>
-          <td class="tnum">33.5%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">12</td><td class="tname">マクアケ</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">9.6%</td>
-          <td class="tnum">26.8%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">5</td><td class="tname">モズタイシソウシ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">7.2%</td>
-          <td class="tnum">24.0%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">4</td><td class="tname">リアライズガイザー</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">7.2%</td>
-          <td class="tnum">23.2%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">6</td><td class="tname">グラマラス</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">7.2%</td>
-          <td class="tnum">23.2%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">11</td><td class="tname">ビービーシナジー</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">6.0%</td>
-          <td class="tnum">19.0%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">13</td><td class="tname">プレデンシア</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">6.0%</td>
-          <td class="tnum">19.0%</td>
         </tr><tr>
           <td class="tn">10</td><td class="tname">チョウスター</td>
           <td class="tmk"></td><td class="tnum">5.2%</td>
-          <td class="tnum">16.8%</td>
         </tr><tr>
           <td class="tn">7</td><td class="tname">ディアデムドール</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">7.5%</td>
         </tr><tr>
           <td class="tn">16</td><td class="tname">ジーティーリボーン</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">6.7%</td>
         </tr><tr>
           <td class="tn">3</td><td class="tname">ラジャブルック</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">6.7%</td>
         </tr><tr>
           <td class="tn">8</td><td class="tname">ザキノフレンズ</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">6.7%</td>
         </tr><tr>
           <td class="tn">2</td><td class="tname">アステルディーヴァ</td>
           <td class="tmk"></td><td class="tnum">0.6%</td>
-          <td class="tnum">3.7%</td>
         </tr><tr>
           <td class="tn">14</td><td class="tname">マルカスマッシュ</td>
           <td class="tmk"></td><td class="tnum">0.6%</td>
-          <td class="tnum">3.0%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -1385,72 +1244,59 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">5R</span><span class="sum-meta">1800mダ 9頭 <span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎3 アンティスマ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">アンティスマ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">21.1%</span></div>
-      <span class="p3-place-col">55.8%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">6</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">シャフメラン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:100%"></div></div><span class="p3-num">21.1%</span></div>
-      <span class="p3-place-col">55.8%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">シャンパンスター</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:76%"></div></div><span class="p3-num">16.1%</span></div>
-      <span class="p3-place-col">45.7%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#FFFFFF;color:#182018;border:1.5px solid #C3CDB7;">1</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">シエーナカラー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:74%"></div></div><span class="p3-num">15.6%</span></div>
-      <span class="p3-place-col">45.7%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">3</td><td class="tname">アンティスマ</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">21.1%</td>
-          <td class="tnum">55.8%</td>
         </tr><tr class="row-o">
           <td class="tn">6</td><td class="tname">シャフメラン</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">21.1%</td>
-          <td class="tnum">55.8%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">4</td><td class="tname">シャンパンスター</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">16.1%</td>
-          <td class="tnum">45.7%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">1</td><td class="tname">シエーナカラー</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">15.6%</td>
-          <td class="tnum">45.7%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">5</td><td class="tname">アーデルリーベ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">12.0%</td>
-          <td class="tnum">38.5%</td>
         </tr><tr>
           <td class="tn">7</td><td class="tname">クイーンズホリデー</td>
           <td class="tmk"></td><td class="tnum">5.0%</td>
-          <td class="tnum">19.3%</td>
         </tr><tr>
           <td class="tn">2</td><td class="tname">デールエルバハリ</td>
           <td class="tmk"></td><td class="tnum">5.0%</td>
-          <td class="tnum">19.3%</td>
         </tr><tr>
           <td class="tn">8</td><td class="tname">シャンドラテ</td>
           <td class="tmk"></td><td class="tnum">2.6%</td>
-          <td class="tnum">12.3%</td>
         </tr><tr>
           <td class="tn">9</td><td class="tname">ブラックドレス</td>
           <td class="tmk"></td><td class="tnum">1.6%</td>
-          <td class="tnum">7.7%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -1495,72 +1341,59 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">6R</span><span class="sum-meta">1400m芝 9頭 <span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎4 アイニードユー</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">アイニードユー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">22.1%</span></div>
-      <span class="p3-place-col">57.3%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">6</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">トミーバローズ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:100%"></div></div><span class="p3-num">22.1%</span></div>
-      <span class="p3-place-col">57.3%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#F2E100;color:#182018;border:none;">5</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">ロンドボス</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:100%"></div></div><span class="p3-num">22.1%</span></div>
-      <span class="p3-place-col">57.3%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#F1A0C4;color:#182018;border:none;">9</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">キャッスルレイク</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:44%"></div></div><span class="p3-num">9.7%</span></div>
-      <span class="p3-place-col">31.6%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">4</td><td class="tname">アイニードユー</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">22.1%</td>
-          <td class="tnum">57.3%</td>
         </tr><tr class="row-o">
           <td class="tn">6</td><td class="tname">トミーバローズ</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">22.1%</td>
-          <td class="tnum">57.3%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">5</td><td class="tname">ロンドボス</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">22.1%</td>
-          <td class="tnum">57.3%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">9</td><td class="tname">キャッスルレイク</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">9.7%</td>
-          <td class="tnum">31.6%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">3</td><td class="tname">トライアンフパス</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">7.3%</td>
-          <td class="tnum">28.3%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">8</td><td class="tname">タガノアンファン</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">7.3%</td>
-          <td class="tnum">27.3%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">1</td><td class="tname">スターウェーブ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">5.2%</td>
-          <td class="tnum">19.9%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">7</td><td class="tname">カウンティフェア</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">2.7%</td>
-          <td class="tnum">13.3%</td>
         </tr><tr>
           <td class="tn">2</td><td class="tname">エイヨーアメジスト</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">7.9%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -1605,72 +1438,59 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">7R</span><span class="sum-meta">1800mダ 9頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎3 タイトニット</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">タイトニット</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">31.1%</span></div>
-      <span class="p3-place-col">64.7%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#F1A0C4;color:#182018;border:none;">9</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">クールミラボー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:50%"></div></div><span class="p3-num">15.7%</span></div>
-      <span class="p3-place-col">46.1%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#FFFFFF;color:#182018;border:1.5px solid #C3CDB7;">1</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">ブレイクフォース</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:39%"></div></div><span class="p3-num">12.0%</span></div>
-      <span class="p3-place-col">38.9%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#F2E100;color:#182018;border:none;">5</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">ソーニーイシュー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:33%"></div></div><span class="p3-num">10.3%</span></div>
-      <span class="p3-place-col">36.4%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">3</td><td class="tname">タイトニット</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">31.1%</td>
-          <td class="tnum">64.7%</td>
         </tr><tr class="row-o">
           <td class="tn">9</td><td class="tname">クールミラボー</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">15.7%</td>
-          <td class="tnum">46.1%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">1</td><td class="tname">ブレイクフォース</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">12.0%</td>
-          <td class="tnum">38.9%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">5</td><td class="tname">ソーニーイシュー</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">10.3%</td>
-          <td class="tnum">36.4%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">4</td><td class="tname">ハビレ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">9.3%</td>
-          <td class="tnum">32.5%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">8</td><td class="tname">ゼットリアン</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">9.3%</td>
-          <td class="tnum">31.1%</td>
         </tr><tr>
           <td class="tn">6</td><td class="tname">ポッドロゴ</td>
           <td class="tmk"></td><td class="tnum">5.8%</td>
-          <td class="tnum">24.8%</td>
         </tr><tr>
           <td class="tn">7</td><td class="tname">サイモンザナドゥ</td>
           <td class="tmk"></td><td class="tnum">5.8%</td>
-          <td class="tnum">22.0%</td>
         </tr><tr>
           <td class="tn">2</td><td class="tname">マリオロード</td>
           <td class="tmk"></td><td class="tnum">0.5%</td>
-          <td class="tnum">3.5%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -1715,80 +1535,65 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">8R</span><span class="sum-meta">1200mダ 11頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎6 ザウリ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">6</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">ザウリ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">29.8%</span></div>
-      <span class="p3-place-col">60.0%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#F2E100;color:#182018;border:none;">5</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">サンマルノヴェル</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:71%"></div></div><span class="p3-num">21.3%</span></div>
-      <span class="p3-place-col">55.1%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">7</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">シルフズミスチーフ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:34%"></div></div><span class="p3-num">10.2%</span></div>
-      <span class="p3-place-col">35.6%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">ルクスレイモンド</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:31%"></div></div><span class="p3-num">9.3%</span></div>
-      <span class="p3-place-col">31.8%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">6</td><td class="tname">ザウリ</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">29.8%</td>
-          <td class="tnum">60.0%</td>
         </tr><tr class="row-o">
           <td class="tn">5</td><td class="tname">サンマルノヴェル</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">21.3%</td>
-          <td class="tnum">55.1%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">7</td><td class="tname">シルフズミスチーフ</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">10.2%</td>
-          <td class="tnum">35.6%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">3</td><td class="tname">ルクスレイモンド</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">9.3%</td>
-          <td class="tnum">31.8%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">4</td><td class="tname">ワイノナオミ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">8.1%</td>
-          <td class="tnum">30.4%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">8</td><td class="tname">パルプフィクション</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">5.9%</td>
-          <td class="tnum">21.5%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">1</td><td class="tname">セルヴァンス</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">5.0%</td>
-          <td class="tnum">19.1%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">9</td><td class="tname">フレイミングパイ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">4.3%</td>
-          <td class="tnum">18.5%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">2</td><td class="tname">ウィップスティッチ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">3.7%</td>
-          <td class="tnum">16.6%</td>
         </tr><tr>
           <td class="tn">11</td><td class="tname">ジャンシ</td>
           <td class="tmk"></td><td class="tnum">1.3%</td>
-          <td class="tnum">5.7%</td>
         </tr><tr>
           <td class="tn">10</td><td class="tname">カツラノキサノキ</td>
           <td class="tmk"></td><td class="tnum">1.1%</td>
-          <td class="tnum">5.7%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -1835,92 +1640,74 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">10R</span><span class="sum-meta">1900mダ 14頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎10 エコロスパーダ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">10</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">エコロスパーダ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">26.3%</span></div>
-      <span class="p3-place-col">56.8%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">9</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">アメリカンイズム</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:65%"></div></div><span class="p3-num">17.2%</span></div>
-      <span class="p3-place-col">50.0%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#EE8A1D;color:#182018;border:none;">12</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">エアフォースワン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:37%"></div></div><span class="p3-num">9.6%</span></div>
-      <span class="p3-place-col">30.1%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#EE8A1D;color:#182018;border:none;">11</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">ブームバップビート</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:37%"></div></div><span class="p3-num">9.6%</span></div>
-      <span class="p3-place-col">28.8%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">10</td><td class="tname">エコロスパーダ</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">26.3%</td>
-          <td class="tnum">56.8%</td>
         </tr><tr class="row-o">
           <td class="tn">9</td><td class="tname">アメリカンイズム</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">17.2%</td>
-          <td class="tnum">50.0%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">12</td><td class="tname">エアフォースワン</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">9.6%</td>
-          <td class="tnum">30.1%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">11</td><td class="tname">ブームバップビート</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">9.6%</td>
-          <td class="tnum">28.8%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">13</td><td class="tname">スナークシャラク</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">7.2%</td>
-          <td class="tnum">23.1%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">2</td><td class="tname">ドメイン</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">5.9%</td>
-          <td class="tnum">18.1%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">1</td><td class="tname">ロックバンド</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">5.7%</td>
-          <td class="tnum">18.1%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">6</td><td class="tname">ロードシュヴァリエ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">5.2%</td>
-          <td class="tnum">18.1%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">3</td><td class="tname">エクストラプッシュ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">3.8%</td>
-          <td class="tnum">15.8%</td>
         </tr><tr>
           <td class="tn">4</td><td class="tname">スターシップ</td>
           <td class="tmk"></td><td class="tnum">3.8%</td>
-          <td class="tnum">15.8%</td>
         </tr><tr>
           <td class="tn">14</td><td class="tname">ロックウイズユー</td>
           <td class="tmk"></td><td class="tnum">2.7%</td>
-          <td class="tnum">11.5%</td>
         </tr><tr>
           <td class="tn">5</td><td class="tname">オーレアミスト</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">7.2%</td>
         </tr><tr>
           <td class="tn">8</td><td class="tname">ジーティーパワー</td>
           <td class="tmk"></td><td class="tnum">1.3%</td>
-          <td class="tnum">5.4%</td>
         </tr><tr>
           <td class="tn">7</td><td class="tname">カイラーサ</td>
           <td class="tmk"></td><td class="tnum">0.1%</td>
-          <td class="tnum">1.3%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -1965,60 +1752,50 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">11R</span><span class="sum-meta">2200m芝 6頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎4 レッドヴァリアート</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">レッドヴァリアート</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">37.5%</span></div>
-      <span class="p3-place-col">95.6%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#F2E100;color:#182018;border:none;">5</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">ビップヴォルフ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:93%"></div></div><span class="p3-num">34.8%</span></div>
-      <span class="p3-place-col">88.1%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">6</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">メイショウナルカミ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:38%"></div></div><span class="p3-num">14.1%</span></div>
-      <span class="p3-place-col">51.1%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#FFFFFF;color:#182018;border:1.5px solid #C3CDB7;">1</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">バリオス</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:21%"></div></div><span class="p3-num">7.8%</span></div>
-      <span class="p3-place-col">34.9%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">4</td><td class="tname">レッドヴァリアート</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">37.5%</td>
-          <td class="tnum">95.6%</td>
         </tr><tr class="row-o">
           <td class="tn">5</td><td class="tname">ビップヴォルフ</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">34.8%</td>
-          <td class="tnum">88.1%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">6</td><td class="tname">メイショウナルカミ</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">14.1%</td>
-          <td class="tnum">51.1%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">1</td><td class="tname">バリオス</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">7.8%</td>
-          <td class="tnum">34.9%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">3</td><td class="tname">ジュンプリメーロ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">2.9%</td>
-          <td class="tnum">17.0%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">2</td><td class="tname">メイショウアゴナス</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">2.9%</td>
-          <td class="tnum">13.4%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -2063,108 +1840,86 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">12R</span><span class="sum-meta">1400m芝 18頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎18 モンシーク</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#F1A0C4;color:#182018;border:none;">18</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">モンシーク</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">26.3%</span></div>
-      <span class="p3-place-col">56.3%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">12</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">ミッキーラヴィータ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:63%"></div></div><span class="p3-num">16.7%</span></div>
-      <span class="p3-place-col">42.3%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#EE8A1D;color:#182018;border:none;">14</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">アラビアンジョイ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:62%"></div></div><span class="p3-num">16.2%</span></div>
-      <span class="p3-place-col">42.3%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">6</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">モカプウイング</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:25%"></div></div><span class="p3-num">6.5%</span></div>
-      <span class="p3-place-col">22.8%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">18</td><td class="tname">モンシーク</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">26.3%</td>
-          <td class="tnum">56.3%</td>
         </tr><tr class="row-o">
           <td class="tn">12</td><td class="tname">ミッキーラヴィータ</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">16.7%</td>
-          <td class="tnum">42.3%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">14</td><td class="tname">アラビアンジョイ</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">16.2%</td>
-          <td class="tnum">42.3%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">6</td><td class="tname">モカプウイング</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">6.5%</td>
-          <td class="tnum">22.8%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">3</td><td class="tname">アルジェンテーラ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">6.0%</td>
-          <td class="tnum">22.8%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">8</td><td class="tname">ハピネスサンライズ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">5.9%</td>
-          <td class="tnum">17.9%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">10</td><td class="tname">ルージュエテルナ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">3.8%</td>
-          <td class="tnum">15.6%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">13</td><td class="tname">マルモリキャスター</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">2.7%</td>
-          <td class="tnum">12.0%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">17</td><td class="tname">ケイアイブラック</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">2.7%</td>
-          <td class="tnum">12.0%</td>
         </tr><tr>
           <td class="tn">9</td><td class="tname">フィアレスウィル</td>
           <td class="tmk"></td><td class="tnum">2.7%</td>
-          <td class="tnum">10.3%</td>
         </tr><tr>
           <td class="tn">2</td><td class="tname">チヨ</td>
           <td class="tmk"></td><td class="tnum">2.7%</td>
-          <td class="tnum">10.0%</td>
         </tr><tr>
           <td class="tn">11</td><td class="tname">リントゥラウル</td>
           <td class="tmk"></td><td class="tnum">2.7%</td>
-          <td class="tnum">10.0%</td>
         </tr><tr>
           <td class="tn">7</td><td class="tname">グランスプリント</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">7.1%</td>
         </tr><tr>
           <td class="tn">15</td><td class="tname">コカボムショット</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">7.1%</td>
         </tr><tr>
           <td class="tn">1</td><td class="tname">ジュピターバローズ</td>
           <td class="tmk"></td><td class="tnum">1.3%</td>
-          <td class="tnum">5.4%</td>
         </tr><tr>
           <td class="tn">16</td><td class="tname">エールドリー</td>
           <td class="tmk"></td><td class="tnum">0.6%</td>
-          <td class="tnum">3.9%</td>
         </tr><tr>
           <td class="tn">5</td><td class="tname">ホウオウスカイハイ</td>
           <td class="tmk"></td><td class="tnum">0.0%</td>
-          <td class="tnum">1.0%</td>
         </tr><tr>
           <td class="tn">4</td><td class="tname">カフラー</td>
           <td class="tmk"></td><td class="tnum">0.0%</td>
-          <td class="tnum">1.0%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -2212,84 +1967,68 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">1R</span><span class="sum-meta">1600m芝 12頭 <span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎9 デザートスピリット</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#EE8A1D;color:#182018;border:none;">9</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">デザートスピリット</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">21.0%</span></div>
-      <span class="p3-place-col">50.3%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">サノノキセキ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:79%"></div></div><span class="p3-num">16.6%</span></div>
-      <span class="p3-place-col">44.8%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#F2E100;color:#182018;border:none;">6</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">シュネーバレン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:79%"></div></div><span class="p3-num">16.6%</span></div>
-      <span class="p3-place-col">43.0%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#F2E100;color:#182018;border:none;">5</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">ヴェントリナ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:59%"></div></div><span class="p3-num">12.4%</span></div>
-      <span class="p3-place-col">36.2%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">9</td><td class="tname">デザートスピリット</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">21.0%</td>
-          <td class="tnum">50.3%</td>
         </tr><tr class="row-o">
           <td class="tn">4</td><td class="tname">サノノキセキ</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">16.6%</td>
-          <td class="tnum">44.8%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">6</td><td class="tname">シュネーバレン</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">16.6%</td>
-          <td class="tnum">43.0%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">5</td><td class="tname">ヴェントリナ</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">12.4%</td>
-          <td class="tnum">36.2%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">3</td><td class="tname">エコロテラ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">9.5%</td>
-          <td class="tnum">30.6%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">10</td><td class="tname">ウィールズアップ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">6.4%</td>
-          <td class="tnum">23.1%</td>
         </tr><tr>
           <td class="tn">1</td><td class="tname">ホワイトフレアー</td>
           <td class="tmk"></td><td class="tnum">4.4%</td>
-          <td class="tnum">17.6%</td>
         </tr><tr>
           <td class="tn">12</td><td class="tname">キミヘノメロディー</td>
           <td class="tmk"></td><td class="tnum">3.7%</td>
-          <td class="tnum">15.9%</td>
         </tr><tr>
           <td class="tn">8</td><td class="tname">センカンナガト</td>
           <td class="tmk"></td><td class="tnum">3.7%</td>
-          <td class="tnum">15.9%</td>
         </tr><tr>
           <td class="tn">2</td><td class="tname">エレスレイプニル</td>
           <td class="tmk"></td><td class="tnum">3.7%</td>
-          <td class="tnum">14.0%</td>
         </tr><tr>
           <td class="tn">7</td><td class="tname">ノドゥス</td>
           <td class="tmk"></td><td class="tnum">1.3%</td>
-          <td class="tnum">5.5%</td>
         </tr><tr>
           <td class="tn">11</td><td class="tname">タイセイルミナス</td>
           <td class="tmk"></td><td class="tnum">0.6%</td>
-          <td class="tnum">3.3%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -2338,96 +2077,77 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">4R</span><span class="sum-meta">1800mダ 15頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎9 サトノクラシカル</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#F2E100;color:#182018;border:none;">9</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">サトノクラシカル</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">45.1%</span></div>
-      <span class="p3-place-col">83.2%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">ツインドライヴ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:25%"></div></div><span class="p3-num">11.2%</span></div>
-      <span class="p3-place-col">39.0%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#F2E100;color:#182018;border:none;">8</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">サングラント</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:25%"></div></div><span class="p3-num">11.1%</span></div>
-      <span class="p3-place-col">37.6%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">10</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">ネイティヴプライド</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:15%"></div></div><span class="p3-num">6.8%</span></div>
-      <span class="p3-place-col">26.6%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">9</td><td class="tname">サトノクラシカル</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">45.1%</td>
-          <td class="tnum">83.2%</td>
         </tr><tr class="row-o">
           <td class="tn">3</td><td class="tname">ツインドライヴ</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">11.2%</td>
-          <td class="tnum">39.0%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">8</td><td class="tname">サングラント</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">11.1%</td>
-          <td class="tnum">37.6%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">10</td><td class="tname">ネイティヴプライド</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">6.8%</td>
-          <td class="tnum">26.6%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">12</td><td class="tname">ジュングロワール</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">6.2%</td>
-          <td class="tnum">20.9%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">7</td><td class="tname">ヤマメナイト</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">4.0%</td>
-          <td class="tnum">18.2%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">13</td><td class="tname">ウォーレーションズ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">2.8%</td>
-          <td class="tnum">13.3%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">5</td><td class="tname">ヤマタケボニータ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">2.8%</td>
-          <td class="tnum">13.3%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">11</td><td class="tname">グラムエッジ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">2.8%</td>
-          <td class="tnum">11.7%</td>
         </tr><tr>
           <td class="tn">4</td><td class="tname">カミカクシ</td>
           <td class="tmk"></td><td class="tnum">1.8%</td>
-          <td class="tnum">8.3%</td>
         </tr><tr>
           <td class="tn">15</td><td class="tname">テルケンレンタッチ</td>
           <td class="tmk"></td><td class="tnum">1.8%</td>
-          <td class="tnum">8.3%</td>
         </tr><tr>
           <td class="tn">6</td><td class="tname">ブリリアンス</td>
           <td class="tmk"></td><td class="tnum">1.8%</td>
-          <td class="tnum">8.3%</td>
         </tr><tr>
           <td class="tn">1</td><td class="tname">チャリティチャリス</td>
           <td class="tmk"></td><td class="tnum">1.2%</td>
-          <td class="tnum">6.3%</td>
         </tr><tr>
           <td class="tn">2</td><td class="tname">グランフィエスタ</td>
           <td class="tmk"></td><td class="tnum">0.6%</td>
-          <td class="tnum">3.8%</td>
         </tr><tr>
           <td class="tn">14</td><td class="tname">アルティシエル</td>
           <td class="tmk"></td><td class="tnum">0.0%</td>
-          <td class="tnum">1.2%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -2472,108 +2192,86 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">5R</span><span class="sum-meta">1800m芝 18頭 <span class="badge badge-rel rel-hi">S</span></span><span class="sum-honmei">◎7 レッドレガリア</span><span class="verdict verdict-buy">注目</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">7</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">レッドレガリア</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">32.7%</span></div>
-      <span class="p3-place-col">64.6%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">5</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">チルチャンプ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:68%"></div></div><span class="p3-num">22.3%</span></div>
-      <span class="p3-place-col">53.6%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">12</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">カルダモン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:30%"></div></div><span class="p3-num">9.8%</span></div>
-      <span class="p3-place-col">30.9%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">6</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">エクストラダーク</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:16%"></div></div><span class="p3-num">5.3%</span></div>
-      <span class="p3-place-col">18.6%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">7</td><td class="tname">レッドレガリア</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">32.7%</td>
-          <td class="tnum">64.6%</td>
         </tr><tr class="row-o">
           <td class="tn">5</td><td class="tname">チルチャンプ</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">22.3%</td>
-          <td class="tnum">53.6%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">12</td><td class="tname">カルダモン</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">9.8%</td>
-          <td class="tnum">30.9%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">6</td><td class="tname">エクストラダーク</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">5.3%</td>
-          <td class="tnum">18.6%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">17</td><td class="tname">フキョウワオン</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">4.5%</td>
-          <td class="tnum">18.0%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">2</td><td class="tname">ラグアイリータ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">3.8%</td>
-          <td class="tnum">16.2%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">3</td><td class="tname">セーヌデローヴ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">3.8%</td>
-          <td class="tnum">16.2%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">18</td><td class="tname">アオゾラランチ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">3.8%</td>
-          <td class="tnum">16.2%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">13</td><td class="tname">ニシノトップダノン</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">2.7%</td>
-          <td class="tnum">14.1%</td>
         </tr><tr>
           <td class="tn">1</td><td class="tname">ナイトバード</td>
           <td class="tmk"></td><td class="tnum">2.7%</td>
-          <td class="tnum">11.8%</td>
         </tr><tr>
           <td class="tn">16</td><td class="tname">プラネタリーアワー</td>
           <td class="tmk"></td><td class="tnum">2.7%</td>
-          <td class="tnum">10.4%</td>
         </tr><tr>
           <td class="tn">10</td><td class="tname">レーザーキック</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">7.4%</td>
         </tr><tr>
           <td class="tn">11</td><td class="tname">ビップマリク</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">7.4%</td>
         </tr><tr>
           <td class="tn">9</td><td class="tname">イバラヒメ</td>
           <td class="tmk"></td><td class="tnum">1.2%</td>
-          <td class="tnum">5.6%</td>
         </tr><tr>
           <td class="tn">14</td><td class="tname">キタノアヤカ</td>
           <td class="tmk"></td><td class="tnum">0.6%</td>
-          <td class="tnum">3.4%</td>
         </tr><tr>
           <td class="tn">4</td><td class="tname">ジーナグレイス</td>
           <td class="tmk"></td><td class="tnum">0.6%</td>
-          <td class="tnum">3.4%</td>
         </tr><tr>
           <td class="tn">15</td><td class="tname">テンノルーキー</td>
           <td class="tmk"></td><td class="tnum">0.1%</td>
-          <td class="tnum">1.4%</td>
         </tr><tr>
           <td class="tn">8</td><td class="tname">ルビーサンセット</td>
           <td class="tmk"></td><td class="tnum">0.0%</td>
-          <td class="tnum">1.1%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -2618,96 +2316,77 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">6R</span><span class="sum-meta">1800mダ 15頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎6 ヘリオトロープ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">6</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">ヘリオトロープ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">26.0%</span></div>
-      <span class="p3-place-col">55.5%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">5</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">ナイトスラッガー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:47%"></div></div><span class="p3-num">12.3%</span></div>
-      <span class="p3-place-col">35.2%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">10</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">フィールオーサム</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:47%"></div></div><span class="p3-num">12.3%</span></div>
-      <span class="p3-place-col">35.2%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">マッドゲイル</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:37%"></div></div><span class="p3-num">9.5%</span></div>
-      <span class="p3-place-col">29.4%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">6</td><td class="tname">ヘリオトロープ</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">26.0%</td>
-          <td class="tnum">55.5%</td>
         </tr><tr class="row-o">
           <td class="tn">5</td><td class="tname">ナイトスラッガー</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">12.3%</td>
-          <td class="tnum">35.2%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">10</td><td class="tname">フィールオーサム</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">12.3%</td>
-          <td class="tnum">35.2%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">4</td><td class="tname">マッドゲイル</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">9.5%</td>
-          <td class="tnum">29.4%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">1</td><td class="tname">ブレトワルダ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">9.5%</td>
-          <td class="tnum">28.1%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">11</td><td class="tname">ニシノケンタマン</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">6.4%</td>
-          <td class="tnum">22.6%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">2</td><td class="tname">カレンワッツアップ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">5.1%</td>
-          <td class="tnum">17.7%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">12</td><td class="tname">ユイノマチブセ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">5.1%</td>
-          <td class="tnum">17.7%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">15</td><td class="tname">ロードソルスティス</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">3.7%</td>
-          <td class="tnum">15.4%</td>
         </tr><tr>
           <td class="tn">8</td><td class="tname">セザンワールド</td>
           <td class="tmk"></td><td class="tnum">2.6%</td>
-          <td class="tnum">11.8%</td>
         </tr><tr>
           <td class="tn">3</td><td class="tname">シーニックビュー</td>
           <td class="tmk"></td><td class="tnum">2.6%</td>
-          <td class="tnum">9.9%</td>
         </tr><tr>
           <td class="tn">7</td><td class="tname">ルーラーリッチ</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">7.0%</td>
         </tr><tr>
           <td class="tn">9</td><td class="tname">フクチャントウメイ</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">7.0%</td>
         </tr><tr>
           <td class="tn">13</td><td class="tname">エリカヴェネチア</td>
           <td class="tmk"></td><td class="tnum">1.3%</td>
-          <td class="tnum">5.3%</td>
         </tr><tr>
           <td class="tn">14</td><td class="tname">スプレーフォール</td>
           <td class="tmk"></td><td class="tnum">0.1%</td>
-          <td class="tnum">2.3%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -2752,104 +2431,83 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">7R</span><span class="sum-meta">1000m芝 17頭 <span class="badge badge-grade">GIII</span><span class="badge badge-rel rel-hi">S</span></span><span class="sum-honmei">◎16 アメリカンステージ</span><span class="verdict verdict-buy">注目</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#F1A0C4;color:#182018;border:none;">16</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">アメリカンステージ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">21.3%</span></div>
-      <span class="p3-place-col">48.0%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#F1A0C4;color:#182018;border:none;">17</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">ビッグシーザー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:44%"></div></div><span class="p3-num">9.3%</span></div>
-      <span class="p3-place-col">26.4%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#FFFFFF;color:#182018;border:1.5px solid #C3CDB7;">1</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">ウイングレイテスト</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:44%"></div></div><span class="p3-num">9.3%</span></div>
-      <span class="p3-place-col">26.4%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#F2E100;color:#182018;border:none;">9</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">カウンターセブン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:44%"></div></div><span class="p3-num">9.3%</span></div>
-      <span class="p3-place-col">26.4%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">重賞レポート — 全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">16</td><td class="tname">アメリカンステージ</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">21.3%</td>
-          <td class="tnum">48.0%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">6</td><td class="tname">ピューロマジック</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">10.3%</td>
-          <td class="tnum">31.0%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">17</td><td class="tname">ビッグシーザー</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">9.3%</td>
-          <td class="tnum">26.4%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">1</td><td class="tname">ウイングレイテスト</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">9.3%</td>
-          <td class="tnum">26.4%</td>
         </tr><tr class="row-o">
           <td class="tn">9</td><td class="tname">カウンターセブン</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">9.3%</td>
-          <td class="tnum">26.4%</td>
         </tr><tr>
           <td class="tn">8</td><td class="tname">シュラフ</td>
           <td class="tmk"></td><td class="tnum">8.1%</td>
-          <td class="tnum">26.4%</td>
         </tr><tr>
           <td class="tn">4</td><td class="tname">カウスリップ</td>
           <td class="tmk"></td><td class="tnum">7.0%</td>
-          <td class="tnum">22.9%</td>
         </tr><tr>
           <td class="tn">10</td><td class="tname">エコロレジーナ</td>
           <td class="tmk"></td><td class="tnum">5.7%</td>
-          <td class="tnum">16.6%</td>
         </tr><tr>
           <td class="tn">2</td><td class="tname">デュガ</td>
           <td class="tmk"></td><td class="tnum">4.3%</td>
-          <td class="tnum">16.1%</td>
         </tr><tr>
           <td class="tn">5</td><td class="tname">ベルギューン</td>
           <td class="tmk"></td><td class="tnum">3.7%</td>
-          <td class="tnum">14.5%</td>
         </tr><tr>
           <td class="tn">11</td><td class="tname">ロードトレイル</td>
           <td class="tmk"></td><td class="tnum">2.6%</td>
-          <td class="tnum">9.3%</td>
         </tr><tr>
           <td class="tn">12</td><td class="tname">クムシラコ</td>
           <td class="tmk"></td><td class="tnum">2.6%</td>
-          <td class="tnum">8.8%</td>
         </tr><tr>
           <td class="tn">13</td><td class="tname">テイエムスパーダ</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">6.6%</td>
         </tr><tr>
           <td class="tn">15</td><td class="tname">アタリダイキチ</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">6.6%</td>
         </tr><tr>
           <td class="tn">14</td><td class="tname">ブーケファロス</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">6.6%</td>
         </tr><tr>
           <td class="tn">7</td><td class="tname">バグラダス</td>
           <td class="tmk"></td><td class="tnum">1.3%</td>
-          <td class="tnum">5.0%</td>
         </tr><tr>
           <td class="tn">3</td><td class="tname">ミカッテヨンデイイ</td>
           <td class="tmk"></td><td class="tnum">0.1%</td>
-          <td class="tnum">2.4%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -2894,92 +2552,74 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">8R</span><span class="sum-meta">1800m芝 14頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎8 リポサンテ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#F2E100;color:#182018;border:none;">8</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">リポサンテ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">20.6%</span></div>
-      <span class="p3-place-col">47.9%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#FFFFFF;color:#182018;border:1.5px solid #C3CDB7;">1</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">キアラメンテ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:74%"></div></div><span class="p3-num">15.3%</span></div>
-      <span class="p3-place-col">39.3%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">5</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">トランスマーレ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:72%"></div></div><span class="p3-num">14.9%</span></div>
-      <span class="p3-place-col">39.3%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">ガーヴィ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:66%"></div></div><span class="p3-num">13.5%</span></div>
-      <span class="p3-place-col">39.3%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">8</td><td class="tname">リポサンテ</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">20.6%</td>
-          <td class="tnum">47.9%</td>
         </tr><tr class="row-o">
           <td class="tn">1</td><td class="tname">キアラメンテ</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">15.3%</td>
-          <td class="tnum">39.3%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">5</td><td class="tname">トランスマーレ</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">14.9%</td>
-          <td class="tnum">39.3%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">2</td><td class="tname">ガーヴィ</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">13.5%</td>
-          <td class="tnum">39.3%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">13</td><td class="tname">ミエノフェアリー</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">7.9%</td>
-          <td class="tnum">26.4%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">9</td><td class="tname">キューティリップ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">6.8%</td>
-          <td class="tnum">23.7%</td>
         </tr><tr>
           <td class="tn">4</td><td class="tname">ファストフォワード</td>
           <td class="tmk"></td><td class="tnum">4.9%</td>
-          <td class="tnum">16.6%</td>
         </tr><tr>
           <td class="tn">3</td><td class="tname">シアブリス</td>
           <td class="tmk"></td><td class="tnum">3.5%</td>
-          <td class="tnum">14.5%</td>
         </tr><tr>
           <td class="tn">7</td><td class="tname">ゴバド</td>
           <td class="tmk"></td><td class="tnum">3.5%</td>
-          <td class="tnum">14.5%</td>
         </tr><tr>
           <td class="tn">12</td><td class="tname">ノーザンタイタン</td>
           <td class="tmk"></td><td class="tnum">2.5%</td>
-          <td class="tnum">11.1%</td>
         </tr><tr>
           <td class="tn">11</td><td class="tname">ルンベーラ</td>
           <td class="tmk"></td><td class="tnum">2.5%</td>
-          <td class="tnum">9.3%</td>
         </tr><tr>
           <td class="tn">6</td><td class="tname">ユメシルベ</td>
           <td class="tmk"></td><td class="tnum">1.6%</td>
-          <td class="tnum">7.4%</td>
         </tr><tr>
           <td class="tn">10</td><td class="tname">ニシノコマチムスメ</td>
           <td class="tmk"></td><td class="tnum">1.4%</td>
-          <td class="tnum">5.9%</td>
         </tr><tr>
           <td class="tn">14</td><td class="tname">ノーブルクラウド</td>
           <td class="tmk"></td><td class="tnum">1.2%</td>
-          <td class="tnum">5.0%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -3024,96 +2664,77 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">9R</span><span class="sum-meta">1800mダ 15頭 <span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎2 ウリズンベー</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">ウリズンベー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">16.1%</span></div>
-      <span class="p3-place-col">39.2%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#EE8A1D;color:#182018;border:none;">13</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">エコロガノン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:88%"></div></div><span class="p3-num">14.2%</span></div>
-      <span class="p3-place-col">39.2%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">7</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">メディチパワー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:88%"></div></div><span class="p3-num">14.2%</span></div>
-      <span class="p3-place-col">39.2%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">10</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">サトノフェンサー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:76%"></div></div><span class="p3-num">12.3%</span></div>
-      <span class="p3-place-col">33.0%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">2</td><td class="tname">ウリズンベー</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">16.1%</td>
-          <td class="tnum">39.2%</td>
         </tr><tr class="row-o">
           <td class="tn">13</td><td class="tname">エコロガノン</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">14.2%</td>
-          <td class="tnum">39.2%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">7</td><td class="tname">メディチパワー</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">14.2%</td>
-          <td class="tnum">39.2%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">10</td><td class="tname">サトノフェンサー</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">12.3%</td>
-          <td class="tnum">33.0%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">5</td><td class="tname">サトノラポール</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">10.4%</td>
-          <td class="tnum">30.9%</td>
         </tr><tr>
           <td class="tn">11</td><td class="tname">サトノシャムロック</td>
           <td class="tmk"></td><td class="tnum">6.4%</td>
-          <td class="tnum">21.2%</td>
         </tr><tr>
           <td class="tn">9</td><td class="tname">タニセンドリーム</td>
           <td class="tmk"></td><td class="tnum">6.4%</td>
-          <td class="tnum">21.2%</td>
         </tr><tr>
           <td class="tn">8</td><td class="tname">イーグルロック</td>
           <td class="tmk"></td><td class="tnum">6.4%</td>
-          <td class="tnum">21.1%</td>
         </tr><tr>
           <td class="tn">14</td><td class="tname">ベルウッドピース</td>
           <td class="tmk"></td><td class="tnum">3.7%</td>
-          <td class="tnum">14.5%</td>
         </tr><tr>
           <td class="tn">15</td><td class="tname">カシノスパーク</td>
           <td class="tmk"></td><td class="tnum">2.6%</td>
-          <td class="tnum">11.1%</td>
         </tr><tr>
           <td class="tn">12</td><td class="tname">セントゴーデンス</td>
           <td class="tmk"></td><td class="tnum">2.6%</td>
-          <td class="tnum">10.5%</td>
         </tr><tr>
           <td class="tn">4</td><td class="tname">ヘルメスギャング</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">6.6%</td>
         </tr><tr>
           <td class="tn">6</td><td class="tname">ブレゲアン</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">6.6%</td>
         </tr><tr>
           <td class="tn">3</td><td class="tname">ウーバーストロング</td>
           <td class="tmk"></td><td class="tnum">1.3%</td>
-          <td class="tnum">5.0%</td>
         </tr><tr>
           <td class="tn">1</td><td class="tname">スーパーホース</td>
           <td class="tmk"></td><td class="tnum">0.0%</td>
-          <td class="tnum">0.9%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -3158,92 +2779,74 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">10R</span><span class="sum-meta">1200mダ 14頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎1 チームユートピア</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#FFFFFF;color:#182018;border:1.5px solid #C3CDB7;">1</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">チームユートピア</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">32.1%</span></div>
-      <span class="p3-place-col">68.3%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">10</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">トモジャオーリー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:82%"></div></div><span class="p3-num">26.4%</span></div>
-      <span class="p3-place-col">61.7%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">6</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">アイアンソリッド</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:20%"></div></div><span class="p3-num">6.5%</span></div>
-      <span class="p3-place-col">24.9%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">マオノクラッシュ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:18%"></div></div><span class="p3-num">5.7%</span></div>
-      <span class="p3-place-col">19.6%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">1</td><td class="tname">チームユートピア</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">32.1%</td>
-          <td class="tnum">68.3%</td>
         </tr><tr class="row-o">
           <td class="tn">10</td><td class="tname">トモジャオーリー</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">26.4%</td>
-          <td class="tnum">61.7%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">6</td><td class="tname">アイアンソリッド</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">6.5%</td>
-          <td class="tnum">24.9%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">3</td><td class="tname">マオノクラッシュ</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">5.7%</td>
-          <td class="tnum">19.6%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">5</td><td class="tname">ローズブーケ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">5.2%</td>
-          <td class="tnum">19.6%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">8</td><td class="tname">ビアフォーナウ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">5.2%</td>
-          <td class="tnum">19.6%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">9</td><td class="tname">レゲンデ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">3.8%</td>
-          <td class="tnum">17.1%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">11</td><td class="tname">カンレイスター</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">3.7%</td>
-          <td class="tnum">15.1%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">4</td><td class="tname">レディサン</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">2.7%</td>
-          <td class="tnum">13.1%</td>
         </tr><tr>
           <td class="tn">13</td><td class="tname">ハヌル</td>
           <td class="tmk"></td><td class="tnum">2.7%</td>
-          <td class="tnum">12.5%</td>
         </tr><tr>
           <td class="tn">2</td><td class="tname">ベルヴィヴァン</td>
           <td class="tmk"></td><td class="tnum">2.7%</td>
-          <td class="tnum">11.1%</td>
         </tr><tr>
           <td class="tn">7</td><td class="tname">フュルスティン</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">7.8%</td>
         </tr><tr>
           <td class="tn">12</td><td class="tname">セイウンアインス</td>
           <td class="tmk"></td><td class="tnum">1.1%</td>
-          <td class="tnum">5.9%</td>
         </tr><tr>
           <td class="tn">14</td><td class="tname">ゴールドシャーク</td>
           <td class="tmk"></td><td class="tnum">0.6%</td>
-          <td class="tnum">3.5%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -3288,92 +2891,74 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">11R</span><span class="sum-meta">2200m芝 14頭 <span class="badge badge-rel rel-hi">S</span></span><span class="sum-honmei">◎12 ヤマメホープ</span><span class="verdict verdict-buy">注目</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#EE8A1D;color:#182018;border:none;">12</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">ヤマメホープ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">26.1%</span></div>
-      <span class="p3-place-col">56.1%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#F1A0C4;color:#182018;border:none;">13</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">クイーンズレイン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:47%"></div></div><span class="p3-num">12.3%</span></div>
-      <span class="p3-place-col">35.6%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#FFFFFF;color:#182018;border:1.5px solid #C3CDB7;">1</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">キコリータ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:40%"></div></div><span class="p3-num">10.5%</span></div>
-      <span class="p3-place-col">33.3%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#F2E100;color:#182018;border:none;">7</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">ブラーヴジャン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:36%"></div></div><span class="p3-num">9.5%</span></div>
-      <span class="p3-place-col">29.7%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">12</td><td class="tname">ヤマメホープ</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">26.1%</td>
-          <td class="tnum">56.1%</td>
         </tr><tr class="row-o">
           <td class="tn">13</td><td class="tname">クイーンズレイン</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">12.3%</td>
-          <td class="tnum">35.6%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">1</td><td class="tname">キコリータ</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">10.5%</td>
-          <td class="tnum">33.3%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">7</td><td class="tname">ブラーヴジャン</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">9.5%</td>
-          <td class="tnum">29.7%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">14</td><td class="tname">フォンドルレール</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">9.5%</td>
-          <td class="tnum">28.4%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">5</td><td class="tname">コスモアミュレット</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">8.3%</td>
-          <td class="tnum">28.4%</td>
         </tr><tr>
           <td class="tn">8</td><td class="tname">マイネルオラクル</td>
           <td class="tmk"></td><td class="tnum">5.8%</td>
-          <td class="tnum">17.9%</td>
         </tr><tr>
           <td class="tn">4</td><td class="tname">サヴマ</td>
           <td class="tmk"></td><td class="tnum">5.1%</td>
-          <td class="tnum">17.9%</td>
         </tr><tr>
           <td class="tn">11</td><td class="tname">ソロンゴ</td>
           <td class="tmk"></td><td class="tnum">5.1%</td>
-          <td class="tnum">17.9%</td>
         </tr><tr>
           <td class="tn">2</td><td class="tname">レッドリファインド</td>
           <td class="tmk"></td><td class="tnum">4.4%</td>
-          <td class="tnum">17.3%</td>
         </tr><tr>
           <td class="tn">10</td><td class="tname">カムバックトゥミー</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">7.1%</td>
         </tr><tr>
           <td class="tn">6</td><td class="tname">タイキヴィグルーズ</td>
           <td class="tmk"></td><td class="tnum">1.3%</td>
-          <td class="tnum">5.4%</td>
         </tr><tr>
           <td class="tn">9</td><td class="tname">ジーティーホクサイ</td>
           <td class="tmk"></td><td class="tnum">0.6%</td>
-          <td class="tnum">3.9%</td>
         </tr><tr>
           <td class="tn">3</td><td class="tname">フロステリオン</td>
           <td class="tmk"></td><td class="tnum">0.0%</td>
-          <td class="tnum">1.0%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -3418,108 +3003,86 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">12R</span><span class="sum-meta">1400m芝 18頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎14 シャインアルプス</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#EE8A1D;color:#182018;border:none;">14</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">シャインアルプス</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">48.3%</span></div>
-      <span class="p3-place-col">94.6%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#EE8A1D;color:#182018;border:none;">15</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">ウインテラジーナ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:38%"></div></div><span class="p3-num">18.4%</span></div>
-      <span class="p3-place-col">53.7%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">8</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">ニシノタチアナ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:14%"></div></div><span class="p3-num">6.8%</span></div>
-      <span class="p3-place-col">25.7%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">6</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">ゴッドレイ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:6%"></div></div><span class="p3-num">3.0%</span></div>
-      <span class="p3-place-col">14.5%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">14</td><td class="tname">シャインアルプス</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">48.3%</td>
-          <td class="tnum">94.6%</td>
         </tr><tr class="row-o">
           <td class="tn">15</td><td class="tname">ウインテラジーナ</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">18.4%</td>
-          <td class="tnum">53.7%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">8</td><td class="tname">ニシノタチアナ</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">6.8%</td>
-          <td class="tnum">25.7%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">6</td><td class="tname">ゴッドレイ</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">3.0%</td>
-          <td class="tnum">14.5%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">2</td><td class="tname">アラムベイ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">3.0%</td>
-          <td class="tnum">14.5%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">13</td><td class="tname">ノーブルクロンヌ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">3.0%</td>
-          <td class="tnum">12.7%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">9</td><td class="tname">モントーヤ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">1.9%</td>
-          <td class="tnum">10.1%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">7</td><td class="tname">セレスティアハート</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">1.9%</td>
-          <td class="tnum">9.0%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">16</td><td class="tname">ペルシアーノ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">1.9%</td>
-          <td class="tnum">9.0%</td>
         </tr><tr>
           <td class="tn">12</td><td class="tname">スイートハイデン</td>
           <td class="tmk"></td><td class="tnum">1.9%</td>
-          <td class="tnum">9.0%</td>
         </tr><tr>
           <td class="tn">11</td><td class="tname">ピコバレット</td>
           <td class="tmk"></td><td class="tnum">1.9%</td>
-          <td class="tnum">9.0%</td>
         </tr><tr>
           <td class="tn">3</td><td class="tname">ベルバード</td>
           <td class="tmk"></td><td class="tnum">1.5%</td>
-          <td class="tnum">6.8%</td>
         </tr><tr>
           <td class="tn">5</td><td class="tname">ノベンバーベイズ</td>
           <td class="tmk"></td><td class="tnum">1.5%</td>
-          <td class="tnum">6.8%</td>
         </tr><tr>
           <td class="tn">10</td><td class="tname">ヤマカンドリーミン</td>
           <td class="tmk"></td><td class="tnum">1.5%</td>
-          <td class="tnum">6.8%</td>
         </tr><tr>
           <td class="tn">4</td><td class="tname">エイシンイクサボシ</td>
           <td class="tmk"></td><td class="tnum">1.5%</td>
-          <td class="tnum">6.8%</td>
         </tr><tr>
           <td class="tn">1</td><td class="tname">ノブステップ</td>
           <td class="tmk"></td><td class="tnum">1.3%</td>
-          <td class="tnum">6.8%</td>
         </tr><tr>
           <td class="tn">17</td><td class="tname">ブロッコロ</td>
           <td class="tmk"></td><td class="tnum">0.6%</td>
-          <td class="tnum">4.1%</td>
         </tr><tr>
           <td class="tn">18</td><td class="tname">ホウオウパーソンズ</td>
           <td class="tmk"></td><td class="tnum">0.0%</td>
-          <td class="tnum">0.0%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -3567,92 +3130,74 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">1R</span><span class="sum-meta">1700mダ 14頭 <span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎7 ザンシュトーム</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#F2E100;color:#182018;border:none;">7</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">ザンシュトーム</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">16.8%</span></div>
-      <span class="p3-place-col">41.9%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#FFFFFF;color:#182018;border:1.5px solid #C3CDB7;">1</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">タガノシルフィー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:100%"></div></div><span class="p3-num">16.8%</span></div>
-      <span class="p3-place-col">41.9%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">ダノンルミエール</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:86%"></div></div><span class="p3-num">14.4%</span></div>
-      <span class="p3-place-col">41.9%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">ワンダーアスク</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:78%"></div></div><span class="p3-num">13.1%</span></div>
-      <span class="p3-place-col">35.8%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">7</td><td class="tname">ザンシュトーム</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">16.8%</td>
-          <td class="tnum">41.9%</td>
         </tr><tr class="row-o">
           <td class="tn">1</td><td class="tname">タガノシルフィー</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">16.8%</td>
-          <td class="tnum">41.9%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">4</td><td class="tname">ダノンルミエール</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">14.4%</td>
-          <td class="tnum">41.9%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">3</td><td class="tname">ワンダーアスク</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">13.1%</td>
-          <td class="tnum">35.8%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">6</td><td class="tname">フレンチブラッサム</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">10.7%</td>
-          <td class="tnum">33.0%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">8</td><td class="tname">ストリートクイーン</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">10.7%</td>
-          <td class="tnum">33.0%</td>
         </tr><tr>
           <td class="tn">11</td><td class="tname">クルサール</td>
           <td class="tmk"></td><td class="tnum">3.8%</td>
-          <td class="tnum">15.5%</td>
         </tr><tr>
           <td class="tn">12</td><td class="tname">ヨドノサファイア</td>
           <td class="tmk"></td><td class="tnum">2.7%</td>
-          <td class="tnum">11.9%</td>
         </tr><tr>
           <td class="tn">5</td><td class="tname">ローゾフィア</td>
           <td class="tmk"></td><td class="tnum">2.7%</td>
-          <td class="tnum">9.9%</td>
         </tr><tr>
           <td class="tn">13</td><td class="tname">レーヌペスカ</td>
           <td class="tmk"></td><td class="tnum">2.7%</td>
-          <td class="tnum">9.9%</td>
         </tr><tr>
           <td class="tn">2</td><td class="tname">ヒマラヤミュサ</td>
           <td class="tmk"></td><td class="tnum">2.1%</td>
-          <td class="tnum">8.1%</td>
         </tr><tr>
           <td class="tn">14</td><td class="tname">テリオスリコ</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">7.9%</td>
         </tr><tr>
           <td class="tn">10</td><td class="tname">アインプロージット</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">7.0%</td>
         </tr><tr>
           <td class="tn">9</td><td class="tname">ドゥブルヴェ</td>
           <td class="tmk"></td><td class="tnum">0.1%</td>
-          <td class="tnum">2.3%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -3697,92 +3242,74 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">2R</span><span class="sum-meta">1500m芝 14頭 <span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎2 ニシノマーレ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">ニシノマーレ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">21.3%</span></div>
-      <span class="p3-place-col">51.5%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#EE8A1D;color:#182018;border:none;">12</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">ブルーエ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:79%"></div></div><span class="p3-num">16.8%</span></div>
-      <span class="p3-place-col">49.4%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">ペカリーナ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:74%"></div></div><span class="p3-num">15.8%</span></div>
-      <span class="p3-place-col">42.2%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#F2E100;color:#182018;border:none;">8</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">エグジスタンス</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:72%"></div></div><span class="p3-num">15.4%</span></div>
-      <span class="p3-place-col">42.2%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">2</td><td class="tname">ニシノマーレ</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">21.3%</td>
-          <td class="tnum">51.5%</td>
         </tr><tr class="row-o">
           <td class="tn">12</td><td class="tname">ブルーエ</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">16.8%</td>
-          <td class="tnum">49.4%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">3</td><td class="tname">ペカリーナ</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">15.8%</td>
-          <td class="tnum">42.2%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">8</td><td class="tname">エグジスタンス</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">15.4%</td>
-          <td class="tnum">42.2%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">10</td><td class="tname">グローリーバローズ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">9.3%</td>
-          <td class="tnum">29.7%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">11</td><td class="tname">ショウナンバーボン</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">5.9%</td>
-          <td class="tnum">20.2%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">4</td><td class="tname">シーシェル</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">5.0%</td>
-          <td class="tnum">17.9%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">6</td><td class="tname">ロックフラワー</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">3.7%</td>
-          <td class="tnum">15.6%</td>
         </tr><tr>
           <td class="tn">1</td><td class="tname">スカイピア</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">7.1%</td>
         </tr><tr>
           <td class="tn">5</td><td class="tname">モンテール</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">7.1%</td>
         </tr><tr>
           <td class="tn">14</td><td class="tname">メイショウタダツグ</td>
           <td class="tmk"></td><td class="tnum">1.3%</td>
-          <td class="tnum">5.4%</td>
         </tr><tr>
           <td class="tn">7</td><td class="tname">ポセイドンテソーロ</td>
           <td class="tmk"></td><td class="tnum">1.1%</td>
-          <td class="tnum">5.4%</td>
         </tr><tr>
           <td class="tn">9</td><td class="tname">ミアエッテ</td>
           <td class="tmk"></td><td class="tnum">0.5%</td>
-          <td class="tnum">3.2%</td>
         </tr><tr>
           <td class="tn">13</td><td class="tname">アトリ</td>
           <td class="tmk"></td><td class="tnum">0.5%</td>
-          <td class="tnum">3.2%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -3827,80 +3354,65 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">3R</span><span class="sum-meta">1700mダ 11頭 <span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎1 モズヴイ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#FFFFFF;color:#182018;border:1.5px solid #C3CDB7;">1</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">モズヴイ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">24.8%</span></div>
-      <span class="p3-place-col">60.0%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">ワンダーブリッツ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:83%"></div></div><span class="p3-num">20.7%</span></div>
-      <span class="p3-place-col">55.1%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#F2E100;color:#182018;border:none;">5</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">イーサンミラー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:64%"></div></div><span class="p3-num">15.8%</span></div>
-      <span class="p3-place-col">45.1%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#EE8A1D;color:#182018;border:none;">8</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">ゴンフィンガー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:62%"></div></div><span class="p3-num">15.3%</span></div>
-      <span class="p3-place-col">45.1%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">1</td><td class="tname">モズヴイ</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">24.8%</td>
-          <td class="tnum">60.0%</td>
         </tr><tr class="row-o">
           <td class="tn">3</td><td class="tname">ワンダーブリッツ</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">20.7%</td>
-          <td class="tnum">55.1%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">5</td><td class="tname">イーサンミラー</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">15.8%</td>
-          <td class="tnum">45.1%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">8</td><td class="tname">ゴンフィンガー</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">15.3%</td>
-          <td class="tnum">45.1%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">11</td><td class="tname">ホウオウロレンシア</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">7.9%</td>
-          <td class="tnum">30.4%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">9</td><td class="tname">ハイランダー</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">5.7%</td>
-          <td class="tnum">21.6%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">2</td><td class="tname">ワンダーゾルダート</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">4.9%</td>
-          <td class="tnum">19.1%</td>
         </tr><tr>
           <td class="tn">4</td><td class="tname">エースオブゴールド</td>
           <td class="tmk"></td><td class="tnum">1.9%</td>
-          <td class="tnum">8.8%</td>
         </tr><tr>
           <td class="tn">10</td><td class="tname">カンフージョン</td>
           <td class="tmk"></td><td class="tnum">1.2%</td>
-          <td class="tnum">5.7%</td>
         </tr><tr>
           <td class="tn">6</td><td class="tname">ヘリオポリス</td>
           <td class="tmk"></td><td class="tnum">1.2%</td>
-          <td class="tnum">5.7%</td>
         </tr><tr>
           <td class="tn">7</td><td class="tname">イントゥゴールデン</td>
           <td class="tmk"></td><td class="tnum">0.5%</td>
-          <td class="tnum">3.4%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -3945,88 +3457,71 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">4R</span><span class="sum-meta">2600m芝 13頭 <span class="badge badge-rel rel-hi">S</span></span><span class="sum-honmei">◎5 クオンタムスター</span><span class="verdict verdict-buy">注目</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">5</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">クオンタムスター</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">32.5%</span></div>
-      <span class="p3-place-col">68.5%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#F1A0C4;color:#182018;border:none;">12</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">テイクザクラウン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:49%"></div></div><span class="p3-num">16.0%</span></div>
-      <span class="p3-place-col">44.8%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">ワンダフルデイズ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:48%"></div></div><span class="p3-num">15.6%</span></div>
-      <span class="p3-place-col">44.8%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">9</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">ニヒトツーゼーア</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:29%"></div></div><span class="p3-num">9.4%</span></div>
-      <span class="p3-place-col">30.1%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">5</td><td class="tname">クオンタムスター</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">32.5%</td>
-          <td class="tnum">68.5%</td>
         </tr><tr class="row-o">
           <td class="tn">12</td><td class="tname">テイクザクラウン</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">16.0%</td>
-          <td class="tnum">44.8%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">2</td><td class="tname">ワンダフルデイズ</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">15.6%</td>
-          <td class="tnum">44.8%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">9</td><td class="tname">ニヒトツーゼーア</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">9.4%</td>
-          <td class="tnum">30.1%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">6</td><td class="tname">タケルフォーカス</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">6.4%</td>
-          <td class="tnum">24.2%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">10</td><td class="tname">レイデラティエラ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">5.1%</td>
-          <td class="tnum">19.0%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">1</td><td class="tname">エナジーショット</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">2.6%</td>
-          <td class="tnum">12.7%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">13</td><td class="tname">シャインバオバブ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">2.6%</td>
-          <td class="tnum">12.7%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">8</td><td class="tname">ランブリングマン</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">2.6%</td>
-          <td class="tnum">12.7%</td>
         </tr><tr>
           <td class="tn">4</td><td class="tname">グランアルト</td>
           <td class="tmk"></td><td class="tnum">2.6%</td>
-          <td class="tnum">10.9%</td>
         </tr><tr>
           <td class="tn">7</td><td class="tname">ペリプルス</td>
           <td class="tmk"></td><td class="tnum">2.6%</td>
-          <td class="tnum">10.6%</td>
         </tr><tr>
           <td class="tn">3</td><td class="tname">ジーティートシオー</td>
           <td class="tmk"></td><td class="tnum">1.3%</td>
-          <td class="tnum">5.7%</td>
         </tr><tr>
           <td class="tn">11</td><td class="tname">サイモンイロハニー</td>
           <td class="tmk"></td><td class="tnum">0.6%</td>
-          <td class="tnum">3.4%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -4073,80 +3568,65 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">6R</span><span class="sum-meta">1700mダ 11頭 <span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎3 ロードアマルフィ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">ロードアマルフィ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">16.5%</span></div>
-      <span class="p3-place-col">41.7%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#F2E100;color:#182018;border:none;">5</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">ココデイック</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:97%"></div></div><span class="p3-num">16.0%</span></div>
-      <span class="p3-place-col">41.7%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#EE8A1D;color:#182018;border:none;">9</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">ゼルダ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:85%"></div></div><span class="p3-num">14.1%</span></div>
-      <span class="p3-place-col">39.2%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">アスクガンバーレ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:74%"></div></div><span class="p3-num">12.2%</span></div>
-      <span class="p3-place-col">35.2%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">3</td><td class="tname">ロードアマルフィ</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">16.5%</td>
-          <td class="tnum">41.7%</td>
         </tr><tr class="row-o">
           <td class="tn">5</td><td class="tname">ココデイック</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">16.0%</td>
-          <td class="tnum">41.7%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">9</td><td class="tname">ゼルダ</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">14.1%</td>
-          <td class="tnum">39.2%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">2</td><td class="tname">アスクガンバーレ</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">12.2%</td>
-          <td class="tnum">35.2%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">4</td><td class="tname">マテンロウカナロア</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">10.5%</td>
-          <td class="tnum">32.9%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">8</td><td class="tname">タイセイジェイド</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">9.4%</td>
-          <td class="tnum">29.4%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">1</td><td class="tname">ステイアンビシャス</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">6.4%</td>
-          <td class="tnum">22.5%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">6</td><td class="tname">グランセレスト</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">5.9%</td>
-          <td class="tnum">19.1%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">10</td><td class="tname">セイントホース</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">3.7%</td>
-          <td class="tnum">15.4%</td>
         </tr><tr>
           <td class="tn">7</td><td class="tname">ステラデルークス</td>
           <td class="tmk"></td><td class="tnum">2.6%</td>
-          <td class="tnum">11.8%</td>
         </tr><tr>
           <td class="tn">11</td><td class="tname">カフジクロミエ</td>
           <td class="tmk"></td><td class="tnum">2.6%</td>
-          <td class="tnum">11.2%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -4191,84 +3671,68 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">7R</span><span class="sum-meta">2000m芝 12頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎9 メイショウローゼ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#EE8A1D;color:#182018;border:none;">9</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">メイショウローゼ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">30.6%</span></div>
-      <span class="p3-place-col">64.2%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#FFFFFF;color:#182018;border:1.5px solid #C3CDB7;">1</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">アールグレイ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:86%"></div></div><span class="p3-num">26.4%</span></div>
-      <span class="p3-place-col">64.2%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">7</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">ワダツミ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:41%"></div></div><span class="p3-num">12.4%</span></div>
-      <span class="p3-place-col">40.7%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#F1A0C4;color:#182018;border:none;">12</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">ヤクジョ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:21%"></div></div><span class="p3-num">6.5%</span></div>
-      <span class="p3-place-col">26.1%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">9</td><td class="tname">メイショウローゼ</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">30.6%</td>
-          <td class="tnum">64.2%</td>
         </tr><tr class="row-o">
           <td class="tn">1</td><td class="tname">アールグレイ</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">26.4%</td>
-          <td class="tnum">64.2%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">7</td><td class="tname">ワダツミ</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">12.4%</td>
-          <td class="tnum">40.7%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">12</td><td class="tname">ヤクジョ</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">6.5%</td>
-          <td class="tnum">26.1%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">11</td><td class="tname">デイズインザサン</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">6.5%</td>
-          <td class="tnum">25.9%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">8</td><td class="tname">スリールーディカ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">5.2%</td>
-          <td class="tnum">20.4%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">10</td><td class="tname">フォーティンブラス</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">5.2%</td>
-          <td class="tnum">20.4%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">2</td><td class="tname">フクチャンブラック</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">2.7%</td>
-          <td class="tnum">13.7%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">5</td><td class="tname">ゴールデンボブ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">1.7%</td>
-          <td class="tnum">8.1%</td>
         </tr><tr>
           <td class="tn">3</td><td class="tname">アイアムコロンブス</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">8.1%</td>
         </tr><tr>
           <td class="tn">4</td><td class="tname">ウインベルチェーロ</td>
           <td class="tmk"></td><td class="tnum">0.6%</td>
-          <td class="tnum">4.4%</td>
         </tr><tr>
           <td class="tn">6</td><td class="tname">デルマアサマ</td>
           <td class="tmk"></td><td class="tnum">0.6%</td>
-          <td class="tnum">3.7%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -4313,92 +3777,74 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">8R</span><span class="sum-meta">1200m芝 14頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎14 ジーティーエスピ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#F1A0C4;color:#182018;border:none;">14</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">ジーティーエスピ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">29.1%</span></div>
-      <span class="p3-place-col">57.6%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#FFFFFF;color:#182018;border:1.5px solid #C3CDB7;">1</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">エコロハート</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:53%"></div></div><span class="p3-num">15.5%</span></div>
-      <span class="p3-place-col">43.4%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">ブライトアゲイン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:41%"></div></div><span class="p3-num">11.8%</span></div>
-      <span class="p3-place-col">36.6%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#EE8A1D;color:#182018;border:none;">12</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">レッドカメリア</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:31%"></div></div><span class="p3-num">9.1%</span></div>
-      <span class="p3-place-col">30.5%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">14</td><td class="tname">ジーティーエスピ</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">29.1%</td>
-          <td class="tnum">57.6%</td>
         </tr><tr class="row-o">
           <td class="tn">1</td><td class="tname">エコロハート</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">15.5%</td>
-          <td class="tnum">43.4%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">3</td><td class="tname">ブライトアゲイン</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">11.8%</td>
-          <td class="tnum">36.6%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">12</td><td class="tname">レッドカメリア</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">9.1%</td>
-          <td class="tnum">30.5%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">5</td><td class="tname">ザカリナン</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">6.2%</td>
-          <td class="tnum">23.3%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">2</td><td class="tname">サトノワーグナー</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">5.7%</td>
-          <td class="tnum">20.7%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">13</td><td class="tname">ディーズメンフィス</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">5.6%</td>
-          <td class="tnum">18.4%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">4</td><td class="tname">グレートスティック</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">4.9%</td>
-          <td class="tnum">18.4%</td>
         </tr><tr>
           <td class="tn">6</td><td class="tname">ロードクラシコ</td>
           <td class="tmk"></td><td class="tnum">2.5%</td>
-          <td class="tnum">10.6%</td>
         </tr><tr>
           <td class="tn">11</td><td class="tname">ダブルチャレンジ</td>
           <td class="tmk"></td><td class="tnum">2.5%</td>
-          <td class="tnum">10.3%</td>
         </tr><tr>
           <td class="tn">8</td><td class="tname">アースコーリング</td>
           <td class="tmk"></td><td class="tnum">2.5%</td>
-          <td class="tnum">10.3%</td>
         </tr><tr>
           <td class="tn">9</td><td class="tname">アートフォーム</td>
           <td class="tmk"></td><td class="tnum">1.6%</td>
-          <td class="tnum">7.3%</td>
         </tr><tr>
           <td class="tn">10</td><td class="tname">シャインズオンユー</td>
           <td class="tmk"></td><td class="tnum">1.6%</td>
-          <td class="tnum">7.3%</td>
         </tr><tr>
           <td class="tn">7</td><td class="tname">ブライアーヒル</td>
           <td class="tmk"></td><td class="tnum">1.1%</td>
-          <td class="tnum">5.5%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -4443,84 +3889,68 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">9R</span><span class="sum-meta">1000mダ 12頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎5 パールフロント</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#F2E100;color:#182018;border:none;">5</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">パールフロント</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">33.9%</span></div>
-      <span class="p3-place-col">68.8%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#F1A0C4;color:#182018;border:none;">12</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">ビーマックス</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:48%"></div></div><span class="p3-num">16.2%</span></div>
-      <span class="p3-place-col">45.0%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">デアプリームス</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:37%"></div></div><span class="p3-num">12.7%</span></div>
-      <span class="p3-place-col">37.9%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">エコロレバン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:19%"></div></div><span class="p3-num">6.6%</span></div>
-      <span class="p3-place-col">24.3%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">5</td><td class="tname">パールフロント</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">33.9%</td>
-          <td class="tnum">68.8%</td>
         </tr><tr class="row-o">
           <td class="tn">12</td><td class="tname">ビーマックス</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">16.2%</td>
-          <td class="tnum">45.0%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">2</td><td class="tname">デアプリームス</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">12.7%</td>
-          <td class="tnum">37.9%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">3</td><td class="tname">エコロレバン</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">6.6%</td>
-          <td class="tnum">24.3%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">7</td><td class="tname">ララアヴリル</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">6.6%</td>
-          <td class="tnum">24.2%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">11</td><td class="tname">ジーベック</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">6.2%</td>
-          <td class="tnum">24.2%</td>
         </tr><tr>
           <td class="tn">1</td><td class="tname">ヒットミー</td>
           <td class="tmk"></td><td class="tnum">3.9%</td>
-          <td class="tnum">16.6%</td>
         </tr><tr>
           <td class="tn">10</td><td class="tname">クインズシフォン</td>
           <td class="tmk"></td><td class="tnum">3.9%</td>
-          <td class="tnum">16.6%</td>
         </tr><tr>
           <td class="tn">9</td><td class="tname">サベージラヴ</td>
           <td class="tmk"></td><td class="tnum">3.8%</td>
-          <td class="tnum">16.3%</td>
         </tr><tr>
           <td class="tn">8</td><td class="tname">アイアムイチバン</td>
           <td class="tmk"></td><td class="tnum">3.8%</td>
-          <td class="tnum">14.6%</td>
         </tr><tr>
           <td class="tn">4</td><td class="tname">ベニシア</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">7.6%</td>
         </tr><tr>
           <td class="tn">6</td><td class="tname">ストロングボンド</td>
           <td class="tmk"></td><td class="tnum">0.6%</td>
-          <td class="tnum">3.9%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -4565,76 +3995,62 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">10R</span><span class="sum-meta">1700mダ 10頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎8 ヘニーガイスト</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#EE8A1D;color:#182018;border:none;">8</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">ヘニーガイスト</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">36.1%</span></div>
-      <span class="p3-place-col">78.9%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#FFFFFF;color:#182018;border:1.5px solid #C3CDB7;">1</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">サムシャイン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:47%"></div></div><span class="p3-num">16.8%</span></div>
-      <span class="p3-place-col">49.4%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">6</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">チャーリー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:47%"></div></div><span class="p3-num">16.8%</span></div>
-      <span class="p3-place-col">49.4%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">タイセイミッション</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:20%"></div></div><span class="p3-num">7.4%</span></div>
-      <span class="p3-place-col">28.8%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">8</td><td class="tname">ヘニーガイスト</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">36.1%</td>
-          <td class="tnum">78.9%</td>
         </tr><tr class="row-o">
           <td class="tn">1</td><td class="tname">サムシャイン</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">16.8%</td>
-          <td class="tnum">49.4%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">6</td><td class="tname">チャーリー</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">16.8%</td>
-          <td class="tnum">49.4%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">3</td><td class="tname">タイセイミッション</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">7.4%</td>
-          <td class="tnum">28.8%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">5</td><td class="tname">シーズザスローン</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">7.4%</td>
-          <td class="tnum">28.8%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">9</td><td class="tname">アイウィル</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">6.2%</td>
-          <td class="tnum">23.6%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">7</td><td class="tname">スマートカイロス</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">5.3%</td>
-          <td class="tnum">20.9%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">4</td><td class="tname">スマートケープ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">2.8%</td>
-          <td class="tnum">11.9%</td>
         </tr><tr>
           <td class="tn">10</td><td class="tname">フルールドール</td>
           <td class="tmk"></td><td class="tnum">0.6%</td>
-          <td class="tnum">4.6%</td>
         </tr><tr>
           <td class="tn">2</td><td class="tname">キュールエフウジン</td>
           <td class="tmk"></td><td class="tnum">0.6%</td>
-          <td class="tnum">3.8%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -4679,92 +4095,74 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">11R</span><span class="sum-meta">1800m芝 14頭 <span class="badge badge-grade">GIII</span><span class="badge badge-rel rel-hi">S</span></span><span class="sum-honmei">◎7 ココナッツブラウン</span><span class="verdict verdict-buy">注目</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#F2E100;color:#182018;border:none;">7</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">ココナッツブラウン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">32.8%</span></div>
-      <span class="p3-place-col">64.5%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">5</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">アンゴラブラック</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:33%"></div></div><span class="p3-num">10.7%</span></div>
-      <span class="p3-place-col">33.3%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#EE8A1D;color:#182018;border:none;">11</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">コガネノソラ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:30%"></div></div><span class="p3-num">9.8%</span></div>
-      <span class="p3-place-col">30.9%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#F1A0C4;color:#182018;border:none;">13</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">ルージュソリテール</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:26%"></div></div><span class="p3-num">8.5%</span></div>
-      <span class="p3-place-col">29.5%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">重賞レポート — 全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">7</td><td class="tname">ココナッツブラウン</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">32.8%</td>
-          <td class="tnum">64.5%</td>
         </tr><tr class="row-o">
           <td class="tn">5</td><td class="tname">アンゴラブラック</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">10.7%</td>
-          <td class="tnum">33.3%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">11</td><td class="tname">コガネノソラ</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">9.8%</td>
-          <td class="tnum">30.9%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">13</td><td class="tname">ルージュソリテール</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">8.5%</td>
-          <td class="tnum">29.5%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">9</td><td class="tname">エリカエクスプレス</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">8.5%</td>
-          <td class="tnum">29.5%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">4</td><td class="tname">リラボニート</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">6.6%</td>
-          <td class="tnum">23.6%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">1</td><td class="tname">フレミングフープ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">5.9%</td>
-          <td class="tnum">18.6%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">2</td><td class="tname">ケリフレッドアスク</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">5.3%</td>
-          <td class="tnum">18.6%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">10</td><td class="tname">フェスティバルヒル</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">3.8%</td>
-          <td class="tnum">16.2%</td>
         </tr><tr>
           <td class="tn">12</td><td class="tname">ボンドガール</td>
           <td class="tmk"></td><td class="tnum">2.7%</td>
-          <td class="tnum">11.8%</td>
         </tr><tr>
           <td class="tn">3</td><td class="tname">カテリーナ</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">7.4%</td>
         </tr><tr>
           <td class="tn">14</td><td class="tname">ヴーレヴー</td>
           <td class="tmk"></td><td class="tnum">1.7%</td>
-          <td class="tnum">7.4%</td>
         </tr><tr>
           <td class="tn">8</td><td class="tname">エラトー</td>
           <td class="tmk"></td><td class="tnum">1.3%</td>
-          <td class="tnum">5.6%</td>
         </tr><tr>
           <td class="tn">6</td><td class="tname">クリノメイ</td>
           <td class="tmk"></td><td class="tnum">0.6%</td>
-          <td class="tnum">3.3%</td>
         </tr></tbody>
     </table></div>
     </div>
@@ -4809,92 +4207,74 @@ h1.title .nowrap{white-space:nowrap;}
       <summary><span class="sum-race">12R</span><span class="sum-meta">1200m芝 14頭 <span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎5 マテンロウサン</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
-  <span></span><span></span><span>馬名</span><span>相対勝率</span><span>複勝率</span>
+  <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row honmei">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">5</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">マテンロウサン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">16.3%</span></div>
-      <span class="p3-place-col">39.1%</span>
     </li><li class="horse-row o">
       <span class="uma-badge" style="background:#FFFFFF;color:#182018;border:1.5px solid #C3CDB7;">1</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">トウカイエルデ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:97%"></div></div><span class="p3-num">15.8%</span></div>
-      <span class="p3-place-col">39.1%</span>
     </li><li class="horse-row sankaku">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">6</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">ニホンピロトッティ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:74%"></div></div><span class="p3-num">12.1%</span></div>
-      <span class="p3-place-col">33.0%</span>
     </li><li class="horse-row hoshi">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">10</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">ベルビースタローン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:63%"></div></div><span class="p3-num">10.2%</span></div>
-      <span class="p3-place-col">30.8%</span>
     </li></ul>
         <div class="graded">
       <div class="graded-head">全馬表</div>
       <div class="tablewrap"><table class="field-table">
-      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th><th>複勝率</th></tr></thead>
+      <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>相対勝率</th></tr></thead>
       <tbody><tr class="row-honmei">
           <td class="tn">5</td><td class="tname">マテンロウサン</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">16.3%</td>
-          <td class="tnum">39.1%</td>
         </tr><tr class="row-o">
           <td class="tn">1</td><td class="tname">トウカイエルデ</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">15.8%</td>
-          <td class="tnum">39.1%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">6</td><td class="tname">ニホンピロトッティ</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">12.1%</td>
-          <td class="tnum">33.0%</td>
         </tr><tr class="row-hoshi">
           <td class="tn">10</td><td class="tname">ベルビースタローン</td>
           <td class="tmk"><span class="mark mark-hoshi">☆</span></td><td class="tnum">10.2%</td>
-          <td class="tnum">30.8%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">2</td><td class="tname">デンプシー</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">9.3%</td>
-          <td class="tnum">27.5%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">4</td><td class="tname">ホウオウヘッセン</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">7.3%</td>
-          <td class="tnum">26.3%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">8</td><td class="tname">ベビーズブレス</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">6.3%</td>
-          <td class="tnum">21.0%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">3</td><td class="tname">サンドロナイト</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">5.0%</td>
-          <td class="tnum">16.6%</td>
         </tr><tr class="row-yonkaku">
           <td class="tn">14</td><td class="tname">ミキノバカラ</td>
           <td class="tmk"><span class="mark mark-yonkaku">△</span></td><td class="tnum">3.7%</td>
-          <td class="tnum">14.4%</td>
         </tr><tr>
           <td class="tn">9</td><td class="tname">ピースフルナイト</td>
           <td class="tmk"></td><td class="tnum">3.7%</td>
-          <td class="tnum">14.4%</td>
         </tr><tr>
           <td class="tn">11</td><td class="tname">バシレウスシチー</td>
           <td class="tmk"></td><td class="tnum">3.6%</td>
-          <td class="tnum">12.7%</td>
         </tr><tr>
           <td class="tn">13</td><td class="tname">スイミーユニバンス</td>
           <td class="tmk"></td><td class="tnum">2.6%</td>
-          <td class="tnum">9.2%</td>
         </tr><tr>
           <td class="tn">7</td><td class="tname">ライツユーアップ</td>
           <td class="tmk"></td><td class="tnum">2.6%</td>
-          <td class="tnum">9.2%</td>
         </tr><tr>
           <td class="tn">12</td><td class="tname">サンポーニャ</td>
           <td class="tmk"></td><td class="tnum">1.6%</td>
-          <td class="tnum">6.6%</td>
         </tr></tbody>
     </table></div>
     </div>
