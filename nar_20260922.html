@@ -176,8 +176,14 @@ h1.title .nowrap{white-space:nowrap;}
 .result-badge{font-size:11px;font-weight:700;padding:1px 7px;border-radius:6px;flex:0 0 auto;white-space:nowrap;}
 .result-badge.hit{color:var(--accent-strong);background:var(--accent-tint);}
 .result-badge.miss{color:var(--text-faint);background:var(--surface-2);}
-.result-badge.wide-result{margin-left:6px;}
 .result-badge.pick-result{margin-left:auto;margin-right:0;font-size:11.5px;}
+.reviews{display:flex;flex-direction:column;gap:4px;margin-top:8px;}
+.review-row{display:flex;align-items:baseline;gap:8px;font-size:12.5px;flex-wrap:nowrap;}
+.review-name{
+  font-weight:700;flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.review-row .mark{width:auto;flex:0 0 auto;}
 
 .highlight-list{display:flex;flex-direction:column;gap:8px;margin-top:12px;}
 .highlight-card{background:var(--surface);border:1px solid var(--gold-tint-strong);border-radius:12px;
@@ -262,12 +268,12 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">シンビリーブ <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:39%"></div></div><span class="p3-num">10.41%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">クールミラボー <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:38%"></div></div><span class="p3-num">10.03%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">メリークリスマス <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:33%"></div></div><span class="p3-num">8.69%</span></div>
@@ -345,7 +351,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">バイアメ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:10%"></div></div><span class="p3-num">4.54%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">フイノマジワリ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:10%"></div></div><span class="p3-num">4.53%</span></div>
@@ -370,7 +376,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">エルプロフェッサー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:5%"></div></div><span class="p3-num">2.27%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
       <span class="horse-name">ツワモノ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:2%"></div></div><span class="p3-num">0.90%</span></div>
@@ -413,7 +419,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">パルメニデス</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:15%"></div></div><span class="p3-num">5.66%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">マーニク</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:12%"></div></div><span class="p3-num">4.45%</span></div>
@@ -438,7 +444,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">スターコマチ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:3%"></div></div><span class="p3-num">1.25%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark"></span>
       <span class="horse-name">シェナカレン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:1%"></div></div><span class="p3-num">0.41%</span></div>
@@ -466,7 +472,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">サンズ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">45.98%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">スペンサーバローズ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:49%"></div></div><span class="p3-num">22.35%</span></div>
@@ -491,7 +497,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ピノマハナ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:9%"></div></div><span class="p3-num">4.10%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">ジュンビクトワール</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:5%"></div></div><span class="p3-num">2.44%</span></div>
@@ -533,7 +539,7 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">ファイストス</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">44.63%</span></div>
@@ -543,7 +549,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">エイシンチョンパ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:49%"></div></div><span class="p3-num">21.71%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">フオメンタ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:32%"></div></div><span class="p3-num">14.12%</span></div>
@@ -588,7 +594,7 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">ロバリアノキセキ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">37.81%</span></div>
@@ -623,7 +629,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ダークファンタジー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:9%"></div></div><span class="p3-num">3.47%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
       <span class="horse-name">ノースショアガール</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:5%"></div></div><span class="p3-num">1.94%</span></div>
@@ -643,7 +649,7 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">ダイバリオン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">25.43%</span></div>
@@ -653,7 +659,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ミツカネヴィーナス <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:75%"></div></div><span class="p3-num">19.12%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">マイネルヒッツェ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:41%"></div></div><span class="p3-num">10.32%</span></div>
@@ -698,12 +704,12 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">コンバットトーラス</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">31.09%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">キタノインディ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:59%"></div></div><span class="p3-num">18.33%</span></div>
@@ -773,12 +779,12 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ユウユウコラソン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:34%"></div></div><span class="p3-num">11.79%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">モルデュール</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:16%"></div></div><span class="p3-num">5.75%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">ダブルスチール</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:13%"></div></div><span class="p3-num">4.44%</span></div>
@@ -813,7 +819,7 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">リュウノソイジャー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">17.23%</span></div>
@@ -838,7 +844,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ティガーカッツェ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:70%"></div></div><span class="p3-num">12.05%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark"></span>
       <span class="horse-name">プロパティクシオン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:50%"></div></div><span class="p3-num">8.53%</span></div>
@@ -873,7 +879,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ユキドケマヂカ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">60.83%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">マカコ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:15%"></div></div><span class="p3-num">9.25%</span></div>
@@ -913,7 +919,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">パワポケグリフィン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:3%"></div></div><span class="p3-num">1.95%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
       <span class="horse-name">ジャンダルマン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:1%"></div></div><span class="p3-num">0.78%</span></div>
@@ -928,7 +934,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">タイセイゴッシュ <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">82.33%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">コンフィアンサ <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:7%"></div></div><span class="p3-num">6.05%</span></div>
@@ -973,7 +979,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">チェンドル</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:0%"></div></div><span class="p3-num">0.09%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark"></span>
       <span class="horse-name">タカマキシックス</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:0%"></div></div><span class="p3-num">0.08%</span></div>
@@ -1038,12 +1044,12 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">マルケイファイン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:2%"></div></div><span class="p3-num">1.39%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark"></span>
       <span class="horse-name">コンバットスネル</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:1%"></div></div><span class="p3-num">0.56%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
       <span class="horse-name">ピースラッキー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:0%"></div></div><span class="p3-num">0.22%</span></div>
@@ -1068,12 +1074,12 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">キタノクーヴェル</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:57%"></div></div><span class="p3-num">16.58%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">ワイドカイゼリン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:47%"></div></div><span class="p3-num">13.58%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">ダイビングヘッド</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:36%"></div></div><span class="p3-num">10.44%</span></div>
@@ -1098,7 +1104,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">アドマイヤアーデル <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">71.53%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">サクラマウ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:22%"></div></div><span class="p3-num">15.71%</span></div>
@@ -1123,7 +1129,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">モンサンイルベント</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:2%"></div></div><span class="p3-num">1.34%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">オムブラーヴ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:2%"></div></div><span class="p3-num">1.13%</span></div>
@@ -1163,7 +1169,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">バイアメ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:10%"></div></div><span class="p3-num">4.54%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">フイノマジワリ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:10%"></div></div><span class="p3-num">4.53%</span></div>
@@ -1188,7 +1194,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">エルプロフェッサー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:5%"></div></div><span class="p3-num">2.27%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
       <span class="horse-name">ツワモノ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:2%"></div></div><span class="p3-num">0.90%</span></div>
@@ -1206,12 +1212,12 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">タカイチアスコット</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">25.85%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">コロディア</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:83%"></div></div><span class="p3-num">21.54%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">トリニタリアニズム</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:67%"></div></div><span class="p3-num">17.37%</span></div>
@@ -1266,7 +1272,7 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">アーサフロウジョン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">17.20%</span></div>
@@ -1286,7 +1292,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">オサケノオトモニ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:66%"></div></div><span class="p3-num">11.35%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">モーニングチカラ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:66%"></div></div><span class="p3-num">11.34%</span></div>
@@ -1326,7 +1332,7 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">ストラドル</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">28.25%</span></div>
@@ -1356,7 +1362,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">コンバットキュート</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:27%"></div></div><span class="p3-num">7.74%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">トーケンオーパス</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:27%"></div></div><span class="p3-num">7.61%</span></div>
@@ -1406,7 +1412,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">デュオメーデス</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:4%"></div></div><span class="p3-num">2.67%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">トルーカ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:3%"></div></div><span class="p3-num">2.22%</span></div>
@@ -1436,7 +1442,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">オーデンサフィー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:1%"></div></div><span class="p3-num">0.61%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark"></span>
       <span class="horse-name">リトルエース</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:1%"></div></div><span class="p3-num">0.60%</span></div>
@@ -1466,7 +1472,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">メーネフロタント</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:5%"></div></div><span class="p3-num">4.02%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">タツノドリーム</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:4%"></div></div><span class="p3-num">3.08%</span></div>
@@ -1491,7 +1497,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">アンダラクリスタル</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:0%"></div></div><span class="p3-num">0.25%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
       <span class="horse-name">ヴァシロペス</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:0%"></div></div><span class="p3-num">0.24%</span></div>
@@ -1541,7 +1547,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">エリークラウン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:14%"></div></div><span class="p3-num">6.16%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">オオタニズスマイル</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:11%"></div></div><span class="p3-num">5.06%</span></div>
@@ -1551,7 +1557,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">プレストワンダ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:6%"></div></div><span class="p3-num">2.68%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark"></span>
       <span class="horse-name">スマートアライヴ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:6%"></div></div><span class="p3-num">2.67%</span></div>
@@ -1586,7 +1592,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">パッツンドレス</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:100%"></div></div><span class="p3-num">17.86%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">エガル</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:85%"></div></div><span class="p3-num">15.23%</span></div>
@@ -1621,12 +1627,12 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">バルカニクス</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:27%"></div></div><span class="p3-num">4.75%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">5</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">5</span>
       <span class="mark"></span>
       <span class="horse-name">シンキングレーヴ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:24%"></div></div><span class="p3-num">4.22%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
       <span class="horse-name">アルジェナー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:21%"></div></div><span class="p3-num">3.84%</span></div>
@@ -1671,7 +1677,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">パルメニデス</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:15%"></div></div><span class="p3-num">5.66%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">マーニク</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:12%"></div></div><span class="p3-num">4.45%</span></div>
@@ -1696,7 +1702,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">スターコマチ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:3%"></div></div><span class="p3-num">1.25%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark"></span>
       <span class="horse-name">シェナカレン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:1%"></div></div><span class="p3-num">0.41%</span></div>
@@ -1756,7 +1762,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">レモンアイカー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:16%"></div></div><span class="p3-num">3.84%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark"></span>
       <span class="horse-name">スタークイック</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:12%"></div></div><span class="p3-num">2.90%</span></div>
@@ -1766,7 +1772,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">メイショウサノサ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:8%"></div></div><span class="p3-num">1.89%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
       <span class="horse-name">イッポンミチ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:2%"></div></div><span class="p3-num">0.44%</span></div>
@@ -1816,12 +1822,12 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ビービーシャーンス</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:11%"></div></div><span class="p3-num">3.40%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark"></span>
       <span class="horse-name">マスクドサムライ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:9%"></div></div><span class="p3-num">2.69%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
       <span class="horse-name">ビコーズウイキャン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:7%"></div></div><span class="p3-num">2.29%</span></div>
@@ -1841,7 +1847,7 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">エゴンウレア</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">18.85%</span></div>
@@ -1886,7 +1892,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ツェルニー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:22%"></div></div><span class="p3-num">4.21%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
       <span class="horse-name">クマノコ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:10%"></div></div><span class="p3-num">1.83%</span></div>
@@ -1911,7 +1917,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">サンズ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">45.98%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">スペンサーバローズ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:49%"></div></div><span class="p3-num">22.35%</span></div>
@@ -1936,7 +1942,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ピノマハナ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:9%"></div></div><span class="p3-num">4.10%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">ジュンビクトワール</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:5%"></div></div><span class="p3-num">2.44%</span></div>
@@ -1984,7 +1990,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">アーチボールド</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:7%"></div></div><span class="p3-num">6.10%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">モリノリオン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:5%"></div></div><span class="p3-num">4.07%</span></div>
@@ -1999,7 +2005,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ガケップチー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:2%"></div></div><span class="p3-num">1.72%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">ウィアザピープル</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:1%"></div></div><span class="p3-num">1.13%</span></div>
@@ -2024,12 +2030,12 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">バンビチャン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">59.59%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">テクスチャー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:21%"></div></div><span class="p3-num">12.77%</span></div>
@@ -2084,7 +2090,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ワンショートデイ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:6%"></div></div><span class="p3-num">4.48%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">コランタ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:4%"></div></div><span class="p3-num">3.26%</span></div>
@@ -2099,7 +2105,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">フェスティヴフリー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:2%"></div></div><span class="p3-num">1.42%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">ヒルノエルニド</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:1%"></div></div><span class="p3-num">0.51%</span></div>
@@ -2134,7 +2140,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">トリクシー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:39%"></div></div><span class="p3-num">11.67%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">スザンナ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:38%"></div></div><span class="p3-num">11.24%</span></div>
@@ -2149,7 +2155,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">プロペラシャフト</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:16%"></div></div><span class="p3-num">4.84%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
       <span class="horse-name">タンバリュー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:12%"></div></div><span class="p3-num">3.56%</span></div>
@@ -2184,7 +2190,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ハッピーノリクン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:10%"></div></div><span class="p3-num">7.64%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">テーオーライラ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:8%"></div></div><span class="p3-num">5.87%</span></div>
@@ -2214,7 +2220,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">マジョリー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:1%"></div></div><span class="p3-num">0.60%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark"></span>
       <span class="horse-name">ルクリリ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:1%"></div></div><span class="p3-num">0.59%</span></div>
@@ -2229,7 +2235,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ベールドインパクト <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">38.88%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">キングオブワールド</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:54%"></div></div><span class="p3-num">20.86%</span></div>
@@ -2259,7 +2265,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">シュプリームアロー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:5%"></div></div><span class="p3-num">1.99%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
       <span class="horse-name">シャンドゥルン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:3%"></div></div><span class="p3-num">1.32%</span></div>
@@ -2274,7 +2280,7 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">ホームランバッター</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">33.46%</span></div>
@@ -2289,7 +2295,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">アオレレ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:42%"></div></div><span class="p3-num">14.07%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">サンセットベリー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:35%"></div></div><span class="p3-num">11.67%</span></div>
@@ -2334,7 +2340,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ラクリメ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:37%"></div></div><span class="p3-num">15.43%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">カンヒザクラ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:26%"></div></div><span class="p3-num">10.86%</span></div>
@@ -2349,7 +2355,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">チャイロサマー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:6%"></div></div><span class="p3-num">2.49%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">ハーフサイズ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:3%"></div></div><span class="p3-num">1.28%</span></div>
@@ -2384,7 +2390,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">リョーマ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:21%"></div></div><span class="p3-num">6.30%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">ミエルシトロン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:20%"></div></div><span class="p3-num">5.83%</span></div>
@@ -2399,7 +2405,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">レクランスリール</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:12%"></div></div><span class="p3-num">3.58%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark"></span>
       <span class="horse-name">マイネルジュリアン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:1%"></div></div><span class="p3-num">0.20%</span></div>
@@ -2414,7 +2420,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">エイシンタヴェルナ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">20.65%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">オールウェズキズナ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:94%"></div></div><span class="p3-num">19.45%</span></div>
@@ -2429,7 +2435,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">インティパイロ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:70%"></div></div><span class="p3-num">14.47%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">プエルタアスール</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:37%"></div></div><span class="p3-num">7.60%</span></div>
@@ -2484,12 +2490,12 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">トレノ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:20%"></div></div><span class="p3-num">5.97%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">オンベイト</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:12%"></div></div><span class="p3-num">3.66%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">ピースブロッサム</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:9%"></div></div><span class="p3-num">2.81%</span></div>
@@ -2517,7 +2523,7 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">メイショウオオミネ <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">90.12%</span></div>
@@ -2552,7 +2558,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ネムレスクイーン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:1%"></div></div><span class="p3-num">0.51%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark"></span>
       <span class="horse-name">ボルサリーノ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:1%"></div></div><span class="p3-num">0.50%</span></div>
@@ -2587,7 +2593,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ブルートレーラー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:38%"></div></div><span class="p3-num">12.55%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">スペシャルサンデー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:21%"></div></div><span class="p3-num">7.09%</span></div>
@@ -2612,7 +2618,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">スーパーナニー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:7%"></div></div><span class="p3-num">2.44%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
       <span class="horse-name">スマートアリオン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:4%"></div></div><span class="p3-num">1.19%</span></div>
@@ -2652,7 +2658,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">インテンスフレイム</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:2%"></div></div><span class="p3-num">1.70%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">カラーズリング</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:1%"></div></div><span class="p3-num">0.95%</span></div>
@@ -2662,7 +2668,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ナムラパール</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:1%"></div></div><span class="p3-num">0.82%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
       <span class="horse-name">リワードリュタン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:1%"></div></div><span class="p3-num">0.81%</span></div>
@@ -2712,7 +2718,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">フィエールガール</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:38%"></div></div><span class="p3-num">10.08%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">イサムダイヤモンド</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:33%"></div></div><span class="p3-num">8.73%</span></div>
@@ -2742,7 +2748,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">メッチャハットリ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:7%"></div></div><span class="p3-num">1.90%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark"></span>
       <span class="horse-name">フォーユーランラン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:5%"></div></div><span class="p3-num">1.23%</span></div>
@@ -2792,12 +2798,12 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ピースマッチング</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:1%"></div></div><span class="p3-num">0.61%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
       <span class="horse-name">ピナーカ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:1%"></div></div><span class="p3-num">0.50%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark"></span>
       <span class="horse-name">ルルーディ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:1%"></div></div><span class="p3-num">0.49%</span></div>
@@ -2827,7 +2833,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">アンダーレ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:67%"></div></div><span class="p3-num">17.29%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">シナモンブルー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:58%"></div></div><span class="p3-num">15.03%</span></div>
@@ -2847,7 +2853,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ラシェンテ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:14%"></div></div><span class="p3-num">3.50%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark"></span>
       <span class="horse-name">ミテクレコノアシ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:10%"></div></div><span class="p3-num">2.54%</span></div>
@@ -2882,7 +2888,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ケアンズ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">72.94%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">カノアレディー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:13%"></div></div><span class="p3-num">9.63%</span></div>
@@ -2902,7 +2908,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ピカピカピロコ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:5%"></div></div><span class="p3-num">3.48%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">ミラコロヴァーグ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:2%"></div></div><span class="p3-num">1.66%</span></div>
@@ -2937,7 +2943,7 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">ディヴァージオン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">48.33%</span></div>
@@ -2982,7 +2988,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ベストタンゴ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:3%"></div></div><span class="p3-num">1.60%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
       <span class="horse-name">フレーズタルト</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:2%"></div></div><span class="p3-num">1.13%</span></div>
@@ -3012,7 +3018,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ファーストフラワー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:48%"></div></div><span class="p3-num">11.82%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">イフリーティア <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:30%"></div></div><span class="p3-num">7.49%</span></div>
@@ -3047,7 +3053,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ファビュラスロード</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:3%"></div></div><span class="p3-num">0.65%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
       <span class="horse-name">ダンナイ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:1%"></div></div><span class="p3-num">0.19%</span></div>
@@ -3087,12 +3093,12 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">バルミーウェザー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:13%"></div></div><span class="p3-num">4.31%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">イルミネーター</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:11%"></div></div><span class="p3-num">3.45%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
       <span class="horse-name">アオイミモザ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:5%"></div></div><span class="p3-num">1.58%</span></div>
@@ -3122,12 +3128,12 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">シンビリーブ <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:39%"></div></div><span class="p3-num">10.41%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">クールミラボー <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:38%"></div></div><span class="p3-num">10.03%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">メリークリスマス <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:33%"></div></div><span class="p3-num">8.69%</span></div>
@@ -3187,7 +3193,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ソウルユニバンス</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:12%"></div></div><span class="p3-num">7.61%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">プライムライン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:9%"></div></div><span class="p3-num">5.84%</span></div>
@@ -3202,7 +3208,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ボナセーラ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:5%"></div></div><span class="p3-num">3.09%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark"></span>
       <span class="horse-name">フルゴリラ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:2%"></div></div><span class="p3-num">1.07%</span></div>
@@ -3270,7 +3276,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">リコークックー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:17%"></div></div><span class="p3-num">5.91%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
       <span class="horse-name">ブラックレイシ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:5%"></div></div><span class="p3-num">1.82%</span></div>
@@ -3290,7 +3296,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ベストガーデン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:5%"></div></div><span class="p3-num">1.68%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark"></span>
       <span class="horse-name">ガンバリナサイト</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:1%"></div></div><span class="p3-num">0.49%</span></div>
@@ -3325,7 +3331,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">メアスライヴ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:35%"></div></div><span class="p3-num">8.43%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">ヘルエッジロード</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:33%"></div></div><span class="p3-num">7.92%</span></div>
@@ -3350,7 +3356,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ダンクバール</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:18%"></div></div><span class="p3-num">4.28%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark"></span>
       <span class="horse-name">ツムギノワンワン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:9%"></div></div><span class="p3-num">2.26%</span></div>
@@ -3395,12 +3401,12 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ルビーグラス</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:36%"></div></div><span class="p3-num">8.55%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">マフイカ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:24%"></div></div><span class="p3-num">5.61%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
       <span class="horse-name">ナナイロ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:16%"></div></div><span class="p3-num">3.85%</span></div>
@@ -3430,7 +3436,7 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">カインドオブユー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">35.84%</span></div>
@@ -3455,7 +3461,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">フラワーステラ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:23%"></div></div><span class="p3-num">8.12%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">セイランクロフネ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:18%"></div></div><span class="p3-num">6.42%</span></div>
@@ -3525,7 +3531,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">トーケンアーサー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:8%"></div></div><span class="p3-num">3.93%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">スイレンチャン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:7%"></div></div><span class="p3-num">3.59%</span></div>
@@ -3550,7 +3556,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ツワ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:1%"></div></div><span class="p3-num">0.55%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
       <span class="horse-name">クイーンサイド</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:1%"></div></div><span class="p3-num">0.54%</span></div>
@@ -3565,12 +3571,12 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">モウフブキ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">28.98%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">アミラジオネ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:64%"></div></div><span class="p3-num">18.51%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">ジューングレイス <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:45%"></div></div><span class="p3-num">13.18%</span></div>
@@ -3615,7 +3621,7 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">ソフィアプルーマ <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">44.79%</span></div>
@@ -3630,7 +3636,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ヤマニンカナレット</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:23%"></div></div><span class="p3-num">10.09%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">タケショウカイザー <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:17%"></div></div><span class="p3-num">7.83%</span></div>
@@ -3700,7 +3706,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ハッピーピンク</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:31%"></div></div><span class="p3-num">6.99%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
       <span class="horse-name">ベルケム</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:23%"></div></div><span class="p3-num">5.16%</span></div>
@@ -3720,7 +3726,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">トップオブザキング <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:8%"></div></div><span class="p3-num">1.90%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark"></span>
       <span class="horse-name">ホウオウプラージュ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:2%"></div></div><span class="p3-num">0.43%</span></div>
@@ -3745,7 +3751,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">スナークホクサイ <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:91%"></div></div><span class="p3-num">15.52%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">グラムエッジ <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:73%"></div></div><span class="p3-num">12.42%</span></div>
@@ -3775,7 +3781,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">イチリュウオー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:18%"></div></div><span class="p3-num">3.14%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
       <span class="horse-name">ニットウアイアン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:13%"></div></div><span class="p3-num">2.27%</span></div>
@@ -3805,7 +3811,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">マナアリイ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:55%"></div></div><span class="p3-num">18.93%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">タケノルル</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:51%"></div></div><span class="p3-num">17.80%</span></div>
@@ -3835,7 +3841,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">トモノシルバー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:3%"></div></div><span class="p3-num">0.96%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark"></span>
       <span class="horse-name">バリジグリー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:1%"></div></div><span class="p3-num">0.42%</span></div>
@@ -3860,7 +3866,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">フォンメイリー <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:68%"></div></div><span class="p3-num">23.95%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">カミハマッテイル</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:55%"></div></div><span class="p3-num">19.31%</span></div>
@@ -3885,7 +3891,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">レディパイロ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:7%"></div></div><span class="p3-num">2.41%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
       <span class="horse-name">トーアサジタリウス</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:7%"></div></div><span class="p3-num">2.40%</span></div>
@@ -3925,7 +3931,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ケイアイドリー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:56%"></div></div><span class="p3-num">21.41%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">ストリーム</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:52%"></div></div><span class="p3-num">19.80%</span></div>
@@ -3960,7 +3966,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">マジカルレイズ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:1%"></div></div><span class="p3-num">0.22%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark"></span>
       <span class="horse-name">ロビンバローズ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:0%"></div></div><span class="p3-num">0.07%</span></div>
@@ -3978,12 +3984,12 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">サンサンキック</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">65.49%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">ロイヤルクォーク</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:26%"></div></div><span class="p3-num">17.22%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">エスケーガーネット</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:14%"></div></div><span class="p3-num">9.07%</span></div>
@@ -4018,7 +4024,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ゼントユウイ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:51%"></div></div><span class="p3-num">14.96%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">スノークルーズ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:44%"></div></div><span class="p3-num">12.73%</span></div>
@@ -4053,7 +4059,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ダルムシュタット</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:13%"></div></div><span class="p3-num">3.90%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark"></span>
       <span class="horse-name">グランパリッシュ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:10%"></div></div><span class="p3-num">3.04%</span></div>
@@ -4073,7 +4079,7 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
 </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-honmei">◎</span>
       <span class="horse-name">メイショウハボマイ <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">33.05%</span></div>
@@ -4098,7 +4104,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ブラウナイル</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:9%"></div></div><span class="p3-num">2.86%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">アルデココ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:7%"></div></div><span class="p3-num">2.35%</span></div>
@@ -4148,7 +4154,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">シシ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:24%"></div></div><span class="p3-num">7.23%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">クヴェレ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:16%"></div></div><span class="p3-num">5.02%</span></div>
@@ -4173,7 +4179,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">サプライズビュー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:11%"></div></div><span class="p3-num">3.35%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
       <span class="horse-name">プリマフェーヴル</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:11%"></div></div><span class="p3-num">3.34%</span></div>
@@ -4198,7 +4204,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">アルトシュタット</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">55.98%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">ディクシーヴォーグ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:37%"></div></div><span class="p3-num">20.75%</span></div>
@@ -4218,7 +4224,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">エレガントウインク</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:5%"></div></div><span class="p3-num">2.67%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">ナバロン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:4%"></div></div><span class="p3-num">2.06%</span></div>
@@ -4253,12 +4259,12 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">フォトスフィア</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">58.11%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">アードラー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:48%"></div></div><span class="p3-num">28.05%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">ビッグショータイム</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:8%"></div></div><span class="p3-num">4.61%</span></div>
@@ -4348,12 +4354,12 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">チャンピオンリボン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:4%"></div></div><span class="p3-num">2.50%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
       <span class="horse-name">フリントロック</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:2%"></div></div><span class="p3-num">1.42%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark"></span>
       <span class="horse-name">オケイン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:1%"></div></div><span class="p3-num">0.46%</span></div>
@@ -4368,7 +4374,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ウインイメル <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
       <div class="p3"><div class="p3-track"><div class="p3-fill honmei" style="width:100%"></div></div><span class="p3-num">45.92%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-o">○</span>
       <span class="horse-name">カイザーブリッツ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:41%"></div></div><span class="p3-num">18.70%</span></div>
@@ -4408,7 +4414,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">カノンウッドテール</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:2%"></div></div><span class="p3-num">0.74%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark"></span>
       <span class="horse-name">エクトゥシュタール</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:1%"></div></div><span class="p3-num">0.55%</span></div>
@@ -4438,12 +4444,12 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">イナズマテーラー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:23%"></div></div><span class="p3-num">11.04%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">ジーティーハッピー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:19%"></div></div><span class="p3-num">9.26%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">ゼンノソブリン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:9%"></div></div><span class="p3-num">4.60%</span></div>
@@ -4488,7 +4494,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ブラッティーキッド</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:3%"></div></div><span class="p3-num">2.75%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-hoshi">☆</span>
       <span class="horse-name">ジークシュベルト</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:2%"></div></div><span class="p3-num">1.46%</span></div>
@@ -4513,7 +4519,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">スティーロポリス</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:1%"></div></div><span class="p3-num">0.51%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark"></span>
       <span class="horse-name">ジョウショーパワー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:1%"></div></div><span class="p3-num">0.49%</span></div>
@@ -4533,7 +4539,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">トップアメリカン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill o" style="width:42%"></div></div><span class="p3-num">22.36%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark mark-sankaku">▲</span>
       <span class="horse-name">メイショウハマギク</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:11%"></div></div><span class="p3-num">5.74%</span></div>
@@ -4548,7 +4554,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">モズパシュート</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:7%"></div></div><span class="p3-num">3.83%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">メイショウイヌワシ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:5%"></div></div><span class="p3-num">2.57%</span></div>
@@ -4613,7 +4619,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ダノンジャスティス</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:46%"></div></div><span class="p3-num">9.26%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#D63A2E;color:#FFFFFF;border:none;">3</span>
+      <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark mark-yonkaku">△</span>
       <span class="horse-name">ワクワクドリーム</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:39%"></div></div><span class="p3-num">8.02%</span></div>
@@ -4638,7 +4644,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">アンジョルラス</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:29%"></div></div><span class="p3-num">5.88%</span></div>
     </li><li class="horse-row">
-      <span class="uma-badge" style="background:#1B5FA6;color:#FFFFFF;border:none;">4</span>
+      <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
       <span class="horse-name">プリンセスダイヤ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:10%"></div></div><span class="p3-num">2.12%</span></div>
