@@ -178,6 +178,7 @@ h1.title .nowrap{white-space:nowrap;}
 .pick-head{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 10px;margin-bottom:10px;}
 .pick-venue{font-size:12.5px;font-weight:700;color:var(--text-muted);}
 .pick-race{font-size:19px;font-weight:800;letter-spacing:-.01em;}
+.hasso{font-size:12px;color:var(--text-faint);font-variant-numeric:tabular-nums;flex:0 0 auto;}
 .pick-meta{font-size:12.5px;color:var(--text-muted);display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
 
 /* ---- badges ---- */
@@ -389,6 +390,7 @@ h1.title .nowrap{white-space:nowrap;}
       <header class="pick-head">
         <div class="pick-venue">新潟</div>
         <div class="pick-race">11R</div>
+        <span class="hasso">17:30発走</span>
         <div class="pick-meta">2000m 芝 18頭 
           <span class="badge badge-rel rel-hi">S</span>
           <span class="result-badge pick-result missed">◎6着</span>
@@ -496,6 +498,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">17 コスモアルペジオ</span>
           <span class="podium-ninki">5番人気・21.4倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">15 レッドレガリア</span>
@@ -518,6 +521,7 @@ h1.title .nowrap{white-space:nowrap;}
       <header class="pick-head">
         <div class="pick-venue">札幌</div>
         <div class="pick-race">11R</div>
+        <span class="hasso">15:25発走</span>
         <div class="pick-meta">2000m 芝 14頭 
           <span class="badge badge-rel rel-hi">S</span>
           <span class="result-badge pick-result missed">◎12着</span>
@@ -613,6 +617,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">5 ハニードレス</span>
           <span class="podium-ninki">7番人気・15.2倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">6 アリスメティーク</span>
@@ -638,7 +643,7 @@ h1.title .nowrap{white-space:nowrap;}
   <section class="venue-section" id="v-中京">
       <h2 class="venue-title">中京</h2>
       <div class="race-list"><details class="race-card is-skip" id="r-中京-1" data-buy="0">
-      <summary><span class="sum-race">1R</span><span class="sum-meta">2000m芝 11頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎1 エンルートフライト</span></summary>
+      <summary><span class="sum-race">1R</span><span class="hasso">09:50発走</span><span class="sum-meta">2000m芝 11頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎1 エンルートフライト</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -721,6 +726,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">8 ハルカカナタ</span>
           <span class="podium-ninki">6番人気・24.8倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">1 エンルートフライト</span>
@@ -741,7 +747,7 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><details class="race-card is-skip" id="r-中京-2" data-buy="0">
-      <summary><span class="sum-race">2R</span><span class="sum-meta">1800mダ 12頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎7 オーリエイト</span></summary>
+      <summary><span class="sum-race">2R</span><span class="hasso">10:25発走</span><span class="sum-meta">1800mダ 12頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎7 オーリエイト</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -827,6 +833,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">2 ボビーザグレート</span>
           <span class="podium-ninki">5番人気・17.6倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">7 オーリエイト</span>
@@ -847,9 +854,9 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><div class="race-card is-excluded" id="r-中京-3" data-buy="0">
-      <div class="race-card-row"><span class="sum-race">3R</span><span class="sum-meta">1400m芝 </span><span class="sum-honmei sum-excluded">新馬戦（出走馬全員が初出走）のため除外</span></div>
+      <div class="race-card-row"><span class="sum-race">3R</span><span class="hasso">10:55発走</span><span class="sum-meta">1400m芝 </span><span class="sum-honmei sum-excluded">新馬戦（出走馬全員が初出走）のため除外</span></div>
     </div><details class="race-card is-skip" id="r-中京-4" data-buy="0">
-      <summary><span class="sum-race">4R</span><span class="sum-meta">2200m芝 16頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎13 マイコンプリート</span></summary>
+      <summary><span class="sum-race">4R</span><span class="hasso">11:25発走</span><span class="sum-meta">2200m芝 16頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎13 マイコンプリート</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -947,6 +954,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">10 テイエムプレミラン</span>
           <span class="podium-ninki">9番人気・83.8倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">13 マイコンプリート</span>
@@ -967,7 +975,7 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><details class="race-card is-skip" id="r-中京-5" data-buy="0">
-      <summary><span class="sum-race">5R</span><span class="sum-meta">2000m芝 13頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎10 ビクスバイト</span></summary>
+      <summary><span class="sum-race">5R</span><span class="hasso">11:55発走</span><span class="sum-meta">2000m芝 13頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎10 ビクスバイト</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -1056,6 +1064,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">8 ゴールデンテティス</span>
           <span class="podium-ninki">3番人気・7.1倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">10 ビクスバイト</span>
@@ -1076,7 +1085,7 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><details class="race-card is-skip" id="r-中京-6" data-buy="0">
-      <summary><span class="sum-race">6R</span><span class="sum-meta">1200mダ 13頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎12 バッハアルプゼー</span></summary>
+      <summary><span class="sum-race">6R</span><span class="hasso">15:00発走</span><span class="sum-meta">1200mダ 13頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎12 バッハアルプゼー</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -1165,6 +1174,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">6 ダノンモンテローザ</span>
           <span class="podium-ninki">6番人気・13.3倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">12 バッハアルプゼー</span>
@@ -1185,7 +1195,7 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><details class="race-card is-skip" id="r-中京-7" data-buy="0">
-      <summary><span class="sum-race">7R</span><span class="sum-meta">1400m芝 15頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎1 ボンヌソワレ</span></summary>
+      <summary><span class="sum-race">7R</span><span class="hasso">15:35発走</span><span class="sum-meta">1400m芝 15頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎1 ボンヌソワレ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -1280,6 +1290,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">1 ボンヌソワレ</span>
           <span class="podium-ninki">2番人気・4.6倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">1 ボンヌソワレ</span>
@@ -1300,7 +1311,7 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><details class="race-card is-skip" id="r-中京-8" data-buy="0">
-      <summary><span class="sum-race">8R</span><span class="sum-meta">1400m芝 14頭 <span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎9 エーデルヴェーグ</span></summary>
+      <summary><span class="sum-race">8R</span><span class="hasso">16:10発走</span><span class="sum-meta">1400m芝 14頭 <span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎9 エーデルヴェーグ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -1392,6 +1403,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">9 エーデルヴェーグ</span>
           <span class="podium-ninki">3番人気・5.1倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">9 エーデルヴェーグ</span>
@@ -1412,7 +1424,7 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><details class="race-card is-skip" id="r-中京-9" data-buy="0">
-      <summary><span class="sum-race">9R</span><span class="sum-meta">1800mダ 9頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎9 メイショウアカリ</span></summary>
+      <summary><span class="sum-race">9R</span><span class="hasso">16:45発走</span><span class="sum-meta">1800mダ 9頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎9 メイショウアカリ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -1489,6 +1501,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">1 ラグナトーレ</span>
           <span class="podium-ninki">8番人気・28.5倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">9 メイショウアカリ</span>
@@ -1509,7 +1522,7 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><details class="race-card is-skip" id="r-中京-10" data-buy="0">
-      <summary><span class="sum-race">10R</span><span class="sum-meta">1400mダ 16頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎13 グランメドウ</span></summary>
+      <summary><span class="sum-race">10R</span><span class="hasso">17:15発走</span><span class="sum-meta">1400mダ 16頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎13 グランメドウ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -1607,6 +1620,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">7 ウォーターパラディ</span>
           <span class="podium-ninki">11番人気・43.8倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">13 グランメドウ</span>
@@ -1627,7 +1641,7 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><details class="race-card is-skip" id="r-中京-11" data-buy="0">
-      <summary><span class="sum-race">11R</span><span class="sum-meta">1600m芝 13頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎3 ファルカータ</span></summary>
+      <summary><span class="sum-race">11R</span><span class="hasso">17:45発走</span><span class="sum-meta">1600m芝 13頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎3 ファルカータ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -1716,6 +1730,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">2 エンベッカ</span>
           <span class="podium-ninki">10番人気・48.8倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">3 ファルカータ</span>
@@ -1736,7 +1751,7 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><details class="race-card is-skip" id="r-中京-12" data-buy="0">
-      <summary><span class="sum-race">12R</span><span class="sum-meta">1800mダ 14頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎1 クロレ</span></summary>
+      <summary><span class="sum-race">12R</span><span class="hasso">18:15発走</span><span class="sum-meta">1800mダ 14頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎1 クロレ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -1828,6 +1843,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">2 ゴールデンドラゴン</span>
           <span class="podium-ninki">1番人気・3.3倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">1 クロレ</span>
@@ -1851,9 +1867,9 @@ h1.title .nowrap{white-space:nowrap;}
     </section><section class="venue-section" id="v-新潟">
       <h2 class="venue-title">新潟</h2>
       <div class="race-list"><div class="race-card is-excluded" id="r-新潟-1" data-buy="0">
-      <div class="race-card-row"><span class="sum-race">1R</span><span class="sum-meta">2850m障害 </span><span class="sum-honmei sum-excluded">障害戦のため除外</span></div>
+      <div class="race-card-row"><span class="sum-race">1R</span><span class="hasso">09:40発走</span><span class="sum-meta">2850m障害 </span><span class="sum-honmei sum-excluded">障害戦のため除外</span></div>
     </div><details class="race-card is-skip" id="r-新潟-2" data-buy="0">
-      <summary><span class="sum-race">2R</span><span class="sum-meta">1800mダ 15頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎6 ガードオブオナー</span></summary>
+      <summary><span class="sum-race">2R</span><span class="hasso">10:15発走</span><span class="sum-meta">1800mダ 15頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎6 ガードオブオナー</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -1948,6 +1964,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">7 ゴールドプレイヤー</span>
           <span class="podium-ninki">2番人気・3.7倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">6 ガードオブオナー</span>
@@ -1968,7 +1985,7 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><details class="race-card is-skip" id="r-新潟-3" data-buy="0">
-      <summary><span class="sum-race">3R</span><span class="sum-meta">1600m芝 11頭 <span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎8 アウアリイ</span></summary>
+      <summary><span class="sum-race">3R</span><span class="hasso">10:45発走</span><span class="sum-meta">1600m芝 11頭 <span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎8 アウアリイ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -2051,6 +2068,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">2 ノルトハウゼン</span>
           <span class="podium-ninki">3番人気・4.6倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">8 アウアリイ</span>
@@ -2071,9 +2089,9 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><div class="race-card is-excluded" id="r-新潟-4" data-buy="0">
-      <div class="race-card-row"><span class="sum-race">4R</span><span class="sum-meta">1400m芝 </span><span class="sum-honmei sum-excluded">新馬戦（出走馬全員が初出走）のため除外</span></div>
+      <div class="race-card-row"><span class="sum-race">4R</span><span class="hasso">11:15発走</span><span class="sum-meta">1400m芝 </span><span class="sum-honmei sum-excluded">新馬戦（出走馬全員が初出走）のため除外</span></div>
     </div><details class="race-card is-skip" id="r-新潟-5" data-buy="0">
-      <summary><span class="sum-race">5R</span><span class="sum-meta">2200m芝 18頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎7 ヤマメホープ</span></summary>
+      <summary><span class="sum-race">5R</span><span class="hasso">11:45発走</span><span class="sum-meta">2200m芝 18頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎7 ヤマメホープ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -2177,6 +2195,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">9 ゾネブルーム</span>
           <span class="podium-ninki">2番人気・4.1倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">7 ヤマメホープ</span>
@@ -2197,7 +2216,7 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><details class="race-card is-skip" id="r-新潟-6" data-buy="0">
-      <summary><span class="sum-race">6R</span><span class="sum-meta">1800mダ 15頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎5 トレベルオール</span></summary>
+      <summary><span class="sum-race">6R</span><span class="hasso">14:35発走</span><span class="sum-meta">1800mダ 15頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎5 トレベルオール</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -2292,6 +2311,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">10 リアライズオーラム</span>
           <span class="podium-ninki">4番人気・13.5倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">5 トレベルオール</span>
@@ -2312,7 +2332,7 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><details class="race-card is-skip" id="r-新潟-7" data-buy="0">
-      <summary><span class="sum-race">7R</span><span class="sum-meta">2000m芝 17頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎2 ボウウィンドウ</span></summary>
+      <summary><span class="sum-race">7R</span><span class="hasso">15:10発走</span><span class="sum-meta">2000m芝 17頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎2 ボウウィンドウ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -2413,6 +2433,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">15 スピンザブラッド</span>
           <span class="podium-ninki">11番人気・50.4倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">2 ボウウィンドウ</span>
@@ -2433,7 +2454,7 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><details class="race-card is-skip" id="r-新潟-8" data-buy="0">
-      <summary><span class="sum-race">8R</span><span class="sum-meta">1800mダ 11頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎3 タガノバビロン</span></summary>
+      <summary><span class="sum-race">8R</span><span class="hasso">15:45発走</span><span class="sum-meta">1800mダ 11頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎3 タガノバビロン</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -2516,6 +2537,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">1 ピカピカサンダー</span>
           <span class="podium-ninki">3番人気・7.3倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">3 タガノバビロン</span>
@@ -2536,7 +2558,7 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><details class="race-card is-skip" id="r-新潟-9" data-buy="0">
-      <summary><span class="sum-race">9R</span><span class="sum-meta">2200m芝 13頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎11 ランブルスコ</span></summary>
+      <summary><span class="sum-race">9R</span><span class="hasso">16:25発走</span><span class="sum-meta">2200m芝 13頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎11 ランブルスコ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -2625,6 +2647,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">7 ミッドセンチュリー</span>
           <span class="podium-ninki">5番人気・10.5倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">11 ランブルスコ</span>
@@ -2645,7 +2668,7 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><details class="race-card is-skip" id="r-新潟-10" data-buy="0">
-      <summary><span class="sum-race">10R</span><span class="sum-meta">1400m芝 18頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎9 ライネリーベ</span></summary>
+      <summary><span class="sum-race">10R</span><span class="hasso">17:00発走</span><span class="sum-meta">1400m芝 18頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎9 ライネリーベ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -2749,6 +2772,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">6 タイセイフレッサ</span>
           <span class="podium-ninki">2番人気・3.3倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">9 ライネリーベ</span>
@@ -2769,7 +2793,7 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><details class="race-card is-buy" id="r-新潟-11" data-buy="1">
-      <summary><span class="sum-race">11R</span><span class="sum-meta">2000m芝 18頭 <span class="badge badge-rel rel-hi">S</span></span><span class="sum-honmei">◎15 レッドレガリア</span><span class="verdict verdict-buy">注目</span></summary>
+      <summary><span class="sum-race">11R</span><span class="hasso">17:30発走</span><span class="sum-meta">2000m芝 18頭 <span class="badge badge-rel rel-hi">S</span></span><span class="sum-honmei">◎15 レッドレガリア</span><span class="verdict verdict-buy">注目</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -2873,6 +2897,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">17 コスモアルペジオ</span>
           <span class="podium-ninki">5番人気・21.4倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">15 レッドレガリア</span>
@@ -2893,7 +2918,7 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><details class="race-card is-skip" id="r-新潟-12" data-buy="0">
-      <summary><span class="sum-race">12R</span><span class="sum-meta">1200mダ 15頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎7 ロンバスブレス</span></summary>
+      <summary><span class="sum-race">12R</span><span class="hasso">18:05発走</span><span class="sum-meta">1200mダ 15頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎7 ロンバスブレス</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -2988,6 +3013,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">15 ライヴマティーニ</span>
           <span class="podium-ninki">5番人気・7.0倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">7 ロンバスブレス</span>
@@ -3011,7 +3037,7 @@ h1.title .nowrap{white-space:nowrap;}
     </section><section class="venue-section" id="v-札幌">
       <h2 class="venue-title">札幌</h2>
       <div class="race-list"><details class="race-card is-skip" id="r-札幌-1" data-buy="0">
-      <summary><span class="sum-race">1R</span><span class="sum-meta">1700mダ 14頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎10 クールフィデル</span></summary>
+      <summary><span class="sum-race">1R</span><span class="hasso">10:00発走</span><span class="sum-meta">1700mダ 14頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎10 クールフィデル</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -3103,6 +3129,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">2 ロードステラート</span>
           <span class="podium-ninki">3番人気・5.2倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">10 クールフィデル</span>
@@ -3123,7 +3150,7 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><details class="race-card is-skip" id="r-札幌-2" data-buy="0">
-      <summary><span class="sum-race">2R</span><span class="sum-meta">1500m芝 13頭 <span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎5 タプティ</span></summary>
+      <summary><span class="sum-race">2R</span><span class="hasso">10:30発走</span><span class="sum-meta">1500m芝 13頭 <span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎5 タプティ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -3212,6 +3239,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">6 ルギッドドランジュ</span>
           <span class="podium-ninki">3番人気・6.3倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">5 タプティ</span>
@@ -3232,7 +3260,7 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><details class="race-card is-skip" id="r-札幌-3" data-buy="0">
-      <summary><span class="sum-race">3R</span><span class="sum-meta">1800m芝 11頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎1 ダノンキューブ</span></summary>
+      <summary><span class="sum-race">3R</span><span class="hasso">11:00発走</span><span class="sum-meta">1800m芝 11頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎1 ダノンキューブ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -3315,6 +3343,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">3 エコロナイン</span>
           <span class="podium-ninki">2番人気・11.2倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">1 ダノンキューブ</span>
@@ -3335,7 +3364,7 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><details class="race-card is-skip" id="r-札幌-4" data-buy="0">
-      <summary><span class="sum-race">4R</span><span class="sum-meta">1000mダ 12頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎5 アニマレイ</span></summary>
+      <summary><span class="sum-race">4R</span><span class="hasso">11:30発走</span><span class="sum-meta">1000mダ 12頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎5 アニマレイ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -3421,6 +3450,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">3 ハクサンレイホウ</span>
           <span class="podium-ninki">9番人気・82.5倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">5 アニマレイ</span>
@@ -3441,9 +3471,9 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><div class="race-card is-excluded" id="r-札幌-5" data-buy="0">
-      <div class="race-card-row"><span class="sum-race">5R</span><span class="sum-meta">1700mダート </span><span class="sum-honmei sum-excluded">新馬戦（出走馬全員が初出走）のため除外</span></div>
+      <div class="race-card-row"><span class="sum-race">5R</span><span class="hasso">12:20発走</span><span class="sum-meta">1700mダート </span><span class="sum-honmei sum-excluded">新馬戦（出走馬全員が初出走）のため除外</span></div>
     </div><details class="race-card is-skip" id="r-札幌-6" data-buy="0">
-      <summary><span class="sum-race">6R</span><span class="sum-meta">1500m芝 14頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎8 サートゥルチェア</span></summary>
+      <summary><span class="sum-race">6R</span><span class="hasso">12:50発走</span><span class="sum-meta">1500m芝 14頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎8 サートゥルチェア</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -3535,6 +3565,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">1 ヒルノボローニャ</span>
           <span class="podium-ninki">8番人気・17.8倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">8 サートゥルチェア</span>
@@ -3555,7 +3586,7 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><details class="race-card is-skip" id="r-札幌-7" data-buy="0">
-      <summary><span class="sum-race">7R</span><span class="sum-meta">1200m芝 16頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎8 ジーティーエスピ</span></summary>
+      <summary><span class="sum-race">7R</span><span class="hasso">13:20発走</span><span class="sum-meta">1200m芝 16頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎8 ジーティーエスピ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -3653,6 +3684,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">11 ペガサスノース</span>
           <span class="podium-ninki">15番人気・89.7倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">8 ジーティーエスピ</span>
@@ -3673,7 +3705,7 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><details class="race-card is-skip" id="r-札幌-8" data-buy="0">
-      <summary><span class="sum-race">8R</span><span class="sum-meta">1700mダ 11頭 <span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎6 レッドフロイデ</span></summary>
+      <summary><span class="sum-race">8R</span><span class="hasso">13:50発走</span><span class="sum-meta">1700mダ 11頭 <span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎6 レッドフロイデ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -3756,6 +3788,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">6 レッドフロイデ</span>
           <span class="podium-ninki">4番人気・5.5倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">6 レッドフロイデ</span>
@@ -3776,7 +3809,7 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><details class="race-card is-skip" id="r-札幌-9" data-buy="0">
-      <summary><span class="sum-race">9R</span><span class="sum-meta">1800m芝 12頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎7 グランセゾン</span></summary>
+      <summary><span class="sum-race">9R</span><span class="hasso">14:20発走</span><span class="sum-meta">1800m芝 12頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎7 グランセゾン</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -3862,6 +3895,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">5 カージオイド</span>
           <span class="podium-ninki">5番人気・12.0倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">7 グランセゾン</span>
@@ -3882,7 +3916,7 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><details class="race-card is-skip" id="r-札幌-10" data-buy="0">
-      <summary><span class="sum-race">10R</span><span class="sum-meta">1200m芝 12頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎3 ワールドエンジェル</span></summary>
+      <summary><span class="sum-race">10R</span><span class="hasso">14:50発走</span><span class="sum-meta">1200m芝 12頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎3 ワールドエンジェル</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -3968,6 +4002,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">5 ピンクゴールド</span>
           <span class="podium-ninki">11番人気・99.8倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">3 ワールドエンジェル</span>
@@ -3988,7 +4023,7 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><details class="race-card is-buy" id="r-札幌-11" data-buy="1">
-      <summary><span class="sum-race">11R</span><span class="sum-meta">2000m芝 14頭 <span class="badge badge-rel rel-hi">S</span></span><span class="sum-honmei">◎6 アリスメティーク</span><span class="verdict verdict-buy">注目</span></summary>
+      <summary><span class="sum-race">11R</span><span class="hasso">15:25発走</span><span class="sum-meta">2000m芝 14頭 <span class="badge badge-rel rel-hi">S</span></span><span class="sum-honmei">◎6 アリスメティーク</span><span class="verdict verdict-buy">注目</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -4080,6 +4115,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">5 ハニードレス</span>
           <span class="podium-ninki">7番人気・15.2倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">6 アリスメティーク</span>
@@ -4100,7 +4136,7 @@ h1.title .nowrap{white-space:nowrap;}
     </div>
       </div>
     </details><details class="race-card is-skip" id="r-札幌-12" data-buy="0">
-      <summary><span class="sum-race">12R</span><span class="sum-meta">1700mダ 12頭 <span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎5 ホレーショ</span></summary>
+      <summary><span class="sum-race">12R</span><span class="hasso">16:00発走</span><span class="sum-meta">1700mダ 12頭 <span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎5 ホレーショ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -4186,6 +4222,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-name">7 リメンバーヒム</span>
           <span class="podium-ninki">7番人気・94.1倍</span>
         </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
           <span class="review-name">5 ホレーショ</span>
@@ -4222,10 +4259,10 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="stat"><div class="num tabular">107<small>%</small></div><div class="label">◎単勝回収率</div></div>
       <div class="stat"><div class="num tabular">71<small>%</small></div><div class="label">◎複勝回収率</div></div>
     </div>
-  <p class="section-lead">注目レースのみ対象。馬単・馬連・ワイドは◎-○▲☆の3点均等（馬単は◎→相手の順序指定）、3連単は◎○▲BOX（6点）を100円均等で買った場合の成績（仮定シミュレーション）です。</p>
-  <div class="stat-row"><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">単勝◎回収率（注目のみ）</div></div><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">馬単◎→○▲☆回収率</div></div><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">馬連◎-○▲☆回収率</div></div><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">ワイド◎-○▲☆回収率</div></div><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">3連複◎軸流し回収率</div></div><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">3連単◎○▲BOX回収率</div></div></div>
-  <p class="section-lead">こちらは全レース対象（見送りレースも含めて買った場合の参考値）です。</p>
-  <div class="stat-row"><div class="stat"><div class="num tabular">45<small>%</small></div><div class="label">ワイド◎-○▲☆回収率（全レース）</div></div><div class="stat"><div class="num tabular">68<small>%</small></div><div class="label">3連単◎○▲BOX回収率（全レース）</div></div></div></div>
+  <p class="section-lead">注目レース（S:推奨＋A+:信頼度高だが見送り）対象。ユーザー個人の実弾買い目パターン（◎確定単勝オッズ5倍以下: ワイド1点＋馬単2点＋3連単F最大10点／5倍超: 単勝＋馬連最大6点＋3連複最大15点。△△△は次点スコア3頭固定）で買った場合の成績（仮定シミュレーション）です。</p>
+  <div class="stat-row"><div class="stat"><div class="num tabular">79<small>%</small></div><div class="label">ワイド(個人想定)回収率（◎5倍以下・10R）</div></div><div class="stat"><div class="num tabular">172<small>%</small></div><div class="label">馬単(個人想定)回収率（◎5倍以下・10R）</div></div><div class="stat"><div class="num tabular">131<small>%</small></div><div class="label">3連単F(個人想定)回収率（◎5倍以下・10R）</div></div><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">単勝(個人想定)回収率（◎5倍超・2R）</div></div><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">馬連(個人想定)回収率（◎5倍超・2R）</div></div><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">3連複(個人想定)回収率（◎5倍超・2R）</div></div></div>
+  <p class="section-lead">こちらは全レース対象（見送りレースも含めて個人の買い方パターンで買った場合の参考値）です。</p>
+  <div class="stat-row"><div class="stat"><div class="num tabular">50<small>%</small></div><div class="label">ワイド(個人想定)回収率（全レース・◎5倍以下・21R）</div></div><div class="stat"><div class="num tabular">155<small>%</small></div><div class="label">馬単(個人想定)回収率（全レース・◎5倍以下・21R）</div></div><div class="stat"><div class="num tabular">62<small>%</small></div><div class="label">3連単F(個人想定)回収率（全レース・◎5倍以下・21R）</div></div><div class="stat"><div class="num tabular">88<small>%</small></div><div class="label">単勝(個人想定)回収率（全レース・◎5倍超・11R）</div></div><div class="stat"><div class="num tabular">68<small>%</small></div><div class="label">馬連(個人想定)回収率（全レース・◎5倍超・11R）</div></div><div class="stat"><div class="num tabular">61<small>%</small></div><div class="label">3連複(個人想定)回収率（全レース・◎5倍超・11R）</div></div></div></div>
 
   <div class="to-top"><a href="#top">↑ ページ上部へ</a></div>
 
