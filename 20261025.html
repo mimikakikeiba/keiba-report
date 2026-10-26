@@ -167,6 +167,8 @@ h1.title .nowrap{white-space:nowrap;}
   text-transform:uppercase;margin:34px 0 4px;scroll-margin-top:64px;
 }
 .section-lead{font-size:14px;color:var(--text-muted);margin:0 0 16px;}
+.personal-formula{font-size:13px;line-height:1.9;background:var(--surface-2);
+  border-radius:8px;padding:10px 12px;margin-top:-10px;}
 .section-lead b{color:var(--text);font-weight:700;}
 
 /* ---- pick cards (本日のおすすめ) ---- */
@@ -298,6 +300,7 @@ h1.title .nowrap{white-space:nowrap;}
   overflow:hidden;scroll-margin-top:64px;
 }
 .race-card.is-buy{border-color:var(--gold-tint-strong);}
+.race-card.is-hit{border-color:#3fae5a;border-width:2px;}
 .race-card summary{
   list-style:none;cursor:pointer;padding:12px 14px;display:flex;align-items:center;
   gap:10px;flex-wrap:wrap;
@@ -963,7 +966,7 @@ h1.title .nowrap{white-space:nowrap;}
   <p class="section-lead">会場・レースをタップすると相対勝率が開きます</p>
   <section class="venue-section" id="v-京都">
       <h2 class="venue-title">京都</h2>
-      <div class="race-list"><details class="race-card is-skip" id="r-京都-1" data-buy="0">
+      <div class="race-list"><details class="race-card is-skip is-hit" id="r-京都-1" data-buy="0">
       <summary><span class="sum-race">1R</span><span class="hasso">10:00発走</span><span class="sum-meta">1800mダ 8頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎1 ナオミガサイキョウ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
@@ -1159,7 +1162,7 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
     </div>
       </div>
-    </details><details class="race-card is-skip" id="r-京都-3" data-buy="0">
+    </details><details class="race-card is-skip is-hit" id="r-京都-3" data-buy="0">
       <summary><span class="sum-race">3R</span><span class="hasso">11:00発走</span><span class="sum-meta">1600m芝 9頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎2 ドンクラッシュ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
@@ -1261,7 +1264,7 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="race-card-row"><span class="sum-race">4R</span><span class="hasso">11:30発走</span><span class="sum-meta">1400mダート </span><span class="sum-honmei sum-excluded">新馬戦（出走馬全員が初出走）のため除外</span></div>
     </div><div class="race-card is-excluded" id="r-京都-5" data-buy="0">
       <div class="race-card-row"><span class="sum-race">5R</span><span class="hasso">12:20発走</span><span class="sum-meta">1800m芝 </span><span class="sum-honmei sum-excluded">新馬戦（出走馬全員が初出走）のため除外</span></div>
-    </div><details class="race-card is-skip" id="r-京都-6" data-buy="0">
+    </div><details class="race-card is-skip is-hit" id="r-京都-6" data-buy="0">
       <summary><span class="sum-race">6R</span><span class="hasso">12:50発走</span><span class="sum-meta">1800mダ 12頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎11 ヤエギリ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
@@ -1368,7 +1371,7 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
     </div>
       </div>
-    </details><details class="race-card is-buy" id="r-京都-7" data-buy="1">
+    </details><details class="race-card is-buy is-hit" id="r-京都-7" data-buy="1">
       <summary><span class="sum-race">7R</span><span class="hasso">13:20発走</span><span class="sum-meta">1800m芝 9頭 <span class="badge badge-rel rel-hi">S</span></span><span class="sum-honmei">◎3 サトノアグード</span><span class="verdict verdict-buy">注目</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
@@ -2376,7 +2379,7 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
     </div>
       </div>
-    </details><details class="race-card is-skip" id="r-新潟-4" data-buy="0">
+    </details><details class="race-card is-skip is-hit" id="r-新潟-4" data-buy="0">
       <summary><span class="sum-race">4R</span><span class="hasso">11:10発走</span><span class="sum-meta">1200mダ 13頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎13 クアロアランチ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
@@ -3038,7 +3041,7 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
     </div>
       </div>
-    </details><details class="race-card is-skip" id="r-新潟-11" data-buy="0">
+    </details><details class="race-card is-skip is-hit" id="r-新潟-11" data-buy="0">
       <summary><span class="sum-race">11R</span><span class="hasso">15:10発走</span><span class="sum-meta">1000m芝 17頭 <span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎14 カウスリップ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
@@ -3399,7 +3402,7 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
     </div>
       </div>
-    </details><details class="race-card is-skip" id="r-東京-2" data-buy="0">
+    </details><details class="race-card is-skip is-hit" id="r-東京-2" data-buy="0">
       <summary><span class="sum-race">2R</span><span class="hasso">10:20発走</span><span class="sum-meta">2000m芝 7頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎2 シアルナーレ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
@@ -3604,7 +3607,7 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="race-card-row"><span class="sum-race">5R</span><span class="hasso">12:10発走</span><span class="sum-meta">1800m芝 </span><span class="sum-honmei sum-excluded">新馬戦（出走馬全員が初出走）のため除外</span></div>
     </div><div class="race-card is-excluded" id="r-東京-6" data-buy="0">
       <div class="race-card-row"><span class="sum-race">6R</span><span class="hasso">12:40発走</span><span class="sum-meta">1400m芝 </span><span class="sum-honmei sum-excluded">新馬戦（出走馬全員が初出走）のため除外</span></div>
-    </div><details class="race-card is-skip" id="r-東京-7" data-buy="0">
+    </div><details class="race-card is-skip is-hit" id="r-東京-7" data-buy="0">
       <summary><span class="sum-race">7R</span><span class="hasso">13:10発走</span><span class="sum-meta">1400mダ 15頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎6 ミヤエスケープ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
@@ -3720,7 +3723,7 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
     </div>
       </div>
-    </details><details class="race-card is-skip" id="r-東京-8" data-buy="0">
+    </details><details class="race-card is-skip is-hit" id="r-東京-8" data-buy="0">
       <summary><span class="sum-race">8R</span><span class="hasso">13:40発走</span><span class="sum-meta">1600m芝 18頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎11 デイジー</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
@@ -3949,7 +3952,7 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
     </div>
       </div>
-    </details><details class="race-card is-buy" id="r-東京-10" data-buy="1">
+    </details><details class="race-card is-buy is-hit" id="r-東京-10" data-buy="1">
       <summary><span class="sum-race">10R</span><span class="hasso">14:45発走</span><span class="sum-meta">1800m芝 9頭 <span class="badge badge-rel rel-hi">S</span></span><span class="sum-honmei">◎2 クライスレリアーナ</span><span class="verdict verdict-buy">注目</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
@@ -4047,7 +4050,7 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
     </div>
       </div>
-    </details><details class="race-card is-skip" id="r-東京-11" data-buy="0">
+    </details><details class="race-card is-skip is-hit" id="r-東京-11" data-buy="0">
       <summary><span class="sum-race">11R</span><span class="hasso">15:20発走</span><span class="sum-meta">1400mダ 16頭 <span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎4 ベルジュロネット</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
@@ -4281,6 +4284,9 @@ h1.title .nowrap{white-space:nowrap;}
 
   <div class="section-eyebrow">的中ピックアップ</div>
   <div class="highlight-list"><div class="highlight-card">
+          <span class="highlight-tag">🏆 本日最高配当</span>
+          <span class="highlight-body">京都7R: 3連単 27.9倍</span>
+        </div><div class="highlight-card">
           <span class="highlight-tag">🎯 3頭ビタ</span>
           <span class="highlight-body">京都7R: ◎サトノアグード→▲ダイチノナポリ→○ルーチェブリラーレ</span>
         </div><div class="highlight-card">
