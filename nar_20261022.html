@@ -186,6 +186,12 @@ h1.title .nowrap{white-space:nowrap;}
 }
 .review-row .mark{width:auto;flex:0 0 auto;}
 
+/* ---- 個人の買い方パターン（2026/10/26新設） ---- */
+.personal-bets{margin-top:10px;padding-top:9px;border-top:1px dashed var(--border);
+  display:flex;flex-direction:column;gap:3px;}
+.personal-bets-head{font-size:11px;font-weight:700;color:var(--text-faint);}
+.personal-line{font-size:12.5px;color:var(--text-muted);}
+
 .highlight-list{display:flex;flex-direction:column;gap:8px;margin-top:12px;}
 .highlight-card{background:var(--surface);border:1px solid var(--gold-tint-strong);border-radius:12px;
   padding:11px 14px;box-shadow:var(--shadow);display:flex;align-items:baseline;gap:6px 10px;flex-wrap:wrap;}
@@ -330,21 +336,25 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">1 グランワールド</span>
+          <span class="review-name">1 グランワールド （3番人気・3.7倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">6 エイシンピサロ</span>
+          <span class="review-name">6 エイシンピサロ （7番人気・43.7倍）</span>
           <span class="result-badge miss">10着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">9 ペタルズダンス</span>
+          <span class="review-name">9 ペタルズダンス （1番人気・2.0倍）</span>
           <span class="result-badge miss">4着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">7 エーピーポエティス</span>
+          <span class="review-name">7 エーピーポエティス （2番人気・3.4倍）</span>
           <span class="result-badge hit">2着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-○: 不的中</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div>
     </article>
 
@@ -352,7 +362,7 @@ h1.title .nowrap{white-space:nowrap;}
   <p class="section-lead">会場・レースをタップすると相対勝率が開きます</p>
   <section class="venue-section" id="v-園田">
       <h2 class="venue-title">園田</h2>
-      <div class="race-list"><details class="race-card is-skip is-hit" id="r-園田-1" data-buy="0">
+      <div class="race-list"><details class="race-card is-skip" id="r-園田-1" data-buy="0">
       <summary><span class="sum-race">1R</span><span class="hasso">10:40発走</span><span class="sum-meta">1400mダート 10頭<span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎3 フドウミョウオウ</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -426,23 +436,27 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">3 フドウミョウオウ</span>
+          <span class="review-name">3 フドウミョウオウ （2番人気・2.3倍）</span>
           <span class="result-badge hit">2着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">5 ブチエードリーム</span>
+          <span class="review-name">5 ブチエードリーム （6番人気・25.3倍）</span>
           <span class="result-badge miss">7着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">8 ニシノフォーリーフ</span>
+          <span class="review-name">8 ニシノフォーリーフ （3番人気・7.1倍）</span>
           <span class="result-badge hit">3着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">9 カシスオレンジ</span>
+          <span class="review-name">9 カシスオレンジ （1番人気・2.1倍）</span>
           <span class="result-badge hit">1着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-○: 不的中</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
-    </details><details class="race-card is-skip is-hit" id="r-園田-2" data-buy="0">
+    </details><details class="race-card is-skip" id="r-園田-2" data-buy="0">
       <summary><span class="sum-race">2R</span><span class="hasso">11:10発走</span><span class="sum-meta">1400mダート 10頭<span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎10 エーチャン</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -516,21 +530,25 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">10 エーチャン</span>
+          <span class="review-name">10 エーチャン （2番人気・3.5倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">7 ペンペングサ</span>
+          <span class="review-name">7 ペンペングサ （7番人気・23.9倍）</span>
           <span class="result-badge miss">10着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">4 メイショウテンテン</span>
+          <span class="review-name">4 メイショウテンテン （1番人気・1.5倍）</span>
           <span class="result-badge miss">4着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">3 シェナクィーン</span>
+          <span class="review-name">3 シェナクィーン （5番人気・21.6倍）</span>
           <span class="result-badge hit">2着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-○: 不的中</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
     </details><div class="race-card is-excluded" id="r-園田-3" data-buy="0">
       <div class="race-card-row"><span class="sum-race">3R</span><span class="sum-meta">1400mダート 6頭</span><span class="sum-honmei sum-excluded">新馬戦（出走馬全員が初出走）のため除外</span></div>
@@ -613,23 +631,27 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">8 マジカルフェイス</span>
+          <span class="review-name">8 マジカルフェイス （4番人気・17.0倍）</span>
           <span class="result-badge miss">4着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">10 フューチャーライト</span>
+          <span class="review-name">10 フューチャーライト （1番人気・1.8倍）</span>
           <span class="result-badge hit">3着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">6 クリムゾンレッド</span>
+          <span class="review-name">6 クリムゾンレッド （7番人気・18.8倍）</span>
           <span class="result-badge miss">6着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">2 トレジャーブルー</span>
+          <span class="review-name">2 トレジャーブルー （5番人気・18.6倍）</span>
           <span class="result-badge miss">10着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">単勝◎: 不的中</div><div class="personal-line">馬連（◎-○▲☆△△△）6点: 不的中</div><div class="personal-line">3連複（◎-○▲☆△△△）15点: 不的中</div>
+        </div>
     </div></div>
-    </details><details class="race-card is-buy is-hit" id="r-園田-5" data-buy="1">
+    </details><details class="race-card is-buy" id="r-園田-5" data-buy="1">
       <summary><span class="sum-race">5R</span><span class="hasso">12:45発走</span><span class="sum-meta">1700mダート 11頭<span class="badge badge-rel rel-lo">S</span></span><span class="sum-honmei">◎1 グランワールド</span><span class="verdict verdict-buy">注目</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -708,21 +730,25 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">1 グランワールド</span>
+          <span class="review-name">1 グランワールド （3番人気・3.7倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">6 エイシンピサロ</span>
+          <span class="review-name">6 エイシンピサロ （7番人気・43.7倍）</span>
           <span class="result-badge miss">10着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">9 ペタルズダンス</span>
+          <span class="review-name">9 ペタルズダンス （1番人気・2.0倍）</span>
           <span class="result-badge miss">4着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">7 エーピーポエティス</span>
+          <span class="review-name">7 エーピーポエティス （2番人気・3.4倍）</span>
           <span class="result-badge hit">2着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-○: 不的中</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-園田-6" data-buy="0">
       <summary><span class="sum-race">6R</span><span class="hasso">13:20発走</span><span class="sum-meta">820mダート 12頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎10 ソシジ</span></summary>
@@ -808,23 +834,27 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">10 ソシジ</span>
+          <span class="review-name">10 ソシジ （2番人気・2.9倍）</span>
           <span class="result-badge miss">5着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">5 サウンドアンフィニ</span>
+          <span class="review-name">5 サウンドアンフィニ （6番人気・36.3倍）</span>
           <span class="result-badge hit">3着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">2 ディナーラッシュ</span>
+          <span class="review-name">2 ディナーラッシュ （5番人気・29.8倍）</span>
           <span class="result-badge miss">4着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">11 アサメシマエ</span>
+          <span class="review-name">11 アサメシマエ （10番人気・174.8倍）</span>
           <span class="result-badge miss">9着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-○: 不的中</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
-    </details><details class="race-card is-skip is-hit" id="r-園田-7" data-buy="0">
+    </details><details class="race-card is-skip" id="r-園田-7" data-buy="0">
       <summary><span class="sum-race">7R</span><span class="hasso">13:55発走</span><span class="sum-meta">1400mダート 9頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎8 ロードステラート</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -893,23 +923,27 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">8 ロードステラート</span>
+          <span class="review-name">8 ロードステラート （1番人気・1.0倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">9 ヤクジンミョウオウ</span>
+          <span class="review-name">9 ヤクジンミョウオウ （3番人気・26.7倍）</span>
           <span class="result-badge miss">7着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">6 ヤザン</span>
+          <span class="review-name">6 ヤザン （2番人気・8.5倍）</span>
           <span class="result-badge hit">2着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">7 ジーベローチェ</span>
+          <span class="review-name">7 ジーベローチェ （8番人気・75.2倍）</span>
           <span class="result-badge hit">3着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-○: 不的中</div><div class="personal-line">馬単◎→▲: 的中1.8倍🎯</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
-    </details><details class="race-card is-skip is-hit" id="r-園田-8" data-buy="0">
+    </details><details class="race-card is-skip" id="r-園田-8" data-buy="0">
       <summary><span class="sum-race">8R</span><span class="hasso">14:30発走</span><span class="sum-meta">1400mダート 10頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎7 マイネルゼーロス</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -983,23 +1017,27 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">7 マイネルゼーロス</span>
+          <span class="review-name">7 マイネルゼーロス （1番人気・2.5倍）</span>
           <span class="result-badge hit">3着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">4 ハッピーチャンス</span>
+          <span class="review-name">4 ハッピーチャンス （2番人気・2.6倍）</span>
           <span class="result-badge hit">2着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">6 ブルーダイヤシチー</span>
+          <span class="review-name">6 ブルーダイヤシチー （4番人気・8.8倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">3 アークブリッツ</span>
+          <span class="review-name">3 アークブリッツ （6番人気・24.7倍）</span>
           <span class="result-badge miss">4着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-▲: 的中2.9倍🎯</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
-    </details><details class="race-card is-skip is-hit" id="r-園田-9" data-buy="0">
+    </details><details class="race-card is-skip" id="r-園田-9" data-buy="0">
       <summary><span class="sum-race">9R</span><span class="hasso">15:05発走</span><span class="sum-meta">1400mダート 10頭<span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎6 ヤマタケボニータ</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -1073,21 +1111,25 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">6 ヤマタケボニータ</span>
+          <span class="review-name">6 ヤマタケボニータ （3番人気・5.0倍）</span>
           <span class="result-badge hit">3着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">5 ナリタアーマー</span>
+          <span class="review-name">5 ナリタアーマー （1番人気・1.8倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">2 ワイドオルデン</span>
+          <span class="review-name">2 ワイドオルデン （2番人気・4.9倍）</span>
           <span class="result-badge miss">5着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">7 デルタフォー</span>
+          <span class="review-name">7 デルタフォー （8番人気・55.5倍）</span>
           <span class="result-badge miss">6着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-▲: 不的中</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-園田-10" data-buy="0">
       <summary><span class="sum-race">10R</span><span class="hasso">15:40発走</span><span class="sum-meta">1700mダート 10頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎2 オーバーランダー</span></summary>
@@ -1163,21 +1205,25 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">2 オーバーランダー</span>
+          <span class="review-name">2 オーバーランダー （3番人気・4.3倍）</span>
           <span class="result-badge hit">2着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">3 ラブトゥエニイワン</span>
+          <span class="review-name">3 ラブトゥエニイワン （4番人気・6.4倍）</span>
           <span class="result-badge miss">4着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">8 エイシンウィキッド</span>
+          <span class="review-name">8 エイシンウィキッド （9番人気・139.8倍）</span>
           <span class="result-badge miss">9着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">7 エイシンビクーニャ</span>
+          <span class="review-name">7 エイシンビクーニャ （6番人気・36.6倍）</span>
           <span class="result-badge miss">6着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-▲: 不的中</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-園田-11" data-buy="0">
       <summary><span class="sum-race">11R</span><span class="hasso">16:15発走</span><span class="sum-meta">1230mダート 11頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎1 ハイラブソング</span></summary>
@@ -1258,21 +1304,25 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">1 ハイラブソング</span>
+          <span class="review-name">1 ハイラブソング （2番人気・3.7倍）</span>
           <span class="result-badge hit">3着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">7 トリニティノット</span>
+          <span class="review-name">7 トリニティノット （8番人気・67.6倍）</span>
           <span class="result-badge miss">8着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">4 トッレブランカ</span>
+          <span class="review-name">4 トッレブランカ （5番人気・10.0倍）</span>
           <span class="result-badge miss">4着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">5 フラッシュケリー</span>
+          <span class="review-name">5 フラッシュケリー （3番人気・5.5倍）</span>
           <span class="result-badge miss">6着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-○: 不的中</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-園田-12" data-buy="0">
       <summary><span class="sum-race">12R</span><span class="hasso">16:50発走</span><span class="sum-meta">1400mダート 11頭<span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎2 グレンセロース</span></summary>
@@ -1353,26 +1403,30 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">2 グレンセロース</span>
+          <span class="review-name">2 グレンセロース （2番人気・3.6倍）</span>
           <span class="result-badge miss">4着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">1 サンライズナスカ</span>
+          <span class="review-name">1 サンライズナスカ （3番人気・3.6倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">4 ガトー</span>
+          <span class="review-name">4 ガトー （1番人気・1.9倍）</span>
           <span class="result-badge miss">6着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">8 ネバーセイグッバイ</span>
+          <span class="review-name">8 ネバーセイグッバイ （5番人気・13.4倍）</span>
           <span class="result-badge hit">2着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-○: 不的中</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
     </details></div>
     </section><section class="venue-section" id="v-浦和">
       <h2 class="venue-title">浦和</h2>
-      <div class="race-list"><details class="race-card is-skip is-hit" id="r-浦和-1" data-buy="0">
+      <div class="race-list"><details class="race-card is-skip" id="r-浦和-1" data-buy="0">
       <summary><span class="sum-race">1R</span><span class="hasso">12:20発走</span><span class="sum-meta">1400mダート 12頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎3 ハッピーバースデー</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -1456,23 +1510,27 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">3 ハッピーバースデー</span>
+          <span class="review-name">3 ハッピーバースデー （1番人気・1.5倍）</span>
           <span class="result-badge hit">3着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">12 オサケノオトモニ</span>
+          <span class="review-name">12 オサケノオトモニ （6番人気・33.1倍）</span>
           <span class="result-badge miss">6着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">8 ゴシップコラム</span>
+          <span class="review-name">8 ゴシップコラム （2番人気・3.5倍）</span>
           <span class="result-badge miss">4着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">9 シナノダムール</span>
+          <span class="review-name">9 シナノダムール （4番人気・15.1倍）</span>
           <span class="result-badge hit">2着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-○: 不的中</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
-    </details><details class="race-card is-skip is-hit" id="r-浦和-2" data-buy="0">
+    </details><details class="race-card is-skip" id="r-浦和-2" data-buy="0">
       <summary><span class="sum-race">2R</span><span class="hasso">12:50発走</span><span class="sum-meta">1500mダート 11頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎9 ダブルレイズカード</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -1551,21 +1609,25 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">9 ダブルレイズカード</span>
+          <span class="review-name">9 ダブルレイズカード （1番人気・1.3倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">11 クルメミッチー</span>
+          <span class="review-name">11 クルメミッチー （4番人気・16.6倍）</span>
           <span class="result-badge hit">2着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">7 スターハッスル</span>
+          <span class="review-name">7 スターハッスル （9番人気・170.6倍）</span>
           <span class="result-badge miss">9着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">2 リケアヴィオレ</span>
+          <span class="review-name">2 リケアヴィオレ （10番人気・174.8倍）</span>
           <span class="result-badge miss">7着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-▲: 不的中</div><div class="personal-line">馬単◎→○: 的中9.8倍🎯</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-浦和-3" data-buy="0">
       <summary><span class="sum-race">3R</span><span class="hasso">13:20発走</span><span class="sum-meta">1400mダート 12頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎12 フルーツポンチ</span></summary>
@@ -1651,23 +1713,27 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">12 フルーツポンチ</span>
+          <span class="review-name">12 フルーツポンチ （8番人気・28.7倍）</span>
           <span class="result-badge miss">5着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">8 モーニングチカラ</span>
+          <span class="review-name">8 モーニングチカラ （6番人気・21.0倍）</span>
           <span class="result-badge miss">4着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">11 サマーエンド</span>
+          <span class="review-name">11 サマーエンド （1番人気・2.1倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">6 ビービーウォルド</span>
+          <span class="review-name">6 ビービーウォルド （5番人気・20.0倍）</span>
           <span class="result-badge miss">9着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">単勝◎: 不的中</div><div class="personal-line">馬連（◎-○▲☆△△△）6点: 不的中</div><div class="personal-line">3連複（◎-○▲☆△△△）15点: 不的中</div>
+        </div>
     </div></div>
-    </details><details class="race-card is-skip is-hit" id="r-浦和-4" data-buy="0">
+    </details><details class="race-card is-skip" id="r-浦和-4" data-buy="0">
       <summary><span class="sum-race">4R</span><span class="hasso">13:50発走</span><span class="sum-meta">800mダート 12頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎12 コトリノウタウウタ</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -1751,23 +1817,27 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">12 コトリノウタウウタ</span>
+          <span class="review-name">12 コトリノウタウウタ （2番人気・4.3倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">3 タカラバディウス</span>
+          <span class="review-name">3 タカラバディウス （3番人気・5.5倍）</span>
           <span class="result-badge hit">2着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">5 ライトネス</span>
+          <span class="review-name">5 ライトネス （4番人気・10.4倍）</span>
           <span class="result-badge hit">3着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">8 パワーマジック</span>
+          <span class="review-name">8 パワーマジック （11番人気・438.4倍）</span>
           <span class="result-badge miss">11着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-▲: 的中4.6倍🎯</div><div class="personal-line">馬単◎→○: 的中27.2倍🎯</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 的中107.3倍🎯</div>
+        </div>
     </div></div>
-    </details><details class="race-card is-skip is-hit" id="r-浦和-5" data-buy="0">
+    </details><details class="race-card is-skip" id="r-浦和-5" data-buy="0">
       <summary><span class="sum-race">5R</span><span class="hasso">14:25発走</span><span class="sum-meta">800mダート 12頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎7 ゴーゴーメロディ</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -1851,23 +1921,27 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">7 ゴーゴーメロディ</span>
+          <span class="review-name">7 ゴーゴーメロディ （6番人気・29.0倍）</span>
           <span class="result-badge hit">2着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">11 クラオウリュウ</span>
+          <span class="review-name">11 クラオウリュウ （1番人気・2.2倍）</span>
           <span class="result-badge hit">3着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">1 ラグーンプレミアム</span>
+          <span class="review-name">1 ラグーンプレミアム （7番人気・42.3倍）</span>
           <span class="result-badge miss">11着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
           <span class="review-name">8 ペチンペチンイテテ</span>
           <span class="result-badge miss">取消/中止</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">単勝◎: 不的中</div><div class="personal-line">馬連（◎-○▲☆△△△）6点: 的中55.6倍🎯</div><div class="personal-line">3連複（◎-○▲☆△△△）15点: 的中42.9倍🎯</div>
+        </div>
     </div></div>
-    </details><details class="race-card is-skip is-hit" id="r-浦和-6" data-buy="0">
+    </details><details class="race-card is-skip" id="r-浦和-6" data-buy="0">
       <summary><span class="sum-race">6R</span><span class="hasso">14:55発走</span><span class="sum-meta">2000mダート 12頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎6 ミーサーク</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -1951,21 +2025,25 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">6 ミーサーク</span>
+          <span class="review-name">6 ミーサーク （1番人気・1.3倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">3 スターバロン</span>
+          <span class="review-name">3 スターバロン （12番人気・325.5倍）</span>
           <span class="result-badge miss">12着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">11 ジーティーウタマロ</span>
+          <span class="review-name">11 ジーティーウタマロ （2番人気・3.3倍）</span>
           <span class="result-badge hit">3着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">5 シヴァシン</span>
+          <span class="review-name">5 シヴァシン （5番人気・26.8倍）</span>
           <span class="result-badge miss">5着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-○: 不的中</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-浦和-7" data-buy="0">
       <summary><span class="sum-race">7R</span><span class="hasso">15:25発走</span><span class="sum-meta">1400mダート 12頭<span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎1 ジェノバフレイバー</span></summary>
@@ -2051,21 +2129,25 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">1 ジェノバフレイバー</span>
+          <span class="review-name">1 ジェノバフレイバー （4番人気・7.8倍）</span>
           <span class="result-badge miss">6着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">6 ノワスティエ</span>
+          <span class="review-name">6 ノワスティエ （7番人気・16.7倍）</span>
           <span class="result-badge miss">9着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">2 モーリシャスアロマ</span>
+          <span class="review-name">2 モーリシャスアロマ （2番人気・3.7倍）</span>
           <span class="result-badge miss">5着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">4 ポレポレ</span>
+          <span class="review-name">4 ポレポレ （9番人気・25.1倍）</span>
           <span class="result-badge miss">4着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">単勝◎: 不的中</div><div class="personal-line">馬連（◎-○▲☆△△△）6点: 不的中</div><div class="personal-line">3連複（◎-○▲☆△△△）15点: 不的中</div>
+        </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-浦和-8" data-buy="0">
       <summary><span class="sum-race">8R</span><span class="hasso">16:00発走</span><span class="sum-meta">1500mダート 10頭<span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎8 ブリヤンオーブ</span></summary>
@@ -2141,23 +2223,27 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">8 ブリヤンオーブ</span>
+          <span class="review-name">8 ブリヤンオーブ （5番人気・15.1倍）</span>
           <span class="result-badge miss">8着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">10 バイルシュタイン</span>
+          <span class="review-name">10 バイルシュタイン （1番人気・2.1倍）</span>
           <span class="result-badge miss">7着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">2 ダンシングラスカル</span>
+          <span class="review-name">2 ダンシングラスカル （3番人気・4.8倍）</span>
           <span class="result-badge hit">3着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">3 エドノビートイン</span>
+          <span class="review-name">3 エドノビートイン （4番人気・10.1倍）</span>
           <span class="result-badge hit">2着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">単勝◎: 不的中</div><div class="personal-line">馬連（◎-○▲☆△△△）6点: 不的中</div><div class="personal-line">3連複（◎-○▲☆△△△）15点: 不的中</div>
+        </div>
     </div></div>
-    </details><details class="race-card is-skip is-hit" id="r-浦和-9" data-buy="0">
+    </details><details class="race-card is-skip" id="r-浦和-9" data-buy="0">
       <summary><span class="sum-race">9R</span><span class="hasso">16:35発走</span><span class="sum-meta">1400mダート 12頭<span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎1 コットンフラワー</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -2241,21 +2327,25 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">1 コットンフラワー</span>
+          <span class="review-name">1 コットンフラワー （4番人気・7.0倍）</span>
           <span class="result-badge hit">2着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">10 ラブリーモンスター</span>
+          <span class="review-name">10 ラブリーモンスター （7番人気・29.9倍）</span>
           <span class="result-badge miss">7着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">12 チョウスター</span>
+          <span class="review-name">12 チョウスター （1番人気・2.0倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">6 セイウンユズカ</span>
+          <span class="review-name">6 セイウンユズカ （2番人気・5.9倍）</span>
           <span class="result-badge miss">8着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">単勝◎: 不的中</div><div class="personal-line">馬連（◎-○▲☆△△△）6点: 的中9.5倍🎯</div><div class="personal-line">3連複（◎-○▲☆△△△）15点: 的中11.4倍🎯</div>
+        </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-浦和-10" data-buy="0">
       <summary><span class="sum-race">10R</span><span class="hasso">17:10発走</span><span class="sum-meta">1400mダート 10頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎5 ダノンレーニア</span></summary>
@@ -2331,21 +2421,25 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">5 ダノンレーニア</span>
+          <span class="review-name">5 ダノンレーニア （10番人気・53.6倍）</span>
           <span class="result-badge miss">10着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">4 ウェルウィッチア</span>
+          <span class="review-name">4 ウェルウィッチア （1番人気・2.6倍）</span>
           <span class="result-badge miss">5着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">3 グルーヴィン</span>
+          <span class="review-name">3 グルーヴィン （5番人気・8.6倍）</span>
           <span class="result-badge miss">8着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">6 マッスル</span>
+          <span class="review-name">6 マッスル （2番人気・4.5倍）</span>
           <span class="result-badge miss">4着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">単勝◎: 不的中</div><div class="personal-line">馬連（◎-○▲☆△△△）6点: 不的中</div><div class="personal-line">3連複（◎-○▲☆△△△）15点: 不的中</div>
+        </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-浦和-11" data-buy="0">
       <summary><span class="sum-race">11R</span><span class="hasso">17:45発走</span><span class="sum-meta">1500mダート 12頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎12 ダノンザボルケーノ</span></summary>
@@ -2431,23 +2525,27 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">12 ダノンザボルケーノ</span>
+          <span class="review-name">12 ダノンザボルケーノ （2番人気・3.0倍）</span>
           <span class="result-badge miss">5着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">2 ブルーメンガルテン</span>
+          <span class="review-name">2 ブルーメンガルテン （3番人気・3.5倍）</span>
           <span class="result-badge miss">11着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">10 エアポートライナー</span>
+          <span class="review-name">10 エアポートライナー （1番人気・2.6倍）</span>
           <span class="result-badge miss">4着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">1 リヴィフェイス</span>
+          <span class="review-name">1 リヴィフェイス （4番人気・9.1倍）</span>
           <span class="result-badge hit">2着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-○: 不的中</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
-    </details><details class="race-card is-skip is-hit" id="r-浦和-12" data-buy="0">
+    </details><details class="race-card is-skip" id="r-浦和-12" data-buy="0">
       <summary><span class="sum-race">12R</span><span class="hasso">18:20発走</span><span class="sum-meta">2000mダート 12頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎12 ヴルールドロワ</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -2531,21 +2629,25 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">12 ヴルールドロワ</span>
+          <span class="review-name">12 ヴルールドロワ （1番人気・1.6倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">5 マイアミマツリ</span>
+          <span class="review-name">5 マイアミマツリ （2番人気・4.9倍）</span>
           <span class="result-badge miss">6着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">7 ソリスレガーロ</span>
+          <span class="review-name">7 ソリスレガーロ （6番人気・21.1倍）</span>
           <span class="result-badge hit">2着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">9 ゴッドトレジャー</span>
+          <span class="review-name">9 ゴッドトレジャー （3番人気・6.3倍）</span>
           <span class="result-badge hit">3着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-▲: 的中3.9倍🎯</div><div class="personal-line">馬単◎→▲: 的中11.7倍🎯</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
     </details></div>
     </section><section class="venue-section" id="v-笠松">
@@ -2609,23 +2711,27 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">6 ビッグバンビチャン</span>
+          <span class="review-name">6 ビッグバンビチャン （6番人気・56.8倍）</span>
           <span class="result-badge miss">7着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">4 エルジェム</span>
+          <span class="review-name">4 エルジェム （4番人気・48.5倍）</span>
           <span class="result-badge miss">4着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">7 シャッターチャンス</span>
+          <span class="review-name">7 シャッターチャンス （2番人気・2.5倍）</span>
           <span class="result-badge hit">2着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">5 フォイツ</span>
+          <span class="review-name">5 フォイツ （3番人気・17.1倍）</span>
           <span class="result-badge hit">3着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">単勝◎: 不的中</div><div class="personal-line">馬連（◎-○▲☆△△△）6点: 不的中</div><div class="personal-line">3連複（◎-○▲☆△△△）15点: 不的中</div>
+        </div>
     </div></div>
-    </details><details class="race-card is-skip is-hit" id="r-笠松-2" data-buy="0">
+    </details><details class="race-card is-skip" id="r-笠松-2" data-buy="0">
       <summary><span class="sum-race">2R</span><span class="hasso">11:00発走</span><span class="sum-meta">1400mダート 11頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎9 キタノコウセイ</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -2704,21 +2810,25 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">9 キタノコウセイ</span>
+          <span class="review-name">9 キタノコウセイ （1番人気・1.2倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">7 オパールテソーロ</span>
+          <span class="review-name">7 オパールテソーロ （2番人気・3.7倍）</span>
           <span class="result-badge hit">3着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">11 マチュ</span>
+          <span class="review-name">11 マチュ （9番人気・229.4倍）</span>
           <span class="result-badge miss">5着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">5 ギアセカンド</span>
+          <span class="review-name">5 ギアセカンド （4番人気・36.9倍）</span>
           <span class="result-badge miss">4着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-▲: 不的中</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 的中8.8倍🎯</div>
+        </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-笠松-3" data-buy="0">
       <summary><span class="sum-race">3R</span><span class="hasso">11:30発走</span><span class="sum-meta">1400mダート 10頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎4 ミラヴェリタ</span></summary>
@@ -2794,23 +2904,27 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">4 ミラヴェリタ</span>
+          <span class="review-name">4 ミラヴェリタ （1番人気・1.8倍）</span>
           <span class="result-badge hit">2着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">10 ベルシエル</span>
+          <span class="review-name">10 ベルシエル （5番人気・58.7倍）</span>
           <span class="result-badge miss">8着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">1 アダマント</span>
+          <span class="review-name">1 アダマント （8番人気・341.0倍）</span>
           <span class="result-badge miss">7着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">8 エヴァンスベイ</span>
+          <span class="review-name">8 エヴァンスベイ （4番人気・11.6倍）</span>
           <span class="result-badge miss">5着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-▲: 不的中</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
-    </details><details class="race-card is-skip is-hit" id="r-笠松-4" data-buy="0">
+    </details><details class="race-card is-skip" id="r-笠松-4" data-buy="0">
       <summary><span class="sum-race">4R</span><span class="hasso">12:00発走</span><span class="sum-meta">1580mダート 10頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎1 レイノルズナンバー</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -2884,21 +2998,25 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">1 レイノルズナンバー</span>
+          <span class="review-name">1 レイノルズナンバー （2番人気・1.8倍）</span>
           <span class="result-badge hit">2着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">6 トーセンシーギリヤ</span>
+          <span class="review-name">6 トーセンシーギリヤ （4番人気・48.6倍）</span>
           <span class="result-badge miss">4着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">8 ハイパーコール</span>
+          <span class="review-name">8 ハイパーコール （7番人気・175.5倍）</span>
           <span class="result-badge miss">8着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">5 ミズノミヤコ</span>
+          <span class="review-name">5 ミズノミヤコ （3番人気・11.4倍）</span>
           <span class="result-badge hit">3着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-▲: 不的中</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-笠松-5" data-buy="0">
       <summary><span class="sum-race">5R</span><span class="hasso">12:35発走</span><span class="sum-meta">1400mダート 12頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎2 キタノヒコボシ</span></summary>
@@ -2984,23 +3102,27 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">2 キタノヒコボシ</span>
+          <span class="review-name">2 キタノヒコボシ （4番人気・6.4倍）</span>
           <span class="result-badge hit">2着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">12 コパノエルバス</span>
+          <span class="review-name">12 コパノエルバス （2番人気・3.7倍）</span>
           <span class="result-badge miss">5着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">6 クリチャーシシー</span>
+          <span class="review-name">6 クリチャーシシー （5番人気・16.6倍）</span>
           <span class="result-badge miss">4着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">1 フレンドキング</span>
+          <span class="review-name">1 フレンドキング （7番人気・20.7倍）</span>
           <span class="result-badge miss">11着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">単勝◎: 不的中</div><div class="personal-line">馬連（◎-○▲☆△△△）6点: 不的中</div><div class="personal-line">3連複（◎-○▲☆△△△）15点: 不的中</div>
+        </div>
     </div></div>
-    </details><details class="race-card is-skip is-hit" id="r-笠松-6" data-buy="0">
+    </details><details class="race-card is-skip" id="r-笠松-6" data-buy="0">
       <summary><span class="sum-race">6R</span><span class="hasso">13:10発走</span><span class="sum-meta">1400mダート 10頭<span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎5 オガル</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -3074,23 +3196,27 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">5 オガル</span>
+          <span class="review-name">5 オガル （3番人気・2.8倍）</span>
           <span class="result-badge hit">3着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">9 マスティカーレ</span>
+          <span class="review-name">9 マスティカーレ （1番人気・2.3倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">3 レディソフィア</span>
+          <span class="review-name">3 レディソフィア （2番人気・2.7倍）</span>
           <span class="result-badge hit">2着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">2 シーズンインザサン</span>
+          <span class="review-name">2 シーズンインザサン （4番人気・16.3倍）</span>
           <span class="result-badge miss">10着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-▲: 的中1.3倍🎯</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
-    </details><details class="race-card is-skip is-hit" id="r-笠松-7" data-buy="0">
+    </details><details class="race-card is-skip" id="r-笠松-7" data-buy="0">
       <summary><span class="sum-race">7R</span><span class="hasso">13:40発走</span><span class="sum-meta">1580mダート 10頭<span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎3 リアルケンチャン</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -3164,23 +3290,27 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">3 リアルケンチャン</span>
+          <span class="review-name">3 リアルケンチャン （1番人気・1.6倍）</span>
           <span class="result-badge hit">2着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">10 ツキノコブネ</span>
+          <span class="review-name">10 ツキノコブネ （2番人気・2.6倍）</span>
           <span class="result-badge hit">3着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">4 ビービーラフター</span>
+          <span class="review-name">4 ビービーラフター （5番人気・58.8倍）</span>
           <span class="result-badge miss">4着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">9 ビートウマザンマイ</span>
+          <span class="review-name">9 ビートウマザンマイ （4番人気・14.5倍）</span>
           <span class="result-badge miss">5着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-▲: 不的中</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
-    </details><details class="race-card is-skip is-hit" id="r-笠松-8" data-buy="0">
+    </details><details class="race-card is-skip" id="r-笠松-8" data-buy="0">
       <summary><span class="sum-race">8R</span><span class="hasso">14:10発走</span><span class="sum-meta">1400mダート 10頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎5 カサナルキセキ</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -3254,23 +3384,27 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">5 カサナルキセキ</span>
+          <span class="review-name">5 カサナルキセキ （1番人気・2.6倍）</span>
           <span class="result-badge hit">2着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">7 フィティテラ</span>
+          <span class="review-name">7 フィティテラ （4番人気・12.6倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">8 サクセスブレイク</span>
+          <span class="review-name">8 サクセスブレイク （2番人気・2.7倍）</span>
           <span class="result-badge hit">3着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">3 アイヴカムバック</span>
+          <span class="review-name">3 アイヴカムバック （6番人気・34.4倍）</span>
           <span class="result-badge miss">5着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-○: 的中3.4倍🎯</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
-    </details><details class="race-card is-skip is-hit" id="r-笠松-9" data-buy="0">
+    </details><details class="race-card is-skip" id="r-笠松-9" data-buy="0">
       <summary><span class="sum-race">9R</span><span class="hasso">14:45発走</span><span class="sum-meta">1580mダート 6頭<span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎2 ブルーエ</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -3324,21 +3458,25 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">2 ブルーエ</span>
+          <span class="review-name">2 ブルーエ （3番人気・3.4倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">6 ヤマニンエルファバ</span>
+          <span class="review-name">6 ヤマニンエルファバ （1番人気・2.1倍）</span>
           <span class="result-badge hit">3着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">1 オレオス</span>
+          <span class="review-name">1 オレオス （2番人気・2.6倍）</span>
           <span class="result-badge miss">6着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">5 セイカユウヒ</span>
+          <span class="review-name">5 セイカユウヒ （4番人気・23.4倍）</span>
           <span class="result-badge hit">2着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-▲: 不的中</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△-○▲）8点: 的中54.2倍🎯</div>
+        </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-笠松-10" data-buy="0">
       <summary><span class="sum-race">10R</span><span class="hasso">15:15発走</span><span class="sum-meta">1580mダート 10頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎10 エルモサカスターノ</span></summary>
@@ -3414,11 +3552,11 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">10 エルモサカスターノ</span>
+          <span class="review-name">10 エルモサカスターノ （1番人気・1.5倍）</span>
           <span class="result-badge miss">4着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">7 トパーズテソーロ</span>
+          <span class="review-name">7 トパーズテソーロ （3番人気・6.5倍）</span>
           <span class="result-badge hit">2着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
@@ -3426,9 +3564,13 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="result-badge miss">取消/中止</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">8 ジョイフルサンデー</span>
+          <span class="review-name">8 ジョイフルサンデー （5番人気・51.0倍）</span>
           <span class="result-badge miss">7着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-○: 不的中</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-笠松-11" data-buy="0">
       <summary><span class="sum-race">11R</span><span class="hasso">15:50発走</span><span class="sum-meta">1900mダート 12頭<span class="badge badge-grade">重賞</span><span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎1 ヨサリ</span></summary>
@@ -3514,21 +3656,25 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">1 ヨサリ</span>
+          <span class="review-name">1 ヨサリ （6番人気・24.9倍）</span>
           <span class="result-badge miss">4着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">4 リバーストリート</span>
+          <span class="review-name">4 リバーストリート （8番人気・78.5倍）</span>
           <span class="result-badge miss">9着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">6 ゴコクホウジョウ</span>
+          <span class="review-name">6 ゴコクホウジョウ （2番人気・3.1倍）</span>
           <span class="result-badge miss">5着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">2 リバーサルトップ</span>
+          <span class="review-name">2 リバーサルトップ （3番人気・5.0倍）</span>
           <span class="result-badge miss">6着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">単勝◎: 不的中</div><div class="personal-line">馬連（◎-○▲☆△△△）6点: 不的中</div><div class="personal-line">3連複（◎-○▲☆△△△）15点: 不的中</div>
+        </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-笠松-12" data-buy="0">
       <summary><span class="sum-race">12R</span><span class="hasso">16:30発走</span><span class="sum-meta">1400mダート 10頭<span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎3 マルシェ</span></summary>
@@ -3604,11 +3750,11 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">3 マルシェ</span>
+          <span class="review-name">3 マルシェ （1番人気・2.3倍）</span>
           <span class="result-badge miss">6着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">7 メモリーフィルム</span>
+          <span class="review-name">7 メモリーフィルム （3番人気・4.4倍）</span>
           <span class="result-badge miss">5着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
@@ -3616,9 +3762,13 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="result-badge miss">取消/中止</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">10 オーキッドレディ</span>
+          <span class="review-name">10 オーキッドレディ （2番人気・3.6倍）</span>
           <span class="result-badge hit">3着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-○: 不的中</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
     </details></div>
     </section><section class="venue-section" id="v-門別">
@@ -3707,23 +3857,27 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">11 プランドゥボヌール</span>
+          <span class="review-name">11 プランドゥボヌール （1番人気・1.7倍）</span>
           <span class="result-badge hit">2着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">5 ヘルエッジロード</span>
+          <span class="review-name">5 ヘルエッジロード （4番人気・11.7倍）</span>
           <span class="result-badge miss">4着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">3 エムティグレース</span>
+          <span class="review-name">3 エムティグレース （5番人気・15.6倍）</span>
           <span class="result-badge miss">10着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">7 ピカンチチェリー</span>
+          <span class="review-name">7 ピカンチチェリー （7番人気・34.0倍）</span>
           <span class="result-badge miss">5着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-▲: 不的中</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
-    </details><details class="race-card is-skip is-hit" id="r-門別-2" data-buy="0">
+    </details><details class="race-card is-skip" id="r-門別-2" data-buy="0">
       <summary><span class="sum-race">2R</span><span class="hasso">15:10発走</span><span class="sum-meta">1100mダート 11頭<span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎5 ディアスプリンター</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -3802,23 +3956,27 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">5 ディアスプリンター</span>
+          <span class="review-name">5 ディアスプリンター （1番人気・1.9倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">7 テンビーキャッスル</span>
+          <span class="review-name">7 テンビーキャッスル （5番人気・27.6倍）</span>
           <span class="result-badge miss">6着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">6 ベストメッセージ</span>
+          <span class="review-name">6 ベストメッセージ （2番人気・3.0倍）</span>
           <span class="result-badge hit">3着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">9 ラップドアップ</span>
+          <span class="review-name">9 ラップドアップ （3番人気・4.4倍）</span>
           <span class="result-badge miss">9着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-○: 不的中</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
-    </details><details class="race-card is-skip is-hit" id="r-門別-3" data-buy="0">
+    </details><details class="race-card is-skip" id="r-門別-3" data-buy="0">
       <summary><span class="sum-race">3R</span><span class="hasso">15:45発走</span><span class="sum-meta">1200mダート 10頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎5 トラブルメーカー</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -3892,23 +4050,27 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">5 トラブルメーカー</span>
+          <span class="review-name">5 トラブルメーカー （1番人気・1.2倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">9 クリシュナラブリー</span>
+          <span class="review-name">9 クリシュナラブリー （2番人気・4.1倍）</span>
           <span class="result-badge hit">3着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">6 ブラックレイシ</span>
+          <span class="review-name">6 ブラックレイシ （5番人気・35.3倍）</span>
           <span class="result-badge miss">4着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">2 トシデンセツ</span>
+          <span class="review-name">2 トシデンセツ （3番人気・14.3倍）</span>
           <span class="result-badge hit">2着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-▲: 不的中</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 的中12.7倍🎯</div>
+        </div>
     </div></div>
-    </details><details class="race-card is-skip is-hit" id="r-門別-4" data-buy="0">
+    </details><details class="race-card is-skip" id="r-門別-4" data-buy="0">
       <summary><span class="sum-race">4R</span><span class="hasso">16:20発走</span><span class="sum-meta">1200mダート 10頭<span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎3 ボブノップスターン</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -3982,21 +4144,25 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">3 ボブノップスターン</span>
+          <span class="review-name">3 ボブノップスターン （2番人気・3.4倍）</span>
           <span class="result-badge hit">3着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">2 フロムザムーン</span>
+          <span class="review-name">2 フロムザムーン （1番人気・1.5倍）</span>
           <span class="result-badge miss">10着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">5 カーリンハート</span>
+          <span class="review-name">5 カーリンハート （3番人気・6.3倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">1 パレホ</span>
+          <span class="review-name">1 パレホ （5番人気・35.2倍）</span>
           <span class="result-badge miss">6着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-▲: 的中2.5倍🎯</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-門別-5" data-buy="0">
       <summary><span class="sum-race">5R</span><span class="hasso">16:55発走</span><span class="sum-meta">1200mダート 11頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎5 オーヴァザトラブル</span></summary>
@@ -4077,21 +4243,25 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">5 オーヴァザトラブル</span>
+          <span class="review-name">5 オーヴァザトラブル （4番人気・9.2倍）</span>
           <span class="result-badge miss">4着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">11 イナンナ</span>
+          <span class="review-name">11 イナンナ （2番人気・3.2倍）</span>
           <span class="result-badge miss">6着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">9 サイモンナイスラン</span>
+          <span class="review-name">9 サイモンナイスラン （1番人気・2.2倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">1 ドレッドナイト</span>
+          <span class="review-name">1 ドレッドナイト （8番人気・96.1倍）</span>
           <span class="result-badge miss">11着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">単勝◎: 不的中</div><div class="personal-line">馬連（◎-○▲☆△△△）6点: 不的中</div><div class="personal-line">3連複（◎-○▲☆△△△）15点: 不的中</div>
+        </div>
     </div></div>
     </details><div class="race-card is-excluded" id="r-門別-6" data-buy="0">
       <div class="race-card-row"><span class="sum-race">6R</span><span class="sum-meta">1000mダート 11頭</span><span class="sum-honmei sum-excluded">新馬戦（出走馬全員が初出走）のため除外</span></div>
@@ -4179,21 +4349,25 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">10 ウィルミスチヴァス</span>
+          <span class="review-name">10 ウィルミスチヴァス （3番人気・4.0倍）</span>
           <span class="result-badge miss">4着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">11 ペプチドエレノア</span>
+          <span class="review-name">11 ペプチドエレノア （1番人気・2.8倍）</span>
           <span class="result-badge hit">2着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">9 メイショウゲキハ</span>
+          <span class="review-name">9 メイショウゲキハ （5番人気・9.3倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">5 エムピーフリップ</span>
+          <span class="review-name">5 エムピーフリップ （8番人気・70.9倍）</span>
           <span class="result-badge miss">5着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-▲: 不的中</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-門別-8" data-buy="0">
       <summary><span class="sum-race">8R</span><span class="hasso">18:35発走</span><span class="sum-meta">1800mダート 9頭<span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎3 コーディアリティ</span></summary>
@@ -4264,21 +4438,25 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">3 コーディアリティ</span>
+          <span class="review-name">3 コーディアリティ （3番人気・5.2倍）</span>
           <span class="result-badge miss">5着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">8 ブクブクー</span>
+          <span class="review-name">8 ブクブクー （1番人気・1.6倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">6 グラムエッジ</span>
+          <span class="review-name">6 グラムエッジ （5番人気・16.8倍）</span>
           <span class="result-badge hit">2着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">4 ドリームジャック</span>
+          <span class="review-name">4 ドリームジャック （4番人気・15.8倍）</span>
           <span class="result-badge hit">3着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">単勝◎: 不的中</div><div class="personal-line">馬連（◎-○▲☆△△△）6点: 不的中</div><div class="personal-line">3連複（◎-○▲☆△△△）15点: 不的中</div>
+        </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-門別-9" data-buy="0">
       <summary><span class="sum-race">9R</span><span class="hasso">19:05発走</span><span class="sum-meta">1700mダート 9頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎9 ホウオウミンスター</span></summary>
@@ -4349,23 +4527,27 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">9 ホウオウミンスター</span>
+          <span class="review-name">9 ホウオウミンスター （2番人気・2.8倍）</span>
           <span class="result-badge miss">4着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">3 ワイルドカグラ</span>
+          <span class="review-name">3 ワイルドカグラ （1番人気・2.2倍）</span>
           <span class="result-badge hit">2着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">1 ラヴィレット</span>
+          <span class="review-name">1 ラヴィレット （3番人気・3.4倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">7 キボウハホウショウ</span>
+          <span class="review-name">7 キボウハホウショウ （6番人気・81.9倍）</span>
           <span class="result-badge miss">5着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-▲: 不的中</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
-    </details><details class="race-card is-skip is-hit" id="r-門別-10" data-buy="0">
+    </details><details class="race-card is-skip" id="r-門別-10" data-buy="0">
       <summary><span class="sum-race">10R</span><span class="hasso">19:40発走</span><span class="sum-meta">1000mダート 9頭<span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎8 ワンダーウーマン</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -4434,23 +4616,27 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">8 ワンダーウーマン</span>
+          <span class="review-name">8 ワンダーウーマン （2番人気・3.3倍）</span>
           <span class="result-badge hit">2着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">1 ジャイロ</span>
+          <span class="review-name">1 ジャイロ （4番人気・6.0倍）</span>
           <span class="result-badge miss">4着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">9 リオンダリーナ</span>
+          <span class="review-name">9 リオンダリーナ （1番人気・2.6倍）</span>
           <span class="result-badge hit">3着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">6 ギャルソンマンキ</span>
+          <span class="review-name">6 ギャルソンマンキ （3番人気・4.2倍）</span>
           <span class="result-badge miss">6着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-○: 不的中</div><div class="personal-line">馬単◎→○/▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
-    </details><details class="race-card is-skip is-hit" id="r-門別-11" data-buy="0">
+    </details><details class="race-card is-skip" id="r-門別-11" data-buy="0">
       <summary><span class="sum-race">11R</span><span class="hasso">20:15発走</span><span class="sum-meta">1200mダート 11頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎10 スティールペガサス</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -4529,21 +4715,25 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">10 スティールペガサス</span>
+          <span class="review-name">10 スティールペガサス （1番人気・2.3倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">1 ベラジオゼロ</span>
+          <span class="review-name">1 ベラジオゼロ （3番人気・4.8倍）</span>
           <span class="result-badge miss">5着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">6 ヤマニンパッセ</span>
+          <span class="review-name">6 ヤマニンパッセ （2番人気・3.8倍）</span>
           <span class="result-badge hit">2着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">5 ジャスパーメジャー</span>
+          <span class="review-name">5 ジャスパーメジャー （8番人気・41.6倍）</span>
           <span class="result-badge miss">8着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">ワイド◎-○: 不的中</div><div class="personal-line">馬単◎→▲: 的中9.0倍🎯</div><div class="personal-line">3連単F（◎-○▲☆△△△-○▲）10点: 不的中</div>
+        </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-門別-12" data-buy="0">
       <summary><span class="sum-race">12R</span><span class="hasso">20:50発走</span><span class="sum-meta">1700mダート 12頭<span class="badge badge-grade">重賞</span><span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎3 ヒノエゴールド</span></summary>
@@ -4629,21 +4819,25 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
       <div class="reviews"><div class="review-row">
           <span class="mark mark-honmei">◎</span>
-          <span class="review-name">3 ヒノエゴールド</span>
+          <span class="review-name">3 ヒノエゴールド （4番人気・10.6倍）</span>
           <span class="result-badge miss">7着</span>
         </div><div class="review-row">
           <span class="mark mark-o">○</span>
-          <span class="review-name">9 ダバイクリスタル</span>
+          <span class="review-name">9 ダバイクリスタル （2番人気・5.5倍）</span>
           <span class="result-badge miss">8着</span>
         </div><div class="review-row">
           <span class="mark mark-sankaku">▲</span>
-          <span class="review-name">5 シャディアラ</span>
+          <span class="review-name">5 シャディアラ （3番人気・8.0倍）</span>
           <span class="result-badge miss">5着</span>
         </div><div class="review-row">
           <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">12 スハッチェ</span>
+          <span class="review-name">12 スハッチェ （8番人気・23.9倍）</span>
           <span class="result-badge miss">10着</span>
         </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">個人の買い方なら:</div>
+          <div class="personal-line">単勝◎: 不的中</div><div class="personal-line">馬連（◎-○▲☆△△△）6点: 不的中</div><div class="personal-line">3連複（◎-○▲☆△△△）15点: 不的中</div>
+        </div>
     </div></div>
     </details></div>
     </section>
@@ -4665,9 +4859,13 @@ h1.title .nowrap{white-space:nowrap;}
     <div class="stat"><div class="num tabular">58<small>%</small></div><div class="label">◎単勝回収率</div></div>
     <div class="stat"><div class="num tabular">87<small>%</small></div><div class="label">◎複勝回収率</div></div>
   </div>
-  <p class="section-lead">注目レースのみ対象。馬単・馬連・ワイドは◎-○▲☆の3点均等（馬単は◎→相手の順序指定）、3連単は◎○▲BOX（6点）を100円均等で買った場合の成績（仮定シミュレーション）です。</p>
-  <div class="stat-row"><div class="stat"><div class="num tabular">370<small>%</small></div><div class="label">単勝◎回収率（注目のみ）</div></div><div class="stat"><div class="num tabular">527<small>%</small></div><div class="label">馬単◎→○▲☆回収率</div></div><div class="stat"><div class="num tabular">273<small>%</small></div><div class="label">馬連◎-○▲☆回収率</div></div><div class="stat"><div class="num tabular">100<small>%</small></div><div class="label">ワイド◎-○▲☆回収率</div></div><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">3連複◎軸流し回収率</div></div><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">3連単◎○▲BOX回収率</div></div></div>
-  <p class="section-lead">こちらは全レース対象（見送りレースも含めてユーザー個人の実弾買い目パターン（◎確定単勝オッズ5倍以下: ワイド1点＋馬単2点＋3連単F最大10点／5倍超: 単勝＋馬連最大6点＋3連複最大15点）で買った場合の参考値）です。</p>
+  <p class="section-lead">注目レース（S）対象。個人の買い方で買った場合の成績（仮定シミュレーション）です。</p>
+  <p class="section-lead personal-formula">
+    ◎5倍以下：ワイド◎-○▲(高い方) ＋ 馬単◎→○・◎→▲ ＋ 3連単F（◎-○▲☆△△△-○▲）<br>
+    ◎5倍超：単勝◎ ＋ 馬連（◎-○▲☆△△△） ＋ 3連複（◎-○▲☆△△△）
+  </p>
+  <div class="stat-row"><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">ワイド(個人想定)回収率（◎5倍以下・1R）</div></div><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">馬単(個人想定)回収率（◎5倍以下・1R）</div></div><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">3連単F(個人想定)回収率（◎5倍以下・1R）</div></div></div>
+  <p class="section-lead">こちらは全レース対象（見送りレースも含めて個人の買い方パターンで買った場合の参考値）です。</p>
   <div class="stat-row"><div class="stat"><div class="num tabular">56<small>%</small></div><div class="label">ワイド(個人想定)回収率（全レース・◎5倍以下・33R）</div></div><div class="stat"><div class="num tabular">90<small>%</small></div><div class="label">馬単(個人想定)回収率（全レース・◎5倍以下・33R）</div></div><div class="stat"><div class="num tabular">56<small>%</small></div><div class="label">3連単F(個人想定)回収率（全レース・◎5倍以下・33R）</div></div><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">単勝(個人想定)回収率（全レース・◎5倍超・13R）</div></div><div class="stat"><div class="num tabular">83<small>%</small></div><div class="label">馬連(個人想定)回収率（全レース・◎5倍超・13R）</div></div><div class="stat"><div class="num tabular">28<small>%</small></div><div class="label">3連複(個人想定)回収率（全レース・◎5倍超・13R）</div></div></div></div>
 
   <div class="to-top"><a href="#top">↑ ページ上部へ</a></div>
