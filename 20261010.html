@@ -167,6 +167,8 @@ h1.title .nowrap{white-space:nowrap;}
   text-transform:uppercase;margin:34px 0 4px;scroll-margin-top:64px;
 }
 .section-lead{font-size:14px;color:var(--text-muted);margin:0 0 16px;}
+.personal-formula{font-size:13px;line-height:1.9;background:var(--surface-2);
+  border-radius:8px;padding:10px 12px;margin-top:-10px;}
 .section-lead b{color:var(--text);font-weight:700;}
 
 /* ---- pick cards (本日のおすすめ) ---- */
@@ -298,6 +300,7 @@ h1.title .nowrap{white-space:nowrap;}
   overflow:hidden;scroll-margin-top:64px;
 }
 .race-card.is-buy{border-color:var(--gold-tint-strong);}
+.race-card.is-hit{border-color:#3fae5a;border-width:2px;}
 .race-card summary{
   list-style:none;cursor:pointer;padding:12px 14px;display:flex;align-items:center;
   gap:10px;flex-wrap:wrap;
@@ -1022,7 +1025,7 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
     </div>
       </div>
-    </details><details class="race-card is-skip" id="r-京都-9" data-buy="0">
+    </details><details class="race-card is-skip is-hit" id="r-京都-9" data-buy="0">
       <summary><span class="sum-race">9R</span><span class="hasso">14:15発走</span><span class="sum-meta">1400mダ 16頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎6 テーオーパーセル</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
@@ -1367,7 +1370,7 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
     </div>
       </div>
-    </details><details class="race-card is-skip" id="r-京都-12" data-buy="0">
+    </details><details class="race-card is-skip is-hit" id="r-京都-12" data-buy="0">
       <summary><span class="sum-race">12R</span><span class="hasso">16:10発走</span><span class="sum-meta">1400mダ 16頭 <span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎5 ペプチドレオン</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
@@ -1718,7 +1721,7 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
     </div>
       </div>
-    </details><details class="race-card is-skip" id="r-東京-3" data-buy="0">
+    </details><details class="race-card is-skip is-hit" id="r-東京-3" data-buy="0">
       <summary><span class="sum-race">3R</span><span class="hasso">11:05発走</span><span class="sum-meta">1600mダ 16頭 <span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎11 ノシェリー</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
@@ -1953,7 +1956,7 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
     </div>
       </div>
-    </details><details class="race-card is-skip" id="r-東京-8" data-buy="0">
+    </details><details class="race-card is-skip is-hit" id="r-東京-8" data-buy="0">
       <summary><span class="sum-race">8R</span><span class="hasso">14:00発走</span><span class="sum-meta">2000m芝 11頭 <span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎6 ウップヘリーア</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
@@ -2057,7 +2060,7 @@ h1.title .nowrap{white-space:nowrap;}
         </div></div>
     </div>
       </div>
-    </details><details class="race-card is-skip" id="r-東京-9" data-buy="0">
+    </details><details class="race-card is-skip is-hit" id="r-東京-9" data-buy="0">
       <summary><span class="sum-race">9R</span><span class="hasso">14:35発走</span><span class="sum-meta">2400m芝 9頭 <span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎3 ノラリクラリ</span></summary>
       <div class="race-detail">
         <ul class="horse-list"><li class="horse-list-head">
@@ -2502,6 +2505,9 @@ h1.title .nowrap{white-space:nowrap;}
 
   <div class="section-eyebrow">的中ピックアップ</div>
   <div class="highlight-list"><div class="highlight-card">
+          <span class="highlight-tag">🏆 本日最高配当</span>
+          <span class="highlight-body">東京3R: ワイド◎-☆ 7.3倍</span>
+        </div><div class="highlight-card">
           <span class="highlight-tag">💰 ◎10倍以上的中</span>
           <span class="highlight-body">京都11R: ◎サイモンシュバリエ 1着（5番人気・10.8倍）</span>
         </div></div>
@@ -2514,7 +2520,11 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="stat"><div class="num tabular">132<small>%</small></div><div class="label">◎単勝回収率</div></div>
       <div class="stat"><div class="num tabular">80<small>%</small></div><div class="label">◎複勝回収率</div></div>
     </div>
-  <p class="section-lead">注目レース（S:推奨＋A+:信頼度高だが見送り）対象。ユーザー個人の実弾買い目パターン（◎確定単勝オッズ5倍以下: ワイド1点＋馬単2点＋3連単F最大10点／5倍超: 単勝＋馬連最大6点＋3連複最大15点。△△△は次点スコア3頭固定）で買った場合の成績（仮定シミュレーション）です。</p>
+  <p class="section-lead">注目レース（S・A+）対象。個人の買い方で買った場合の成績（仮定シミュレーション）です。</p>
+  <p class="section-lead personal-formula">
+    ◎5倍以下：ワイド◎-○▲(高い方) ＋ 馬単◎→○・◎→▲ ＋ 3連単F（◎-○▲☆△△△-○▲）<br>
+    ◎5倍超：単勝◎ ＋ 馬連（◎-○▲☆△△△） ＋ 3連複（◎-○▲☆△△△）
+  </p>
   <div class="stat-row"><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">ワイド(個人想定)回収率（◎5倍以下・3R）</div></div><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">馬単(個人想定)回収率（◎5倍以下・3R）</div></div><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">3連単F(個人想定)回収率（◎5倍以下・3R）</div></div></div>
   <p class="section-lead">こちらは全レース対象（見送りレースも含めて個人の買い方パターンで買った場合の参考値）です。</p>
   <div class="stat-row"><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">ワイド(個人想定)回収率（全レース・◎5倍以下・15R）</div></div><div class="stat"><div class="num tabular">103<small>%</small></div><div class="label">馬単(個人想定)回収率（全レース・◎5倍以下・15R）</div></div><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">3連単F(個人想定)回収率（全レース・◎5倍以下・15R）</div></div><div class="stat"><div class="num tabular">360<small>%</small></div><div class="label">単勝(個人想定)回収率（全レース・◎5倍超・3R）</div></div><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">馬連(個人想定)回収率（全レース・◎5倍超・3R）</div></div><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">3連複(個人想定)回収率（全レース・◎5倍超・3R）</div></div></div></div>
