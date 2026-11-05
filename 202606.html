@@ -71,6 +71,9 @@ h1{font-size:24px;font-weight:800;margin:6px 0 4px;letter-spacing:-.01em;}
 }
 .list-nar a{border-left-color:var(--accent-nar);}
 .list a:active{background:var(--border);}
+.list a.is-plus{border:2px solid #3fae5a;}   /* 注目レース(S)の回収率が100%超の日(2026/11/05・ユーザー指示)。レースカードの的中枠(#3fae5a)と同色 */
+.plus-legend{font-size:12px;color:var(--text-muted);margin:0 0 10px;}
+.plus-legend i{display:inline-block;width:12px;height:12px;border:2px solid #3fae5a;border-radius:3px;vertical-align:-2px;margin-right:4px;}
 .footer{margin-top:24px;font-size:11.5px;color:var(--text-muted);text-align:center;}
 
 .tabular{font-variant-numeric:tabular-nums;}
@@ -111,6 +114,7 @@ h1{font-size:24px;font-weight:800;margin:6px 0 4px;letter-spacing:-.01em;}
     <button class="tab-btn" data-tab="nar">地方</button>
     <button class="tab-btn" data-tab="matome">まとめ</button>
   </div>
+  <p class="plus-legend"><i></i>緑の枠＝中央・注目レース(S)の回収率が100%を超えた日</p>
   <ul class="list" id="list-jra"><li><a href="20260628.html">2026年6月28日（日）</a></li><li><a href="20260627.html">2026年6月27日（土）</a></li><li><a href="20260621.html">2026年6月21日（日）</a></li><li><a href="20260620.html">2026年6月20日（土）</a></li><li><a href="20260614.html">2026年6月14日（日）</a></li><li><a href="20260613.html">2026年6月13日（土）</a></li><li><a href="20260606.html">2026年6月6日（土）</a></li></ul>
   <ul class="list list-nar" id="list-nar" style="display:none;"><li style="color:var(--text-muted);font-weight:400;">この月の地方レポートはありません。</li></ul>
   <div id="pane-matome" style="display:none;">
@@ -126,13 +130,13 @@ h1{font-size:24px;font-weight:800;margin:6px 0 4px;letter-spacing:-.01em;}
   <p class="section-lead">注目レース（S）対象。買い目(検証中)で買った場合の成績（仮定シミュレーション）です。</p>
   <p class="section-lead personal-formula">
     3連単F2：◎→⭐︎(2頭)→○▲（4点） ＋ 馬連：◎-⭐︎(2頭)（2点）　各300円・計1,800円/R<br>
-    ⭐︎＝◎○▲以外で6番人気以下のスコア上位2頭
+    ⭐︎＝◎○▲以外で6番人気以下かつ相対勝率3%以上のスコア上位2頭
   </p>
-  <div class="stat-row stat-row-1"><div class="stat"><div class="num tabular">10<small>%</small></div><div class="label">トータル回収率(検証中)（42R・1点300円の実額ベース）</div></div></div>
-  <div class="stat-row stat-row-2"><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">3連単F2(検証中)回収率（42R）</div></div><div class="stat"><div class="num tabular">29<small>%</small></div><div class="label">馬連(検証中)回収率（42R）</div></div></div>
+  <div class="stat-row stat-row-1"><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">トータル回収率(検証中)（28R・1点300円の実額ベース）</div></div></div>
+  <div class="stat-row stat-row-2"><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">3連単F2(検証中)回収率（28R）</div></div><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">馬連(検証中)回収率（28R）</div></div></div>
   <p class="section-lead">【参考】全レース対象（A+・見送りレースも含めて買い目(検証中)で買った場合の参考値）です。</p>
-  <div class="stat-row stat-row-1"><div class="stat"><div class="num tabular">42<small>%</small></div><div class="label">トータル回収率(検証中)（全レース・201R・1点300円の実額ベース）</div></div></div>
-  <div class="stat-row stat-row-2"><div class="stat"><div class="num tabular">27<small>%</small></div><div class="label">3連単F2(検証中)回収率（全レース・201R）</div></div><div class="stat"><div class="num tabular">74<small>%</small></div><div class="label">馬連(検証中)回収率（全レース・201R）</div></div></div></div>
+  <div class="stat-row stat-row-1"><div class="stat"><div class="num tabular">51<small>%</small></div><div class="label">トータル回収率(検証中)（全レース・161R・1点300円の実額ベース）</div></div></div>
+  <div class="stat-row stat-row-2"><div class="stat"><div class="num tabular">28<small>%</small></div><div class="label">3連単F2(検証中)回収率（全レース・161R）</div></div><div class="stat"><div class="num tabular">95<small>%</small></div><div class="label">馬連(検証中)回収率（全レース・161R）</div></div></div></div>
   </div>
   <div class="footer">Personal prediction system</div>
 </div>
