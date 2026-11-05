@@ -71,6 +71,9 @@ h1{font-size:24px;font-weight:800;margin:6px 0 4px;letter-spacing:-.01em;}
 }
 .list-nar a{border-left-color:var(--accent-nar);}
 .list a:active{background:var(--border);}
+.list a.is-plus{border:2px solid #3fae5a;}   /* 注目レース(S)の回収率が100%超の日(2026/11/05・ユーザー指示)。レースカードの的中枠(#3fae5a)と同色 */
+.plus-legend{font-size:12px;color:var(--text-muted);margin:0 0 10px;}
+.plus-legend i{display:inline-block;width:12px;height:12px;border:2px solid #3fae5a;border-radius:3px;vertical-align:-2px;margin-right:4px;}
 .footer{margin-top:24px;font-size:11.5px;color:var(--text-muted);text-align:center;}
 
 .tabular{font-variant-numeric:tabular-nums;}
@@ -111,6 +114,7 @@ h1{font-size:24px;font-weight:800;margin:6px 0 4px;letter-spacing:-.01em;}
     <button class="tab-btn" data-tab="nar">地方</button>
     <button class="tab-btn" data-tab="matome">まとめ</button>
   </div>
+  <p class="plus-legend"><i></i>緑の枠＝中央・注目レース(S)の回収率が100%を超えた日</p>
   <ul class="list" id="list-jra"><li><a href="20261101.html">2026年11月1日（日）</a></li></ul>
   <ul class="list list-nar" id="list-nar" style="display:none;"><li><a href="nar_20261106.html">2026年11月6日（金）</a></li><li><a href="nar_20261105.html">2026年11月5日（木）</a></li><li><a href="nar_20261104.html">2026年11月4日（水）</a></li><li><a href="nar_20261103.html">2026年11月3日（火）</a></li><li><a href="nar_20261102.html">2026年11月2日（月）</a></li><li><a href="nar_20261101.html">2026年11月1日（日）</a></li></ul>
   <div id="pane-matome" style="display:none;">
@@ -126,7 +130,7 @@ h1{font-size:24px;font-weight:800;margin:6px 0 4px;letter-spacing:-.01em;}
   <p class="section-lead">注目レース（S）対象。買い目(検証中)で買った場合の成績（仮定シミュレーション）です。</p>
   <p class="section-lead personal-formula">
     3連単F2：◎→⭐︎(2頭)→○▲（4点） ＋ 馬連：◎-⭐︎(2頭)（2点）　各300円・計1,800円/R<br>
-    ⭐︎＝◎○▲以外で6番人気以下のスコア上位2頭
+    ⭐︎＝◎○▲以外で6番人気以下かつ相対勝率3%以上のスコア上位2頭
   </p>
   <div class="stat-row stat-row-1"><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">トータル回収率(検証中)（1R・1点300円の実額ベース）</div></div></div>
   <div class="stat-row stat-row-2"><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">3連単F2(検証中)回収率（1R）</div></div><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">馬連(検証中)回収率（1R）</div></div></div>
