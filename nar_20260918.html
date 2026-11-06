@@ -151,6 +151,7 @@ h1.title .nowrap{white-space:nowrap;}
 .mark-sankaku{color:#6B7FCF;}
 .mark-hoshi{color:#B06BC2;}
 .mark-yonkaku{color:var(--text-faint);font-size:13px;}
+.star-note{font-size:12px;color:var(--text-faint);margin:6px 0 2px;}
 .horse-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:600;min-width:0;}
 .jra-bridge-tag{display:inline-block;font-size:9.5px;font-weight:700;color:var(--text-faint);
   border:1px solid var(--border-strong);border-radius:4px;padding:0 4px;vertical-align:middle;
@@ -231,7 +232,9 @@ h1.title .nowrap{white-space:nowrap;}
   <p class="win-note">相対勝率は、過去成績などから独自に算出したスコアを、
   そのレース内で相対比較した数字です。勝率の計算にオッズは使用していません。<br>
   信頼度は<b>S→A+→A→B</b>の順。<b>JRA</b>タグ＝地方競馬の通算が
-  5走未満の馬に、中央（JRA）での戦績を走歴に加味していることを示します。</p>
+  5走未満の馬に、中央（JRA）での戦績を走歴に加味していることを示します。<br>
+  買い目は 馬単 ◎→▲（400円）＋ 単勝 ◎（300円）＋ 三連単 ◎→▲→⭐︎（300円）。<br>
+  ⭐︎＝◎○▲以外で6番人気以下のスコア最上位1頭（前夜20時・当日朝9時の人気で打ち、9時で確定）。</p>
   <div class="stat-row stat-row-2">
     <div class="stat"><div class="num tabular">36<small>R</small></div><div class="label">対象レース</div></div>
     <div class="stat stat-buy"><div class="num tabular">2<small>R</small></div><div class="label">注目</div></div>
@@ -280,24 +283,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:21%"></div></div><span class="p3-num">10.95%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">10</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark"></span>
       <span class="horse-name">リンノパルピート</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:7%"></div></div><span class="p3-num">3.78%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:7%"></div></div><span class="p3-num">3.78%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">ゴッドテソロ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:7%"></div></div><span class="p3-num">3.66%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:7%"></div></div><span class="p3-num">3.66%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">9</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">インフォーマント</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:6%"></div></div><span class="p3-num">3.26%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:6%"></div></div><span class="p3-num">3.26%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">11</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">フローラビーナス</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:5%"></div></div><span class="p3-num">2.90%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:5%"></div></div><span class="p3-num">2.90%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
       <span class="mark"></span>
@@ -324,11 +327,12 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">パルジファル</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:1%"></div></div><span class="p3-num">0.76%</span></div>
     </li></ul>
+      
       <div class="results">
       <div class="results-head">結果</div>
       <div class="podium"><div class="podium-row">
           <span class="podium-rank">1着</span>
-          <span class="mark mark-yonkaku">△2</span>
+          <span class="mark"></span>
           <span class="podium-name">9 インフォーマント</span>
           <span class="podium-ninki">3番人気・7.1倍</span>
         </div><div class="podium-row">
@@ -338,7 +342,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-ninki">6番人気・28.9倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">3着</span>
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark"></span>
           <span class="podium-name">10 リンノパルピート</span>
           <span class="podium-ninki">2番人気・6.7倍</span>
         </div></div>
@@ -355,15 +359,14 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">5 フルオブエナジー （4番人気・9.8倍）</span>
           <span class="result-badge miss">7着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">10 リンノパルピート （2番人気・6.7倍）</span>
-          <span class="result-badge hit">3着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="review-name">4 ゴッドテソロ （10番人気・79.0倍）</span>
           <span class="result-badge miss">9着</span>
         </div></div>
-      
+      <div class="personal-bets">
+          <div class="personal-bets-head">買い目(検証中):</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 不的中</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
+        </div>
     </div>
     </article><article class="pick-card" id="r-大井-9">
       <header class="pick-head">
@@ -394,24 +397,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:12%"></div></div><span class="p3-num">6.99%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">ゴールドジャッジ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:11%"></div></div><span class="p3-num">6.47%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark"></span>
       <span class="horse-name">トランジェント</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:8%"></div></div><span class="p3-num">5.08%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:8%"></div></div><span class="p3-num">5.08%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">9</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">ポンドボーイ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:6%"></div></div><span class="p3-num">3.84%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:6%"></div></div><span class="p3-num">3.84%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">7</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">グレアネオンライト</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:4%"></div></div><span class="p3-num">2.50%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:4%"></div></div><span class="p3-num">2.50%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">6</span>
       <span class="mark"></span>
@@ -423,21 +426,22 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="horse-name">ビシャモンテン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:2%"></div></div><span class="p3-num">1.24%</span></div>
     </li></ul>
+      
       <div class="results">
       <div class="results-head">結果</div>
       <div class="podium"><div class="podium-row">
           <span class="podium-rank">1着</span>
-          <span class="mark mark-yonkaku">△3</span>
+          <span class="mark"></span>
           <span class="podium-name">7 グレアネオンライト</span>
           <span class="podium-ninki">4番人気・17.0倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">2着</span>
-          <span class="mark mark-yonkaku">△2</span>
+          <span class="mark"></span>
           <span class="podium-name">9 ポンドボーイ</span>
           <span class="podium-ninki">6番人気・44.0倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">3着</span>
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="podium-name">2 ゴールドジャッジ</span>
           <span class="podium-ninki">8番人気・109.8倍</span>
         </div></div>
@@ -454,17 +458,13 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">3 ブルマリンシェール （2番人気・6.9倍）</span>
           <span class="result-badge miss">9着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="review-name">2 ゴールドジャッジ （8番人気・109.8倍）</span>
           <span class="result-badge hit">3着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
-          <span class="review-name">4 トランジェント （5番人気・25.6倍）</span>
-          <span class="result-badge miss">8着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-○: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△1△2△3-○▲）10点: 不的中</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 不的中</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div>
     </article>
@@ -494,24 +494,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:91%"></div></div><span class="p3-num">17.85%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">マイネルカイザー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:68%"></div></div><span class="p3-num">13.21%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">6</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark"></span>
       <span class="horse-name">ジーティーフクフク <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:47%"></div></div><span class="p3-num">9.13%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:47%"></div></div><span class="p3-num">9.13%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#FFFFFF;color:#141C26;border:1.5px solid #B9CBDD;">1</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">ディープシャロー <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:39%"></div></div><span class="p3-num">7.66%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:39%"></div></div><span class="p3-num">7.66%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">7</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">ユウブルボン <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:38%"></div></div><span class="p3-num">7.49%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:38%"></div></div><span class="p3-num">7.49%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">9</span>
       <span class="mark"></span>
@@ -541,7 +541,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-ninki">4番人気・11.7倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">3着</span>
-          <span class="mark mark-yonkaku">△2</span>
+          <span class="mark"></span>
           <span class="podium-name">1 ディープシャロー</span>
           <span class="podium-ninki">2番人気・4.0倍</span>
         </div></div>
@@ -558,17 +558,13 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">10 エルファリス （3番人気・9.5倍）</span>
           <span class="result-badge miss">4着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="review-name">3 マイネルカイザー （7番人気・23.5倍）</span>
           <span class="result-badge miss">7着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
-          <span class="review-name">6 ジーティーフクフク （5番人気・15.5倍）</span>
-          <span class="result-badge miss">8着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-○: 的中3.3倍🎯</div><div class="personal-line">3連単F（◎-○▲☆△1△2△3-○▲）10点: 不的中</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 的中1.5倍🎯</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-名古屋-2" data-buy="0">
@@ -592,24 +588,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:73%"></div></div><span class="p3-num">17.40%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark"></span>
       <span class="horse-name">ピゲ <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:57%"></div></div><span class="p3-num">13.59%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:57%"></div></div><span class="p3-num">13.59%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F2E100;color:#141C26;border:none;">5</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark"></span>
       <span class="horse-name">シルフ <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:48%"></div></div><span class="p3-num">11.50%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:48%"></div></div><span class="p3-num">11.50%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">10</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">エルヴ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:24%"></div></div><span class="p3-num">5.72%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:24%"></div></div><span class="p3-num">5.72%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">ワルキューレクイン <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:14%"></div></div><span class="p3-num">3.25%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:14%"></div></div><span class="p3-num">3.25%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">9</span>
       <span class="mark"></span>
@@ -629,12 +625,12 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="results-head">結果</div>
       <div class="podium"><div class="podium-row">
           <span class="podium-rank">1着</span>
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark"></span>
           <span class="podium-name">4 ピゲ</span>
           <span class="podium-ninki">2番人気・3.7倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">2着</span>
-          <span class="mark mark-yonkaku">△1</span>
+          <span class="mark"></span>
           <span class="podium-name">5 シルフ</span>
           <span class="podium-ninki">1番人気・3.5倍</span>
         </div><div class="podium-row">
@@ -656,17 +652,13 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">3 ビーウィナー （4番人気・4.4倍）</span>
           <span class="result-badge hit">3着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">4 ピゲ （2番人気・3.7倍）</span>
-          <span class="result-badge hit">1着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
-          <span class="review-name">5 シルフ （1番人気・3.5倍）</span>
-          <span class="result-badge hit">2着</span>
+          <span class="mark mark-hoshi">⭐︎</span>
+          <span class="review-name">10 エルヴ （7番人気・39.0倍）</span>
+          <span class="result-badge miss">5着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-▲: 不的中</div><div class="personal-line">ワイド◎-○: 不的中</div><div class="personal-line">馬単（◎→○▲☆△1△2△3）6点: 不的中</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 不的中</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-名古屋-3" data-buy="0">
@@ -690,24 +682,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:28%"></div></div><span class="p3-num">10.28%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F2E100;color:#141C26;border:none;">5</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">ミョンソクコムドリ <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:22%"></div></div><span class="p3-num">8.09%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">6</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark"></span>
       <span class="horse-name">ボドニーク</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:16%"></div></div><span class="p3-num">5.87%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:16%"></div></div><span class="p3-num">5.87%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">10</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">ハウスオンファイア</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:14%"></div></div><span class="p3-num">5.18%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:14%"></div></div><span class="p3-num">5.18%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">ピコレーヴ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:12%"></div></div><span class="p3-num">4.53%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:12%"></div></div><span class="p3-num">4.53%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
       <span class="mark"></span>
@@ -727,17 +719,17 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="results-head">結果</div>
       <div class="podium"><div class="podium-row">
           <span class="podium-rank">1着</span>
-          <span class="mark mark-yonkaku">△3</span>
+          <span class="mark"></span>
           <span class="podium-name">3 ピコレーヴ</span>
           <span class="podium-ninki">3番人気・18.8倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">2着</span>
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="podium-name">5 ミョンソクコムドリ</span>
           <span class="podium-ninki">7番人気・56.6倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">3着</span>
-          <span class="mark mark-yonkaku">△2</span>
+          <span class="mark"></span>
           <span class="podium-name">10 ハウスオンファイア</span>
           <span class="podium-ninki">6番人気・34.0倍</span>
         </div></div>
@@ -754,22 +746,18 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">9 マコトエウロペ （5番人気・22.1倍）</span>
           <span class="result-badge miss">4着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="review-name">5 ミョンソクコムドリ （7番人気・56.6倍）</span>
           <span class="result-badge hit">2着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
-          <span class="review-name">6 ボドニーク （4番人気・20.1倍）</span>
-          <span class="result-badge miss">7着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△1△2△3-○▲）10点: 不的中</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 不的中</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
     </details><div class="race-card is-excluded" id="r-名古屋-4" data-buy="0">
       <div class="race-card-row"><span class="sum-race">4R</span><span class="sum-meta">900mダート 7頭</span><span class="sum-honmei sum-excluded">新馬戦（出走馬全員が初出走）のため除外</span></div>
-    </div><details class="race-card is-skip" id="r-名古屋-5" data-buy="0">
+    </div><details class="race-card is-skip is-hit" id="r-名古屋-5" data-buy="0">
       <summary><span class="sum-race">5R</span><span class="hasso">14:40発走</span><span class="sum-meta">1500mダート 10頭<span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎7 ハンクスター</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -790,24 +778,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:58%"></div></div><span class="p3-num">18.33%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">9</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark"></span>
       <span class="horse-name">キャンディタフト</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:25%"></div></div><span class="p3-num">7.87%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:25%"></div></div><span class="p3-num">7.87%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">8</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">レイエル</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:24%"></div></div><span class="p3-num">7.43%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:24%"></div></div><span class="p3-num">7.43%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">アルゴフィリオ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:16%"></div></div><span class="p3-num">5.04%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:16%"></div></div><span class="p3-num">5.04%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">10</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">ダックリン</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:11%"></div></div><span class="p3-num">3.39%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:11%"></div></div><span class="p3-num">3.39%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#FFFFFF;color:#141C26;border:1.5px solid #B9CBDD;">1</span>
       <span class="mark"></span>
@@ -837,7 +825,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-ninki">1番人気・2.4倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">3着</span>
-          <span class="mark mark-yonkaku">△2</span>
+          <span class="mark"></span>
           <span class="podium-name">4 アルゴフィリオ</span>
           <span class="podium-ninki">7番人気・37.8倍</span>
         </div></div>
@@ -854,17 +842,13 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">2 シヴァールバーニ （3番人気・3.2倍）</span>
           <span class="result-badge miss">5着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">9 キャンディタフト （4番人気・12.4倍）</span>
-          <span class="result-badge miss">10着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="review-name">8 レイエル （6番人気・34.1倍）</span>
           <span class="result-badge miss">6着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△1△2△3-○▲）10点: 不的中</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 的中2.9倍🎯</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
     </details><details class="race-card is-skip is-hit" id="r-名古屋-6" data-buy="0">
@@ -888,24 +872,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:21%"></div></div><span class="p3-num">7.83%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">メディアプンタ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:18%"></div></div><span class="p3-num">6.50%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark"></span>
       <span class="horse-name">エグザルテーション</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:10%"></div></div><span class="p3-num">3.69%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:10%"></div></div><span class="p3-num">3.69%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">10</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">イブシギン</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:10%"></div></div><span class="p3-num">3.58%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:10%"></div></div><span class="p3-num">3.58%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">9</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">シャイニーセーラー</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:10%"></div></div><span class="p3-num">3.57%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:10%"></div></div><span class="p3-num">3.57%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">6</span>
       <span class="mark"></span>
@@ -935,7 +919,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-ninki">1番人気・1.6倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">2着</span>
-          <span class="mark mark-yonkaku">△3</span>
+          <span class="mark"></span>
           <span class="podium-name">9 シャイニーセーラー</span>
           <span class="podium-ninki">5番人気・28.4倍</span>
         </div><div class="podium-row">
@@ -957,17 +941,13 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">1 カフジジャワ （3番人気・12.9倍）</span>
           <span class="result-badge miss">6着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="review-name">3 メディアプンタ （6番人気・31.7倍）</span>
           <span class="result-badge miss">4着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
-          <span class="review-name">4 エグザルテーション （10番人気・218.6倍）</span>
-          <span class="result-badge miss">10着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△1△2△3-○▲）10点: 的中44.2倍🎯</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 的中1.6倍🎯</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-名古屋-7" data-buy="0">
@@ -991,24 +971,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:25%"></div></div><span class="p3-num">12.88%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">8</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark"></span>
       <span class="horse-name">テーオーウィルソン</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:16%"></div></div><span class="p3-num">8.18%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:16%"></div></div><span class="p3-num">8.18%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">9</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark"></span>
       <span class="horse-name">ドラゴンラック</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:9%"></div></div><span class="p3-num">4.94%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:9%"></div></div><span class="p3-num">4.94%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">7</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">オーセンティアン</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:5%"></div></div><span class="p3-num">2.51%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:5%"></div></div><span class="p3-num">2.51%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">6</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">オニクダイスキマン</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:4%"></div></div><span class="p3-num">2.08%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:4%"></div></div><span class="p3-num">2.08%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#FFFFFF;color:#141C26;border:1.5px solid #B9CBDD;">1</span>
       <span class="mark"></span>
@@ -1060,20 +1040,16 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">11 アミアン （2番人気・3.2倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">8 テーオーウィルソン （5番人気・13.6倍）</span>
-          <span class="result-badge miss">9着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
-          <span class="review-name">9 ドラゴンラック （4番人気・11.0倍）</span>
-          <span class="result-badge miss">4着</span>
+          <span class="mark mark-hoshi">⭐︎</span>
+          <span class="review-name">7 オーセンティアン （6番人気・21.3倍）</span>
+          <span class="result-badge miss">8着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-○: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△1△2△3-○▲）10点: 不的中</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 不的中</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
-    </details><details class="race-card is-skip is-hit" id="r-名古屋-8" data-buy="0">
+    </details><details class="race-card is-skip" id="r-名古屋-8" data-buy="0">
       <summary><span class="sum-race">8R</span><span class="hasso">16:15発走</span><span class="sum-meta">1500mダート 12頭<span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎9 ポムドール</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -1094,24 +1070,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:32%"></div></div><span class="p3-num">11.22%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">10</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark"></span>
       <span class="horse-name">ゼーブルージュ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:16%"></div></div><span class="p3-num">5.62%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:16%"></div></div><span class="p3-num">5.62%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">グレースシャルマン</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:11%"></div></div><span class="p3-num">3.88%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:11%"></div></div><span class="p3-num">3.88%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">8</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">リックトメンマ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:9%"></div></div><span class="p3-num">2.97%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:9%"></div></div><span class="p3-num">2.97%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#FFFFFF;color:#141C26;border:1.5px solid #B9CBDD;">1</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">モンサンフリージア</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:7%"></div></div><span class="p3-num">2.44%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:7%"></div></div><span class="p3-num">2.44%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">12</span>
       <span class="mark"></span>
@@ -1168,17 +1144,13 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">5 セイスイミリオン （3番人気・5.6倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">10 ゼーブルージュ （5番人気・22.9倍）</span>
-          <span class="result-badge miss">12着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="review-name">2 グレースシャルマン （6番人気・25.3倍）</span>
           <span class="result-badge miss">5着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-▲: 的中1.8倍🎯</div><div class="personal-line">3連単F（◎-○▲☆△1△2△3-○▲）10点: 不的中</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 不的中</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
     </details><details class="race-card is-skip is-hit" id="r-名古屋-9" data-buy="0">
@@ -1202,24 +1174,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:7%"></div></div><span class="p3-num">4.94%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">11</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">コスモコロネット</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:4%"></div></div><span class="p3-num">2.58%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#FFFFFF;color:#141C26;border:1.5px solid #B9CBDD;">1</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark"></span>
       <span class="horse-name">アショカ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:3%"></div></div><span class="p3-num">2.21%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:3%"></div></div><span class="p3-num">2.21%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">ターミバレンシア</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:3%"></div></div><span class="p3-num">2.06%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:3%"></div></div><span class="p3-num">2.06%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">8</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">フークベルエ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:2%"></div></div><span class="p3-num">1.47%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:2%"></div></div><span class="p3-num">1.47%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F2E100;color:#141C26;border:none;">5</span>
       <span class="mark"></span>
@@ -1254,7 +1226,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-ninki">1番人気・1.6倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">2着</span>
-          <span class="mark mark-yonkaku">△1</span>
+          <span class="mark"></span>
           <span class="podium-name">1 アショカ</span>
           <span class="podium-ninki">5番人気・19.3倍</span>
         </div><div class="podium-row">
@@ -1276,17 +1248,13 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">10 ファルコナーラ （4番人気・11.8倍）</span>
           <span class="result-badge miss">12着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="review-name">11 コスモコロネット （8番人気・65.7倍）</span>
           <span class="result-badge miss">8着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
-          <span class="review-name">1 アショカ （5番人気・19.3倍）</span>
-          <span class="result-badge hit">2着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△1△2△3-○▲）10点: 的中59.3倍🎯</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 的中1.6倍🎯</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
     </details><details class="race-card is-buy" id="r-名古屋-10" data-buy="1">
@@ -1310,24 +1278,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:21%"></div></div><span class="p3-num">10.95%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">10</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark"></span>
       <span class="horse-name">リンノパルピート</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:7%"></div></div><span class="p3-num">3.78%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:7%"></div></div><span class="p3-num">3.78%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">ゴッドテソロ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:7%"></div></div><span class="p3-num">3.66%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:7%"></div></div><span class="p3-num">3.66%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">9</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">インフォーマント</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:6%"></div></div><span class="p3-num">3.26%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:6%"></div></div><span class="p3-num">3.26%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">11</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">フローラビーナス</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:5%"></div></div><span class="p3-num">2.90%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:5%"></div></div><span class="p3-num">2.90%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
       <span class="mark"></span>
@@ -1357,7 +1325,7 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="results-head">結果</div>
       <div class="podium"><div class="podium-row">
           <span class="podium-rank">1着</span>
-          <span class="mark mark-yonkaku">△2</span>
+          <span class="mark"></span>
           <span class="podium-name">9 インフォーマント</span>
           <span class="podium-ninki">3番人気・7.1倍</span>
         </div><div class="podium-row">
@@ -1367,7 +1335,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-ninki">6番人気・28.9倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">3着</span>
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark"></span>
           <span class="podium-name">10 リンノパルピート</span>
           <span class="podium-ninki">2番人気・6.7倍</span>
         </div></div>
@@ -1384,15 +1352,14 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">5 フルオブエナジー （4番人気・9.8倍）</span>
           <span class="result-badge miss">7着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">10 リンノパルピート （2番人気・6.7倍）</span>
-          <span class="result-badge hit">3着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="review-name">4 ゴッドテソロ （10番人気・79.0倍）</span>
           <span class="result-badge miss">9着</span>
         </div></div>
-      
+      <div class="personal-bets">
+          <div class="personal-bets-head">買い目(検証中):</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 不的中</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
+        </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-名古屋-11" data-buy="0">
       <summary><span class="sum-race">11R</span><span class="hasso">18:00発走</span><span class="sum-meta">2000mダート 11頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎1 ボックスオフィス</span></summary>
@@ -1415,24 +1382,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:54%"></div></div><span class="p3-num">14.10%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">8</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark"></span>
       <span class="horse-name">アルファヒディ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:51%"></div></div><span class="p3-num">13.23%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:51%"></div></div><span class="p3-num">13.23%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">11</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">ミアステラ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:38%"></div></div><span class="p3-num">9.78%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:38%"></div></div><span class="p3-num">9.78%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">10</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">ケルンコンサート</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:21%"></div></div><span class="p3-num">5.57%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:21%"></div></div><span class="p3-num">5.57%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F2E100;color:#141C26;border:none;">5</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">アルバーシャ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:20%"></div></div><span class="p3-num">5.15%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:20%"></div></div><span class="p3-num">5.15%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">9</span>
       <span class="mark"></span>
@@ -1457,7 +1424,7 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="results-head">結果</div>
       <div class="podium"><div class="podium-row">
           <span class="podium-rank">1着</span>
-          <span class="mark mark-yonkaku">△1</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="podium-name">11 ミアステラ</span>
           <span class="podium-ninki">6番人気・20.9倍</span>
         </div><div class="podium-row">
@@ -1467,7 +1434,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-ninki">1番人気・1.2倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">3着</span>
-          <span class="mark mark-yonkaku">△3</span>
+          <span class="mark"></span>
           <span class="podium-name">5 アルバーシャ</span>
           <span class="podium-ninki">4番人気・14.4倍</span>
         </div></div>
@@ -1484,17 +1451,13 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">3 タナバタ （7番人気・39.0倍）</span>
           <span class="result-badge miss">11着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">8 アルファヒディ （3番人気・12.3倍）</span>
-          <span class="result-badge miss">6着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="review-name">11 ミアステラ （6番人気・20.9倍）</span>
           <span class="result-badge hit">1着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△1△2△3-○▲）10点: 不的中</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 不的中</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-名古屋-12" data-buy="0">
@@ -1518,24 +1481,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:89%"></div></div><span class="p3-num">17.67%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">9</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">ハナムラサキ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:45%"></div></div><span class="p3-num">8.88%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#FFFFFF;color:#141C26;border:1.5px solid #B9CBDD;">1</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark"></span>
       <span class="horse-name">グランドサークル</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:37%"></div></div><span class="p3-num">7.32%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:37%"></div></div><span class="p3-num">7.32%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F2E100;color:#141C26;border:none;">5</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">ウインファイネスト <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:32%"></div></div><span class="p3-num">6.30%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:32%"></div></div><span class="p3-num">6.30%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">ミヤムーブメント</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:32%"></div></div><span class="p3-num">6.29%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:32%"></div></div><span class="p3-num">6.29%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
       <span class="mark"></span>
@@ -1592,17 +1555,13 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">12 フクスケ （2番人気・4.9倍）</span>
           <span class="result-badge hit">2着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="review-name">9 ハナムラサキ （6番人気・11.9倍）</span>
           <span class="result-badge miss">12着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
-          <span class="review-name">1 グランドサークル （9番人気・42.2倍）</span>
-          <span class="result-badge miss">10着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-○: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△1△2△3-○▲）10点: 不的中</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 不的中</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
     </details></div>
@@ -1629,24 +1588,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:16%"></div></div><span class="p3-num">7.07%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">8</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">モンシャトール</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:16%"></div></div><span class="p3-num">7.06%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">9</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark"></span>
       <span class="horse-name">オオイシシャクナゲ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:16%"></div></div><span class="p3-num">7.05%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:16%"></div></div><span class="p3-num">7.05%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#FFFFFF;color:#141C26;border:1.5px solid #B9CBDD;">1</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">モデルチャン</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:6%"></div></div><span class="p3-num">2.87%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:6%"></div></div><span class="p3-num">2.87%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">7</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">エルミラージュ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:6%"></div></div><span class="p3-num">2.86%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:6%"></div></div><span class="p3-num">2.86%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
       <span class="mark"></span>
@@ -1681,7 +1640,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-ninki">1番人気・1.1倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">2着</span>
-          <span class="mark mark-yonkaku">△1</span>
+          <span class="mark"></span>
           <span class="podium-name">9 オオイシシャクナゲ</span>
           <span class="podium-ninki">5番人気・22.7倍</span>
         </div><div class="podium-row">
@@ -1703,17 +1662,13 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">12 ラクスガウディ （2番人気・9.3倍）</span>
           <span class="result-badge hit">3着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="review-name">8 モンシャトール （6番人気・31.1倍）</span>
           <span class="result-badge miss">6着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
-          <span class="review-name">9 オオイシシャクナゲ （5番人気・22.7倍）</span>
-          <span class="result-badge hit">2着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-○: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△1△2△3-○▲）10点: 的中23.3倍🎯</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 的中1.1倍🎯</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-園田-2" data-buy="0">
@@ -1737,24 +1692,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:17%"></div></div><span class="p3-num">7.50%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#FFFFFF;color:#141C26;border:1.5px solid #B9CBDD;">1</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark"></span>
       <span class="horse-name">シトロネット</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:14%"></div></div><span class="p3-num">6.17%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:14%"></div></div><span class="p3-num">6.17%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">ナデシコ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:5%"></div></div><span class="p3-num">2.14%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:5%"></div></div><span class="p3-num">2.14%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">シュタイナー</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:4%"></div></div><span class="p3-num">1.74%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:4%"></div></div><span class="p3-num">1.74%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">シームレス</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:3%"></div></div><span class="p3-num">1.53%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:3%"></div></div><span class="p3-num">1.53%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F2E100;color:#141C26;border:none;">5</span>
       <span class="mark"></span>
@@ -1774,7 +1729,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-ninki">1番人気・1.5倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">3着</span>
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark"></span>
           <span class="podium-name">1 シトロネット</span>
           <span class="podium-ninki">4番人気・17.9倍</span>
         </div></div>
@@ -1791,20 +1746,16 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">8 アカノストロング （3番人気・7.7倍）</span>
           <span class="result-badge miss">4着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">1 シトロネット （4番人気・17.9倍）</span>
-          <span class="result-badge hit">3着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="review-name">3 ナデシコ （7番人気・64.8倍）</span>
           <span class="result-badge miss">5着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△1△2△3-○▲）10点: 不的中</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 不的中</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
-    </details><details class="race-card is-skip" id="r-園田-3" data-buy="0">
+    </details><details class="race-card is-skip is-hit" id="r-園田-3" data-buy="0">
       <summary><span class="sum-race">3R</span><span class="hasso">15:30発走</span><span class="sum-meta">1400mダート 9頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎7 ラクプエル</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -1825,24 +1776,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:20%"></div></div><span class="p3-num">11.14%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">9</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark"></span>
       <span class="horse-name">バークエム</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:9%"></div></div><span class="p3-num">5.00%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:9%"></div></div><span class="p3-num">5.00%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">ムーンセット</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:9%"></div></div><span class="p3-num">4.91%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:9%"></div></div><span class="p3-num">4.91%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#FFFFFF;color:#141C26;border:1.5px solid #B9CBDD;">1</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">アウトサイドベット</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:9%"></div></div><span class="p3-num">4.72%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:9%"></div></div><span class="p3-num">4.72%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">メイショウピスカリ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:5%"></div></div><span class="p3-num">2.54%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:5%"></div></div><span class="p3-num">2.54%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
       <span class="mark"></span>
@@ -1867,7 +1818,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-ninki">2番人気・2.5倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">3着</span>
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark"></span>
           <span class="podium-name">9 バークエム</span>
           <span class="podium-ninki">4番人気・10.6倍</span>
         </div></div>
@@ -1884,17 +1835,13 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">5 フッカツラヴ （2番人気・2.5倍）</span>
           <span class="result-badge hit">2着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">9 バークエム （4番人気・10.6倍）</span>
-          <span class="result-badge hit">3着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="review-name">3 ムーンセット （8番人気・76.7倍）</span>
           <span class="result-badge miss">8着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-○: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△1△2△3-○▲）10点: 不的中</div>
+          <div class="personal-line">馬単◎→▲: 的中3.8倍🎯</div><div class="personal-line">単勝◎: 的中1.9倍🎯</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-園田-4" data-buy="0">
@@ -1918,24 +1865,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:64%"></div></div><span class="p3-num">18.38%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">6</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">クールブレーブ <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:29%"></div></div><span class="p3-num">8.39%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">8</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark"></span>
       <span class="horse-name">レッドアクトゥール</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:29%"></div></div><span class="p3-num">8.38%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:29%"></div></div><span class="p3-num">8.38%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">ノーテンピーカン</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:27%"></div></div><span class="p3-num">7.89%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:27%"></div></div><span class="p3-num">7.89%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">メイショウヨウホウ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:8%"></div></div><span class="p3-num">2.28%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:8%"></div></div><span class="p3-num">2.28%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F2E100;color:#141C26;border:none;">5</span>
       <span class="mark"></span>
@@ -1950,7 +1897,7 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="results-head">結果</div>
       <div class="podium"><div class="podium-row">
           <span class="podium-rank">1着</span>
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="podium-name">6 クールブレーブ</span>
           <span class="podium-ninki">6番人気・75.8倍</span>
         </div><div class="podium-row">
@@ -1960,7 +1907,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-ninki">1番人気・1.7倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">3着</span>
-          <span class="mark mark-yonkaku">△2</span>
+          <span class="mark"></span>
           <span class="podium-name">3 ノーテンピーカン</span>
           <span class="podium-ninki">4番人気・34.7倍</span>
         </div></div>
@@ -1977,17 +1924,13 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">7 イービジョンエイト （3番人気・6.2倍）</span>
           <span class="result-badge miss">7着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="review-name">6 クールブレーブ （6番人気・75.8倍）</span>
           <span class="result-badge hit">1着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
-          <span class="review-name">8 レッドアクトゥール （5番人気・48.7倍）</span>
-          <span class="result-badge miss">5着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△1△2△3-○▲）10点: 不的中</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 不的中</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-園田-5" data-buy="0">
@@ -2011,24 +1954,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:41%"></div></div><span class="p3-num">15.08%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark"></span>
       <span class="horse-name">イービジョンスター</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:34%"></div></div><span class="p3-num">12.57%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:34%"></div></div><span class="p3-num">12.57%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">8</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark"></span>
       <span class="horse-name">ヴァリラプトル</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:16%"></div></div><span class="p3-num">5.91%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:16%"></div></div><span class="p3-num">5.91%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">マエストロライト</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:14%"></div></div><span class="p3-num">5.06%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:14%"></div></div><span class="p3-num">5.06%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#FFFFFF;color:#141C26;border:1.5px solid #B9CBDD;">1</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">セイウンスペリオル</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:10%"></div></div><span class="p3-num">3.51%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:10%"></div></div><span class="p3-num">3.51%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
       <span class="mark"></span>
@@ -2043,7 +1986,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-ninki">2番人気・2.6倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">2着</span>
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark"></span>
           <span class="podium-name">4 イービジョンスター</span>
           <span class="podium-ninki">3番人気・8.4倍</span>
         </div><div class="podium-row">
@@ -2065,17 +2008,13 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">7 リンガスウォリアー （1番人気・1.9倍）</span>
           <span class="result-badge hit">3着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">4 イービジョンスター （3番人気・8.4倍）</span>
-          <span class="result-badge hit">2着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
-          <span class="review-name">8 ヴァリラプトル （5番人気・13.2倍）</span>
-          <span class="result-badge miss">5着</span>
+          <span class="mark mark-hoshi">⭐︎</span>
+          <span class="review-name">3 マエストロライト （7番人気・76.2倍）</span>
+          <span class="result-badge miss">4着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-△1: 不的中</div><div class="personal-line">ワイド◎-☆: 不的中</div><div class="personal-line">馬単（◎→○▲☆△1△2△3）6点: 不的中</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 不的中</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
     </details><details class="race-card is-skip is-hit" id="r-園田-6" data-buy="0">
@@ -2099,24 +2038,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:37%"></div></div><span class="p3-num">12.82%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">7</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">エイシンジコクテン</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:23%"></div></div><span class="p3-num">7.80%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark"></span>
       <span class="horse-name">ヤクジンミョウオウ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:23%"></div></div><span class="p3-num">7.79%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:23%"></div></div><span class="p3-num">7.79%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F2E100;color:#141C26;border:none;">5</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">リーデレ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:19%"></div></div><span class="p3-num">6.54%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:19%"></div></div><span class="p3-num">6.54%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">サンウイング</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:13%"></div></div><span class="p3-num">4.36%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:13%"></div></div><span class="p3-num">4.36%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">6</span>
       <span class="mark"></span>
@@ -2158,17 +2097,13 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">2 アラモアナ （3番人気・11.7倍）</span>
           <span class="result-badge hit">3着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="review-name">7 エイシンジコクテン （6番人気・23.0倍）</span>
           <span class="result-badge miss">8着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
-          <span class="review-name">4 ヤクジンミョウオウ （4番人気・12.1倍）</span>
-          <span class="result-badge miss">取消/中止</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-▲: 的中2.1倍🎯</div><div class="personal-line">3連単F（◎-○▲☆△1△2△3-○▲）10点: 不的中</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 的中1.3倍🎯</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-園田-7" data-buy="0">
@@ -2192,29 +2127,29 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:51%"></div></div><span class="p3-num">13.28%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark"></span>
       <span class="horse-name">ダイボウケン</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:51%"></div></div><span class="p3-num">13.27%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:51%"></div></div><span class="p3-num">13.27%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">6</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark"></span>
       <span class="horse-name">メイショウソニック</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:38%"></div></div><span class="p3-num">9.82%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:38%"></div></div><span class="p3-num">9.82%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#FFFFFF;color:#141C26;border:1.5px solid #B9CBDD;">1</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">ナンバーセオリー</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:38%"></div></div><span class="p3-num">9.81%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:38%"></div></div><span class="p3-num">9.81%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">7</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">ゴッドアミーラ <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:27%"></div></div><span class="p3-num">7.12%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:27%"></div></div><span class="p3-num">7.12%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
-      <span class="mark"></span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">ワンダーデュエル</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:12%"></div></div><span class="p3-num">3.06%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:12%"></div></div><span class="p3-num">3.06%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">8</span>
       <span class="mark"></span>
@@ -2224,7 +2159,7 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="results-head">結果</div>
       <div class="podium"><div class="podium-row">
           <span class="podium-rank">1着</span>
-          <span class="mark mark-yonkaku">△2</span>
+          <span class="mark"></span>
           <span class="podium-name">1 ナンバーセオリー</span>
           <span class="podium-ninki">1番人気・2.6倍</span>
         </div><div class="podium-row">
@@ -2234,7 +2169,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-ninki">6番人気・10.5倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">3着</span>
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark"></span>
           <span class="podium-name">2 ダイボウケン</span>
           <span class="podium-ninki">4番人気・7.9倍</span>
         </div></div>
@@ -2251,17 +2186,13 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">9 ナツミカンチャン （6番人気・10.5倍）</span>
           <span class="result-badge hit">2着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">2 ダイボウケン （4番人気・7.9倍）</span>
-          <span class="result-badge hit">3着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
-          <span class="review-name">6 メイショウソニック （2番人気・2.9倍）</span>
-          <span class="result-badge miss">5着</span>
+          <span class="mark mark-hoshi">⭐︎</span>
+          <span class="review-name">4 ワンダーデュエル （7番人気・24.7倍）</span>
+          <span class="result-badge miss">7着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-○: 不的中</div><div class="personal-line">ワイド◎-▲: 不的中</div><div class="personal-line">馬単（◎→○▲☆△1△2△3）6点: 不的中</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 不的中</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-園田-8" data-buy="0">
@@ -2285,24 +2216,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:50%"></div></div><span class="p3-num">14.67%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F2E100;color:#141C26;border:none;">5</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark"></span>
       <span class="horse-name">コモリボルダー</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:26%"></div></div><span class="p3-num">7.70%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:26%"></div></div><span class="p3-num">7.70%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#FFFFFF;color:#141C26;border:1.5px solid #B9CBDD;">1</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">ファイブレイナ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:20%"></div></div><span class="p3-num">5.68%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:20%"></div></div><span class="p3-num">5.68%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">イレブンアップ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:18%"></div></div><span class="p3-num">5.26%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:18%"></div></div><span class="p3-num">5.26%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">9</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">ガンバルフトシ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:16%"></div></div><span class="p3-num">4.64%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:16%"></div></div><span class="p3-num">4.64%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">10</span>
       <span class="mark"></span>
@@ -2337,12 +2268,12 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-ninki">1番人気・2.6倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">2着</span>
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark"></span>
           <span class="podium-name">5 コモリボルダー</span>
           <span class="podium-ninki">5番人気・6.3倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">3着</span>
-          <span class="mark mark-yonkaku">△1</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="podium-name">1 ファイブレイナ</span>
           <span class="podium-ninki">9番人気・64.9倍</span>
         </div></div>
@@ -2359,20 +2290,16 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">6 アイアンオバーカム （4番人気・5.6倍）</span>
           <span class="result-badge miss">5着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">5 コモリボルダー （5番人気・6.3倍）</span>
-          <span class="result-badge hit">2着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="review-name">1 ファイブレイナ （9番人気・64.9倍）</span>
           <span class="result-badge hit">3着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-△1: 不的中</div><div class="personal-line">ワイド◎-☆: 不的中</div><div class="personal-line">馬単（◎→○▲☆△1△2△3）6点: 不的中</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 不的中</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
-    </details><details class="race-card is-skip" id="r-園田-9" data-buy="0">
+    </details><details class="race-card is-skip is-hit" id="r-園田-9" data-buy="0">
       <summary><span class="sum-race">9R</span><span class="hasso">18:45発走</span><span class="sum-meta">1230mダート 10頭<span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎3 ゼットカレン</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -2393,24 +2320,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:67%"></div></div><span class="p3-num">16.14%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">10</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark"></span>
       <span class="horse-name">アジムット</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:55%"></div></div><span class="p3-num">13.21%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:55%"></div></div><span class="p3-num">13.21%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">7</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">バイシュウ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:42%"></div></div><span class="p3-num">10.16%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:42%"></div></div><span class="p3-num">10.16%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F2E100;color:#141C26;border:none;">5</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">カンタウッドテール</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:20%"></div></div><span class="p3-num">4.77%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:20%"></div></div><span class="p3-num">4.77%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">6</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">マイドオオキニ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:20%"></div></div><span class="p3-num">4.76%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:20%"></div></div><span class="p3-num">4.76%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
@@ -2435,12 +2362,12 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-ninki">2番人気・2.8倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">2着</span>
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark"></span>
           <span class="podium-name">10 アジムット</span>
           <span class="podium-ninki">1番人気・2.1倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">3着</span>
-          <span class="mark mark-yonkaku">△3</span>
+          <span class="mark"></span>
           <span class="podium-name">6 マイドオオキニ</span>
           <span class="podium-ninki">3番人気・7.8倍</span>
         </div></div>
@@ -2457,17 +2384,13 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">1 スピネーカー （4番人気・9.9倍）</span>
           <span class="result-badge miss">10着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">10 アジムット （1番人気・2.1倍）</span>
-          <span class="result-badge hit">2着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="review-name">7 バイシュウ （6番人気・14.0倍）</span>
           <span class="result-badge miss">7着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-○: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△1△2△3-○▲）10点: 不的中</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 的中2.8倍🎯</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-園田-10" data-buy="0">
@@ -2491,24 +2414,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:60%"></div></div><span class="p3-num">15.92%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark"></span>
       <span class="horse-name">アストラカ <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:49%"></div></div><span class="p3-num">13.03%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:49%"></div></div><span class="p3-num">13.03%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark"></span>
       <span class="horse-name">グレイスオブゴッド <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:48%"></div></div><span class="p3-num">12.69%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:48%"></div></div><span class="p3-num">12.69%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F2E100;color:#141C26;border:none;">5</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">タイキエクセロン</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:20%"></div></div><span class="p3-num">5.28%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:20%"></div></div><span class="p3-num">5.28%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">7</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">アドワン</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:15%"></div></div><span class="p3-num">3.91%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:15%"></div></div><span class="p3-num">3.91%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">10</span>
       <span class="mark"></span>
@@ -2533,12 +2456,12 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-ninki">3番人気・3.7倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">2着</span>
-          <span class="mark mark-yonkaku">△1</span>
+          <span class="mark"></span>
           <span class="podium-name">3 グレイスオブゴッド</span>
           <span class="podium-ninki">4番人気・12.0倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">3着</span>
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark"></span>
           <span class="podium-name">2 アストラカ</span>
           <span class="podium-ninki">1番人気・2.1倍</span>
         </div></div>
@@ -2555,15 +2478,14 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">8 ラピドフィオーレ （3番人気・3.7倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">2 アストラカ （1番人気・2.1倍）</span>
-          <span class="result-badge hit">3着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
-          <span class="review-name">3 グレイスオブゴッド （4番人気・12.0倍）</span>
-          <span class="result-badge hit">2着</span>
+          <span class="mark mark-hoshi">⭐︎</span>
+          <span class="review-name">7 アドワン （6番人気・32.4倍）</span>
+          <span class="result-badge miss">7着</span>
         </div></div>
-      
+      <div class="personal-bets">
+          <div class="personal-bets-head">買い目(検証中):</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 不的中</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
+        </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-園田-11" data-buy="0">
       <summary><span class="sum-race">11R</span><span class="hasso">19:55発走</span><span class="sum-meta">1700mダート 10頭<span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎1 アラン</span></summary>
@@ -2586,24 +2508,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:76%"></div></div><span class="p3-num">14.45%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark"></span>
       <span class="horse-name">バウヴォーグ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:70%"></div></div><span class="p3-num">13.36%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:70%"></div></div><span class="p3-num">13.36%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F2E100;color:#141C26;border:none;">5</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark"></span>
       <span class="horse-name">ダンジョンヒーロー <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:48%"></div></div><span class="p3-num">9.09%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:48%"></div></div><span class="p3-num">9.09%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">7</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">サンミゲル</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:41%"></div></div><span class="p3-num">7.88%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:41%"></div></div><span class="p3-num">7.88%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">オトコノロマン</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:37%"></div></div><span class="p3-num">7.13%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:37%"></div></div><span class="p3-num">7.13%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">9</span>
       <span class="mark"></span>
@@ -2628,7 +2550,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-ninki">2番人気・2.9倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">2着</span>
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark"></span>
           <span class="podium-name">3 バウヴォーグ</span>
           <span class="podium-ninki">3番人気・5.8倍</span>
         </div><div class="podium-row">
@@ -2650,17 +2572,13 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">4 トップオブザライン （7番人気・33.9倍）</span>
           <span class="result-badge miss">7着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">3 バウヴォーグ （3番人気・5.8倍）</span>
-          <span class="result-badge hit">2着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
-          <span class="review-name">5 ダンジョンヒーロー</span>
-          <span class="result-badge miss">取消/中止</span>
+          <span class="mark mark-hoshi">⭐︎</span>
+          <span class="review-name">2 オトコノロマン （6番人気・29.3倍）</span>
+          <span class="result-badge miss">5着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△1△2△3-○▲）10点: 不的中</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 不的中</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-園田-12" data-buy="0">
@@ -2684,24 +2602,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:87%"></div></div><span class="p3-num">17.60%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">6</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">ナムラオットー <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:52%"></div></div><span class="p3-num">10.40%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">9</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark"></span>
       <span class="horse-name">アドミ <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:51%"></div></div><span class="p3-num">10.39%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:51%"></div></div><span class="p3-num">10.39%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">エランフェーヴル</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:48%"></div></div><span class="p3-num">9.63%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:48%"></div></div><span class="p3-num">9.63%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">オーラエグザート <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:22%"></div></div><span class="p3-num">4.51%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:22%"></div></div><span class="p3-num">4.51%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">10</span>
       <span class="mark"></span>
@@ -2736,7 +2654,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-ninki">1番人気・2.2倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">3着</span>
-          <span class="mark mark-yonkaku">△2</span>
+          <span class="mark"></span>
           <span class="podium-name">2 エランフェーヴル</span>
           <span class="podium-ninki">5番人気・16.6倍</span>
         </div></div>
@@ -2753,17 +2671,13 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">7 サンリナリア （4番人気・9.0倍）</span>
           <span class="result-badge miss">5着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="review-name">6 ナムラオットー （6番人気・30.1倍）</span>
           <span class="result-badge miss">7着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
-          <span class="review-name">9 アドミ （3番人気・7.6倍）</span>
-          <span class="result-badge miss">6着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△1△2△3-○▲）10点: 不的中</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 不的中</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
     </details></div>
@@ -2790,24 +2704,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:76%"></div></div><span class="p3-num">21.77%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark"></span>
       <span class="horse-name">バーナードハンサム</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:61%"></div></div><span class="p3-num">17.50%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:61%"></div></div><span class="p3-num">17.50%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">6</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">ユーロハートビート</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:7%"></div></div><span class="p3-num">1.93%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:7%"></div></div><span class="p3-num">1.93%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">タリスマンチャント</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:4%"></div></div><span class="p3-num">1.29%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:4%"></div></div><span class="p3-num">1.29%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">フラワーキングエス</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:2%"></div></div><span class="p3-num">0.45%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:2%"></div></div><span class="p3-num">0.45%</span></div>
     </li></ul><div class="results">
       <div class="results-head">結果</div>
       <div class="podium"><div class="podium-row">
@@ -2817,7 +2731,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-ninki">1番人気・1.5倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">2着</span>
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark"></span>
           <span class="podium-name">4 バーナードハンサム</span>
           <span class="podium-ninki">2番人気・4.1倍</span>
         </div><div class="podium-row">
@@ -2839,20 +2753,16 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">7 コスモスフレイバー （1番人気・1.5倍）</span>
           <span class="result-badge hit">1着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">4 バーナードハンサム （2番人気・4.1倍）</span>
-          <span class="result-badge hit">2着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="review-name">6 ユーロハートビート （6番人気・146.9倍）</span>
           <span class="result-badge miss">6着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-△1: 不的中</div><div class="personal-line">ワイド◎-○: 不的中</div><div class="personal-line">馬単（◎→○▲☆△1△2△3）6点: 不的中</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 不的中</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
-    </details><details class="race-card is-skip is-hit" id="r-大井-2" data-buy="0">
+    </details><details class="race-card is-skip" id="r-大井-2" data-buy="0">
       <summary><span class="sum-race">2R</span><span class="hasso">14:50発走</span><span class="sum-meta">1400mダート 14頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎14 シャインブラスト</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -2873,24 +2783,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:42%"></div></div><span class="p3-num">14.37%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">13</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark"></span>
       <span class="horse-name">グラスリッキー <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:41%"></div></div><span class="p3-num">13.92%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:41%"></div></div><span class="p3-num">13.92%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">9</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark"></span>
       <span class="horse-name">ヒュプシュ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:34%"></div></div><span class="p3-num">11.54%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:34%"></div></div><span class="p3-num">11.54%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">6</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">エドノスターウッド</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:6%"></div></div><span class="p3-num">2.18%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:6%"></div></div><span class="p3-num">2.18%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F2E100;color:#141C26;border:none;">8</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">プレイバック</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:5%"></div></div><span class="p3-num">1.86%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:5%"></div></div><span class="p3-num">1.86%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">10</span>
       <span class="mark"></span>
@@ -2930,7 +2840,7 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="results-head">結果</div>
       <div class="podium"><div class="podium-row">
           <span class="podium-rank">1着</span>
-          <span class="mark mark-yonkaku">△1</span>
+          <span class="mark"></span>
           <span class="podium-name">9 ヒュプシュ</span>
           <span class="podium-ninki">1番人気・1.5倍</span>
         </div><div class="podium-row">
@@ -2940,7 +2850,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-ninki">3番人気・4.8倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">3着</span>
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark"></span>
           <span class="podium-name">13 グラスリッキー</span>
           <span class="podium-ninki">5番人気・29.3倍</span>
         </div></div>
@@ -2957,20 +2867,16 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">11 エッジ （4番人気・16.0倍）</span>
           <span class="result-badge miss">4着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">13 グラスリッキー （5番人気・29.3倍）</span>
-          <span class="result-badge hit">3着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
-          <span class="review-name">9 ヒュプシュ （1番人気・1.5倍）</span>
-          <span class="result-badge hit">1着</span>
+          <span class="mark mark-hoshi">⭐︎</span>
+          <span class="review-name">6 エドノスターウッド （8番人気・118.5倍）</span>
+          <span class="result-badge miss">10着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-☆: 的中9.5倍🎯</div><div class="personal-line">ワイド◎-▲: 不的中</div><div class="personal-line">馬単（◎→○▲☆△1△2△3）6点: 不的中</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 不的中</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
-    </details><details class="race-card is-skip is-hit" id="r-大井-3" data-buy="0">
+    </details><details class="race-card is-skip" id="r-大井-3" data-buy="0">
       <summary><span class="sum-race">3R</span><span class="hasso">15:25発走</span><span class="sum-meta">1200mダート 14頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎4 ワイドポティロン</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -2991,24 +2897,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:22%"></div></div><span class="p3-num">10.72%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">14</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">ベラジオスピード</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:13%"></div></div><span class="p3-num">6.13%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">5</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark"></span>
       <span class="horse-name">ナムラソラン <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:6%"></div></div><span class="p3-num">2.88%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:6%"></div></div><span class="p3-num">2.88%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">10</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">ワイルドノブクン</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:5%"></div></div><span class="p3-num">2.44%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:5%"></div></div><span class="p3-num">2.44%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F2E100;color:#141C26;border:none;">8</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">ドレヴィーナス</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:5%"></div></div><span class="p3-num">2.37%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:5%"></div></div><span class="p3-num">2.37%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">6</span>
       <span class="mark"></span>
@@ -3075,17 +2981,13 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">13 フィールドアピール （3番人気・4.8倍）</span>
           <span class="result-badge hit">2着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="review-name">14 ベラジオスピード （6番人気・27.3倍）</span>
           <span class="result-badge miss">14着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
-          <span class="review-name">5 ナムラソラン （4番人気・7.5倍）</span>
-          <span class="result-badge miss">6着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-▲: 的中2.5倍🎯</div><div class="personal-line">3連単F（◎-○▲☆△1△2△3-○▲）10点: 不的中</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 不的中</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
     </details><div class="race-card is-excluded" id="r-大井-4" data-buy="0">
@@ -3113,15 +3015,15 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:12%"></div></div><span class="p3-num">6.34%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F2E100;color:#141C26;border:none;">5</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark"></span>
       <span class="horse-name">ロワゾドゥフ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:10%"></div></div><span class="p3-num">5.32%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:10%"></div></div><span class="p3-num">5.32%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark"></span>
       <span class="horse-name">アウン</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:9%"></div></div><span class="p3-num">4.66%</span></div>
-    </li></ul><div class="results">
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:9%"></div></div><span class="p3-num">4.66%</span></div>
+    </li></ul><div class="star-note">⭐︎なし（人気薄の候補が居ないため三連単は見送り）</div><div class="results">
       <div class="results-head">結果</div>
       <div class="podium"><div class="podium-row">
           <span class="podium-rank">1着</span>
@@ -3135,7 +3037,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-ninki">5番人気・64.0倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">3着</span>
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark"></span>
           <span class="podium-name">5 ロワゾドゥフ</span>
           <span class="podium-ninki">3番人気・9.1倍</span>
         </div></div>
@@ -3151,21 +3053,13 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="mark mark-sankaku">▲</span>
           <span class="review-name">1 モンサンマナオラナ （5番人気・64.0倍）</span>
           <span class="result-badge hit">2着</span>
-        </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">5 ロワゾドゥフ （3番人気・9.1倍）</span>
-          <span class="result-badge hit">3着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
-          <span class="review-name">2 アウン （4番人気・11.7倍）</span>
-          <span class="result-badge miss">取消/中止</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-▲: 的中5.0倍🎯</div><div class="personal-line">3連単F（◎-○▲☆△1-○▲）6点: 不的中</div>
+          <div class="personal-line">馬単◎→▲: 的中20.9倍🎯</div><div class="personal-line">単勝◎: 的中1.2倍🎯</div>
         </div>
     </div></div>
-    </details><details class="race-card is-skip" id="r-大井-7" data-buy="0">
+    </details><details class="race-card is-skip is-hit" id="r-大井-7" data-buy="0">
       <summary><span class="sum-race">7R</span><span class="hasso">17:45発走</span><span class="sum-meta">1600mダート 12頭<span class="badge badge-rel rel-mid">A</span></span><span class="sum-honmei">◎8 スズノアリマール</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -3186,24 +3080,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:11%"></div></div><span class="p3-num">4.92%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark"></span>
       <span class="horse-name">クリノエーデル</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:10%"></div></div><span class="p3-num">4.32%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:10%"></div></div><span class="p3-num">4.32%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">7</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">ステイフリー</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:6%"></div></div><span class="p3-num">2.58%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:6%"></div></div><span class="p3-num">2.58%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F2E100;color:#141C26;border:none;">6</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">ニジイロピカール</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:6%"></div></div><span class="p3-num">2.57%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:6%"></div></div><span class="p3-num">2.57%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">ケンブリッジグレイ <span class="jra-bridge-tag" title="地方通算5走未満のため中央(JRA)の戦績を走歴に加味しています">JRA</span></span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:5%"></div></div><span class="p3-num">2.20%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:5%"></div></div><span class="p3-num">2.20%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">12</span>
       <span class="mark"></span>
@@ -3243,7 +3137,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-ninki">12番人気・330.4倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">3着</span>
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark"></span>
           <span class="podium-name">3 クリノエーデル</span>
           <span class="podium-ninki">4番人気・24.5倍</span>
         </div></div>
@@ -3260,17 +3154,13 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">11 ボンヴィアッジョ （3番人気・10.0倍）</span>
           <span class="result-badge miss">5着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">3 クリノエーデル （4番人気・24.5倍）</span>
-          <span class="result-badge hit">3着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="review-name">7 ステイフリー （7番人気・40.6倍）</span>
           <span class="result-badge miss">4着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-▲: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△1△2△3-○▲）10点: 不的中</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 的中2.1倍🎯</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-大井-8" data-buy="0">
@@ -3294,24 +3184,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:44%"></div></div><span class="p3-num">13.88%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">6</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark"></span>
       <span class="horse-name">ピーターセン</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:30%"></div></div><span class="p3-num">9.50%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:30%"></div></div><span class="p3-num">9.50%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#E0342A;color:#FFFFFF;border:none;">3</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark"></span>
       <span class="horse-name">イフウドウドウ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:25%"></div></div><span class="p3-num">7.95%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:25%"></div></div><span class="p3-num">7.95%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">9</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">クアッズ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:16%"></div></div><span class="p3-num">5.13%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:16%"></div></div><span class="p3-num">5.13%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">オンリーユーズド</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:10%"></div></div><span class="p3-num">3.05%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:10%"></div></div><span class="p3-num">3.05%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F2E100;color:#141C26;border:none;">5</span>
       <span class="mark"></span>
@@ -3341,7 +3231,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-ninki">2番人気・5.5倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">3着</span>
-          <span class="mark mark-yonkaku">△1</span>
+          <span class="mark"></span>
           <span class="podium-name">3 イフウドウドウ</span>
           <span class="podium-ninki">3番人気・13.7倍</span>
         </div></div>
@@ -3358,17 +3248,13 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">4 ミスタージョン （6番人気・28.4倍）</span>
           <span class="result-badge miss">9着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">6 ピーターセン （5番人気・20.9倍）</span>
-          <span class="result-badge miss">4着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
-          <span class="review-name">3 イフウドウドウ （3番人気・13.7倍）</span>
-          <span class="result-badge hit">3着</span>
+          <span class="mark mark-hoshi">⭐︎</span>
+          <span class="review-name">2 オンリーユーズド （7番人気・86.4倍）</span>
+          <span class="result-badge miss">10着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-▲: 不的中</div><div class="personal-line">ワイド◎-☆: 不的中</div><div class="personal-line">馬単（◎→○▲☆△1△2△3）6点: 不的中</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 不的中</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
     </details><details class="race-card is-buy" id="r-大井-9" data-buy="1">
@@ -3392,24 +3278,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:12%"></div></div><span class="p3-num">6.99%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">ゴールドジャッジ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:11%"></div></div><span class="p3-num">6.47%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark"></span>
       <span class="horse-name">トランジェント</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:8%"></div></div><span class="p3-num">5.08%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:8%"></div></div><span class="p3-num">5.08%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">9</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">ポンドボーイ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:6%"></div></div><span class="p3-num">3.84%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:6%"></div></div><span class="p3-num">3.84%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">7</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">グレアネオンライト</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:4%"></div></div><span class="p3-num">2.50%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:4%"></div></div><span class="p3-num">2.50%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1F9A4E;color:#FFFFFF;border:none;">6</span>
       <span class="mark"></span>
@@ -3424,17 +3310,17 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="results-head">結果</div>
       <div class="podium"><div class="podium-row">
           <span class="podium-rank">1着</span>
-          <span class="mark mark-yonkaku">△3</span>
+          <span class="mark"></span>
           <span class="podium-name">7 グレアネオンライト</span>
           <span class="podium-ninki">4番人気・17.0倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">2着</span>
-          <span class="mark mark-yonkaku">△2</span>
+          <span class="mark"></span>
           <span class="podium-name">9 ポンドボーイ</span>
           <span class="podium-ninki">6番人気・44.0倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">3着</span>
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="podium-name">2 ゴールドジャッジ</span>
           <span class="podium-ninki">8番人気・109.8倍</span>
         </div></div>
@@ -3451,20 +3337,16 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">3 ブルマリンシェール （2番人気・6.9倍）</span>
           <span class="result-badge miss">9着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="review-name">2 ゴールドジャッジ （8番人気・109.8倍）</span>
           <span class="result-badge hit">3着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
-          <span class="review-name">4 トランジェント （5番人気・25.6倍）</span>
-          <span class="result-badge miss">8着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-○: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△1△2△3-○▲）10点: 不的中</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 不的中</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
-    </details><details class="race-card is-skip" id="r-大井-10" data-buy="0">
+    </details><details class="race-card is-skip is-hit" id="r-大井-10" data-buy="0">
       <summary><span class="sum-race">10R</span><span class="hasso">19:30発走</span><span class="sum-meta">1200mダート 11頭<span class="badge badge-rel rel-hi">A+</span></span><span class="sum-honmei">◎6 シャンデリアソング</span></summary>
       <div class="race-detail"><ul class="horse-list"><li class="horse-list-head">
   <span></span><span></span><span>馬名</span><span>相対勝率</span>
@@ -3485,24 +3367,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:43%"></div></div><span class="p3-num">10.40%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark"></span>
       <span class="horse-name">エターナルヴァウ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:42%"></div></div><span class="p3-num">10.18%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:42%"></div></div><span class="p3-num">10.18%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">8</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark"></span>
       <span class="horse-name">スタールビーピアス</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:42%"></div></div><span class="p3-num">10.17%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:42%"></div></div><span class="p3-num">10.17%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">11</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">サンピアノソナタ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:29%"></div></div><span class="p3-num">7.12%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:29%"></div></div><span class="p3-num">7.12%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">9</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">エイシンネクタル</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:21%"></div></div><span class="p3-num">5.18%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:21%"></div></div><span class="p3-num">5.18%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">4</span>
       <span class="mark"></span>
@@ -3532,7 +3414,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-ninki">1番人気・1.8倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">2着</span>
-          <span class="mark mark-yonkaku">△1</span>
+          <span class="mark"></span>
           <span class="podium-name">8 スタールビーピアス</span>
           <span class="podium-ninki">5番人気・8.4倍</span>
         </div><div class="podium-row">
@@ -3554,17 +3436,13 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">3 ヤンノカステップ （4番人気・7.8倍）</span>
           <span class="result-badge miss">5着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
-          <span class="review-name">2 エターナルヴァウ （3番人気・7.7倍）</span>
-          <span class="result-badge miss">10着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
-          <span class="review-name">8 スタールビーピアス （5番人気・8.4倍）</span>
-          <span class="result-badge hit">2着</span>
+          <span class="mark mark-hoshi">⭐︎</span>
+          <span class="review-name">9 エイシンネクタル （11番人気・114.0倍）</span>
+          <span class="result-badge miss">7着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-○: 不的中</div><div class="personal-line">3連単F（◎-○▲☆△1△2△3-○▲）10点: 不的中</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 的中1.8倍🎯</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-大井-11" data-buy="0">
@@ -3588,24 +3466,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:48%"></div></div><span class="p3-num">10.00%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">13</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">シビックフォイル</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:45%"></div></div><span class="p3-num">9.42%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#1770C4;color:#FFFFFF;border:none;">6</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark"></span>
       <span class="horse-name">ゴンザーゴ</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:42%"></div></div><span class="p3-num">8.73%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:42%"></div></div><span class="p3-num">8.73%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F2E100;color:#141C26;border:none;">7</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">ドナシェーン</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:39%"></div></div><span class="p3-num">8.17%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:39%"></div></div><span class="p3-num">8.17%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F2E100;color:#141C26;border:none;">8</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">グラシアレス</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:31%"></div></div><span class="p3-num">6.34%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:31%"></div></div><span class="p3-num">6.34%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#FFFFFF;color:#141C26;border:1.5px solid #B9CBDD;">1</span>
       <span class="mark"></span>
@@ -3672,15 +3550,14 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">2 ジーティートレイン （5番人気・15.0倍）</span>
           <span class="result-badge miss">6着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="review-name">13 シビックフォイル （8番人気・21.4倍）</span>
           <span class="result-badge miss">13着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
-          <span class="review-name">6 ゴンザーゴ （9番人気・24.5倍）</span>
-          <span class="result-badge miss">11着</span>
         </div></div>
-      
+      <div class="personal-bets">
+          <div class="personal-bets-head">買い目(検証中):</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 不的中</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
+        </div>
     </div></div>
     </details><details class="race-card is-skip" id="r-大井-12" data-buy="0">
       <summary><span class="sum-race">12R</span><span class="hasso">20:50発走</span><span class="sum-meta">1400mダート 10頭<span class="badge badge-rel rel-lo">B</span></span><span class="sum-honmei">◎1 トーキングザゴッド</span></summary>
@@ -3703,24 +3580,24 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="p3"><div class="p3-track"><div class="p3-fill sankaku" style="width:83%"></div></div><span class="p3-num">23.35%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#111111;color:#FFFFFF;border:none;">2</span>
-      <span class="mark mark-hoshi">☆</span>
+      <span class="mark mark-hoshi">⭐︎</span>
       <span class="horse-name">ミライヘノヒーロー</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:19%"></div></div><span class="p3-num">5.21%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F2E100;color:#141C26;border:none;">5</span>
-      <span class="mark mark-yonkaku">△1</span>
+      <span class="mark"></span>
       <span class="horse-name">ハーレムシャフル</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:18%"></div></div><span class="p3-num">5.02%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:18%"></div></div><span class="p3-num">5.02%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">7</span>
-      <span class="mark mark-yonkaku">△2</span>
+      <span class="mark"></span>
       <span class="horse-name">ルーシーノワール</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:16%"></div></div><span class="p3-num">4.35%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:16%"></div></div><span class="p3-num">4.35%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#EE8A1D;color:#141C26;border:none;">8</span>
-      <span class="mark mark-yonkaku">△3</span>
+      <span class="mark"></span>
       <span class="horse-name">クインズアトリア</span>
-      <div class="p3"><div class="p3-track"><div class="p3-fill yonkaku" style="width:10%"></div></div><span class="p3-num">2.75%</span></div>
+      <div class="p3"><div class="p3-track"><div class="p3-fill plain" style="width:10%"></div></div><span class="p3-num">2.75%</span></div>
     </li><li class="horse-row">
       <span class="uma-badge" style="background:#F1A0C4;color:#141C26;border:none;">9</span>
       <span class="mark"></span>
@@ -3740,7 +3617,7 @@ h1.title .nowrap{white-space:nowrap;}
       <div class="results-head">結果</div>
       <div class="podium"><div class="podium-row">
           <span class="podium-rank">1着</span>
-          <span class="mark mark-yonkaku">△1</span>
+          <span class="mark"></span>
           <span class="podium-name">5 ハーレムシャフル</span>
           <span class="podium-ninki">6番人気・13.1倍</span>
         </div><div class="podium-row">
@@ -3750,7 +3627,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-ninki">3番人気・4.8倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">3着</span>
-          <span class="mark mark-yonkaku">△2</span>
+          <span class="mark"></span>
           <span class="podium-name">7 ルーシーノワール</span>
           <span class="podium-ninki">4番人気・8.2倍</span>
         </div></div>
@@ -3767,17 +3644,13 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="review-name">4 ヴァルチャースター （1番人気・2.2倍）</span>
           <span class="result-badge miss">4着</span>
         </div><div class="review-row">
-          <span class="mark mark-hoshi">☆</span>
+          <span class="mark mark-hoshi">⭐︎</span>
           <span class="review-name">2 ミライヘノヒーロー （7番人気・37.4倍）</span>
           <span class="result-badge miss">8着</span>
-        </div><div class="review-row">
-          <span class="mark mark-yonkaku">△1</span>
-          <span class="review-name">5 ハーレムシャフル （6番人気・13.1倍）</span>
-          <span class="result-badge hit">1着</span>
         </div></div>
       <div class="personal-bets">
           <div class="personal-bets-head">買い目(検証中):</div>
-          <div class="personal-line">ワイド◎-☆: 不的中</div><div class="personal-line">ワイド◎-△1: 不的中</div><div class="personal-line">馬単（◎→○▲☆△1△2△3）6点: 不的中</div>
+          <div class="personal-line">馬単◎→▲: 不的中</div><div class="personal-line">単勝◎: 不的中</div><div class="personal-line">三連単◎→▲→⭐︎: 不的中</div>
         </div>
     </div></div>
     </details></div>
@@ -3786,7 +3659,7 @@ h1.title .nowrap{white-space:nowrap;}
   <div class="section-eyebrow">的中ピックアップ</div>
   <div class="highlight-list"><div class="highlight-card">
           <span class="highlight-tag">🏆 本日最高配当</span>
-          <span class="highlight-body">大井2R: p_total 66.5倍</span>
+          <span class="highlight-body">大井6R: 馬単◎→▲ 20.9倍</span>
         </div></div>
 
   <div id="results"><div class="section-eyebrow">本日のまとめ</div>
@@ -3797,16 +3670,15 @@ h1.title .nowrap{white-space:nowrap;}
     <div class="stat"><div class="num tabular">60<small>%</small></div><div class="label">◎単勝回収率</div></div>
     <div class="stat"><div class="num tabular">73<small>%</small></div><div class="label">◎複勝回収率</div></div>
   </div>
-  <p class="section-lead">注目レース（S・A+）対象。買い目(検証中)で買った場合の成績（仮定シミュレーション）です。</p>
+  <p class="section-lead">注目レース（S）対象。買い目(検証中)で買った場合の成績（実際の賭け金額ベース）です。</p>
   <p class="section-lead personal-formula">
-    ◎4倍以下：ワイド◎-○▲(オッズが高い方1点・1,000円) ＋ 3連単F（◎-○▲☆△1△2△3-○▲・10点各100円）<br>
-    ◎4倍超：ワイド◎-○▲☆△1(オッズが高い方2点・各700円) ＋ 馬単（◎→○▲☆△1△2△3・6点各100円）
+    馬単 ◎→▲（400円）＋ 単勝 ◎（300円）＋ 三連単 ◎→▲→⭐︎（300円・⭐︎が居るレースのみ）＝ 1レース700〜1,000円
   </p>
-  <div class="stat-row stat-row-1"><div class="stat"><div class="num tabular">83<small>%</small></div><div class="label">トータル回収率(検証中)（15R・実際の賭け金額ベース）</div></div></div>
-  <div class="stat-row stat-row-2"><div class="stat"><div class="num tabular">87<small>%</small></div><div class="label">ワイド1点(検証中)回収率（◎4倍以下・11R）</div></div><div class="stat"><div class="num tabular">78<small>%</small></div><div class="label">3連単F(検証中)回収率（◎4倍以下・11R）</div></div><div class="stat"><div class="num tabular">119<small>%</small></div><div class="label">ワイド2点(検証中)回収率（◎4倍超・4R）</div></div><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">馬単6点(検証中)回収率（◎4倍超・4R）</div></div></div>
-  <p class="section-lead">こちらは全レース対象（見送りレースも含めて買い目(検証中)で買った場合の参考値）です。</p>
-  <div class="stat-row stat-row-1"><div class="stat"><div class="num tabular">57<small>%</small></div><div class="label">トータル回収率(検証中)（全レース・30R・実際の賭け金額ベース）</div></div></div>
-  <div class="stat-row stat-row-2"><div class="stat"><div class="num tabular">67<small>%</small></div><div class="label">ワイド1点(検証中)回収率（全レース・◎4倍以下・22R）</div></div><div class="stat"><div class="num tabular">59<small>%</small></div><div class="label">3連単F(検証中)回収率（全レース・◎4倍以下・22R）</div></div><div class="stat"><div class="num tabular">59<small>%</small></div><div class="label">ワイド2点(検証中)回収率（全レース・◎4倍超・8R）</div></div><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">馬単6点(検証中)回収率（全レース・◎4倍超・8R）</div></div></div></div>
+  <div class="stat-row stat-row-1"><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">トータル回収率(検証中)（2R・実額ベース）</div></div></div>
+  <div class="stat-row stat-row-2"><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">馬単◎→▲(400円)回収率（2R）</div></div><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">単勝◎(300円)回収率（2R）</div></div><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">三連単◎→▲→⭐︎(300円)回収率（⭐︎有りのレース）</div></div></div>
+  <p class="section-lead">【参考】全レース対象（Sでないレースも同じ買い目で買った場合の参考値）です。</p>
+  <div class="stat-row stat-row-1"><div class="stat"><div class="num tabular">48<small>%</small></div><div class="label">トータル回収率(検証中)（全レース・33R・実額ベース）</div></div></div>
+  <div class="stat-row stat-row-2"><div class="stat"><div class="num tabular">75<small>%</small></div><div class="label">馬単◎→▲(400円)回収率（全レース・33R）</div></div><div class="stat"><div class="num tabular">60<small>%</small></div><div class="label">単勝◎(300円)回収率（全レース・33R）</div></div><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">三連単◎→▲→⭐︎(300円)回収率（全レース・⭐︎有りのレース）</div></div></div></div>
 
   <div class="to-top"><a href="#top">↑ ページ上部へ</a></div>
 
