@@ -67,6 +67,9 @@ h1{font-size:22px;margin:0 0 8px;line-height:1.35;}
   color:var(--gold-strong);font-weight:700;font-size:13.5px;text-decoration:none;}
 .card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--gold);
   border-radius:12px;padding:14px 16px;margin-bottom:12px;box-shadow:var(--shadow);}
+.card.card-hit{border:2px solid #2fa36b;border-left:6px solid #2fa36b;background:rgba(47,163,107,.10);}
+.hit-badge{display:inline-flex;align-items:center;font-size:11px;font-weight:800;padding:2px 8px;
+  border-radius:999px;background:#2fa36b;color:#fff;}
 .card-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:4px;}
 .badge{display:inline-flex;align-items:center;font-size:11px;font-weight:800;padding:2px 7px;
   border-radius:999px;border:1px solid var(--gold);color:var(--gold-strong);background:var(--gold-tint);}
@@ -134,7 +137,7 @@ table.field-table tr.row-honmei{background:var(--gold-tint);}
   <div class="section-title">出馬表</div>
     <div class="tablewrap"><table class="field-table">
     <thead><tr><th>馬番</th><th>馬名</th><th>印</th><th>推定勝率</th></tr></thead>
-    <tbody><tr class="row-honmei"><td>9</td><td>インユアパレス</td><td><span class="mark mark-honmei">◎</span></td><td>21.72%</td></tr><tr class=""><td>5</td><td>ドンインザムード</td><td><span class="mark mark-o">○</span></td><td>19.89%</td></tr><tr class=""><td>8</td><td>ベルジュロネット</td><td><span class="mark mark-sankaku">▲</span></td><td>15.61%</td></tr><tr class=""><td>7</td><td>ダノンフィーゴ</td><td></td><td>12.72%</td></tr><tr class=""><td>11</td><td>メイショウハチロー</td><td><span class="mark mark-hoshi">⭐︎1</span></td><td>8.51%</td></tr><tr class=""><td>1</td><td>ノーブルロジャー</td><td><span class="mark mark-hoshi">⭐︎2</span></td><td>5.84%</td></tr><tr class=""><td>12</td><td>バトルクライ</td><td></td><td>3.45%</td></tr><tr class=""><td>13</td><td>ドラゴンテイラー</td><td></td><td>3.08%</td></tr><tr class=""><td>6</td><td>ケイアイドリー</td><td></td><td>2.76%</td></tr><tr class=""><td>4</td><td>モンドプリューム</td><td></td><td>2.03%</td></tr><tr class=""><td>2</td><td>ジュンウィンダム</td><td></td><td>1.31%</td></tr><tr class=""><td>14</td><td>マテンロウコマンド</td><td></td><td>1.27%</td></tr><tr class=""><td>3</td><td>ハッピーマン</td><td></td><td>1.18%</td></tr><tr class=""><td>10</td><td>トリリオンボーイ</td><td></td><td>0.63%</td></tr></tbody></table></div>
+    <tbody><tr class=""><td>9</td><td>インユアパレス</td><td><span class="mark mark-o">○</span></td><td>21.72%</td></tr><tr class="row-honmei"><td>5</td><td>ドンインザムード</td><td><span class="mark mark-honmei">◎</span></td><td>19.89%</td></tr><tr class=""><td>8</td><td>ベルジュロネット</td><td></td><td>15.61%</td></tr><tr class=""><td>7</td><td>ダノンフィーゴ</td><td><span class="mark mark-sankaku">▲</span></td><td>12.72%</td></tr><tr class=""><td>11</td><td>メイショウハチロー</td><td><span class="mark mark-hoshi">⭐︎1</span></td><td>8.51%</td></tr><tr class=""><td>1</td><td>ノーブルロジャー</td><td><span class="mark mark-hoshi">⭐︎2</span></td><td>5.84%</td></tr><tr class=""><td>12</td><td>バトルクライ</td><td></td><td>3.45%</td></tr><tr class=""><td>13</td><td>ドラゴンテイラー</td><td></td><td>3.08%</td></tr><tr class=""><td>6</td><td>ケイアイドリー</td><td></td><td>2.76%</td></tr><tr class=""><td>4</td><td>モンドプリューム</td><td></td><td>2.03%</td></tr><tr class=""><td>2</td><td>ジュンウィンダム</td><td></td><td>1.31%</td></tr><tr class=""><td>14</td><td>マテンロウコマンド</td><td></td><td>1.27%</td></tr><tr class=""><td>3</td><td>ハッピーマン</td><td></td><td>1.18%</td></tr><tr class=""><td>10</td><td>トリリオンボーイ</td><td></td><td>0.63%</td></tr></tbody></table></div>
   <div class="section-title">予想コメント</div>
   <div class="pre-review">
       <div class="pre-review-head"><span class="mark mark-honmei">◎</span>
@@ -150,7 +153,7 @@ table.field-table tr.row-honmei{background:var(--gold-tint);}
       <ul class="pre-review-bits"><li>着順の安定感・直線での伸び脚がメンバー随一</li></ul>
     </div>
   <div class="narrative-head">予想の検証</div>
-  <div class="narrative">◎インユアパレス（5人気・単勝10.6倍）は4着に終わりました。僅差の混戦で、上位候補が拮抗する中から選んだ◎でした。勝ったのは無印マテンロウコマンドでした。○ドンインザムード・⭐︎1メイショウハチローは掲示板（3着以内）に食い込みました。</div>
+  <div class="narrative">◎ドンインザムード（1人気・単勝1.8倍）が3着と好走し、狙い通りの結果になりました。僅差の混戦で、上位候補が拮抗する中から選んだ◎でした。勝ったのは無印マテンロウコマンドでした。</div>
   <div class="section-title">展開</div>
     <p class="race-meta">予想展開（想定ペース: ミドル）</p>
     <p class="race-meta">先行争いの中心: 13ドラゴンテイラー・14マテンロウコマンド</p>
@@ -162,14 +165,14 @@ table.field-table tr.row-honmei{background:var(--gold-tint);}
         <span class="podium-name">14 マテンロウコマンド</span></div><div class="podium-row"><span class="podium-rank">2着</span>
         <span class="mark mark-hoshi">⭐︎1</span>
         <span class="podium-name">11 メイショウハチロー</span></div><div class="podium-row"><span class="podium-rank">3着</span>
-        <span class="mark mark-o">○</span>
-        <span class="podium-name">5 ドンインザムード</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="mark mark-honmei">◎</span>
+        <span class="podium-name">5 ドンインザムード</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-o">○</span>
         <span class="review-name">9 インユアパレス</span>
-        <span class="result-badge missed">4着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="result-badge missed">4着</span></div><div class="review-row"><span class="mark mark-honmei">◎</span>
         <span class="review-name">5 ドンインザムード</span>
         <span class="result-badge came-in">3着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
-        <span class="review-name">8 ベルジュロネット</span>
-        <span class="result-badge missed">9着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">7 ダノンフィーゴ</span>
+        <span class="result-badge missed">10着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
         <span class="review-name">11 メイショウハチロー</span>
         <span class="result-badge came-in">2着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
         <span class="review-name">1 ノーブルロジャー</span>
