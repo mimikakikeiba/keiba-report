@@ -3370,15 +3370,15 @@ h1.title .nowrap{white-space:nowrap;}
       <tbody><tr class="row-honmei">
           <td class="tn">14</td><td class="tname">カウスリップ</td>
           <td class="tmk"><span class="mark mark-honmei">◎</span></td><td class="tnum">26.65%</td>
-        </tr><tr>
+        </tr><tr class="row-o">
           <td class="tn">11</td><td class="tname">エコロレジーナ</td>
-          <td class="tmk"></td><td class="tnum">12.54%</td>
+          <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">12.54%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">3</td><td class="tname">ヴェントゥーラ</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">9.67%</td>
-        </tr><tr class="row-o">
+        </tr><tr>
           <td class="tn">17</td><td class="tname">ロードトレイル</td>
-          <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">6.55%</td>
+          <td class="tmk"></td><td class="tnum">6.55%</td>
         </tr><tr>
           <td class="tn">16</td><td class="tname">シュラフ</td>
           <td class="tmk"></td><td class="tnum">6.54%</td>
@@ -3430,7 +3430,7 @@ h1.title .nowrap{white-space:nowrap;}
           <span class="podium-ninki">8番人気・21.2倍</span>
         </div><div class="podium-row">
           <span class="podium-rank">2着</span>
-          <span class="mark"></span>
+          <span class="mark mark-o">○</span>
           <span class="podium-name">11 エコロレジーナ</span>
           <span class="podium-ninki">2番人気・5.4倍</span>
         </div><div class="podium-row">
@@ -4766,3 +4766,4 @@ document.addEventListener('DOMContentLoaded', function(){
   });
 });
 </script>
+<style>#to-top-btn{position:fixed;right:16px;bottom:calc(84px + env(safe-area-inset-bottom,0px));z-index:50;width:46px;height:46px;border-radius:50%;border:1.5px solid var(--gold,#9C6E1E);background:var(--gold-tint,#FBF1DC);color:var(--gold-strong,#7A5511);font-size:20px;font-weight:800;line-height:1;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.25);opacity:0;pointer-events:none;transition:opacity .2s}#to-top-btn.on{opacity:.95;pointer-events:auto}</style><button type="button" id="to-top-btn" aria-label="ページの先頭へ戻る">↑</button><script>(function(){var b=document.getElementById("to-top-btn");if(!b)return;function f(){b.classList.toggle("on",(window.pageYOffset||document.documentElement.scrollTop)>400);}window.addEventListener("scroll",f,{passive:true});f();b.addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"});});})();</script>
