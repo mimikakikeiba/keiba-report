@@ -118,6 +118,10 @@ table.field-table tr.row-honmei{background:var(--gold-tint);}
 .pre-review-head{display:flex;align-items:baseline;gap:7px;font-weight:700;font-size:13.5px;}
 .pre-review-bits{margin:4px 0 0;padding-left:19px;font-size:12.5px;color:var(--text-muted);line-height:1.7;}
 .pre-review-bits li{margin-bottom:1px;}
+table.bet-table th.r,table.bet-table td.r{text-align:right;}
+table.bet-table tr.bet-hit{background:rgba(47,163,107,.12);}
+table.bet-table tr.bet-total td{border-top:2px solid var(--border);background:var(--surface-2);}
+table.bet-table small{color:var(--text-muted);font-size:11px;}
 </style>
 <div class="wrap">
   <div class="back-to-top-wrap">
@@ -177,6 +181,11 @@ table.field-table tr.row-honmei{background:var(--gold-tint);}
         <span class="result-badge came-in">3着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
         <span class="review-name">14 ダノンマッキンリー</span>
         <span class="result-badge missed">7着</span></div></div>
+  <div class="section-title">買い目と払戻</div>
+    <div class="tablewrap"><table class="field-table bet-table">
+    <thead><tr><th>買い目</th><th>馬番</th><th class="r">購入</th><th class="r">払戻</th></tr></thead>
+    <tbody><tr class=""><td>三連単　◎→⭐︎1→○</td><td>2→1→10</td><td class="r">600円</td><td class="r">—</td></tr><tr class=""><td>三連単　◎→⭐︎1→▲</td><td>2→1→8</td><td class="r">400円</td><td class="r">—</td></tr><tr class=""><td>三連単　◎→⭐︎2→○</td><td>2→14→10</td><td class="r">500円</td><td class="r">—</td></tr><tr class=""><td>三連単　◎→⭐︎2→▲</td><td>2→14→8</td><td class="r">400円</td><td class="r">—</td></tr><tr class=""><td>馬単　◎→⭐︎1</td><td>2→1</td><td class="r">100円</td><td class="r">—</td></tr><tr class=""><td>馬単　⭐︎1→○</td><td>1→10</td><td class="r">100円</td><td class="r">—</td></tr><tr class=""><td>馬単　⭐︎1→▲</td><td>1→8</td><td class="r">100円</td><td class="r">—</td></tr><tr class=""><td>馬単　◎→⭐︎2</td><td>2→14</td><td class="r">100円</td><td class="r">—</td></tr><tr class=""><td>馬単　⭐︎2→○</td><td>14→10</td><td class="r">100円</td><td class="r">—</td></tr><tr class=""><td>馬単　⭐︎2→▲</td><td>14→8</td><td class="r">100円</td><td class="r">—</td></tr><tr class=""><td>ワイド　◎-⭐︎1</td><td>2-1</td><td class="r">300円</td><td class="r">—</td></tr><tr class=""><td>ワイド　◎-⭐︎2</td><td>2-14</td><td class="r">200円</td><td class="r">—</td></tr><tr class="bet-total"><td colspan="2">合計</td><td class="r">3,000円</td><td class="r"><b>0円</b> <small>（回収率 0%）</small></td></tr></tbody></table></div>
+    <p class="race-meta">※11/21開催分から使う新しい配分で、当日の買い目を計算し直した参考値です（実際の購入額・払戻ではありません）。</p>
   <p class="lead"><a href="20240825.html#r-札幌-11">この日の全レースの予想・結果はこちら →</a></p>
   <div class="footer">Personal prediction system</div>
 </div><style>#to-top-btn{position:fixed;right:16px;bottom:calc(84px + env(safe-area-inset-bottom,0px));z-index:50;width:46px;height:46px;border-radius:50%;border:1.5px solid var(--gold,#9C6E1E);background:var(--gold-tint,#FBF1DC);color:var(--gold-strong,#7A5511);font-size:20px;font-weight:800;line-height:1;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.25);opacity:0;pointer-events:none;transition:opacity .2s}#to-top-btn.on{opacity:.95;pointer-events:auto}</style><button type="button" id="to-top-btn" aria-label="ページの先頭へ戻る">↑</button><script>(function(){var b=document.getElementById("to-top-btn");if(!b)return;function f(){b.classList.toggle("on",(window.pageYOffset||document.documentElement.scrollTop)>400);}window.addEventListener("scroll",f,{passive:true});f();b.addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"});});})();</script>
