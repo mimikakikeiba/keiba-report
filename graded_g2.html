@@ -145,7 +145,7 @@ table.bet-table small{color:var(--text-muted);font-size:11px;}
     <p class="lead">レース名をクリックすると、そのレースの個別ページに移動します。</p>
   </header>
   <a href="graded.html" class="back-link">← 重賞アーカイブに戻る</a>
-  <style>#year-bar{scrollbar-width:none;-webkit-overflow-scrolling:touch;}#year-bar::-webkit-scrollbar{display:none;}</style><div id="year-bar" style="display:flex;gap:6px;margin:12px 0;overflow-x:auto;white-space:nowrap;"><button type="button" class="yr-chip" data-yr="2026" style="flex:0 0 auto;min-width:4.2em;padding:6px 10px;border-radius:999px;white-space:nowrap;border:1px solid rgba(128,128,128,.5);background:transparent;color:inherit;font:inherit;cursor:pointer;">2026年</button><button type="button" class="yr-chip" data-yr="2025" style="flex:0 0 auto;min-width:4.2em;padding:6px 10px;border-radius:999px;white-space:nowrap;border:1px solid rgba(128,128,128,.5);background:transparent;color:inherit;font:inherit;cursor:pointer;">2025年</button><button type="button" class="yr-chip" data-yr="2024" style="flex:0 0 auto;min-width:4.2em;padding:6px 10px;border-radius:999px;white-space:nowrap;border:1px solid rgba(128,128,128,.5);background:transparent;color:inherit;font:inherit;cursor:pointer;">2024年</button><button type="button" class="yr-chip" data-yr="2023" style="flex:0 0 auto;min-width:4.2em;padding:6px 10px;border-radius:999px;white-space:nowrap;border:1px solid rgba(128,128,128,.5);background:transparent;color:inherit;font:inherit;cursor:pointer;">2023年</button><button type="button" class="yr-chip" data-yr="2022" style="flex:0 0 auto;min-width:4.2em;padding:6px 10px;border-radius:999px;white-space:nowrap;border:1px solid rgba(128,128,128,.5);background:transparent;color:inherit;font:inherit;cursor:pointer;">2022年</button><button type="button" class="yr-chip" data-yr="2021" style="flex:0 0 auto;min-width:4.2em;padding:6px 10px;border-radius:999px;white-space:nowrap;border:1px solid rgba(128,128,128,.5);background:transparent;color:inherit;font:inherit;cursor:pointer;">2021年</button></div><script>document.addEventListener("DOMContentLoaded",function(){var bs=document.querySelectorAll(".yr-chip[data-yr]");function pick(y,scroll){bs.forEach(function(b){var on=b.dataset.yr===y;b.style.fontWeight=on?"700":"400";b.style.borderColor=on?"currentColor":"";if(on&&scroll){var bar=document.getElementById("year-bar");bar.scrollLeft=b.offsetLeft-(bar.clientWidth-b.offsetWidth)/2;}});document.querySelectorAll("[data-year]").forEach(function(e){e.style.display=e.dataset.year===y?"":"none";});try{sessionStorage.setItem("keiba_yr",y);}catch(e){}}var d=bs[0].dataset.yr;var cy=String(new Date().getFullYear());if(document.querySelector(".yr-chip[data-yr=\""+cy+"\"]"))d=cy;try{var sv=sessionStorage.getItem("keiba_yr");if(sv&&document.querySelector(".yr-chip[data-yr=\""+sv+"\"]"))d=sv;}catch(e){}bs.forEach(function(b){b.addEventListener("click",function(){pick(b.dataset.yr,false);});});pick(d,true);});</script><div class="section-head" id="jra"><span class="dot dot-jra"></span><h2>中央競馬</h2></div>
+  <style>#year-bar{scrollbar-width:none;-webkit-overflow-scrolling:touch;}#year-bar::-webkit-scrollbar{display:none;}</style><div id="year-bar" style="display:flex;gap:6px;margin:12px 0;overflow-x:auto;white-space:nowrap;"><button type="button" class="yr-chip" data-yr="2026" style="flex:0 0 auto;min-width:4.2em;padding:6px 10px;border-radius:999px;white-space:nowrap;border:1px solid rgba(128,128,128,.5);background:transparent;color:inherit;font:inherit;cursor:pointer;">2026年</button><button type="button" class="yr-chip" data-yr="2025" style="flex:0 0 auto;min-width:4.2em;padding:6px 10px;border-radius:999px;white-space:nowrap;border:1px solid rgba(128,128,128,.5);background:transparent;color:inherit;font:inherit;cursor:pointer;">2025年</button><button type="button" class="yr-chip" data-yr="2024" style="flex:0 0 auto;min-width:4.2em;padding:6px 10px;border-radius:999px;white-space:nowrap;border:1px solid rgba(128,128,128,.5);background:transparent;color:inherit;font:inherit;cursor:pointer;">2024年</button><button type="button" class="yr-chip" data-yr="2023" style="flex:0 0 auto;min-width:4.2em;padding:6px 10px;border-radius:999px;white-space:nowrap;border:1px solid rgba(128,128,128,.5);background:transparent;color:inherit;font:inherit;cursor:pointer;">2023年</button><button type="button" class="yr-chip" data-yr="2022" style="flex:0 0 auto;min-width:4.2em;padding:6px 10px;border-radius:999px;white-space:nowrap;border:1px solid rgba(128,128,128,.5);background:transparent;color:inherit;font:inherit;cursor:pointer;">2022年</button><button type="button" class="yr-chip" data-yr="2021" style="flex:0 0 auto;min-width:4.2em;padding:6px 10px;border-radius:999px;white-space:nowrap;border:1px solid rgba(128,128,128,.5);background:transparent;color:inherit;font:inherit;cursor:pointer;">2021年</button><button type="button" class="yr-chip" data-yr="2020" style="flex:0 0 auto;min-width:4.2em;padding:6px 10px;border-radius:999px;white-space:nowrap;border:1px solid rgba(128,128,128,.5);background:transparent;color:inherit;font:inherit;cursor:pointer;">2020年</button></div><script>document.addEventListener("DOMContentLoaded",function(){var bs=document.querySelectorAll(".yr-chip[data-yr]");function pick(y,scroll){bs.forEach(function(b){var on=b.dataset.yr===y;b.style.fontWeight=on?"700":"400";b.style.borderColor=on?"currentColor":"";if(on&&scroll){var bar=document.getElementById("year-bar");bar.scrollLeft=b.offsetLeft-(bar.clientWidth-b.offsetWidth)/2;}});document.querySelectorAll("[data-year]").forEach(function(e){e.style.display=e.dataset.year===y?"":"none";});try{sessionStorage.setItem("keiba_yr",y);}catch(e){}}var d=bs[0].dataset.yr;var cy=String(new Date().getFullYear());if(document.querySelector(".yr-chip[data-yr=\""+cy+"\"]"))d=cy;try{var sv=sessionStorage.getItem("keiba_yr");if(sv&&document.querySelector(".yr-chip[data-yr=\""+sv+"\"]"))d=sv;}catch(e){}bs.forEach(function(b){b.addEventListener("click",function(){pick(b.dataset.yr,false);});});pick(d,true);});</script><div class="section-head" id="jra"><span class="dot dot-jra"></span><h2>中央競馬</h2></div>
   <div data-year="2026"><div class="year-head">2026年</div><div class="card">
       <div class="card-head">
         <span class="badge">GII</span>
@@ -5440,6 +5440,854 @@ table.bet-table small{color:var(--text-muted);font-size:11px;}
         <span class="result-badge missed">9着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
         <span class="review-name">4 サンレイポケット</span><span class="review-pop"><span class="pn">5</span>人気 <span class="po">7.7</span>倍</span>
         <span class="result-badge missed">4着</span></div></div>
+    </div></div><div data-year="2020"><div class="year-head">2020年</div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">阪神11R</span>
+        <span class="card-date">12/26（土）</span>
+      </div>
+      <div class="card-title"><a href="race_20201226_hanshin11.html">阪神カップ</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark mark-o">○</span>
+        <span class="podium-name">6 ダノンファンタジー</span><span class="review-pop pod-pop"><span class="pn">4</span>人気 <span class="po">9.6</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark"></span>
+        <span class="podium-name">16 マルターズディオサ</span><span class="review-pop pod-pop"><span class="pn">6</span>人気 <span class="po">19.8</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark mark-honmei">◎</span>
+        <span class="podium-name">12 インディチャンプ</span><span class="review-pop pod-pop"><span class="pn">1</span>人気 <span class="po">1.5</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">12 インディチャンプ</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">1.5</span>倍</span>
+        <span class="result-badge came-in">3着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">6 ダノンファンタジー</span><span class="review-pop"><span class="pn">4</span>人気 <span class="po">9.6</span>倍</span>
+        <span class="result-badge came-in">1着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">9 サウンドキアラ</span><span class="review-pop"><span class="pn">5</span>人気 <span class="po">17.5</span>倍</span>
+        <span class="result-badge missed">4着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">中山11R</span>
+        <span class="card-date">12/5（土）</span>
+      </div>
+      <div class="card-title"><a href="race_20201205_nakayama11.html">ステイヤーズステークス</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark mark-sankaku">▲</span>
+        <span class="podium-name">11 オセアグレイト</span><span class="review-pop pod-pop"><span class="pn">7</span>人気 <span class="po">13.8</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark mark-hoshi">⭐︎1</span>
+        <span class="podium-name">13 タガノディアマンテ</span><span class="review-pop pod-pop"><span class="pn">8</span>人気 <span class="po">17.3</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark"></span>
+        <span class="podium-name">3 ポンデザール</span><span class="review-pop pod-pop"><span class="pn">1</span>人気 <span class="po">3.3</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">9 ヒュミドール</span><span class="review-pop"><span class="pn">6</span>人気 <span class="po">10.8</span>倍</span>
+        <span class="result-badge missed">5着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">4 ボスジラ</span><span class="review-pop"><span class="pn">3</span>人気 <span class="po">6.2</span>倍</span>
+        <span class="result-badge missed">6着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">11 オセアグレイト</span><span class="review-pop"><span class="pn">7</span>人気 <span class="po">13.8</span>倍</span>
+        <span class="result-badge came-in">1着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">13 タガノディアマンテ</span><span class="review-pop"><span class="pn">8</span>人気 <span class="po">17.3</span>倍</span>
+        <span class="result-badge came-in">2着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">10 タイセイトレイル</span><span class="review-pop"><span class="pn">9</span>人気 <span class="po">20.7</span>倍</span>
+        <span class="result-badge missed">4着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">阪神11R</span>
+        <span class="card-date">11/14（土）</span>
+      </div>
+      <div class="card-title"><a href="race_20201114_hanshin11.html">デイリー杯2歳ステークス</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark mark-honmei">◎</span>
+        <span class="podium-name">2 レッドベルオーブ</span><span class="review-pop pod-pop"><span class="pn">1</span>人気 <span class="po">1.3</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark mark-o">○</span>
+        <span class="podium-name">1 ホウオウアマゾン</span><span class="review-pop pod-pop"><span class="pn">2</span>人気 <span class="po">4.5</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark"></span>
+        <span class="podium-name">3 スーパーホープ</span><span class="review-pop pod-pop"><span class="pn">4</span>人気 <span class="po">11.4</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">2 レッドベルオーブ</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">1.3</span>倍</span>
+        <span class="result-badge came-in">1着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">1 ホウオウアマゾン</span><span class="review-pop"><span class="pn">2</span>人気 <span class="po">4.5</span>倍</span>
+        <span class="result-badge came-in">2着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">6 カイザーノヴァ</span><span class="review-pop"><span class="pn">3</span>人気 <span class="po">9.3</span>倍</span>
+        <span class="result-badge missed">5着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">4 シティレインボー</span><span class="review-pop"><span class="pn">6</span>人気 <span class="po">31.6</span>倍</span>
+        <span class="result-badge missed">6着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">8 ビゾンテノブファロ</span><span class="review-pop"><span class="pn">8</span>人気 <span class="po">288.5</span>倍</span>
+        <span class="result-badge missed">4着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">東京11R</span>
+        <span class="card-date">11/8（日）</span>
+      </div>
+      <div class="card-title"><a href="race_20201108_tokyo11.html">アルゼンチン共和国杯</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark mark-sankaku">▲</span>
+        <span class="podium-name">18 オーソリティ</span><span class="review-pop pod-pop"><span class="pn">3</span>人気 <span class="po">5.3</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark"></span>
+        <span class="podium-name">2 ラストドラフト</span><span class="review-pop pod-pop"><span class="pn">6</span>人気 <span class="po">22.9</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark"></span>
+        <span class="podium-name">10 サンアップルトン</span><span class="review-pop pod-pop"><span class="pn">9</span>人気 <span class="po">26.3</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">5 ユーキャンスマイル</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">2.3</span>倍</span>
+        <span class="result-badge missed">4着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">8 サンレイポケット</span><span class="review-pop"><span class="pn">2</span>人気 <span class="po">4.9</span>倍</span>
+        <span class="result-badge missed">6着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">18 オーソリティ</span><span class="review-pop"><span class="pn">3</span>人気 <span class="po">5.3</span>倍</span>
+        <span class="result-badge came-in">1着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">3 ベストアプローチ</span><span class="review-pop"><span class="pn">15</span>人気 <span class="po">94.1</span>倍</span>
+        <span class="result-badge missed">7着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">14 オセアグレイト</span><span class="review-pop"><span class="pn">8</span>人気 <span class="po">26.3</span>倍</span>
+        <span class="result-badge missed">11着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">東京11R</span>
+        <span class="card-date">11/7（土）</span>
+      </div>
+      <div class="card-title"><a href="race_20201107_tokyo11.html">京王杯2歳ステークス</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark"></span>
+        <span class="podium-name">6 モントライゼ</span><span class="review-pop pod-pop"><span class="pn">2</span>人気 <span class="po">3.0</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark"></span>
+        <span class="podium-name">17 ロードマックス</span><span class="review-pop pod-pop"><span class="pn">9</span>人気 <span class="po">57.5</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark"></span>
+        <span class="podium-name">16 ユングヴィ</span><span class="review-pop pod-pop"><span class="pn">5</span>人気 <span class="po">18.5</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">4 リンゴアメ</span><span class="review-pop"><span class="pn">4</span>人気 <span class="po">16.4</span>倍</span>
+        <span class="result-badge missed">12着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">11 リフレイム</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">2.4</span>倍</span>
+        <span class="result-badge missed">5着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">18 ブルーシンフォニー</span><span class="review-pop"><span class="pn">3</span>人気 <span class="po">7.0</span>倍</span>
+        <span class="result-badge missed">8着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">5 ニシノガブリヨリ</span><span class="review-pop"><span class="pn">8</span>人気 <span class="po">26.9</span>倍</span>
+        <span class="result-badge missed">15着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">10 ジャガード</span><span class="review-pop"><span class="pn">10</span>人気 <span class="po">64.8</span>倍</span>
+        <span class="result-badge missed">6着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">京都11R</span>
+        <span class="card-date">10/31（土）</span>
+      </div>
+      <div class="card-title"><a href="race_20201031_kyoto11.html">スワンステークス</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark"></span>
+        <span class="podium-name">4 カツジ</span><span class="review-pop pod-pop"><span class="pn">11</span>人気 <span class="po">143.7</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark mark-sankaku">▲</span>
+        <span class="podium-name">16 ステルヴィオ</span><span class="review-pop pod-pop"><span class="pn">3</span>人気 <span class="po">5.0</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark mark-o">○</span>
+        <span class="podium-name">2 アドマイヤマーズ</span><span class="review-pop pod-pop"><span class="pn">2</span>人気 <span class="po">2.8</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">1 サウンドキアラ</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">2.4</span>倍</span>
+        <span class="result-badge missed">10着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">2 アドマイヤマーズ</span><span class="review-pop"><span class="pn">2</span>人気 <span class="po">2.8</span>倍</span>
+        <span class="result-badge came-in">3着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">16 ステルヴィオ</span><span class="review-pop"><span class="pn">3</span>人気 <span class="po">5.0</span>倍</span>
+        <span class="result-badge came-in">2着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">10 ボンセルヴィーソ</span><span class="review-pop"><span class="pn">7</span>人気 <span class="po">27.3</span>倍</span>
+        <span class="result-badge missed">11着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">5 メイショウオーパス</span><span class="review-pop"><span class="pn">8</span>人気 <span class="po">35.7</span>倍</span>
+        <span class="result-badge missed">9着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">東京11R</span>
+        <span class="card-date">10/24（土）</span>
+      </div>
+      <div class="card-title"><a href="race_20201024_tokyo11.html">富士ステークス</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark"></span>
+        <span class="podium-name">5 ヴァンドギャルド</span><span class="review-pop pod-pop"><span class="pn">5</span>人気 <span class="po">6.2</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark mark-honmei">◎</span>
+        <span class="podium-name">11 ラウダシオン</span><span class="review-pop pod-pop"><span class="pn">3</span>人気 <span class="po">6.2</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark"></span>
+        <span class="podium-name">9 ケイアイノーテック</span><span class="review-pop pod-pop"><span class="pn">6</span>人気 <span class="po">10.3</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">11 ラウダシオン</span><span class="review-pop"><span class="pn">3</span>人気 <span class="po">6.2</span>倍</span>
+        <span class="result-badge came-in">2着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">4 サトノアーサー</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">5.0</span>倍</span>
+        <span class="result-badge missed">9着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">2 タイセイビジョン</span><span class="review-pop"><span class="pn">4</span>人気 <span class="po">6.2</span>倍</span>
+        <span class="result-badge missed">5着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">8 シーズンズギフト</span><span class="review-pop"><span class="pn">7</span>人気 <span class="po">10.4</span>倍</span>
+        <span class="result-badge missed">12着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">12 ワーケア</span><span class="review-pop"><span class="pn">8</span>人気 <span class="po">12.5</span>倍</span>
+        <span class="result-badge missed">8着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">東京11R</span>
+        <span class="card-date">10/17（土）</span>
+      </div>
+      <div class="card-title"><a href="race_20201017_tokyo11.html">府中牝馬ステークス</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark mark-hoshi">⭐︎1</span>
+        <span class="podium-name">4 サラキア</span><span class="review-pop pod-pop"><span class="pn">7</span>人気 <span class="po">20.2</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark"></span>
+        <span class="podium-name">6 シャドウディーヴァ</span><span class="review-pop pod-pop"><span class="pn">6</span>人気 <span class="po">18.1</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark mark-hoshi">⭐︎2</span>
+        <span class="podium-name">8 サムシングジャスト</span><span class="review-pop pod-pop"><span class="pn">8</span>人気 <span class="po">20.9</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">2 ダノンファンタジー</span><span class="review-pop"><span class="pn">2</span>人気 <span class="po">4.0</span>倍</span>
+        <span class="result-badge missed">6着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">5 ラヴズオンリーユー</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">2.3</span>倍</span>
+        <span class="result-badge missed">5着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">3 フェアリーポルカ</span><span class="review-pop"><span class="pn">3</span>人気 <span class="po">4.7</span>倍</span>
+        <span class="result-badge missed">8着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">4 サラキア</span><span class="review-pop"><span class="pn">7</span>人気 <span class="po">20.2</span>倍</span>
+        <span class="result-badge came-in">1着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">8 サムシングジャスト</span><span class="review-pop"><span class="pn">8</span>人気 <span class="po">20.9</span>倍</span>
+        <span class="result-badge came-in">3着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">東京11R</span>
+        <span class="card-date">10/11（日）</span>
+      </div>
+      <div class="card-title"><a href="race_20201011_tokyo11.html">毎日王冠</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark mark-honmei">◎</span>
+        <span class="podium-name">9 サリオス</span><span class="review-pop pod-pop"><span class="pn">1</span>人気 <span class="po">1.3</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark"></span>
+        <span class="podium-name">5 ダイワキャグニー</span><span class="review-pop pod-pop"><span class="pn">4</span>人気 <span class="po">10.6</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark mark-sankaku">▲</span>
+        <span class="podium-name">7 サンレイポケット</span><span class="review-pop pod-pop"><span class="pn">5</span>人気 <span class="po">18.9</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">9 サリオス</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">1.3</span>倍</span>
+        <span class="result-badge came-in">1着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">4 ザダル</span><span class="review-pop"><span class="pn">3</span>人気 <span class="po">8.5</span>倍</span>
+        <span class="result-badge missed">5着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">7 サンレイポケット</span><span class="review-pop"><span class="pn">5</span>人気 <span class="po">18.9</span>倍</span>
+        <span class="result-badge came-in">3着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">10 カデナ</span><span class="review-pop"><span class="pn">6</span>人気 <span class="po">25.0</span>倍</span>
+        <span class="result-badge missed">4着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">11 カイザーメランジェ</span><span class="review-pop"><span class="pn">11</span>人気 <span class="po">328.3</span>倍</span>
+        <span class="result-badge missed">11着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">京都11R</span>
+        <span class="card-date">10/11（日）</span>
+      </div>
+      <div class="card-title"><a href="race_20201011_kyoto11.html">京都大賞典</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark mark-sankaku">▲</span>
+        <span class="podium-name">13 グローリーヴェイズ</span><span class="review-pop pod-pop"><span class="pn">3</span>人気 <span class="po">6.2</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark"></span>
+        <span class="podium-name">2 キセキ</span><span class="review-pop pod-pop"><span class="pn">1</span>人気 <span class="po">3.5</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark"></span>
+        <span class="podium-name">17 キングオブコージ</span><span class="review-pop pod-pop"><span class="pn">2</span>人気 <span class="po">5.2</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">15 パフォーマプロミス</span><span class="review-pop"><span class="pn">6</span>人気 <span class="po">9.9</span>倍</span>
+        <span class="result-badge missed">6着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">8 カセドラルベル</span><span class="review-pop"><span class="pn">7</span>人気 <span class="po">11.2</span>倍</span>
+        <span class="result-badge missed">10着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">13 グローリーヴェイズ</span><span class="review-pop"><span class="pn">3</span>人気 <span class="po">6.2</span>倍</span>
+        <span class="result-badge came-in">1着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">11 バイオスパーク</span><span class="review-pop"><span class="pn">10</span>人気 <span class="po">43.3</span>倍</span>
+        <span class="result-badge missed">9着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">中山11R</span>
+        <span class="card-date">9/27（日）</span>
+      </div>
+      <div class="card-title"><a href="race_20200927_nakayama11.html">オールカマー</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark"></span>
+        <span class="podium-name">4 センテリュオ</span><span class="review-pop pod-pop"><span class="pn">5</span>人気 <span class="po">9.1</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark mark-honmei">◎</span>
+        <span class="podium-name">8 カレンブーケドール</span><span class="review-pop pod-pop"><span class="pn">2</span>人気 <span class="po">3.7</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark"></span>
+        <span class="podium-name">7 ステイフーリッシュ</span><span class="review-pop pod-pop"><span class="pn">3</span>人気 <span class="po">4.9</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">8 カレンブーケドール</span><span class="review-pop"><span class="pn">2</span>人気 <span class="po">3.7</span>倍</span>
+        <span class="result-badge came-in">2着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">3 ミッキースワロー</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">2.9</span>倍</span>
+        <span class="result-badge missed">5着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">1 クレッシェンドラヴ</span><span class="review-pop"><span class="pn">4</span>人気 <span class="po">5.1</span>倍</span>
+        <span class="result-badge missed">4着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">5 ジェネラーレウーノ</span><span class="review-pop"><span class="pn">6</span>人気 <span class="po">10.2</span>倍</span>
+        <span class="result-badge missed">7着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">2 サンアップルトン</span><span class="review-pop"><span class="pn">7</span>人気 <span class="po">34.1</span>倍</span>
+        <span class="result-badge missed">6着</span></div></div>
+    </div><div class="card card-hit">
+      <div class="card-head">
+        <span class="badge">GII</span><span class="hit-badge">🎯 的中 168%</span>
+        <span class="card-venue">中京11R</span>
+        <span class="card-date">9/27（日）</span>
+      </div>
+      <div class="card-title"><a href="race_20200927_chukyo11.html">神戸新聞杯</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark mark-honmei">◎</span>
+        <span class="podium-name">2 コントレイル</span><span class="review-pop pod-pop"><span class="pn">1</span>人気 <span class="po">1.1</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark mark-o">○</span>
+        <span class="podium-name">18 ヴェルトライゼンデ</span><span class="review-pop pod-pop"><span class="pn">3</span>人気 <span class="po">20.3</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark mark-hoshi">⭐︎2</span>
+        <span class="podium-name">5 ロバートソンキー</span><span class="review-pop pod-pop"><span class="pn">14</span>人気 <span class="po">112.7</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">2 コントレイル</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">1.1</span>倍</span>
+        <span class="result-badge came-in">1着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">18 ヴェルトライゼンデ</span><span class="review-pop"><span class="pn">3</span>人気 <span class="po">20.3</span>倍</span>
+        <span class="result-badge came-in">2着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">1 グランデマーレ</span><span class="review-pop"><span class="pn">2</span>人気 <span class="po">19.9</span>倍</span>
+        <span class="result-badge missed">17着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">16 シンボ</span><span class="review-pop"><span class="pn">15</span>人気 <span class="po">123.3</span>倍</span>
+        <span class="result-badge missed">13着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">5 ロバートソンキー</span><span class="review-pop"><span class="pn">14</span>人気 <span class="po">112.7</span>倍</span>
+        <span class="result-badge came-in">3着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">中山11R</span>
+        <span class="card-date">9/21（月）</span>
+      </div>
+      <div class="card-title"><a href="race_20200921_nakayama11.html">セントライト記念</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark mark-o">○</span>
+        <span class="podium-name">6 バビット</span><span class="review-pop pod-pop"><span class="pn">4</span>人気 <span class="po">5.9</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark"></span>
+        <span class="podium-name">9 サトノフラッグ</span><span class="review-pop pod-pop"><span class="pn">1</span>人気 <span class="po">3.7</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark"></span>
+        <span class="podium-name">7 ガロアクリーク</span><span class="review-pop pod-pop"><span class="pn">2</span>人気 <span class="po">4.4</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">4 フィリオアレグロ</span><span class="review-pop"><span class="pn">3</span>人気 <span class="po">5.6</span>倍</span>
+        <span class="result-badge missed">7着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">6 バビット</span><span class="review-pop"><span class="pn">4</span>人気 <span class="po">5.9</span>倍</span>
+        <span class="result-badge came-in">1着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">5 ダノンファスト</span><span class="review-pop"><span class="pn">6</span>人気 <span class="po">10.3</span>倍</span>
+        <span class="result-badge missed">12着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">2 ラインハイト</span><span class="review-pop"><span class="pn">9</span>人気 <span class="po">21.4</span>倍</span>
+        <span class="result-badge missed">4着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">8 リスペクト</span><span class="review-pop"><span class="pn">7</span>人気 <span class="po">16.5</span>倍</span>
+        <span class="result-badge missed">9着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">中京11R</span>
+        <span class="card-date">9/20（日）</span>
+      </div>
+      <div class="card-title"><a href="race_20200920_chukyo11.html">ローズステークス</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark"></span>
+        <span class="podium-name">1 リアアメリア</span><span class="review-pop pod-pop"><span class="pn">3</span>人気 <span class="po">5.1</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark mark-hoshi">⭐︎1</span>
+        <span class="podium-name">13 ムジカ</span><span class="review-pop pod-pop"><span class="pn">14</span>人気 <span class="po">103.9</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark mark-hoshi">⭐︎2</span>
+        <span class="podium-name">8 オーマイダーリン</span><span class="review-pop pod-pop"><span class="pn">11</span>人気 <span class="po">59.4</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">3 フアナ</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">4.2</span>倍</span>
+        <span class="result-badge missed">11着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">15 デゼル</span><span class="review-pop"><span class="pn">4</span>人気 <span class="po">5.7</span>倍</span>
+        <span class="result-badge missed">4着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">9 クラヴァシュドール</span><span class="review-pop"><span class="pn">2</span>人気 <span class="po">4.8</span>倍</span>
+        <span class="result-badge missed">5着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">13 ムジカ</span><span class="review-pop"><span class="pn">14</span>人気 <span class="po">103.9</span>倍</span>
+        <span class="result-badge came-in">2着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">8 オーマイダーリン</span><span class="review-pop"><span class="pn">11</span>人気 <span class="po">59.4</span>倍</span>
+        <span class="result-badge came-in">3着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">中京11R</span>
+        <span class="card-date">9/13（日）</span>
+      </div>
+      <div class="card-title"><a href="race_20200913_chukyo11.html">セントウルステークス</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark mark-honmei">◎</span>
+        <span class="podium-name">16 ダノンスマッシュ</span><span class="review-pop pod-pop"><span class="pn">1</span>人気 <span class="po">3.0</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark"></span>
+        <span class="podium-name">3 メイショウグロッケ</span><span class="review-pop pod-pop"><span class="pn">12</span>人気 <span class="po">67.6</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark mark-sankaku">▲</span>
+        <span class="podium-name">7 ミスターメロディ</span><span class="review-pop pod-pop"><span class="pn">2</span>人気 <span class="po">4.1</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">16 ダノンスマッシュ</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">3.0</span>倍</span>
+        <span class="result-badge came-in">1着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">10 トゥラヴェスーラ</span><span class="review-pop"><span class="pn">7</span>人気 <span class="po">17.7</span>倍</span>
+        <span class="result-badge missed">6着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">7 ミスターメロディ</span><span class="review-pop"><span class="pn">2</span>人気 <span class="po">4.1</span>倍</span>
+        <span class="result-badge came-in">3着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">8 タイセイアベニール</span><span class="review-pop"><span class="pn">8</span>人気 <span class="po">18.1</span>倍</span>
+        <span class="result-badge missed">4着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">4 ラヴィングアンサー</span><span class="review-pop"><span class="pn">9</span>人気 <span class="po">21.6</span>倍</span>
+        <span class="result-badge missed">8着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">札幌11R</span>
+        <span class="card-date">8/23（日）</span>
+      </div>
+      <div class="card-title"><a href="race_20200823_sapporo11.html">札幌記念</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark mark-o">○</span>
+        <span class="podium-name">1 ノームコア</span><span class="review-pop pod-pop"><span class="pn">2</span>人気 <span class="po">3.7</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark"></span>
+        <span class="podium-name">2 ペルシアンナイト</span><span class="review-pop pod-pop"><span class="pn">6</span>人気 <span class="po">20.6</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark mark-honmei">◎</span>
+        <span class="podium-name">6 ラッキーライラック</span><span class="review-pop pod-pop"><span class="pn">1</span>人気 <span class="po">1.9</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">6 ラッキーライラック</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">1.9</span>倍</span>
+        <span class="result-badge came-in">3着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">1 ノームコア</span><span class="review-pop"><span class="pn">2</span>人気 <span class="po">3.7</span>倍</span>
+        <span class="result-badge came-in">1着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">3 トーセンスーリヤ</span><span class="review-pop"><span class="pn">5</span>人気 <span class="po">15.9</span>倍</span>
+        <span class="result-badge missed">6着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">9 イェッツト</span><span class="review-pop"><span class="pn">10</span>人気 <span class="po">33.0</span>倍</span>
+        <span class="result-badge missed">5着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">8 カウディーリョ</span><span class="review-pop"><span class="pn">9</span>人気 <span class="po">30.7</span>倍</span>
+        <span class="result-badge missed">7着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">東京12R</span>
+        <span class="card-date">5/31（日）</span>
+      </div>
+      <div class="card-title"><a href="race_20200531_tokyo12.html">目黒記念</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark mark-sankaku">▲</span>
+        <span class="podium-name">5 キングオブコージ</span><span class="review-pop pod-pop"><span class="pn">1</span>人気 <span class="po">4.1</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark"></span>
+        <span class="podium-name">4 アイスバブル</span><span class="review-pop pod-pop"><span class="pn">6</span>人気 <span class="po">13.3</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark"></span>
+        <span class="podium-name">11 ステイフーリッシュ</span><span class="review-pop pod-pop"><span class="pn">7</span>人気 <span class="po">13.8</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">15 バラックパリンカ</span><span class="review-pop"><span class="pn">12</span>人気 <span class="po">30.7</span>倍</span>
+        <span class="result-badge missed">16着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">16 オセアグレイト</span><span class="review-pop"><span class="pn">2</span>人気 <span class="po">4.8</span>倍</span>
+        <span class="result-badge missed">6着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">5 キングオブコージ</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">4.1</span>倍</span>
+        <span class="result-badge came-in">1着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">13 ウラヌスチャーム</span><span class="review-pop"><span class="pn">8</span>人気 <span class="po">15.7</span>倍</span>
+        <span class="result-badge missed">10着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">2 ノーブルマーズ</span><span class="review-pop"><span class="pn">10</span>人気 <span class="po">20.6</span>倍</span>
+        <span class="result-badge missed">4着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">東京11R</span>
+        <span class="card-date">5/16（土）</span>
+      </div>
+      <div class="card-title"><a href="race_20200516_tokyo11.html">京王杯スプリングカップ</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark mark-honmei">◎</span>
+        <span class="podium-name">13 ダノンスマッシュ</span><span class="review-pop pod-pop"><span class="pn">2</span>人気 <span class="po">4.9</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark mark-sankaku">▲</span>
+        <span class="podium-name">12 ステルヴィオ</span><span class="review-pop pod-pop"><span class="pn">4</span>人気 <span class="po">6.7</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark"></span>
+        <span class="podium-name">2 グルーヴィット</span><span class="review-pop pod-pop"><span class="pn">3</span>人気 <span class="po">4.9</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">13 ダノンスマッシュ</span><span class="review-pop"><span class="pn">2</span>人気 <span class="po">4.9</span>倍</span>
+        <span class="result-badge came-in">1着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">10 タワーオブロンドン</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">3.5</span>倍</span>
+        <span class="result-badge missed">8着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">12 ステルヴィオ</span><span class="review-pop"><span class="pn">4</span>人気 <span class="po">6.7</span>倍</span>
+        <span class="result-badge came-in">2着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">7 ストーミーシー</span><span class="review-pop"><span class="pn">6</span>人気 <span class="po">14.6</span>倍</span>
+        <span class="result-badge missed">7着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">6 ライラックカラー</span><span class="review-pop"><span class="pn">10</span>人気 <span class="po">43.9</span>倍</span>
+        <span class="result-badge missed">12着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">京都11R</span>
+        <span class="card-date">5/9（土）</span>
+      </div>
+      <div class="card-title"><a href="race_20200509_kyoto11.html">京都新聞杯</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark"></span>
+        <span class="podium-name">6 ディープボンド</span><span class="review-pop pod-pop"><span class="pn">4</span>人気 <span class="po">10.7</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark mark-sankaku">▲</span>
+        <span class="podium-name">11 マンオブスピリット</span><span class="review-pop pod-pop"><span class="pn">3</span>人気 <span class="po">8.6</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark"></span>
+        <span class="podium-name">10 ファルコニア</span><span class="review-pop pod-pop"><span class="pn">2</span>人気 <span class="po">6.0</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">8 アドマイヤビルゴ</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">1.4</span>倍</span>
+        <span class="result-badge missed">4着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">13 プレシオーソ</span><span class="review-pop"><span class="pn">5</span>人気 <span class="po">19.6</span>倍</span>
+        <span class="result-badge missed">12着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">11 マンオブスピリット</span><span class="review-pop"><span class="pn">3</span>人気 <span class="po">8.6</span>倍</span>
+        <span class="result-badge came-in">2着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">7 キングオブドラゴン</span><span class="review-pop"><span class="pn">7</span>人気 <span class="po">32.0</span>倍</span>
+        <span class="result-badge missed">7着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">2 アンセッドヴァウ</span><span class="review-pop"><span class="pn">12</span>人気 <span class="po">204.3</span>倍</span>
+        <span class="result-badge missed">11着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">東京11R</span>
+        <span class="card-date">5/2（土）</span>
+      </div>
+      <div class="card-title"><a href="race_20200502_tokyo11.html">青葉賞</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark"></span>
+        <span class="podium-name">3 オーソリティ</span><span class="review-pop pod-pop"><span class="pn">3</span>人気 <span class="po">4.3</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark"></span>
+        <span class="podium-name">7 ヴァルコス</span><span class="review-pop pod-pop"><span class="pn">4</span>人気 <span class="po">12.4</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark mark-o">○</span>
+        <span class="podium-name">1 フィリオアレグロ</span><span class="review-pop pod-pop"><span class="pn">1</span>人気 <span class="po">2.6</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">15 フライライクバード</span><span class="review-pop"><span class="pn">2</span>人気 <span class="po">4.1</span>倍</span>
+        <span class="result-badge missed">8着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">1 フィリオアレグロ</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">2.6</span>倍</span>
+        <span class="result-badge came-in">3着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">10 ダノンセレスタ</span><span class="review-pop"><span class="pn">6</span>人気 <span class="po">19.0</span>倍</span>
+        <span class="result-badge missed">15着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">17 ディアスティマ</span><span class="review-pop"><span class="pn">7</span>人気 <span class="po">20.3</span>倍</span>
+        <span class="result-badge missed">18着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">14 サーストンカイドー</span><span class="review-pop"><span class="pn">13</span>人気 <span class="po">130.0</span>倍</span>
+        <span class="result-badge missed">6着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">東京11R</span>
+        <span class="card-date">4/26（日）</span>
+      </div>
+      <div class="card-title"><a href="race_20200426_tokyo11.html">フローラステークス</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark"></span>
+        <span class="podium-name">3 ウインマリリン</span><span class="review-pop pod-pop"><span class="pn">4</span>人気 <span class="po">11.4</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark"></span>
+        <span class="podium-name">7 ホウオウピースフル</span><span class="review-pop pod-pop"><span class="pn">2</span>人気 <span class="po">4.8</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark mark-o">○</span>
+        <span class="podium-name">16 フアナ</span><span class="review-pop pod-pop"><span class="pn">5</span>人気 <span class="po">13.9</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">9 スカイグルーヴ</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">2.1</span>倍</span>
+        <span class="result-badge missed">5着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">16 フアナ</span><span class="review-pop"><span class="pn">5</span>人気 <span class="po">13.9</span>倍</span>
+        <span class="result-badge came-in">3着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">11 レッドルレーヴ</span><span class="review-pop"><span class="pn">3</span>人気 <span class="po">5.2</span>倍</span>
+        <span class="result-badge missed">7着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">6 ウィスパリンホープ</span><span class="review-pop"><span class="pn">9</span>人気 <span class="po">38.8</span>倍</span>
+        <span class="result-badge missed">16着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">12 ヴォリアーモ</span><span class="review-pop"><span class="pn">8</span>人気 <span class="po">25.7</span>倍</span>
+        <span class="result-badge missed">10着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">京都11R</span>
+        <span class="card-date">4/26（日）</span>
+      </div>
+      <div class="card-title"><a href="race_20200426_kyoto11.html">マイラーズカップ</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark mark-honmei">◎</span>
+        <span class="podium-name">1 インディチャンプ</span><span class="review-pop pod-pop"><span class="pn">1</span>人気 <span class="po">1.6</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark"></span>
+        <span class="podium-name">5 ベステンダンク</span><span class="review-pop pod-pop"><span class="pn">7</span>人気 <span class="po">57.3</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark mark-o">○</span>
+        <span class="podium-name">7 ヴァンドギャルド</span><span class="review-pop pod-pop"><span class="pn">2</span>人気 <span class="po">3.9</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">1 インディチャンプ</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">1.6</span>倍</span>
+        <span class="result-badge came-in">1着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">7 ヴァンドギャルド</span><span class="review-pop"><span class="pn">2</span>人気 <span class="po">3.9</span>倍</span>
+        <span class="result-badge came-in">3着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">10 ヴァルディゼール</span><span class="review-pop"><span class="pn">3</span>人気 <span class="po">5.9</span>倍</span>
+        <span class="result-badge missed">5着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">阪神11R</span>
+        <span class="card-date">4/11（土）</span>
+      </div>
+      <div class="card-title"><a href="race_20200411_hanshin11.html">阪神牝馬ステークス</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark mark-honmei">◎</span>
+        <span class="podium-name">2 サウンドキアラ</span><span class="review-pop pod-pop"><span class="pn">2</span>人気 <span class="po">3.2</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark"></span>
+        <span class="podium-name">15 スカーレットカラー</span><span class="review-pop pod-pop"><span class="pn">6</span>人気 <span class="po">14.0</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark"></span>
+        <span class="podium-name">10 ディメンシオン</span><span class="review-pop pod-pop"><span class="pn">11</span>人気 <span class="po">116.8</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">2 サウンドキアラ</span><span class="review-pop"><span class="pn">2</span>人気 <span class="po">3.2</span>倍</span>
+        <span class="result-badge came-in">1着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">13 ダノンファンタジー</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">2.9</span>倍</span>
+        <span class="result-badge missed">5着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">7 プールヴィル</span><span class="review-pop"><span class="pn">7</span>人気 <span class="po">17.1</span>倍</span>
+        <span class="result-badge missed">7着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">8 ブランノワール</span><span class="review-pop"><span class="pn">9</span>人気 <span class="po">31.9</span>倍</span>
+        <span class="result-badge missed">8着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">12 トロワゼトワル</span><span class="review-pop"><span class="pn">8</span>人気 <span class="po">25.9</span>倍</span>
+        <span class="result-badge missed">15着</span></div></div>
+    </div><div class="card card-hit">
+      <div class="card-head">
+        <span class="badge">GII</span><span class="hit-badge">🎯 的中 135%</span>
+        <span class="card-venue">中山11R</span>
+        <span class="card-date">4/11（土）</span>
+      </div>
+      <div class="card-title"><a href="race_20200411_nakayama11.html">ニュージーランドトロフィー</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark mark-o">○</span>
+        <span class="podium-name">11 ルフトシュトローム</span><span class="review-pop pod-pop"><span class="pn">2</span>人気 <span class="po">4.6</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark mark-honmei">◎</span>
+        <span class="podium-name">14 シーズンズギフト</span><span class="review-pop pod-pop"><span class="pn">5</span>人気 <span class="po">7.2</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark mark-hoshi">⭐︎1</span>
+        <span class="podium-name">16 ウイングレイテスト</span><span class="review-pop pod-pop"><span class="pn">7</span>人気 <span class="po">13.8</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">14 シーズンズギフト</span><span class="review-pop"><span class="pn">5</span>人気 <span class="po">7.2</span>倍</span>
+        <span class="result-badge came-in">2着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">11 ルフトシュトローム</span><span class="review-pop"><span class="pn">2</span>人気 <span class="po">4.6</span>倍</span>
+        <span class="result-badge came-in">1着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">10 ハーモニーマゼラン</span><span class="review-pop"><span class="pn">3</span>人気 <span class="po">6.2</span>倍</span>
+        <span class="result-badge missed">6着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">16 ウイングレイテスト</span><span class="review-pop"><span class="pn">7</span>人気 <span class="po">13.8</span>倍</span>
+        <span class="result-badge came-in">3着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">1 カフェサンドリヨン</span><span class="review-pop"><span class="pn">10</span>人気 <span class="po">41.7</span>倍</span>
+        <span class="result-badge missed">16着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">中山11R</span>
+        <span class="card-date">3/28（土）</span>
+      </div>
+      <div class="card-title"><a href="race_20200328_nakayama11.html">日経賞</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark mark-sankaku">▲</span>
+        <span class="podium-name">14 ミッキースワロー</span><span class="review-pop pod-pop"><span class="pn">1</span>人気 <span class="po">3.4</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark"></span>
+        <span class="podium-name">10 モズベッロ</span><span class="review-pop pod-pop"><span class="pn">2</span>人気 <span class="po">5.0</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark mark-hoshi">⭐︎2</span>
+        <span class="podium-name">12 スティッフェリオ</span><span class="review-pop pod-pop"><span class="pn">9</span>人気 <span class="po">19.4</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">6 ウインイクシード</span><span class="review-pop"><span class="pn">8</span>人気 <span class="po">15.9</span>倍</span>
+        <span class="result-badge missed">8着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">4 レッドレオン</span><span class="review-pop"><span class="pn">4</span>人気 <span class="po">9.0</span>倍</span>
+        <span class="result-badge missed">7着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">14 ミッキースワロー</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">3.4</span>倍</span>
+        <span class="result-badge came-in">1着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">7 ソウルスターリング</span><span class="review-pop"><span class="pn">7</span>人気 <span class="po">13.6</span>倍</span>
+        <span class="result-badge missed">13着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">12 スティッフェリオ</span><span class="review-pop"><span class="pn">9</span>人気 <span class="po">19.4</span>倍</span>
+        <span class="result-badge came-in">3着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">阪神11R</span>
+        <span class="card-date">3/22（日）</span>
+      </div>
+      <div class="card-title"><a href="race_20200322_hanshin11.html">阪神大賞典</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark mark-honmei">◎</span>
+        <span class="podium-name">10 ユーキャンスマイル</span><span class="review-pop pod-pop"><span class="pn">2</span>人気 <span class="po">5.9</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark"></span>
+        <span class="podium-name">4 トーセンカンビーナ</span><span class="review-pop pod-pop"><span class="pn">5</span>人気 <span class="po">15.4</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark"></span>
+        <span class="podium-name">6 メイショウテンゲン</span><span class="review-pop pod-pop"><span class="pn">4</span>人気 <span class="po">10.0</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">10 ユーキャンスマイル</span><span class="review-pop"><span class="pn">2</span>人気 <span class="po">5.9</span>倍</span>
+        <span class="result-badge came-in">1着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">9 キセキ</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">1.6</span>倍</span>
+        <span class="result-badge missed">7着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">3 ムイトオブリガード</span><span class="review-pop"><span class="pn">6</span>人気 <span class="po">21.0</span>倍</span>
+        <span class="result-badge missed">4着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">1 レノヴァール</span><span class="review-pop"><span class="pn">9</span>人気 <span class="po">41.5</span>倍</span>
+        <span class="result-badge missed">9着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">5 タイセイトレイル</span><span class="review-pop"><span class="pn">7</span>人気 <span class="po">25.9</span>倍</span>
+        <span class="result-badge missed">6着</span></div></div>
+    </div><div class="card card-hit">
+      <div class="card-head">
+        <span class="badge">GII</span><span class="hit-badge">🎯 的中 78%</span>
+        <span class="card-venue">中山11R</span>
+        <span class="card-date">3/22（日）</span>
+      </div>
+      <div class="card-title"><a href="race_20200322_nakayama11.html">スプリングステークス</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark mark-hoshi">⭐︎2</span>
+        <span class="podium-name">7 ガロアクリーク</span><span class="review-pop pod-pop"><span class="pn">6</span>人気 <span class="po">16.6</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark mark-honmei">◎</span>
+        <span class="podium-name">3 ヴェルトライゼンデ</span><span class="review-pop pod-pop"><span class="pn">1</span>人気 <span class="po">1.7</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark mark-o">○</span>
+        <span class="podium-name">9 サクセッション</span><span class="review-pop pod-pop"><span class="pn">2</span>人気 <span class="po">4.6</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">3 ヴェルトライゼンデ</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">1.7</span>倍</span>
+        <span class="result-badge came-in">2着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">9 サクセッション</span><span class="review-pop"><span class="pn">2</span>人気 <span class="po">4.6</span>倍</span>
+        <span class="result-badge came-in">3着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">8 アオイクレアトール</span><span class="review-pop"><span class="pn">5</span>人気 <span class="po">13.4</span>倍</span>
+        <span class="result-badge missed">5着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">2 シルバーエース</span><span class="review-pop"><span class="pn">7</span>人気 <span class="po">27.0</span>倍</span>
+        <span class="result-badge missed">6着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">7 ガロアクリーク</span><span class="review-pop"><span class="pn">6</span>人気 <span class="po">16.6</span>倍</span>
+        <span class="result-badge came-in">1着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">阪神11R</span>
+        <span class="card-date">3/15（日）</span>
+      </div>
+      <div class="card-title"><a href="race_20200315_hanshin11.html">フィリーズレビュー</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark"></span>
+        <span class="podium-name">5 エーポス</span><span class="review-pop pod-pop"><span class="pn">5</span>人気 <span class="po">13.8</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark"></span>
+        <span class="podium-name">7 ヤマカツマーメイド</span><span class="review-pop pod-pop"><span class="pn">2</span>人気 <span class="po">3.8</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark"></span>
+        <span class="podium-name">6 ナイントゥファイブ</span><span class="review-pop pod-pop"><span class="pn">12</span>人気 <span class="po">45.9</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">2 パフェムリ</span><span class="review-pop"><span class="pn">14</span>人気 <span class="po">77.8</span>倍</span>
+        <span class="result-badge missed">7着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">11 ケープコッド</span><span class="review-pop"><span class="pn">4</span>人気 <span class="po">7.8</span>倍</span>
+        <span class="result-badge missed">8着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">14 アヌラーダプラ</span><span class="review-pop"><span class="pn">3</span>人気 <span class="po">4.7</span>倍</span>
+        <span class="result-badge missed">9着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">10 ヴァラークラウン</span><span class="review-pop"><span class="pn">8</span>人気 <span class="po">27.8</span>倍</span>
+        <span class="result-badge missed">18着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">8 ソーユーフォリア</span><span class="review-pop"><span class="pn">9</span>人気 <span class="po">30.2</span>倍</span>
+        <span class="result-badge missed">15着</span></div></div>
+    </div><div class="card card-hit">
+      <div class="card-head">
+        <span class="badge">GII</span><span class="hit-badge">🎯 的中 169%</span>
+        <span class="card-venue">中京11R</span>
+        <span class="card-date">3/15（日）</span>
+      </div>
+      <div class="card-title"><a href="race_20200315_chukyo11.html">金鯱賞</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark mark-honmei">◎</span>
+        <span class="podium-name">6 サートゥルナーリア</span><span class="review-pop pod-pop"><span class="pn">1</span>人気 <span class="po">1.3</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark mark-hoshi">⭐︎2</span>
+        <span class="podium-name">8 サトノソルタス</span><span class="review-pop pod-pop"><span class="pn">8</span>人気 <span class="po">41.3</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark mark-hoshi">⭐︎1</span>
+        <span class="podium-name">4 ダイワキャグニー</span><span class="review-pop pod-pop"><span class="pn">6</span>人気 <span class="po">24.3</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">6 サートゥルナーリア</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">1.3</span>倍</span>
+        <span class="result-badge came-in">1着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">10 ロードマイウェイ</span><span class="review-pop"><span class="pn">2</span>人気 <span class="po">5.8</span>倍</span>
+        <span class="result-badge missed">10着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">2 ラストドラフト</span><span class="review-pop"><span class="pn">3</span>人気 <span class="po">11.4</span>倍</span>
+        <span class="result-badge missed">5着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">4 ダイワキャグニー</span><span class="review-pop"><span class="pn">6</span>人気 <span class="po">24.3</span>倍</span>
+        <span class="result-badge came-in">3着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">8 サトノソルタス</span><span class="review-pop"><span class="pn">8</span>人気 <span class="po">41.3</span>倍</span>
+        <span class="result-badge came-in">2着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">中山11R</span>
+        <span class="card-date">3/8（日）</span>
+      </div>
+      <div class="card-title"><a href="race_20200308_nakayama11.html">弥生賞</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark"></span>
+        <span class="podium-name">1 サトノフラッグ</span><span class="review-pop pod-pop"><span class="pn">2</span>人気 <span class="po">2.8</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark mark-honmei">◎</span>
+        <span class="podium-name">8 ワーケア</span><span class="review-pop pod-pop"><span class="pn">1</span>人気 <span class="po">2.5</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark mark-sankaku">▲</span>
+        <span class="podium-name">10 オーソリティ</span><span class="review-pop pod-pop"><span class="pn">3</span>人気 <span class="po">3.9</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">8 ワーケア</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">2.5</span>倍</span>
+        <span class="result-badge came-in">2着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">4 オーロアドーネ</span><span class="review-pop"><span class="pn">6</span>人気 <span class="po">26.6</span>倍</span>
+        <span class="result-badge missed">5着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">10 オーソリティ</span><span class="review-pop"><span class="pn">3</span>人気 <span class="po">3.9</span>倍</span>
+        <span class="result-badge came-in">3着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">11 ディヴィナシオン</span><span class="review-pop"><span class="pn">9</span>人気 <span class="po">107.9</span>倍</span>
+        <span class="result-badge missed">11着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">7 メイショウボサツ</span><span class="review-pop"><span class="pn">8</span>人気 <span class="po">34.0</span>倍</span>
+        <span class="result-badge missed">10着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">阪神11R</span>
+        <span class="card-date">3/7（土）</span>
+      </div>
+      <div class="card-title"><a href="race_20200307_hanshin11.html">チューリップ賞</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark"></span>
+        <span class="podium-name">13 マルターズディオサ</span><span class="review-pop pod-pop"><span class="pn">4</span>人気 <span class="po">15.3</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark mark-sankaku">▲</span>
+        <span class="podium-name">1 クラヴァシュドール</span><span class="review-pop pod-pop"><span class="pn">2</span>人気 <span class="po">4.9</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark mark-honmei">◎</span>
+        <span class="podium-name">4 レシステンシア</span><span class="review-pop pod-pop"><span class="pn">1</span>人気 <span class="po">1.4</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">4 レシステンシア</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">1.4</span>倍</span>
+        <span class="result-badge came-in">3着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">7 ウーマンズハート</span><span class="review-pop"><span class="pn">3</span>人気 <span class="po">8.4</span>倍</span>
+        <span class="result-badge missed">6着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">1 クラヴァシュドール</span><span class="review-pop"><span class="pn">2</span>人気 <span class="po">4.9</span>倍</span>
+        <span class="result-badge came-in">2着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">14 ピーエムピンコ</span><span class="review-pop"><span class="pn">9</span>人気 <span class="po">100.8</span>倍</span>
+        <span class="result-badge missed">8着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">5 チェーンオブラブ</span><span class="review-pop"><span class="pn">6</span>人気 <span class="po">25.2</span>倍</span>
+        <span class="result-badge missed">9着</span></div></div>
+    </div><div class="card card-hit">
+      <div class="card-head">
+        <span class="badge">GII</span><span class="hit-badge">🎯 的中 220%</span>
+        <span class="card-venue">中山11R</span>
+        <span class="card-date">3/1（日）</span>
+      </div>
+      <div class="card-title"><a href="race_20200301_nakayama11.html">中山記念</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark mark-sankaku">▲</span>
+        <span class="podium-name">3 ダノンキングリー</span><span class="review-pop pod-pop"><span class="pn">1</span>人気 <span class="po">2.5</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark mark-honmei">◎</span>
+        <span class="podium-name">7 ラッキーライラック</span><span class="review-pop pod-pop"><span class="pn">2</span>人気 <span class="po">3.0</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark mark-hoshi">⭐︎1</span>
+        <span class="podium-name">4 ソウルスターリング</span><span class="review-pop pod-pop"><span class="pn">6</span>人気 <span class="po">38.6</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">7 ラッキーライラック</span><span class="review-pop"><span class="pn">2</span>人気 <span class="po">3.0</span>倍</span>
+        <span class="result-badge came-in">2着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">1 インディチャンプ</span><span class="review-pop"><span class="pn">4</span>人気 <span class="po">5.4</span>倍</span>
+        <span class="result-badge missed">4着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">3 ダノンキングリー</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">2.5</span>倍</span>
+        <span class="result-badge came-in">1着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">4 ソウルスターリング</span><span class="review-pop"><span class="pn">6</span>人気 <span class="po">38.6</span>倍</span>
+        <span class="result-badge came-in">3着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">京都11R</span>
+        <span class="card-date">2/16（日）</span>
+      </div>
+      <div class="card-title"><a href="race_20200216_kyoto11.html">京都記念</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark mark-honmei">◎</span>
+        <span class="podium-name">7 クロノジェネシス</span><span class="review-pop pod-pop"><span class="pn">1</span>人気 <span class="po">2.7</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark mark-o">○</span>
+        <span class="podium-name">1 カレンブーケドール</span><span class="review-pop pod-pop"><span class="pn">2</span>人気 <span class="po">2.8</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark mark-sankaku">▲</span>
+        <span class="podium-name">5 ステイフーリッシュ</span><span class="review-pop pod-pop"><span class="pn">3</span>人気 <span class="po">4.3</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">7 クロノジェネシス</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">2.7</span>倍</span>
+        <span class="result-badge came-in">1着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">1 カレンブーケドール</span><span class="review-pop"><span class="pn">2</span>人気 <span class="po">2.8</span>倍</span>
+        <span class="result-badge came-in">2着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">5 ステイフーリッシュ</span><span class="review-pop"><span class="pn">3</span>人気 <span class="po">4.3</span>倍</span>
+        <span class="result-badge came-in">3着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">京都11R</span>
+        <span class="card-date">1/26（日）</span>
+      </div>
+      <div class="card-title"><a href="race_20200126_kyoto11.html">東海ステークス</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark"></span>
+        <span class="podium-name">7 エアアルマス</span><span class="review-pop pod-pop"><span class="pn">2</span>人気 <span class="po">3.8</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark mark-honmei">◎</span>
+        <span class="podium-name">15 ヴェンジェンス</span><span class="review-pop pod-pop"><span class="pn">3</span>人気 <span class="po">6.4</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark"></span>
+        <span class="podium-name">13 インティ</span><span class="review-pop pod-pop"><span class="pn">1</span>人気 <span class="po">2.3</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">15 ヴェンジェンス</span><span class="review-pop"><span class="pn">3</span>人気 <span class="po">6.4</span>倍</span>
+        <span class="result-badge came-in">2着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">3 アングライフェン</span><span class="review-pop"><span class="pn">5</span>人気 <span class="po">12.9</span>倍</span>
+        <span class="result-badge missed">4着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">14 キングズガード</span><span class="review-pop"><span class="pn">6</span>人気 <span class="po">16.0</span>倍</span>
+        <span class="result-badge missed">5着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">12 ヒストリーメイカー</span><span class="review-pop"><span class="pn">8</span>人気 <span class="po">33.7</span>倍</span>
+        <span class="result-badge missed">6着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">5 コスモカナディアン</span><span class="review-pop"><span class="pn">11</span>人気 <span class="po">168.8</span>倍</span>
+        <span class="result-badge missed">9着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">中山11R</span>
+        <span class="card-date">1/26（日）</span>
+      </div>
+      <div class="card-title"><a href="race_20200126_nakayama11.html">アメリカジョッキークラブカップ</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark mark-honmei">◎</span>
+        <span class="podium-name">11 ブラストワンピース</span><span class="review-pop pod-pop"><span class="pn">1</span>人気 <span class="po">3.0</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark"></span>
+        <span class="podium-name">10 ステイフーリッシュ</span><span class="review-pop pod-pop"><span class="pn">5</span>人気 <span class="po">8.0</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark"></span>
+        <span class="podium-name">2 ラストドラフト</span><span class="review-pop pod-pop"><span class="pn">4</span>人気 <span class="po">6.8</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">11 ブラストワンピース</span><span class="review-pop"><span class="pn">1</span>人気 <span class="po">3.0</span>倍</span>
+        <span class="result-badge came-in">1着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">3 ミッキースワロー</span><span class="review-pop"><span class="pn">2</span>人気 <span class="po">3.8</span>倍</span>
+        <span class="result-badge missed">4着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">12 サトノクロニクル</span><span class="review-pop"><span class="pn">8</span>人気 <span class="po">29.2</span>倍</span>
+        <span class="result-badge missed">5着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">1 ウラヌスチャーム</span><span class="review-pop"><span class="pn">7</span>人気 <span class="po">18.5</span>倍</span>
+        <span class="result-badge missed">7着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">8 グローブシアター</span><span class="review-pop"><span class="pn">9</span>人気 <span class="po">54.1</span>倍</span>
+        <span class="result-badge missed">11着</span></div></div>
+    </div><div class="card">
+      <div class="card-head">
+        <span class="badge">GII</span>
+        <span class="card-venue">京都11R</span>
+        <span class="card-date">1/19（日）</span>
+      </div>
+      <div class="card-title"><a href="race_20200119_kyoto11.html">日経新春杯</a></div>
+      <div class="podium"><div class="podium-row"><span class="podium-rank">1着</span>
+        <span class="mark"></span>
+        <span class="podium-name">6 モズベッロ</span><span class="review-pop pod-pop"><span class="pn">2</span>人気 <span class="po">4.9</span>倍</span></div><div class="podium-row"><span class="podium-rank">2着</span>
+        <span class="mark mark-o">○</span>
+        <span class="podium-name">4 レッドレオン</span><span class="review-pop pod-pop"><span class="pn">5</span>人気 <span class="po">8.1</span>倍</span></div><div class="podium-row"><span class="podium-rank">3着</span>
+        <span class="mark"></span>
+        <span class="podium-name">8 エーティーラッセン</span><span class="review-pop pod-pop"><span class="pn">11</span>人気 <span class="po">58.3</span>倍</span></div></div><div class="reviews"><div class="review-row"><span class="mark mark-honmei">◎</span>
+        <span class="review-name">13 アフリカンゴールド</span><span class="review-pop"><span class="pn">3</span>人気 <span class="po">5.4</span>倍</span>
+        <span class="result-badge missed">11着</span></div><div class="review-row"><span class="mark mark-o">○</span>
+        <span class="review-name">4 レッドレオン</span><span class="review-pop"><span class="pn">5</span>人気 <span class="po">8.1</span>倍</span>
+        <span class="result-badge came-in">2着</span></div><div class="review-row"><span class="mark mark-sankaku">▲</span>
+        <span class="review-name">11 サトノガーネット</span><span class="review-pop"><span class="pn">7</span>人気 <span class="po">14.3</span>倍</span>
+        <span class="result-badge missed">6着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎1</span>
+        <span class="review-name">3 マスターコード</span><span class="review-pop"><span class="pn">8</span>人気 <span class="po">23.2</span>倍</span>
+        <span class="result-badge missed">8着</span></div><div class="review-row"><span class="mark mark-hoshi">⭐︎2</span>
+        <span class="review-name">14 プリンスオブペスカ</span><span class="review-pop"><span class="pn">10</span>人気 <span class="po">55.5</span>倍</span>
+        <span class="result-badge missed">5着</span></div></div>
     </div></div>
   <div class="section-head" id="nar"><span class="dot dot-nar"></span><h2>地方競馬（ダートグレード）</h2></div>
   <div data-year="2026"><div class="year-head">2026年</div><div class="card">
