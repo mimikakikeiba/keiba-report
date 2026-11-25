@@ -168,12 +168,26 @@ document.addEventListener('DOMContentLoaded', function(){
     var pm = document.getElementById('pane-matome');
     if (pm) pm.style.display = (tab === 'matome') ? '' : 'none';
   }
+  // 2026/11/25 ユーザー指示: 地方タブを選んだまま月一覧(index.html)へ戻っても地方タブのままにする。
+  // 選んだタブをlocalStorageに覚え(使えない環境でも壊れないようtry/catch)、「← 月一覧に戻る」の
+  // リンク先も #nar 付きに切り替える(保存が使えなくてもリンクだけで地方タブに戻れる)。
+  var KEY = 'keiba_tab';
+  function remember(tab){
+    try { if (tab === 'jra' || tab === 'nar') localStorage.setItem(KEY, tab); } catch (e) {}
+    document.querySelectorAll('a[href="index.html"],a[href="index.html#nar"]').forEach(function(a){
+      a.setAttribute('href', tab === 'nar' ? 'index.html#nar' : 'index.html');
+    });
+  }
   btns.forEach(function(btn){
-    btn.addEventListener('click', function(){ activate(btn.dataset.tab); });
+    btn.addEventListener('click', function(){ activate(btn.dataset.tab); remember(btn.dataset.tab); });
   });
   // 2026/09/02: 地方の日次ページ等から「TOPに戻る」で index.html#nar に来た場合、
   // 地方タブを開いた状態で表示する（中央タブが既定で先頭に出る違和感の解消）。
-  if (location.hash === '#nar') { activate('nar'); }
+  var saved = null;
+  try { saved = localStorage.getItem(KEY); } catch (e) {}
+  var has = function(t){ return Array.prototype.some.call(btns, function(b){ return b.dataset.tab === t; }); };
+  if (location.hash === '#nar') { activate('nar'); remember('nar'); }
+  else if (saved === 'nar' && has('nar')) { activate('nar'); remember('nar'); }
 });
 </script>
 </body></html>
