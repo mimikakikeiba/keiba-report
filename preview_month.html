@@ -1,0 +1,217 @@
+<!doctype html><html><head><meta charset="utf-8">
+<title>2026年11月の競馬予想レポート（デザイン案）</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="2026年11月の競馬予想レポート">
+<meta property="og:description" content="◎○▲⭐︎と全レースの相対勝率・結果・的中ピックアップ">
+<meta property="og:image" content="https://mimikakikeiba.github.io/keiba-report/og-image.png">
+<meta property="og:url" content="https://mimikakikeiba.github.io/keiba-report/202611.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="2026年11月の競馬予想レポート">
+<meta name="twitter:description" content="◎○▲⭐︎と全レースの相対勝率・結果・的中ピックアップ">
+<meta name="twitter:image" content="https://mimikakikeiba.github.io/keiba-report/og-image.png">
+<style>
+:root{
+  --bg:#F2F5EC;--surface:#FFFFFF;--border:#DBE2D2;--border-strong:#C3CDB7;
+  --text:#182018;--text-muted:#5B6558;--accent:#1E6B3F;--accent-strong:#0F4A29;--accent-tint:#E4EFE3;
+  --accent-nar:#1B5FA6;--accent-nar-strong:#0E3E73;--accent-nar-tint:#E2ECF7;
+  --gold:#9C6E1E;--gold-strong:#7A5511;--gold-tint:#FBF1DC;
+  --shadow:0 1px 2px rgba(15,30,20,.06),0 6px 20px -8px rgba(15,30,20,.18);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1512;--surface:#151F19;--border:#28362C;--border-strong:#354536;
+    --text:#EAEDE4;--text-muted:#9FAB9B;--accent:#4FB57A;--accent-strong:#7BD6A0;--accent-tint:#16281E;
+    --accent-nar:#5B9BD8;--accent-nar-strong:#8DC0EA;--accent-nar-tint:#152840;
+    --gold:#E3B657;--gold-strong:#F0CB7C;--gold-tint:#2E2513;
+    --shadow:0 1px 2px rgba(0,0,0,.35),0 10px 28px -10px rgba(0,0,0,.55);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1512;--surface:#151F19;--border:#28362C;--border-strong:#354536;
+  --text:#EAEDE4;--text-muted:#9FAB9B;--accent:#4FB57A;--accent-strong:#7BD6A0;--accent-tint:#16281E;
+  --accent-nar:#5B9BD8;--accent-nar-strong:#8DC0EA;--accent-nar-tint:#152840;
+  --gold:#E3B657;--gold-strong:#F0CB7C;--gold-tint:#2E2513;
+  --shadow:0 1px 2px rgba(0,0,0,.35),0 10px 28px -10px rgba(0,0,0,.55);
+  color-scheme:dark;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic","Noto Sans JP",system-ui,-apple-system,sans-serif;
+  line-height:1.6;
+}
+.wrap{max-width:640px;margin:0 auto;padding:32px 16px 64px;}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--accent);text-transform:uppercase;}
+h1{font-size:24px;font-weight:800;margin:6px 0 4px;letter-spacing:-.01em;}
+.lead{color:var(--text-muted);font-size:13.5px;margin:0 0 20px;}
+.graded-link{
+  display:inline-flex;align-items:center;gap:6px;margin:-8px 0 20px;padding:8px 14px;
+  border-radius:999px;border:1.5px solid var(--gold);background:var(--gold-tint);
+  color:var(--gold-strong);font-weight:700;font-size:13.5px;text-decoration:none;
+}
+.links-row{display:flex;gap:10px;flex-wrap:wrap;margin:-4px 0 20px;}
+.links-row .graded-link{margin:0;}
+.tabs{display:flex;gap:8px;margin-bottom:16px;}
+.tab-btn{
+  flex:1;padding:10px 14px;border-radius:999px;border:1.5px solid var(--border-strong);
+  background:var(--surface);font-size:14px;font-weight:700;cursor:pointer;color:var(--text-muted);
+  font-family:inherit;
+}
+.tab-btn[data-tab="jra"].active{background:var(--accent-tint);border-color:var(--accent);color:var(--accent-strong);}
+.tab-btn[data-tab="nar"].active{background:var(--accent-nar-tint);border-color:var(--accent-nar);color:var(--accent-nar-strong);}
+.tab-btn[data-tab="matome"].active{background:var(--gold-tint);border-color:var(--gold);color:var(--gold-strong);}
+.list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;}
+.list a{
+  display:block;background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--accent);
+  border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--text);font-weight:700;font-size:15px;
+  box-shadow:var(--shadow);
+}
+.list-nar a{border-left-color:var(--accent-nar);}
+.list a:active{background:var(--border);}
+.list a.is-plus{border:2px solid #3fae5a;}   /* 注目レース(S)の回収率が100%超の日(2026/11/05・ユーザー指示)。レースカードの的中枠(#3fae5a)と同色 */
+.plus-legend{font-size:12px;color:var(--text-muted);margin:0 0 10px;}
+.plus-legend i{display:inline-block;width:12px;height:12px;border:2px solid #3fae5a;border-radius:3px;vertical-align:-2px;margin-right:4px;}
+.footer{margin-top:24px;font-size:11.5px;color:var(--text-muted);text-align:center;}
+
+.tabular{font-variant-numeric:tabular-nums;}
+.matome-title{font-size:16px;font-weight:800;margin:0 0 16px;letter-spacing:-.01em;}
+.matome-empty{color:var(--text-muted);font-size:13.5px;}
+.month-summary+.month-summary{margin-top:26px;padding-top:22px;border-top:1px solid var(--border);}
+.month-summary .section-eyebrow{
+  font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  display:inline-block;padding:3px 10px;border-radius:999px;margin:0 0 10px;
+}
+.month-summary-jra .section-eyebrow{background:var(--accent-tint);color:var(--accent-strong);}
+.month-summary-nar .section-eyebrow{background:var(--accent-nar-tint);color:var(--accent-nar-strong);}
+.month-summary .section-lead{font-size:13px;color:var(--text-muted);margin:0 0 12px;}
+.month-summary .stat-row{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 14px;
+}
+.month-summary .stat-row-2{grid-template-columns:repeat(2,1fr);}
+.month-summary .stat{
+  background:var(--surface);border:1px solid var(--border);border-radius:12px;
+  padding:10px 12px;box-shadow:var(--shadow);
+}
+.month-summary .stat .num{font-size:19px;font-weight:800;letter-spacing:-.01em;}
+.month-summary .stat .num small{font-size:11.5px;font-weight:600;margin-left:1px;}
+.month-summary .stat .label{font-size:10.5px;color:var(--text-muted);letter-spacing:.02em;margin-top:2px;}
+.month-summary .stat-row-1{grid-template-columns:1fr;}
+.month-summary .stat-row-1 .stat .num{font-size:24px;color:var(--gold-strong);}
+</style><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet"><style id="theme-preview">
+:root, :root[data-theme="light"]{
+  --bg:#F3F4F0;--surface:#F3F4F0;--text:#16222E;--text-muted:#5A6672;--text-faint:#7B8791;
+  --border:#C9CFC6;--border-strong:#16222E;
+  --accent:#2B6A4B;--accent-strong:#1B4A33;--accent-tint:#E3EDE6;
+  --accent-nar:#985A2B;--accent-nar-strong:#6F3F1B;--accent-nar-tint:#F1E6DA;
+  --gold:#8A6417;--gold-strong:#6B4C10;--gold-tint:#F4ECD6;--gold-tint-strong:#EADDB8;
+  --shadow:none;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#121A22;--surface:#17212B;--text:#E8EBE6;--text-muted:#9AA6B0;--text-faint:#74818C;
+    --border:#2C3946;--border-strong:#E8EBE6;
+    --accent:#62B78E;--accent-strong:#8ED1AE;--accent-tint:#173126;
+    --accent-nar:#D79F66;--accent-nar-strong:#E6B98A;--accent-nar-tint:#33261A;
+    --gold:#D9B35E;--gold-strong:#E8C987;--gold-tint:#2E2713;--gold-tint-strong:#3A3118;
+    --shadow:none;
+  }
+}
+html{zoom:1.1;}
+body{font-family:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic UI","Yu Gothic",system-ui,sans-serif !important;
+  font-weight:700 !important;font-variant-numeric:tabular-nums;font-feature-settings:"tnum";}
+h1,h2,h3,.card-title,.race-title{font-weight:900 !important;}
+[class*="card"],.results,.graded,.month-summary .stat,.stat-row>*{box-shadow:none !important;border-radius:6px !important;}
+</style><meta name="robots" content="noindex"></head><body>
+<div class="wrap">
+  <div class="eyebrow">Keiba Report</div>
+  <h1>2026年11月</h1>
+  <p class="lead">日付を選んで、その日の推奨レース・結果をご覧いただけます。</p>
+  <div class="links-row">
+    <a href="index.html" class="graded-link">← 月一覧に戻る</a>
+    <a href="graded.html" class="graded-link">🏆 重賞アーカイブ</a>
+  </div>
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="jra">中央</button>
+    <button class="tab-btn" data-tab="nar">地方</button>
+    <button class="tab-btn" data-tab="matome">まとめ</button>
+  </div>
+  <p class="plus-legend"><i></i>緑の枠＝注目レース(S)の回収率が100%を超えた日（中央・地方とも）</p>
+  <ul class="list" id="list-jra"><li><a href="20261101.html">2026年11月1日（日）</a></li><li><a href="20261107.html">2026年11月7日（土）</a></li><li><a href="20261108.html">2026年11月8日（日）</a></li><li><a href="20261114.html">2026年11月14日（土）</a></li><li><a href="20261115.html">2026年11月15日（日）</a></li><li><a href="20261121.html" class="is-plus">2026年11月21日（土）</a></li><li><a href="20261122.html">2026年11月22日（日）</a></li><li><a href="20261123.html">2026年11月23日（月）</a></li></ul>
+  <ul class="list list-nar" id="list-nar" style="display:none;"><li><a href="nar_20261101.html">2026年11月1日（日）</a></li><li><a href="nar_20261102.html" class="is-plus">2026年11月2日（月）</a></li><li><a href="nar_20261103.html" class="is-plus">2026年11月3日（火）</a></li><li><a href="nar_20261104.html">2026年11月4日（水）</a></li><li><a href="nar_20261105.html">2026年11月5日（木）</a></li><li><a href="nar_20261106.html">2026年11月6日（金）</a></li><li><a href="nar_20261107.html">2026年11月7日（土）</a></li><li><a href="nar_20261108.html">2026年11月8日（日）</a></li><li><a href="nar_20261109.html">2026年11月9日（月）</a></li><li><a href="nar_20261110.html">2026年11月10日（火）</a></li><li><a href="nar_20261111.html">2026年11月11日（水）</a></li><li><a href="nar_20261112.html" class="is-plus">2026年11月12日（木）</a></li><li><a href="nar_20261113.html">2026年11月13日（金）</a></li><li><a href="nar_20261114.html" class="is-plus">2026年11月14日（土）</a></li><li><a href="nar_20261115.html">2026年11月15日（日）</a></li><li><a href="nar_20261116.html">2026年11月16日（月）</a></li><li><a href="nar_20261117.html">2026年11月17日（火）</a></li><li><a href="nar_20261118.html">2026年11月18日（水）</a></li><li><a href="nar_20261119.html">2026年11月19日（木）</a></li><li><a href="nar_20261120.html">2026年11月20日（金）</a></li><li><a href="nar_20261121.html">2026年11月21日（土）</a></li><li><a href="nar_20261122.html">2026年11月22日（日）</a></li><li><a href="nar_20261123.html" class="is-plus">2026年11月23日（月）</a></li><li><a href="nar_20261124.html">2026年11月24日（火）</a></li><li><a href="nar_20261125.html">2026年11月25日（水）</a></li><li><a href="nar_20261126.html">2026年11月26日（木）</a></li><li><a href="nar_20261127.html">2026年11月27日（金）</a></li></ul>
+  <div id="pane-matome" style="display:none;">
+    <h2 class="matome-title">2026年11月のまとめ</h2>
+    <div class="month-summary month-summary-jra"><div class="section-eyebrow">中央</div>
+  <p class="section-lead">◎1頭を単勝・複勝それぞれ100円均等で買った場合の成績（仮定シミュレーション）です。</p>
+  <div class="stat-row stat-row-2">
+      <div class="stat"><div class="num tabular">26.5<small>%</small></div><div class="label">◎勝率（52/196R）</div></div>
+      <div class="stat"><div class="num tabular">58.7<small>%</small></div><div class="label">◎複勝率（115/196R）</div></div>
+      <div class="stat"><div class="num tabular">80<small>%</small></div><div class="label">◎単勝回収率</div></div>
+      <div class="stat"><div class="num tabular">89<small>%</small></div><div class="label">◎複勝回収率</div></div>
+    </div>
+  <p class="section-lead">注目レース（S）対象。買い目(検証中)で買った場合の成績（仮定シミュレーション）です。</p>
+  <p class="section-lead personal-formula">
+    金額・配分・⭐︎の決め方は<a href="bets.html">買い目の考え方</a>をご覧ください。
+  </p>
+  <div class="stat-row stat-row-1"><div class="stat"><div class="num tabular">32<small>%</small></div><div class="label">トータル回収率(検証中)（16R・実額ベース）</div></div></div>
+  <div class="stat-row stat-row-2"><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">3連単(検証中)回収率（16R）</div></div><div class="stat stat-plus"><div class="num tabular">134<small>%</small></div><div class="label">馬単◎→⭐︎(検証中)回収率（16R）</div></div><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">馬単⭐︎→○▲(検証中)回収率（16R）</div></div><div class="stat"><div class="num tabular">90<small>%</small></div><div class="label">ワイド◎-⭐︎(重賞のみ)回収率</div></div><div class="stat"><div class="num tabular">0<small>%</small></div><div class="label">3連複◎軸(平場のみ)回収率</div></div></div>
+  <p class="section-lead">【参考】全レース対象（A+・見送りレースも含めて買い目(検証中)で買った場合の参考値）です。</p>
+  <div class="stat-row stat-row-1"><div class="stat"><div class="num tabular">79<small>%</small></div><div class="label">トータル回収率(検証中)（全レース・193R・実額ベース）</div></div></div>
+  <div class="stat-row stat-row-2"><div class="stat"><div class="num tabular">70<small>%</small></div><div class="label">3連単(検証中)回収率（全レース・193R）</div></div><div class="stat"><div class="num tabular">34<small>%</small></div><div class="label">馬単◎→⭐︎(検証中)回収率（全レース・193R）</div></div><div class="stat stat-plus"><div class="num tabular">111<small>%</small></div><div class="label">馬単⭐︎→○▲(検証中)回収率（全レース・193R）</div></div><div class="stat"><div class="num tabular">90<small>%</small></div><div class="label">ワイド◎-⭐︎(重賞のみ)回収率（全レース）</div></div><div class="stat"><div class="num tabular">89<small>%</small></div><div class="label">3連複◎軸(平場のみ)回収率（全レース）</div></div></div></div><div class="month-summary month-summary-graded"><div class="section-eyebrow">的中した重賞</div><p class="section-lead">中央の重賞（GI〜GIII）10レースのうち2レースで的中。重賞全体の回収率 <b>44%</b>（払戻14,530円／投資33,000円・実額ベース）。</p><style>.gh-wrap{overflow-x:auto;margin:8px 0 4px}.gh-tbl{border-collapse:collapse;width:100%;min-width:560px;font-size:13px;line-height:1.45}.gh-tbl th{font-weight:600;text-align:left;padding:6px 8px;border-bottom:2px solid var(--border,rgba(128,128,128,.5));white-space:nowrap}.gh-tbl td{padding:7px 8px;border-bottom:1px solid var(--border,rgba(128,128,128,.25));vertical-align:top}.gh-tbl td.r,.gh-tbl th.r{text-align:right;white-space:nowrap}.gh-tbl small{opacity:.7;font-size:11.5px}.gh-tbl tr.gh-last td{border-bottom:1px solid var(--border,rgba(128,128,128,.5))}.gh-g{display:inline-block;font-size:11px;padding:0 6px;border-radius:999px;border:1px solid currentColor;margin-left:4px;opacity:.85}.gh-plus{color:#2fa36b;font-weight:700}</style><div class="gh-wrap"><table class="gh-tbl"><thead><tr><th>レース</th><th>的中した馬券</th><th class="r">倍率</th><th class="r">払戻</th><th class="r">レース回収率<br><small>投資→払戻</small></th></tr></thead><tbody><tr class="gh-last"><td rowspan="1"><b>京王杯2歳S</b><span class="gh-g">GII</span><br><small>11/7 東京11R</small></td><td><b>ワイド</b> ◎-⭐︎1<br><small>馬番 9-5</small></td><td class="r">6.7倍</td><td class="r">2,010円<br><small>投資300円</small></td><td rowspan="1" class="r"><span>67%</span><br><small>3,000→2,010円</small></td></tr><tr><td rowspan="2"><b>福島記念</b><span class="gh-g">GIII</span><br><small>11/21 福島11R</small></td><td><b>馬単</b> ◎→⭐︎2<br><small>馬番 13-3</small></td><td class="r">75.1倍</td><td class="r">7,510円<br><small>投資100円</small></td><td rowspan="2" class="r"><span class="gh-plus">417%</span><br><small>3,000→12,520円</small></td></tr><tr class="gh-last"><td><b>ワイド</b> ◎-⭐︎2<br><small>馬番 13-3</small></td><td class="r">16.7倍</td><td class="r">5,010円<br><small>投資300円</small></td></tr></tbody></table></div></div><div class="month-summary month-summary-nar"><div class="section-eyebrow">地方</div>
+  <p class="section-lead">◎1頭を単勝・複勝それぞれ100円均等で買った場合の成績（仮定シミュレーション）です。</p>
+  <div class="stat-row stat-row-2">
+    <div class="stat"><div class="num tabular">30.1<small>%</small></div><div class="label">◎勝率（299/995R）</div></div>
+    <div class="stat"><div class="num tabular">57.5<small>%</small></div><div class="label">◎複勝率（572/995R）</div></div>
+    <div class="stat"><div class="num tabular">92<small>%</small></div><div class="label">◎単勝回収率</div></div>
+    <div class="stat"><div class="num tabular">88<small>%</small></div><div class="label">◎複勝回収率</div></div>
+  </div>
+  <p class="section-lead">注目レース（S）対象。買い目(検証中)で買った場合の成績（実際の賭け金額ベース）です。</p>
+  <p class="section-lead personal-formula">
+    単勝 ◎（500円）＋ 馬連 ◎-▲（500円）＝ 1レース1,000円（11/25開催分から。それ以前の日は、この買い目で計算し直した参考値です）
+  </p>
+  <div class="stat-row stat-row-1"><div class="stat"><div class="num tabular">49<small>%</small></div><div class="label">トータル回収率(検証中)（59R・実額ベース）</div></div></div>
+  <div class="stat-row stat-row-2"><div class="stat"><div class="num tabular">15<small>%</small></div><div class="label">馬連◎-▲回収率（59R）</div></div><div class="stat"><div class="num tabular">82<small>%</small></div><div class="label">単勝◎回収率（買い目）</div></div></div>
+  
+  <p class="section-lead">【参考】全レース対象（Sでないレースも同じ買い目で買った場合の参考値）です。</p>
+  <div class="stat-row stat-row-1"><div class="stat"><div class="num tabular">84<small>%</small></div><div class="label">トータル回収率(検証中)（全レース・995R・実額ベース）</div></div></div>
+  <div class="stat-row stat-row-2"><div class="stat"><div class="num tabular">76<small>%</small></div><div class="label">馬連◎-▲回収率（全レース・995R）</div></div><div class="stat"><div class="num tabular">92<small>%</small></div><div class="label">単勝◎回収率（買い目・全レース）</div></div></div></div><div class="month-summary month-summary-graded"><div class="section-eyebrow">的中したダートグレード</div><p class="section-lead">地方のダートグレード競走（Jpn）5レースのうち2レースで的中。全体の回収率 <b>109%</b>（払戻5,450円／投資5,000円・実額ベース）。　11/25より前の日は、今の買い目（単勝◎500円＋馬連◎-▲500円）で計算し直した参考値です。</p><style>.gh-wrap{overflow-x:auto;margin:8px 0 4px}.gh-tbl{border-collapse:collapse;width:100%;min-width:560px;font-size:13px;line-height:1.45}.gh-tbl th{font-weight:600;text-align:left;padding:6px 8px;border-bottom:2px solid var(--border,rgba(128,128,128,.5));white-space:nowrap}.gh-tbl td{padding:7px 8px;border-bottom:1px solid var(--border,rgba(128,128,128,.25));vertical-align:top}.gh-tbl td.r,.gh-tbl th.r{text-align:right;white-space:nowrap}.gh-tbl small{opacity:.7;font-size:11.5px}.gh-tbl tr.gh-last td{border-bottom:1px solid var(--border,rgba(128,128,128,.5))}.gh-g{display:inline-block;font-size:11px;padding:0 6px;border-radius:999px;border:1px solid currentColor;margin-left:4px;opacity:.85}.gh-plus{color:#2fa36b;font-weight:700}</style><div class="gh-wrap"><table class="gh-tbl"><thead><tr><th>レース</th><th>的中した馬券</th><th class="r">倍率</th><th class="r">払戻</th><th class="r">レース回収率<br><small>投資→払戻</small></th></tr></thead><tbody><tr class="gh-last"><td rowspan="1"><b>ＪＢＣレディスクラシック</b><span class="gh-g">JpnI</span><br><small>11/3 金沢7R</small><br><small>（参考）</small></td><td><b>単勝</b> ◎<br><small>馬番 9</small></td><td class="r">8.0倍</td><td class="r">4,000円<br><small>投資500円</small></td><td rowspan="1" class="r"><span class="gh-plus">400%</span><br><small>1,000→4,000円</small></td></tr><tr class="gh-last"><td rowspan="1"><b>ＪＢＣクラシック</b><span class="gh-g">JpnI</span><br><small>11/3 金沢9R</small><br><small>（参考）</small></td><td><b>単勝</b> ◎<br><small>馬番 2</small></td><td class="r">2.9倍</td><td class="r">1,450円<br><small>投資500円</small></td><td rowspan="1" class="r"><span class="gh-plus">145%</span><br><small>1,000→1,450円</small></td></tr></tbody></table></div></div>
+  </div>
+  <div class="footer">Personal prediction system</div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  var btns = document.querySelectorAll('.tab-btn');
+  function activate(tab){
+    btns.forEach(function(b){ b.classList.toggle('active', b.dataset.tab === tab); });
+    document.getElementById('list-jra').style.display = (tab === 'jra') ? '' : 'none';
+    document.getElementById('list-nar').style.display = (tab === 'nar') ? '' : 'none';
+    // pane-matome(まとめタブ)は月別ページ({month}.html)にのみ存在(2026/09/07)。
+    // index.htmlには無いのでnullガードする。
+    var pm = document.getElementById('pane-matome');
+    if (pm) pm.style.display = (tab === 'matome') ? '' : 'none';
+  }
+  // 2026/11/25 ユーザー指示: 地方タブを選んだまま月一覧(index.html)へ戻っても地方タブのままにする。
+  // 選んだタブをlocalStorageに覚え(使えない環境でも壊れないようtry/catch)、「← 月一覧に戻る」の
+  // リンク先も #nar 付きに切り替える(保存が使えなくてもリンクだけで地方タブに戻れる)。
+  var KEY = 'keiba_tab';
+  function remember(tab){
+    try { if (tab === 'jra' || tab === 'nar') localStorage.setItem(KEY, tab); } catch (e) {}
+    document.querySelectorAll('a[href="index.html"],a[href="index.html#nar"]').forEach(function(a){
+      a.setAttribute('href', tab === 'nar' ? 'index.html#nar' : 'index.html');
+    });
+  }
+  btns.forEach(function(btn){
+    btn.addEventListener('click', function(){ activate(btn.dataset.tab); remember(btn.dataset.tab); });
+  });
+  // 2026/09/02: 地方の日次ページ等から「TOPに戻る」で index.html#nar に来た場合、
+  // 地方タブを開いた状態で表示する（中央タブが既定で先頭に出る違和感の解消）。
+  var saved = null;
+  try { saved = localStorage.getItem(KEY); } catch (e) {}
+  var has = function(t){ return Array.prototype.some.call(btns, function(b){ return b.dataset.tab === t; }); };
+  if (location.hash === '#nar') { activate('nar'); remember('nar'); }
+  else if (saved === 'nar' && has('nar')) { activate('nar'); remember('nar'); }
+});
+</script>
+</body></html>

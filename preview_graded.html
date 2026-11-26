@@ -1,0 +1,161 @@
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet"><style id="theme-preview">
+:root, :root[data-theme="light"]{
+  --bg:#F3F4F0;--surface:#F3F4F0;--text:#16222E;--text-muted:#5A6672;--text-faint:#7B8791;
+  --border:#C9CFC6;--border-strong:#16222E;
+  --accent:#2B6A4B;--accent-strong:#1B4A33;--accent-tint:#E3EDE6;
+  --accent-nar:#985A2B;--accent-nar-strong:#6F3F1B;--accent-nar-tint:#F1E6DA;
+  --gold:#8A6417;--gold-strong:#6B4C10;--gold-tint:#F4ECD6;--gold-tint-strong:#EADDB8;
+  --shadow:none;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#121A22;--surface:#17212B;--text:#E8EBE6;--text-muted:#9AA6B0;--text-faint:#74818C;
+    --border:#2C3946;--border-strong:#E8EBE6;
+    --accent:#62B78E;--accent-strong:#8ED1AE;--accent-tint:#173126;
+    --accent-nar:#D79F66;--accent-nar-strong:#E6B98A;--accent-nar-tint:#33261A;
+    --gold:#D9B35E;--gold-strong:#E8C987;--gold-tint:#2E2713;--gold-tint-strong:#3A3118;
+    --shadow:none;
+  }
+}
+html{zoom:1.1;}
+body{font-family:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic UI","Yu Gothic",system-ui,sans-serif !important;
+  font-weight:700 !important;font-variant-numeric:tabular-nums;font-feature-settings:"tnum";}
+h1,h2,h3,.card-title,.race-title{font-weight:900 !important;}
+[class*="card"],.results,.graded,.month-summary .stat,.stat-row>*{box-shadow:none !important;border-radius:6px !important;}
+</style><meta name="robots" content="noindex"><title>重賞アーカイブ（デザイン案）</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{box-sizing:border-box;}
+:root{
+  --bg:#FAF7F0; --surface:#FFFFFF; --surface-2:#F3EFE4; --border:#E6DFCC; --border-strong:#D8CEB0;
+  --text:#26221A; --text-muted:#6B6350; --text-faint:#948A6E;
+  --gold:#9C6E1E; --gold-strong:#7A5511; --gold-tint:#FBF1DC; --gold-tint-strong:#F5E4BC;
+  --accent-jra:#1E6B3F; --accent-nar:#1B5FA6;
+  --shadow:0 1px 3px rgba(60,45,10,0.08);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#181510; --surface:#221E16; --surface-2:#2B261C; --border:#3A331F; --border-strong:#4A4028;
+    --text:#F0EADA; --text-muted:#B8AD8E; --text-faint:#8C826A;
+    --gold:#E3B657; --gold-strong:#F0CB7C; --gold-tint:#2E2513; --gold-tint-strong:#3B2F16;
+    --accent-jra:#4FB57A; --accent-nar:#5B9BD8;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#181510; --surface:#221E16; --surface-2:#2B261C; --border:#3A331F; --border-strong:#4A4028;
+  --text:#F0EADA; --text-muted:#B8AD8E; --text-faint:#8C826A;
+  --gold:#E3B657; --gold-strong:#F0CB7C; --gold-tint:#2E2513; --gold-tint-strong:#3B2F16;
+  --accent-jra:#4FB57A; --accent-nar:#5B9BD8;
+}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif;
+  -webkit-font-smoothing:antialiased;}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px 40px;}
+.back-to-top-wrap{max-width:760px;margin:0 auto;padding:14px 16px 0;display:flex;gap:16px;flex-wrap:wrap;}
+.back-to-top{display:inline-flex;align-items:center;gap:4px;font-size:13px;font-weight:600;
+  color:var(--gold-strong);text-decoration:none;}
+.masthead{padding:18px 0 14px;}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--gold-strong);margin-bottom:6px;}
+h1{font-size:22px;margin:0 0 8px;line-height:1.35;}
+.lead{font-size:13px;color:var(--text-muted);line-height:1.7;margin:0;}
+.section-head{display:flex;align-items:baseline;gap:8px;margin:26px 0 12px;padding-bottom:8px;
+  border-bottom:2px solid var(--border-strong);}
+.section-head h2{font-size:16px;margin:0;}
+.section-head .dot{width:9px;height:9px;border-radius:50%;flex:0 0 auto;}
+.dot-jra{background:var(--accent-jra);}
+.dot-nar{background:var(--accent-nar);}
+.year-head{font-size:12.5px;font-weight:800;letter-spacing:.04em;color:var(--text-faint);
+  margin:18px 0 10px;padding-bottom:4px;border-bottom:1px dashed var(--border);}
+.year-head:first-of-type{margin-top:4px;}
+.nav-eyebrow{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--text-faint);margin:22px 0 10px;}
+.nav-eyebrow:first-of-type{margin-top:2px;}
+.nav-list{list-style:none;margin:0 0 4px;padding:0;display:flex;flex-direction:column;gap:8px;}
+.nav-list a{
+  display:block;background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--gold);
+  border-radius:12px;padding:13px 16px;text-decoration:none;color:var(--text);font-weight:700;font-size:14.5px;
+  box-shadow:var(--shadow);
+}
+.back-link{display:inline-flex;align-items:center;gap:6px;margin:-8px 0 20px;padding:8px 14px;
+  border-radius:999px;border:1.5px solid var(--gold);background:var(--gold-tint);
+  color:var(--gold-strong);font-weight:700;font-size:13.5px;text-decoration:none;}
+.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--gold);
+  border-radius:12px;padding:14px 16px;margin-bottom:12px;box-shadow:var(--shadow);}
+.card.card-hit{border:2px solid #2fa36b;border-left:6px solid #2fa36b;background:rgba(47,163,107,.10);}
+.hit-badge{display:inline-flex;align-items:center;font-size:11px;font-weight:800;padding:2px 8px;
+  border-radius:999px;background:#2fa36b;color:#fff;}
+.card-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:4px;}
+.badge{display:inline-flex;align-items:center;font-size:11px;font-weight:800;padding:2px 7px;
+  border-radius:999px;border:1px solid var(--gold);color:var(--gold-strong);background:var(--gold-tint);}
+.card-date{font-size:12px;color:var(--text-faint);}
+.card-venue{font-size:12px;color:var(--text-muted);font-weight:600;}
+.card-title{font-size:15.5px;font-weight:700;margin:2px 0 10px;}
+.card-title a{color:var(--text);text-decoration:none;}
+.card-title a:hover{text-decoration:underline;}
+.podium{display:flex;flex-direction:column;gap:4px;margin-bottom:10px;padding-bottom:10px;
+  border-bottom:1px dashed var(--border);}
+.podium-row{display:flex;align-items:baseline;gap:8px;font-size:12.5px;}
+.podium-rank{font-weight:800;color:var(--gold-strong);width:2.4em;flex:0 0 auto;}
+.mark{font-weight:800;font-size:14px;width:16px;text-align:center;flex:0 0 auto;}
+.mark-honmei{color:var(--gold-strong);}
+.mark-o{color:#2E7D46;}
+.mark-sankaku{color:#6B7FCF;}
+.mark-hoshi{color:#B06BC2;}
+.podium-name{flex:1 1 auto;}
+.reviews{display:flex;flex-direction:column;gap:5px;}
+.review-row{display:flex;align-items:baseline;gap:8px;font-size:12.5px;}
+.review-name{flex:1 1 auto;}
+.result-badge{font-size:11px;font-weight:700;padding:1px 7px;border-radius:999px;flex:0 0 auto;}
+.result-badge.came-in{color:#1F7A45;background:#E4F3E9;}
+.result-badge.missed{color:var(--text-faint);background:var(--surface-2);}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .result-badge.came-in{color:#7BD6A0;background:#16281E;}
+}
+:root[data-theme="dark"] .result-badge.came-in{color:#7BD6A0;background:#16281E;}
+.no-data{font-size:12.5px;color:var(--text-faint);}
+.footer{margin-top:24px;font-size:11.5px;color:var(--text-faint);text-align:center;}
+
+/* 個別ページ専用 */
+.race-meta{font-size:13px;color:var(--text-muted);margin:2px 0 16px;}
+.narrative{background:var(--gold-tint);border:1px solid var(--gold-tint-strong);border-radius:12px;
+  padding:14px 16px;font-size:13.5px;line-height:1.85;margin-bottom:20px;}
+.narrative-head{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--gold-strong);margin-bottom:6px;}
+.section-title{font-size:14px;font-weight:800;margin:22px 0 10px;color:var(--text);}
+.tablewrap{overflow-x:auto;border:1px solid var(--border);border-radius:10px;}
+table.field-table{width:100%;border-collapse:collapse;font-size:12.5px;white-space:nowrap;}
+table.field-table th{background:var(--surface-2);color:var(--text-muted);font-weight:700;
+  text-align:left;padding:7px 10px;position:sticky;top:0;}
+table.field-table td{padding:7px 10px;border-top:1px solid var(--border);}
+table.field-table tr.row-honmei{background:var(--gold-tint);}
+.pre-review{margin-bottom:12px;}
+.pre-review-head{display:flex;align-items:baseline;gap:7px;font-weight:700;font-size:13.5px;}
+.pre-review-bits{margin:4px 0 0;padding-left:19px;font-size:12.5px;color:var(--text-muted);line-height:1.7;}
+.pre-review-bits li{margin-bottom:1px;}
+.review-pop{font-size:11.5px;color:var(--text-muted);margin:0 4px;white-space:nowrap;flex:0 0 auto;text-align:left;font-variant-numeric:tabular-nums;}
+.pod-pop{margin-right:0;}   /* 1〜3着の人気・単勝はカード右端に寄せる(11/18ユーザー指示「もっと右」) */
+.review-pop .pn{display:inline-block;min-width:1.6em;text-align:right;}
+.review-pop .po{display:inline-block;min-width:2.7em;text-align:right;}
+.review-row .result-badge{width:3.9em;text-align:center;box-sizing:border-box;padding-left:0;padding-right:0;}
+.review-name{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+table.bet-table th.r,table.bet-table td.r{text-align:right;}
+table.bet-table tr.bet-hit{background:rgba(47,163,107,.12);}
+table.bet-table tr.bet-total td{border-top:2px solid var(--border);background:var(--surface-2);}
+table.bet-table small{color:var(--text-muted);font-size:11px;}
+</style>
+<div class="wrap">
+  <header class="masthead">
+    <div class="eyebrow">Graded Races</div>
+    <h1>重賞アーカイブ</h1>
+    <p class="lead">現在サイトで公開している期間の重賞をまとめています。中央競馬は全グレード(GI/GII/GIII)、地方競馬は統一ダートグレード(Jpn)のみを対象にしています（地方の「重賞」全体ではありません）。</p>
+  </header>
+  
+  <style>#year-bar{scrollbar-width:none;-webkit-overflow-scrolling:touch;}#year-bar::-webkit-scrollbar{display:none;}@media (min-width:700px){#year-bar{flex-wrap:wrap;overflow-x:visible !important;}}</style><div id="year-bar" style="display:flex;gap:6px;margin:12px 0;overflow-x:auto;white-space:nowrap;"><button type="button" class="yr-chip" data-yr="2026" style="flex:0 0 auto;min-width:4.2em;padding:6px 10px;border-radius:999px;white-space:nowrap;border:1px solid rgba(128,128,128,.5);background:transparent;color:inherit;font:inherit;cursor:pointer;">2026年</button><button type="button" class="yr-chip" data-yr="2025" style="flex:0 0 auto;min-width:4.2em;padding:6px 10px;border-radius:999px;white-space:nowrap;border:1px solid rgba(128,128,128,.5);background:transparent;color:inherit;font:inherit;cursor:pointer;">2025年</button><button type="button" class="yr-chip" data-yr="2024" style="flex:0 0 auto;min-width:4.2em;padding:6px 10px;border-radius:999px;white-space:nowrap;border:1px solid rgba(128,128,128,.5);background:transparent;color:inherit;font:inherit;cursor:pointer;">2024年</button><button type="button" class="yr-chip" data-yr="2023" style="flex:0 0 auto;min-width:4.2em;padding:6px 10px;border-radius:999px;white-space:nowrap;border:1px solid rgba(128,128,128,.5);background:transparent;color:inherit;font:inherit;cursor:pointer;">2023年</button><button type="button" class="yr-chip" data-yr="2022" style="flex:0 0 auto;min-width:4.2em;padding:6px 10px;border-radius:999px;white-space:nowrap;border:1px solid rgba(128,128,128,.5);background:transparent;color:inherit;font:inherit;cursor:pointer;">2022年</button><button type="button" class="yr-chip" data-yr="2021" style="flex:0 0 auto;min-width:4.2em;padding:6px 10px;border-radius:999px;white-space:nowrap;border:1px solid rgba(128,128,128,.5);background:transparent;color:inherit;font:inherit;cursor:pointer;">2021年</button><button type="button" class="yr-chip" data-yr="2020" style="flex:0 0 auto;min-width:4.2em;padding:6px 10px;border-radius:999px;white-space:nowrap;border:1px solid rgba(128,128,128,.5);background:transparent;color:inherit;font:inherit;cursor:pointer;">2020年</button><button type="button" class="yr-chip" data-yr="2019" style="flex:0 0 auto;min-width:4.2em;padding:6px 10px;border-radius:999px;white-space:nowrap;border:1px solid rgba(128,128,128,.5);background:transparent;color:inherit;font:inherit;cursor:pointer;">2019年</button><button type="button" class="yr-chip" data-yr="2018" style="flex:0 0 auto;min-width:4.2em;padding:6px 10px;border-radius:999px;white-space:nowrap;border:1px solid rgba(128,128,128,.5);background:transparent;color:inherit;font:inherit;cursor:pointer;">2018年</button><button type="button" class="yr-chip" data-yr="2017" style="flex:0 0 auto;min-width:4.2em;padding:6px 10px;border-radius:999px;white-space:nowrap;border:1px solid rgba(128,128,128,.5);background:transparent;color:inherit;font:inherit;cursor:pointer;">2017年</button></div><script>document.addEventListener("DOMContentLoaded",function(){var bs=document.querySelectorAll(".yr-chip[data-yr]");function pick(y,scroll){bs.forEach(function(b){var on=b.dataset.yr===y;b.style.fontWeight=on?"700":"400";b.style.borderColor=on?"currentColor":"";if(on&&scroll){var bar=document.getElementById("year-bar");if(bar.scrollWidth>bar.clientWidth+1)bar.scrollLeft=b.offsetLeft-(bar.clientWidth-b.offsetWidth)/2;}});document.querySelectorAll("[data-year]").forEach(function(e){e.style.display=e.dataset.year===y?"":"none";});try{sessionStorage.setItem("keiba_yr",y);}catch(e){}}var d=bs[0].dataset.yr;var cy=String(new Date().getFullYear());if(document.querySelector(".yr-chip[data-yr=\""+cy+"\"]"))d=cy;try{var sv=sessionStorage.getItem("keiba_yr");if(sv&&document.querySelector(".yr-chip[data-yr=\""+sv+"\"]"))d=sv;}catch(e){}bs.forEach(function(b){b.addEventListener("click",function(){pick(b.dataset.yr,false);});});pick(d,true);});</script><div class="nav-eyebrow">月から探す</div>
+  <ul class="nav-list"><li data-year="2026"><a href="graded_202611.html">2026年11月</a></li><li data-year="2026"><a href="graded_202610.html">2026年10月</a></li><li data-year="2026"><a href="graded_202609.html">2026年9月</a></li><li data-year="2026"><a href="graded_202608.html">2026年8月</a></li><li data-year="2026"><a href="graded_202607.html">2026年7月</a></li><li data-year="2026"><a href="graded_202606.html">2026年6月</a></li><li data-year="2026"><a href="graded_202605.html">2026年5月</a></li><li data-year="2026"><a href="graded_202604.html">2026年4月</a></li><li data-year="2026"><a href="graded_202603.html">2026年3月</a></li><li data-year="2026"><a href="graded_202602.html">2026年2月</a></li><li data-year="2026"><a href="graded_202601.html">2026年1月</a></li><li data-year="2025"><a href="graded_202512.html">2025年12月</a></li><li data-year="2025"><a href="graded_202511.html">2025年11月</a></li><li data-year="2025"><a href="graded_202510.html">2025年10月</a></li><li data-year="2025"><a href="graded_202509.html">2025年9月</a></li><li data-year="2025"><a href="graded_202508.html">2025年8月</a></li><li data-year="2025"><a href="graded_202507.html">2025年7月</a></li><li data-year="2025"><a href="graded_202506.html">2025年6月</a></li><li data-year="2025"><a href="graded_202505.html">2025年5月</a></li><li data-year="2025"><a href="graded_202504.html">2025年4月</a></li><li data-year="2025"><a href="graded_202503.html">2025年3月</a></li><li data-year="2025"><a href="graded_202502.html">2025年2月</a></li><li data-year="2025"><a href="graded_202501.html">2025年1月</a></li><li data-year="2024"><a href="graded_202412.html">2024年12月</a></li><li data-year="2024"><a href="graded_202411.html">2024年11月</a></li><li data-year="2024"><a href="graded_202410.html">2024年10月</a></li><li data-year="2024"><a href="graded_202409.html">2024年9月</a></li><li data-year="2024"><a href="graded_202408.html">2024年8月</a></li><li data-year="2024"><a href="graded_202407.html">2024年7月</a></li><li data-year="2024"><a href="graded_202406.html">2024年6月</a></li><li data-year="2024"><a href="graded_202405.html">2024年5月</a></li><li data-year="2024"><a href="graded_202404.html">2024年4月</a></li><li data-year="2024"><a href="graded_202403.html">2024年3月</a></li><li data-year="2024"><a href="graded_202402.html">2024年2月</a></li><li data-year="2024"><a href="graded_202401.html">2024年1月</a></li><li data-year="2023"><a href="graded_202312.html">2023年12月</a></li><li data-year="2023"><a href="graded_202311.html">2023年11月</a></li><li data-year="2023"><a href="graded_202310.html">2023年10月</a></li><li data-year="2023"><a href="graded_202309.html">2023年9月</a></li><li data-year="2023"><a href="graded_202308.html">2023年8月</a></li><li data-year="2023"><a href="graded_202307.html">2023年7月</a></li><li data-year="2023"><a href="graded_202306.html">2023年6月</a></li><li data-year="2023"><a href="graded_202305.html">2023年5月</a></li><li data-year="2023"><a href="graded_202304.html">2023年4月</a></li><li data-year="2023"><a href="graded_202303.html">2023年3月</a></li><li data-year="2023"><a href="graded_202302.html">2023年2月</a></li><li data-year="2023"><a href="graded_202301.html">2023年1月</a></li><li data-year="2022"><a href="graded_202212.html">2022年12月</a></li><li data-year="2022"><a href="graded_202211.html">2022年11月</a></li><li data-year="2022"><a href="graded_202210.html">2022年10月</a></li><li data-year="2022"><a href="graded_202209.html">2022年9月</a></li><li data-year="2022"><a href="graded_202208.html">2022年8月</a></li><li data-year="2022"><a href="graded_202207.html">2022年7月</a></li><li data-year="2022"><a href="graded_202206.html">2022年6月</a></li><li data-year="2022"><a href="graded_202205.html">2022年5月</a></li><li data-year="2022"><a href="graded_202204.html">2022年4月</a></li><li data-year="2022"><a href="graded_202203.html">2022年3月</a></li><li data-year="2022"><a href="graded_202202.html">2022年2月</a></li><li data-year="2022"><a href="graded_202201.html">2022年1月</a></li><li data-year="2021"><a href="graded_202112.html">2021年12月</a></li><li data-year="2021"><a href="graded_202111.html">2021年11月</a></li><li data-year="2021"><a href="graded_202110.html">2021年10月</a></li><li data-year="2021"><a href="graded_202109.html">2021年9月</a></li><li data-year="2021"><a href="graded_202108.html">2021年8月</a></li><li data-year="2021"><a href="graded_202107.html">2021年7月</a></li><li data-year="2021"><a href="graded_202106.html">2021年6月</a></li><li data-year="2021"><a href="graded_202105.html">2021年5月</a></li><li data-year="2021"><a href="graded_202104.html">2021年4月</a></li><li data-year="2021"><a href="graded_202103.html">2021年3月</a></li><li data-year="2021"><a href="graded_202102.html">2021年2月</a></li><li data-year="2021"><a href="graded_202101.html">2021年1月</a></li><li data-year="2020"><a href="graded_202012.html">2020年12月</a></li><li data-year="2020"><a href="graded_202011.html">2020年11月</a></li><li data-year="2020"><a href="graded_202010.html">2020年10月</a></li><li data-year="2020"><a href="graded_202009.html">2020年9月</a></li><li data-year="2020"><a href="graded_202008.html">2020年8月</a></li><li data-year="2020"><a href="graded_202007.html">2020年7月</a></li><li data-year="2020"><a href="graded_202006.html">2020年6月</a></li><li data-year="2020"><a href="graded_202005.html">2020年5月</a></li><li data-year="2020"><a href="graded_202004.html">2020年4月</a></li><li data-year="2020"><a href="graded_202003.html">2020年3月</a></li><li data-year="2020"><a href="graded_202002.html">2020年2月</a></li><li data-year="2020"><a href="graded_202001.html">2020年1月</a></li><li data-year="2019"><a href="graded_201912.html">2019年12月</a></li><li data-year="2019"><a href="graded_201911.html">2019年11月</a></li><li data-year="2019"><a href="graded_201910.html">2019年10月</a></li><li data-year="2019"><a href="graded_201909.html">2019年9月</a></li><li data-year="2019"><a href="graded_201908.html">2019年8月</a></li><li data-year="2019"><a href="graded_201907.html">2019年7月</a></li><li data-year="2019"><a href="graded_201906.html">2019年6月</a></li><li data-year="2019"><a href="graded_201905.html">2019年5月</a></li><li data-year="2019"><a href="graded_201904.html">2019年4月</a></li><li data-year="2019"><a href="graded_201903.html">2019年3月</a></li><li data-year="2019"><a href="graded_201902.html">2019年2月</a></li><li data-year="2019"><a href="graded_201901.html">2019年1月</a></li><li data-year="2018"><a href="graded_201812.html">2018年12月</a></li><li data-year="2018"><a href="graded_201811.html">2018年11月</a></li><li data-year="2018"><a href="graded_201810.html">2018年10月</a></li><li data-year="2018"><a href="graded_201809.html">2018年9月</a></li><li data-year="2018"><a href="graded_201808.html">2018年8月</a></li><li data-year="2018"><a href="graded_201807.html">2018年7月</a></li><li data-year="2018"><a href="graded_201806.html">2018年6月</a></li><li data-year="2018"><a href="graded_201805.html">2018年5月</a></li><li data-year="2018"><a href="graded_201804.html">2018年4月</a></li><li data-year="2018"><a href="graded_201803.html">2018年3月</a></li><li data-year="2018"><a href="graded_201802.html">2018年2月</a></li><li data-year="2018"><a href="graded_201801.html">2018年1月</a></li><li data-year="2017"><a href="graded_201712.html">2017年12月</a></li><li data-year="2017"><a href="graded_201711.html">2017年11月</a></li><li data-year="2017"><a href="graded_201710.html">2017年10月</a></li><li data-year="2017"><a href="graded_201709.html">2017年9月</a></li><li data-year="2017"><a href="graded_201708.html">2017年8月</a></li><li data-year="2017"><a href="graded_201707.html">2017年7月</a></li><li data-year="2017"><a href="graded_201706.html">2017年6月</a></li><li data-year="2017"><a href="graded_201705.html">2017年5月</a></li><li data-year="2017"><a href="graded_201704.html">2017年4月</a></li><li data-year="2017"><a href="graded_201703.html">2017年3月</a></li><li data-year="2017"><a href="graded_201702.html">2017年2月</a></li><li data-year="2017"><a href="graded_201701.html">2017年1月</a></li></ul>
+  <div class="nav-eyebrow">グレードから探す（中央）</div>
+  <ul class="nav-list"><li><a href="graded_g1.html">中央 GI</a></li><li><a href="graded_g2.html">中央 GII</a></li><li><a href="graded_g3.html">中央 GIII</a></li></ul>
+  <div class="nav-eyebrow">グレードから探す（ダートグレード）</div>
+  <ul class="nav-list"><li><a href="graded_n1.html">ダートグレード JpnI</a></li><li><a href="graded_n2.html">ダートグレード JpnII</a></li><li><a href="graded_n3.html">ダートグレード JpnIII</a></li></ul>
+  <div class="footer">Personal prediction system</div>
+</div>
