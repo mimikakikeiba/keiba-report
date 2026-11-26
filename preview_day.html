@@ -33,7 +33,10 @@ h1,h2,h3,.card-title,.race-title{font-weight:900 !important;}
 .race-card summary{padding:13px 2px !important;}
 .race-card[open] summary{border-bottom:1px dotted var(--border) !important;}
 .race-card.is-buy{border-left:4px solid var(--gold) !important;padding-left:8px;}
-.race-card.is-hit{border-left:4px solid var(--accent) !important;padding-left:8px;}
+.race-card.is-hit{border-left:8px solid var(--accent) !important;padding-left:8px;background:var(--accent-tint) !important;}
+.race-card.is-hit summary::before{content:"的中";order:-1;background:var(--accent);color:#fff;font-weight:900;font-size:13px;padding:3px 8px;border-radius:2px;flex:0 0 auto;}
+.race-card.is-hit .sum-race{color:var(--accent-strong);}
+.highlight-card{border-left:6px solid var(--accent) !important;padding-left:12px !important;background:var(--accent-tint) !important;}
 .race-detail{padding:4px 2px 14px !important;}
 .highlight-card{background:none !important;border:none !important;border-radius:0 !important;border-bottom:1px solid var(--border) !important;padding:10px 2px !important;}
 /* 丸を四角に */
