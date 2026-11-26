@@ -32,8 +32,11 @@ h1,h2,h3,.card-title,.race-title{font-weight:900 !important;}
 .race-card,.race-card.is-buy,.race-card.is-hit{background:none !important;border:none !important;border-bottom:1px solid var(--border) !important;border-radius:0 !important;}
 .race-card summary{padding:13px 2px !important;}
 .race-card[open] summary{border-bottom:1px dotted var(--border) !important;}
-.race-card.is-buy{border-left:4px solid var(--gold) !important;padding-left:8px;}
-.race-card.is-hit{border-left:8px solid var(--accent) !important;padding-left:8px;background:var(--accent-tint) !important;}
+.race-card.is-buy{border-left:8px solid var(--gold) !important;padding-left:8px;background:var(--gold-tint) !important;}
+.race-card.is-buy .verdict-buy{order:-1;font-size:13px;font-weight:900;padding:3px 8px;}
+.race-card.is-buy .sum-race{color:var(--gold-strong);}
+.race-card.is-buy.is-hit{background:linear-gradient(90deg,var(--gold-tint) 0,var(--accent-tint) 100%) !important;}
+.race-card.is-hit:not(.is-buy){border-left:8px solid var(--accent) !important;padding-left:8px;background:var(--accent-tint) !important;}
 .race-card.is-hit summary::before{content:"的中";order:-1;background:var(--accent);color:#fff;font-weight:900;font-size:13px;padding:3px 8px;border-radius:2px;flex:0 0 auto;}
 .race-card.is-hit .sum-race{color:var(--accent-strong);}
 .highlight-card{border-left:6px solid var(--accent) !important;padding-left:12px !important;background:var(--accent-tint) !important;}
