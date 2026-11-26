@@ -124,6 +124,37 @@ body{font-family:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic UI","Yu Gothic
   font-weight:700 !important;font-variant-numeric:tabular-nums;font-feature-settings:"tnum";}
 h1,h2,h3,.card-title,.race-title{font-weight:900 !important;}
 [class*="card"],.results,.graded,.month-summary .stat,.stat-row>*{box-shadow:none !important;border-radius:6px !important;}
+</style><style id="struct2-preview">
+html{zoom:1 !important;}
+.stat,.month-summary .stat{background:none !important;border:none !important;border-radius:0 !important;border-top:2px solid var(--border-strong) !important;padding:10px 2px 6px !important;}
+.stat-row{gap:0 !important;}
+.stat{border-left:1px solid var(--text-faint) !important;padding-left:12px !important;}
+.stat:first-child{border-left:none !important;padding-left:2px !important;}
+.tabs{gap:0 !important;border-bottom:2px solid var(--border-strong);}
+.tab-btn{border:none !important;border-radius:0 !important;background:none !important;border-bottom:4px solid transparent !important;margin-bottom:-2px;font-size:17px !important;font-weight:900 !important;}
+.tab-btn[data-tab="jra"].active{border-bottom-color:var(--accent) !important;}
+.tab-btn[data-tab="nar"].active{border-bottom-color:var(--accent-nar) !important;}
+.tab-btn[data-tab="matome"].active{border-bottom-color:var(--gold) !important;}
+.graded-link,.back-link{border-radius:0 !important;border:none !important;border-bottom:3px solid var(--gold) !important;background:none !important;padding:6px 2px !important;}
+.list,.nav-list{gap:0 !important;border-top:2px solid var(--border-strong);}
+.list a,.nav-list a{background:none !important;border:none !important;border-bottom:2px solid var(--text-faint) !important;border-left:6px solid var(--accent) !important;border-radius:0 !important;padding:15px 12px !important;box-shadow:none !important;}
+.nav-list a{border-left-color:var(--gold) !important;}
+.card,.nav-list a{border-bottom:3px solid var(--border-strong) !important;}
+.card:nth-of-type(even):not(.card-hit),.nav-list li:nth-child(even) a{background:color-mix(in srgb,var(--text) 6%,transparent) !important;}
+.card+.card{margin-top:0 !important;}
+.list a.is-plus{background:none !important;}
+.list a.is-plus::after{content:"回収率100%超";float:right;background:var(--text);color:var(--bg);font-size:13px;font-weight:900;padding:2px 8px;}
+.plus-legend i{display:inline-block;background:var(--text);color:var(--bg);border:none !important;width:auto !important;height:auto !important;font-style:normal;font-size:12px;padding:1px 6px;margin-right:6px;}
+.plus-legend i::before{content:"回収率100%超";}
+.plus-legend{font-size:0 !important;}.plus-legend>*{font-size:13px;}
+.month-summary .section-eyebrow{border-radius:0 !important;background:none !important;font-size:15px !important;letter-spacing:.04em !important;color:var(--text) !important;border-bottom:2px solid var(--border-strong);padding:0 0 6px !important;display:block !important;text-transform:none !important;}
+.card{background:none !important;border:none !important;border-radius:0 !important;border-top:none !important;border-bottom:2px solid var(--text-faint) !important;border-left:6px solid var(--gold) !important;padding:14px 12px !important;margin-bottom:0 !important;}
+.card.card-hit{background:var(--accent-tint) !important;border-left:10px solid var(--accent) !important;border-bottom:2px solid var(--text-faint) !important;}
+.hit-badge,.badge,.result-badge{border-radius:2px !important;}
+.hit-badge{font-size:14px !important;font-weight:900 !important;padding:3px 9px !important;background:var(--accent) !important;}
+.narrative{background:none !important;border:none !important;border-left:4px solid var(--gold) !important;border-radius:0 !important;padding:6px 14px !important;}
+.tablewrap{border-radius:0 !important;border-left:none !important;border-right:none !important;}
+*,*::before,*::after{border-radius:0 !important;}
 </style></head><body>
 <div class="wrap">
   <div class="eyebrow">Keiba Report</div>
@@ -138,7 +169,7 @@ h1,h2,h3,.card-title,.race-title{font-weight:900 !important;}
     <button class="tab-btn" data-tab="nar">地方</button>
     <button class="tab-btn" data-tab="matome">まとめ</button>
   </div>
-  <p class="plus-legend"><i></i>緑の枠＝注目レース(S)の回収率が100%を超えた日（中央・地方とも）</p>
+  <p class="plus-legend"><i></i>札＝注目レース(S)の回収率が100%を超えた日（中央・地方とも）</p>
   <ul class="list" id="list-jra"><li><a href="20260801.html">2026年8月1日（土）</a></li><li><a href="20260802.html">2026年8月2日（日）</a></li><li><a href="20260808.html">2026年8月8日（土）</a></li><li><a href="20260809.html">2026年8月9日（日）</a></li><li><a href="20260815.html">2026年8月15日（土）</a></li><li><a href="20260816.html">2026年8月16日（日）</a></li><li><a href="20260822.html">2026年8月22日（土）</a></li><li><a href="20260823.html">2026年8月23日（日）</a></li><li><a href="20260829.html">2026年8月29日（土）</a></li><li><a href="20260830.html">2026年8月30日（日）</a></li></ul>
   <ul class="list list-nar" id="list-nar" style="display:none;"><li><a href="nar_20260801.html">2026年8月1日（土）</a></li><li><a href="nar_20260802.html">2026年8月2日（日）</a></li><li><a href="nar_20260803.html">2026年8月3日（月）</a></li><li><a href="nar_20260804.html">2026年8月4日（火）</a></li><li><a href="nar_20260805.html">2026年8月5日（水）</a></li><li><a href="nar_20260806.html">2026年8月6日（木）</a></li><li><a href="nar_20260807.html">2026年8月7日（金）</a></li><li><a href="nar_20260808.html">2026年8月8日（土）</a></li><li><a href="nar_20260809.html" class="is-plus">2026年8月9日（日）</a></li><li><a href="nar_20260810.html">2026年8月10日（月）</a></li><li><a href="nar_20260811.html">2026年8月11日（火）</a></li><li><a href="nar_20260812.html">2026年8月12日（水）</a></li><li><a href="nar_20260813.html">2026年8月13日（木）</a></li><li><a href="nar_20260814.html">2026年8月14日（金）</a></li><li><a href="nar_20260815.html">2026年8月15日（土）</a></li><li><a href="nar_20260816.html">2026年8月16日（日）</a></li><li><a href="nar_20260817.html" class="is-plus">2026年8月17日（月）</a></li><li><a href="nar_20260818.html">2026年8月18日（火）</a></li><li><a href="nar_20260819.html">2026年8月19日（水）</a></li><li><a href="nar_20260820.html">2026年8月20日（木）</a></li><li><a href="nar_20260821.html">2026年8月21日（金）</a></li><li><a href="nar_20260822.html">2026年8月22日（土）</a></li><li><a href="nar_20260823.html">2026年8月23日（日）</a></li><li><a href="nar_20260824.html">2026年8月24日（月）</a></li><li><a href="nar_20260825.html">2026年8月25日（火）</a></li><li><a href="nar_20260826.html">2026年8月26日（水）</a></li><li><a href="nar_20260827.html" class="is-plus">2026年8月27日（木）</a></li><li><a href="nar_20260828.html">2026年8月28日（金）</a></li><li><a href="nar_20260829.html">2026年8月29日（土）</a></li><li><a href="nar_20260830.html">2026年8月30日（日）</a></li><li><a href="nar_20260831.html">2026年8月31日（月）</a></li></ul>
   <div id="pane-matome" style="display:none;">
