@@ -150,6 +150,7 @@ h1,h2,h3,.card-title,.race-title{font-weight:900 !important;}
 [class*="card"],.results,.graded,.month-summary .stat,.stat-row>*{box-shadow:none !important;border-radius:6px !important;}
 *,*::before,*::after{border-radius:0 !important;}
 </style><style id="struct2-preview">
+html{zoom:1 !important;}
 .stat,.month-summary .stat{background:none !important;border:none !important;border-radius:0 !important;border-top:2px solid var(--border-strong) !important;padding:10px 2px 6px !important;}
 .stat-row{gap:0 !important;}
 .stat{border-left:1px solid var(--text-faint) !important;padding-left:12px !important;}
@@ -166,8 +167,11 @@ h1,h2,h3,.card-title,.race-title{font-weight:900 !important;}
 .card,.nav-list a{border-bottom:3px solid var(--border-strong) !important;}
 .card:nth-of-type(even):not(.card-hit),.nav-list li:nth-child(even) a{background:color-mix(in srgb,var(--text) 6%,transparent) !important;}
 .card+.card{margin-top:0 !important;}
-.list a.is-plus{border-left-width:12px !important;background:var(--accent-tint) !important;border-bottom:1px solid var(--border) !important;}
-.plus-legend i{border-radius:0 !important;background:var(--accent-tint);border-color:var(--accent) !important;border-width:0 0 0 8px !important;width:6px !important;}
+.list a.is-plus{background:none !important;}
+.list a.is-plus::after{content:"回収率100%超";float:right;background:var(--text);color:var(--bg);font-size:13px;font-weight:900;padding:2px 8px;}
+.plus-legend i{display:inline-block;background:var(--text);color:var(--bg);border:none !important;width:auto !important;height:auto !important;font-style:normal;font-size:12px;padding:1px 6px;margin-right:6px;}
+.plus-legend i::before{content:"回収率100%超";}
+.plus-legend{font-size:0 !important;}.plus-legend>*{font-size:13px;}
 .month-summary .section-eyebrow{border-radius:0 !important;background:none !important;font-size:15px !important;letter-spacing:.04em !important;color:var(--text) !important;border-bottom:2px solid var(--border-strong);padding:0 0 6px !important;display:block !important;text-transform:none !important;}
 .card{background:none !important;border:none !important;border-radius:0 !important;border-top:none !important;border-bottom:2px solid var(--text-faint) !important;border-left:6px solid var(--gold) !important;padding:14px 12px !important;margin-bottom:0 !important;}
 .card.card-hit{background:var(--accent-tint) !important;border-left:10px solid var(--accent) !important;border-bottom:2px solid var(--text-faint) !important;}
@@ -190,7 +194,7 @@ h1,h2,h3,.card-title,.race-title{font-weight:900 !important;}
     <button class="tab-btn" data-tab="nar">地方</button>
     <button class="tab-btn" data-tab="matome">まとめ</button>
   </div>
-  <p class="plus-legend"><i></i>緑の枠＝注目レース(S)の回収率が100%を超えた日（中央・地方とも）</p>
+  <p class="plus-legend"><i></i>札＝注目レース(S)の回収率が100%を超えた日（中央・地方とも）</p>
   <ul class="list" id="list-jra"><li><a href="20261101.html">2026年11月1日（日）</a></li><li><a href="20261107.html">2026年11月7日（土）</a></li><li><a href="20261108.html">2026年11月8日（日）</a></li><li><a href="20261114.html">2026年11月14日（土）</a></li><li><a href="20261115.html">2026年11月15日（日）</a></li><li><a href="20261121.html" class="is-plus">2026年11月21日（土）</a></li><li><a href="20261122.html">2026年11月22日（日）</a></li><li><a href="20261123.html">2026年11月23日（月）</a></li></ul>
   <ul class="list list-nar" id="list-nar" style="display:none;"><li><a href="nar_20261101.html">2026年11月1日（日）</a></li><li><a href="nar_20261102.html" class="is-plus">2026年11月2日（月）</a></li><li><a href="nar_20261103.html" class="is-plus">2026年11月3日（火）</a></li><li><a href="nar_20261104.html">2026年11月4日（水）</a></li><li><a href="nar_20261105.html">2026年11月5日（木）</a></li><li><a href="nar_20261106.html">2026年11月6日（金）</a></li><li><a href="nar_20261107.html">2026年11月7日（土）</a></li><li><a href="nar_20261108.html">2026年11月8日（日）</a></li><li><a href="nar_20261109.html">2026年11月9日（月）</a></li><li><a href="nar_20261110.html">2026年11月10日（火）</a></li><li><a href="nar_20261111.html">2026年11月11日（水）</a></li><li><a href="nar_20261112.html" class="is-plus">2026年11月12日（木）</a></li><li><a href="nar_20261113.html">2026年11月13日（金）</a></li><li><a href="nar_20261114.html" class="is-plus">2026年11月14日（土）</a></li><li><a href="nar_20261115.html">2026年11月15日（日）</a></li><li><a href="nar_20261116.html">2026年11月16日（月）</a></li><li><a href="nar_20261117.html">2026年11月17日（火）</a></li><li><a href="nar_20261118.html">2026年11月18日（水）</a></li><li><a href="nar_20261119.html">2026年11月19日（木）</a></li><li><a href="nar_20261120.html">2026年11月20日（金）</a></li><li><a href="nar_20261121.html">2026年11月21日（土）</a></li><li><a href="nar_20261122.html">2026年11月22日（日）</a></li><li><a href="nar_20261123.html" class="is-plus">2026年11月23日（月）</a></li><li><a href="nar_20261124.html">2026年11月24日（火）</a></li><li><a href="nar_20261125.html">2026年11月25日（水）</a></li><li><a href="nar_20261126.html">2026年11月26日（木）</a></li><li><a href="nar_20261127.html">2026年11月27日（金）</a></li></ul>
   <div id="pane-matome" style="display:none;">
