@@ -34,7 +34,9 @@ html{zoom:1 !important;}
 .pick-card{background:none !important;border:none !important;border-radius:0 !important;border-top:3px solid var(--gold) !important;padding:14px 0 10px !important;margin-bottom:22px !important;}
 .race-list{gap:0 !important;border-top:2px solid var(--border-strong);}
 .race-card,.race-card.is-buy,.race-card.is-hit{background:none !important;border:none !important;border-bottom:2px solid var(--text-faint) !important;border-radius:0 !important;}
-.race-card summary{padding:13px 2px !important;}
+.race-card summary{padding:13px 30px 13px 2px !important;position:relative;row-gap:6px !important;}
+.race-card summary .sum-honmei{flex:0 0 100% !important;order:5;}
+.race-card summary::after{position:absolute !important;right:8px;top:50%;margin-top:-6px;}
 .race-card[open] summary{border-bottom:1px dotted var(--border) !important;}
 .race-card.is-buy{border-left:8px solid var(--gold) !important;padding-left:8px;background:var(--gold-tint) !important;}
 .race-card.is-buy .verdict-buy{order:-1;font-size:13px;font-weight:900;padding:3px 8px;}
