@@ -23,10 +23,11 @@ body{font-family:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic UI","Yu Gothic
 h1,h2,h3,.card-title,.race-title{font-weight:900 !important;}
 [class*="card"],.results,.graded,.month-summary .stat,.stat-row>*{box-shadow:none !important;border-radius:6px !important;}
 </style><style id="struct-preview">
+:root{--red:#C8321E;--red-tint:#F8E2DC;}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--red:#EC6A55;--red-tint:#3A1D18;}}
 html{zoom:1 !important;}
 /* 箱をやめて罫線で区切る */
 .stat{background:none !important;border:none !important;border-radius:0 !important;border-top:2px solid var(--border-strong) !important;padding:10px 2px 6px !important;}
-.stat.stat-plus{border-top-color:var(--accent) !important;border-width:2px 0 0 0 !important;}
+.stat.stat-plus{border-top-color:var(--red) !important;border-width:2px 0 0 0 !important;}
 .stat-row{gap:0 !important;}
 .stat{border-left:1px solid var(--text-faint) !important;padding-left:12px !important;}
 .stat:first-child{border-left:none !important;padding-left:2px !important;}
@@ -38,11 +39,11 @@ html{zoom:1 !important;}
 .race-card.is-buy{border-left:8px solid var(--gold) !important;padding-left:8px;background:var(--gold-tint) !important;}
 .race-card.is-buy .verdict-buy{order:-1;font-size:13px;font-weight:900;padding:3px 8px;}
 .race-card.is-buy .sum-race{color:var(--gold-strong);}
-.race-card.is-buy.is-hit{background:linear-gradient(90deg,var(--gold-tint) 0,var(--accent-tint) 100%) !important;}
-.race-card.is-hit:not(.is-buy){border-left:8px solid var(--accent) !important;padding-left:8px;background:var(--accent-tint) !important;}
-.hit-tag{order:-1;background:var(--accent);color:#fff;font-weight:900;font-size:15px;padding:3px 9px;border-radius:2px;flex:0 0 auto;}
-.race-card.is-hit .sum-race{color:var(--accent-strong);}
-.highlight-card{border-left:6px solid var(--accent) !important;padding-left:12px !important;background:var(--accent-tint) !important;}
+.race-card.is-buy.is-hit{background:linear-gradient(90deg,var(--gold-tint) 0,var(--red-tint) 100%) !important;}
+.race-card.is-hit:not(.is-buy){border-left:8px solid var(--red) !important;padding-left:8px;background:var(--red-tint) !important;}
+.hit-tag{order:-1;background:var(--red);color:#fff;font-weight:900;font-size:15px;padding:3px 9px;border-radius:2px;flex:0 0 auto;}
+.race-card.is-hit .sum-race{color:var(--red);}
+.highlight-card{border-left:6px solid var(--red) !important;padding-left:12px !important;background:var(--red-tint) !important;}
 .race-detail{padding:4px 2px 14px !important;}
 .highlight-card{background:none !important;border:none !important;border-radius:0 !important;border-bottom:2px solid var(--text-faint) !important;padding:10px 2px !important;}
 /* 丸を四角に */
