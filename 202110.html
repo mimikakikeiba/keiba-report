@@ -142,9 +142,10 @@ html{zoom:1 !important;}
 .card,.nav-list a{border-bottom:3px solid var(--border-strong) !important;}
 .card:nth-of-type(even):not(.card-hit),.nav-list li:nth-child(even) a{background:color-mix(in srgb,var(--text) 6%,transparent) !important;}
 .card+.card{margin-top:0 !important;}
-.list a.is-plus{background:color-mix(in srgb,var(--text) 10%,transparent) !important;border-left:12px solid var(--text) !important;}
-.list a.is-plus::after{content:"回収率100%超";float:right;background:var(--text);color:var(--bg);font-size:13px;font-weight:900;padding:2px 8px;}
-.plus-legend i{display:inline-block;background:var(--text);color:var(--bg);border:none !important;width:auto !important;height:auto !important;font-style:normal;font-size:12px;padding:1px 6px;margin-right:6px;}
+:root{--red:#C8321E;--red-tint:#F8E2DC;}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--red:#EC6A55;--red-tint:#3A1D18;}}
+.list a.is-plus{background:var(--red-tint) !important;border-left:12px solid var(--red) !important;}
+.list a.is-plus::after{content:"回収率100%超";float:right;background:var(--red);color:#fff;font-size:13px;font-weight:900;padding:2px 8px;}
+.plus-legend i{display:inline-block;background:var(--red);color:#fff;border:none !important;width:auto !important;height:auto !important;font-style:normal;font-size:12px;padding:1px 6px;margin-right:6px;}
 .plus-legend i::before{content:"回収率100%超";}
 .plus-legend{font-size:0 !important;}.plus-legend>*{font-size:13px;}
 .month-summary .section-eyebrow{border-radius:0 !important;background:none !important;font-size:15px !important;letter-spacing:.04em !important;color:var(--text) !important;border-bottom:2px solid var(--border-strong);padding:0 0 6px !important;display:block !important;text-transform:none !important;}
