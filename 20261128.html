@@ -282,6 +282,8 @@ h1.title .nowrap{white-space:nowrap;}
 .mark-sankaku{color:#6B7FCF;}
 .mark-hoshi{color:#B06BC2;}
 .mark-yonkaku{color:var(--text-faint);font-size:13px;}
+.mark-scratch{color:var(--text-faint);font-size:13px;font-weight:900;white-space:nowrap;}
+.horse-row.scratched .horse-name,.row-scratch td{text-decoration:line-through;color:var(--text-faint);}
 .retro-note{font-size:11px;color:var(--text-faint);}
 .no-star-note{font-size:12px;font-weight:700;color:var(--text-muted);margin:6px 0 2px;}
 .stake-note{font-size:12px;color:var(--text-muted);margin:6px 0 2px;}
@@ -500,7 +502,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="mark mark-hoshi">⭐︎2</span>
       <span class="horse-name">サノノキセキ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:18%"></div></div><span class="p3-num">6.25%</span></div>
-    </li></ul>
+    </li><li class="horse-row scratched"><span class="uma-badge" style="background:#EE8A1D;color:#182018;border:none;">9</span><span class="mark mark-scratch">取消</span><span class="horse-name">ネーロノワール</span><span></span></li></ul>
       <div class="stake-note">◎4.5倍→◎4倍以上・予算3,000円　<a href="bets.html">買い目の考え方</a></div>
       <div class="graded">
       <div class="graded-head">重賞レポート — 全馬表</div>
@@ -512,9 +514,9 @@ h1.title .nowrap{white-space:nowrap;}
         </tr><tr class="row-o">
           <td class="tn">10</td><td class="tname">ドラゴンバルド</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">12.90%</td>
-        </tr><tr>
+        </tr><tr class="row-scratch">
           <td class="tn">9</td><td class="tname">ネーロノワール</td>
-          <td class="tmk"></td><td class="tnum">9.97%</td>
+          <td class="tmk"><span class="mark mark-scratch">取消</span></td><td class="tnum">9.97%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">3</td><td class="tname">ショウナンバトレニ</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">9.96%</td>
@@ -890,7 +892,51 @@ h1.title .nowrap{white-space:nowrap;}
         </tr></tbody>
     </table></div>
     </div>
-        
+        <div class="results">
+      <div class="results-head">結果</div>
+      <div class="podium"><div class="podium-row">
+          <span class="podium-rank">1着</span>
+          <span class="mark"></span>
+          <span class="podium-name">15 ブロッサムスピア</span>
+          <span class="podium-ninki">1番人気・2.6倍</span>
+        </div><div class="podium-row">
+          <span class="podium-rank">2着</span>
+          <span class="mark mark-hoshi">⭐︎1</span>
+          <span class="podium-name">4 ランゲ</span>
+          <span class="podium-ninki">11番人気・45.2倍</span>
+        </div><div class="podium-row">
+          <span class="podium-rank">3着</span>
+          <span class="mark"></span>
+          <span class="podium-name">8 ボウアンドアロー</span>
+          <span class="podium-ninki">10番人気・30.3倍</span>
+        </div></div>
+      <p class="win-note">※人気・オッズは速報値です。確定値と若干異なる場合があります。</p>
+      <div class="reviews"><div class="review-row">
+          <span class="mark mark-honmei">◎</span>
+          <span class="review-name">7 ナジュム （3番人気・7.1倍）</span>
+          <span class="result-badge missed">14着</span>
+        </div><div class="review-row">
+          <span class="mark mark-o">○</span>
+          <span class="review-name">16 レイヨンラゼール （8番人気・23.7倍）</span>
+          <span class="result-badge missed">4着</span>
+        </div><div class="review-row">
+          <span class="mark mark-sankaku">▲</span>
+          <span class="review-name">1 アドマイヤキングス （2番人気・5.1倍）</span>
+          <span class="result-badge missed">9着</span>
+        </div><div class="review-row">
+          <span class="mark mark-hoshi">⭐︎1</span>
+          <span class="review-name">4 ランゲ （11番人気・45.2倍）</span>
+          <span class="result-badge came-in">2着</span>
+        </div><div class="review-row">
+          <span class="mark mark-hoshi">⭐︎2</span>
+          <span class="review-name">11 フクノブルースカイ （7番人気・19.8倍）</span>
+          <span class="result-badge missed">5着</span>
+        </div></div>
+      <div class="personal-bets">
+          <div class="personal-bets-head">買い目(検証中):</div>
+          <div class="personal-line">3連単（◎→⭐︎→○▲）4点(不的中)</div><div class="personal-line">馬単（◎→⭐︎）2点(不的中)</div><div class="personal-line">馬単（⭐︎→○▲）4点(不的中)</div><div class="personal-line">3連複（◎軸）4点(不的中)</div>
+        </div>
+    </div>
       </div>
     </details><div class="race-card is-excluded" id="r-京都-4" data-buy="0">
       <div class="race-card-row"><span class="sum-race">4R</span><span class="hasso">11:35発走</span><span class="sum-meta">2910m障害 </span><span class="sum-honmei sum-excluded">障害戦のため除外</span></div>
@@ -1275,7 +1321,7 @@ h1.title .nowrap{white-space:nowrap;}
       <span class="mark mark-hoshi">⭐︎2</span>
       <span class="horse-name">サノノキセキ</span>
       <div class="p3"><div class="p3-track"><div class="p3-fill hoshi" style="width:18%"></div></div><span class="p3-num">6.25%</span></div>
-    </li></ul>
+    </li><li class="horse-row scratched"><span class="uma-badge" style="background:#EE8A1D;color:#182018;border:none;">9</span><span class="mark mark-scratch">取消</span><span class="horse-name">ネーロノワール</span><span></span></li></ul>
         <div class="stake-note">◎4.5倍→◎4倍以上・予算3,000円　<a href="bets.html">買い目の考え方</a></div>
         <div class="graded">
       <div class="graded-head">重賞レポート — 全馬表</div>
@@ -1287,9 +1333,9 @@ h1.title .nowrap{white-space:nowrap;}
         </tr><tr class="row-o">
           <td class="tn">10</td><td class="tname">ドラゴンバルド</td>
           <td class="tmk"><span class="mark mark-o">○</span></td><td class="tnum">12.90%</td>
-        </tr><tr>
+        </tr><tr class="row-scratch">
           <td class="tn">9</td><td class="tname">ネーロノワール</td>
-          <td class="tmk"></td><td class="tnum">9.97%</td>
+          <td class="tmk"><span class="mark mark-scratch">取消</span></td><td class="tnum">9.97%</td>
         </tr><tr class="row-sankaku">
           <td class="tn">3</td><td class="tname">ショウナンバトレニ</td>
           <td class="tmk"><span class="mark mark-sankaku">▲</span></td><td class="tnum">9.96%</td>
